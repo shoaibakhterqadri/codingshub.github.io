@@ -1,0 +1,2106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structure & Algorithm</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="algorithm.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <style>
+        .all-menu a {
+            background-color:#008cff;
+          /* background-color: #7386d5; Grey background color */
+          color: white; /* Black text color */
+          display: block; /* Make the links appear below each other */
+          padding: 12px; /* Add some padding */
+          text-decoration: none; /* Remove underline from links */
+        }
+        .all-menu {
+          width: 250px;
+          height: 505px;
+          overflow-y: auto;
+          background-color: #008cff;
+        }
+          </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+
+        <nav id="sidebar" >
+            <div id="all" style="position:fixed" >
+            <div class="sidebar-header" style="width: 225px;">
+                <a href="../../../index.html"><h3>Codings Hub</h3></a>
+            </div>
+            <div class="all-menu" style="height: 750px;">
+            <ul class="list-unstyled components">
+                <p>Programming Languages</p>
+                <li>
+                    <a href="../../coding.html">HTML</a>
+                </li>
+                <li>
+                    <a href="../css/css.html">CSS</a>
+                </li>
+                <li>
+                    <a href="../JavaScript/javaScript.html">JavaScript</a>
+                </li>
+                <li>
+                    <a href="../Java/java.html">Java</a>
+                </li>
+                <li>
+                    <a href="../C++/c++.html">C++</a>
+                 </li>
+                <li>
+                    <a href="../CSharp/cSharp.html">C#</a>
+                </li>
+                <li>
+                    <a href="../cald/cald.html">Computer Architecture & Logic Design</a>
+                </li>
+                <li class="active" style="width: 233px;" >
+                        
+                    <a href="#cald" data-toggle="collapse" aria-expanded="false"  class="dropdown-toggle">Data Structure & Algorithm</a>
+                    
+                    <ul class="collapse list-unstyled" id="cald">
+                        <li>
+                            <a href="#linear">1. linear search and sorting</a>
+                        </li>
+                        <li>
+                            <a href="#Linked">2. Linked List</a>
+                        </li>
+                        <li>
+                            <a href="#Double">3. Double linked list</a>
+                        </li>
+                        <li>
+                            <a href="#Stacks">4. Stacks</a>
+                        </li>
+                        <li>
+                            <a href="#Recursion">5. Recursion</a>
+                        </li>
+                        <li>
+                            <a href="#Merge">6. Merge and Quick Sort</a>
+                        </li>
+                        <li>
+                            <a href="#Queues">7. Queues</a>
+                        </li>
+                        <li>
+                            <a href="#BT">8. BT,Bucket +Radix Sort</a>
+                        </li>
+                        <li>
+                            <a href="#BST">9. BST and AVL</a>
+                        </li>
+                        <li>
+                            <a href="#Graphs">10. Graphs</a>
+                        </li>
+                        <li>
+                            <a href="#Heap">11. Heap Sort</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="../os/os.html">Operating System</a>
+                </li>
+                <li>
+                    <a href="../sda/os.html">Software Design & Architecture</a>
+                </li>
+                <li>
+                    <a href="../dbms/os.html">Database Management System</a>
+                </li>
+                <li>
+                    <a target="_blank" href="../../../portfolio/index.html">Portfolio</a>
+                </li>
+                <li>
+                    <a target="_blank" href="../../../contact-us/contact/index.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </nav>
+
+
+
+    
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../../mcqs/mcqsOfProgrammingLanguage/html/todo/htmlMCQs.html">MCQs</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.fiverr.com/users/shoaibakhter18">Services by Fiverr</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- </div> -->
+            </nav>
+       
+
+            <h1>Tasks & Solution of Data Structure & Algorithm</h1> <br>
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- Introduction to Data Structure & Algorithm-->
+            <h2 id="linear">1. linear search and sorting </h2> <br>
+
+            <h5>1) Which type of sorting you want to apply? Create a menu having the following options: <br>
+                I.	Bubble Sort Method<br>
+                II.	Selection Sort Method<br>
+                III.	Insertion Sort Method<br>
+                Implement using methods.
+                </h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/1.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <img src="image/1.2.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <img src="image/1.3.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+            color: white;">
+static void bubble(int[] array){<br>
+    int n = array.Length;<br>
+    int k;<br>
+    for (int m = n; m >= 0; m--){<br>
+    for (int i = 0; i < n - 1; i++){<br>
+    k = i + 1;<br>
+    if (array[i] > array[k]){<br>
+    int temp;<br>
+    temp = array[i];<br>
+    array[i] = array[k];<br>
+    array[k] = temp;}}}<br>
+    for (int m = 0; m < array.Length; m++){<br>
+    Console.Write(array[m] + "  ");}<br>
+    Console.ReadLine();}<br>
+    static void selection(int[] arr){<br>
+    int temp, smallest;<br>
+    for (int i = 0; i < arr.Length - 1; i++) <br>
+    smallest = i;<br>
+    for (int j = i + 1; j < arr.Length; j++){<br>
+    if (arr[j] < arr[smallest]){<br>
+    smallest = j;}}<br>
+    temp = arr[smallest];<br>
+    arr[smallest] = arr[i];<br>
+    arr[i] = temp;}<br>
+    for (int m = 0; m < arr.Length; m++){<br>
+    Console.Write(arr[m] + "  ");}<br>
+    Console.ReadLine();}<br>
+    static void insertion(int[] Array){<br>
+    for (int i = 0; i < Array.Length - 1; i++){<br>
+    for (int j = i + 1; j > 0; j--){<br>
+    if (Array[j - 1] > Array[j]){<br>
+    int temp = Array[j - 1];<br>
+    Array[j - 1] = Array[j];<br>
+    Array[j] = temp;}}}<br>
+    for (int m = 0; m < Array.Length; m++){<br>
+    Console.Write(Array[m] + "  ");}<br>
+    Console.ReadLine();}<br>
+    static bool Menu(int[] a)	{<br>
+    Console.WriteLine("\n\nWHICH TYPES OF SORTING YOU CHOOSE");<br>
+    Console.WriteLine("1) BUBBLE SORT \n2) INSERTION SORT\n3) SELECTION SORT");<br>
+    Console.Write("Select any One ? ");<br>
+    switch (Console.ReadLine()){<br>
+    case "1":<br>
+    Console.WriteLine("\nBUBBLE SORT");<br>
+    bubble(a);<br>
+    return true;<br>
+    case "2":<br>
+    Console.WriteLine("\nINSERTION SORT ");<br>
+    insertion(a);<br>
+    return true;<br>
+    case "3":<br>
+    Console.WriteLine("\nSELECTION SORT ");<br>
+    selection(a);<br>
+    return true;<br>
+    default:<br>
+    return false;}}<br>
+    static void Main(string[] args){<br>
+    int[] arr = { 46,20,100,89,36,75,18,33,98,26,86,51};<br>
+    Console.Write("Unsorted Array = ");<br>
+    for(int i = 0; i<arr.Length; i++){ <br>
+    Console.Write(arr[i]+"  ");}<br>
+    bool a = true;<br>
+    while (a){<br>
+    a = Menu(arr);}}
+    
+            </p>
+        
+
+            <div class="line"></div>
+
+            <h5>2) Implement Selection sort and print string array data in descending order.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/1.4.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+               int smallest;<br>
+               string temp;<br>
+               for (int i = 0; i < array.Length; i++){<br>
+               smallest = i;<br>
+               for (int j = (i + 1); j < array.Length; j++){<br>
+               if (array[smallest][0] > array[j][0]){<br>
+               smallest = j;}}<br>
+               temp = array[smallest];<br>
+               array[smallest] = array[i];<br>
+               array[i] = temp;}}<br>
+               static void Main(string[] args){<br>
+               Console.Write("Enter The Sixe Of Array : ");<br>
+               int size = int.Parse(Console.ReadLine());<br>
+               string[] array = new string[size];<br>
+               for (int i = 0; i < array.Length; i++){<br>
+               Console.Write("Enter Value At {0} Index :  ", (i + 1));<br>
+               array[i] = Console.ReadLine().ToLower();}<br>
+               Console.Clear();<br>
+               for (int i = 0; i < array.Length; i++){<br>
+               Console.WriteLine("\t {0}",array[i]);}<br>
+               Console.WriteLine("After Sorting In Decending Order \n");<br>
+               SelectionSort(array);<br>
+               for (int i = array.Length-1; i >= 0; i--){<br>
+               Console.WriteLine("\t {0}", array[i]);}
+               
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>3) A Detox chemical Industry has a list of chemicals along with their concentration and Volume. Your task is to list down the name of chemicals in descending order based on their Volume. In order to fulfil the task you have to select any of the sorting method taught in todays lab with proper reasoning of usage of that algorithm.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/1.5.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+               int[] vol , conc;<br>
+               string[] name;
+               Console.Write("How many chemical which you buy ? ");<br>
+               int n = int.Parse(Console.ReadLine());<br>
+               vol = new int[n];<br>
+               conc = new int[n];<br>
+               name = new string[n];<br>
+               for (int i = 0; i < n; i++){<br>
+               Console.Write("\nEnter Name : ");<br>
+               name[i] = Console.ReadLine();<br>
+               Console.Write("Enter Volume : ");<br>
+               vol[i] = int.Parse(Console.ReadLine());<br>
+               Console.Write("Enter Concentraion : ");<br>
+               conc[i] = int.Parse(Console.ReadLine());}<br>
+               for (int i = 0; i < n - 1; i++){  for (int j = i + 1; j > 0; j--){<br>
+               if (vol[j - 1] < vol[j])    {<br>
+               int temp = vol[j - 1];<br>
+               vol[j - 1] = vol[j];<br>
+               vol[j] = temp;<br>
+               string temp1 = name[j - 1];<br>
+               name[j - 1] = name[j];<br>
+               name[j] = temp1;<br>
+               int temp2 = conc[j - 1];<br>
+               conc[j - 1] = conc[j];<br>
+               conc[j] = temp2;   }}}<br>
+               Console.WriteLine("\n\nNAME\t\tVOLUME\t\tCONC");<br>
+               for (int i = 0; i < n; i++){<br>
+               Console.WriteLine("{0,-16} {1,-15} {2}", name[i], vol[i], conc[i]);}
+                             
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>4) You have to write a program which take input from the user and place the value on correct location in ascending order.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/1.6.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+               Console.Write("Enter length of Array : ");<br>
+               int n = Convert.ToInt32(Console.ReadLine());<br>
+               Console.WriteLine("\nEnter Numbers :");<br>
+               int[] arr = new int[n];<br>
+               for (int i = 0; i < arr.Length; i++)        {<br>
+               arr[i] = Convert.ToInt32(Console.ReadLine());     }<br>
+               for (int j = 0; j < arr.Length; j++){<br>
+               int index = j;<br>
+               for (int k = j; k < arr.Length; k++)      {<br>
+               if (arr[index] > arr[k])          {<br>
+               index = k;      }}<br>
+               int temp = arr[index];<br>
+               arr[index] = arr[j];<br>
+               arr[j] = temp;}<br>
+               Console.Write("\nSorting number is : ");<br>
+               for (int l = 0; l < arr.Length; l++)     {<br>
+               Console.Write(arr[l]+"  ");            }<br>
+               Console.ReadLine();
+               
+                
+            </p>
+
+            <div class="line"></div>
+
+            <h5>5) Write a program which take N numbers of grocery items from user along with their price. Your main task is to display the items in sorted format. Then allow user to search for any of the item from that list by using name of the item.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/1.7.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <img src="image/1.8.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <img src="image/1.9.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+              static void Main(string[] args){<br>
+                Console.Write("Enter number of grocery items = ");<br>
+                int num = int.Parse(Console.ReadLine());<br>
+                String[,] groceryItems = new string [num,2];<br>
+                for(int i = 0; i<num; i++){<br>
+                Console.Write("\nEnter Grocery Name : ");<br>
+                groceryItems[i, 0] = Console.ReadLine();<br>
+                Console.Write("Enter Grocery Price : ");<br>
+                groceryItems[i, 1] = Console.ReadLine();}<br>
+                Console.WriteLine("\n1) Search Item\n2) Display Item along with Grocery Name\n3) Display Item along with Grocery Price");<br>
+                Console.Write("\n\tSelect any option : ");<br>
+                int choice = int.Parse(Console.ReadLine());<br>
+                switch (choice){<br>
+                case 1:<br>
+                Console.Write("\n\nEnter Grocery Item for Searching : ");<br>
+                String search = Console.ReadLine();<br>
+                for (int i = 0; i < num; i++){<br>
+                if (groceryItems[i, 0] == search){<br>
+                Console.WriteLine("\n\tGrocery Item = " + search);<br>
+                Console.WriteLine("\tGrocery Price = " + groceryItems[i, 1]);<br>
+                break;}}<br>
+                break;<br>
+                case 2:<br>
+                Console.WriteLine("\n--------------------------------");<br>
+                Console.WriteLine("| Grocery Items\t |\tPrice  |");<br>
+                Console.WriteLine("--------------------------------");<br>
+                String[] items_Sort = new string[num];<br>
+                for (int i = 0; i < num; i++)           {<br>
+                items_Sort[i] = groceryItems[i, 0];}<br>
+                Array.Sort(items_Sort);<br>
+                for (int i = 0; i<num; i++){<br>
+                for(int j = 0; j<num; j++){<br>
+                if (items_Sort[i] == groceryItems[j,0]){<br>
+                Console.WriteLine("| {0,-15}|\t{1,-6}|", groceryItems[j, 0], groceryItems[j, 1]);}}<br>
+                if(i == num - 1){<br>
+                Console.WriteLine("--------------------------------");}}<br>
+                break;<br>
+                case 3:<br>
+                Console.WriteLine("\n--------------------------------");<br>
+                Console.WriteLine("| Grocery Items\t |\tPrice  |");<br>
+                Console.WriteLine("--------------------------------");<br>
+                int Price1 , Price2;<br>
+                for (int i = 0; i < num - 1; i++){<br>
+                for (int j = i + 1; j > 0; j--){<br>
+                Price1 = int.Parse(groceryItems[j - 1, 1]);<br>
+                Price2 = int.Parse(groceryItems[j , 1]);<br>
+                if (Price1 > Price2){<br>
+                String tempName = groceryItems[j - 1, 0];<br>
+                String tempPrice = groceryItems[j - 1, 1];<br>
+                groceryItems[j - 1, 0] = groceryItems[j, 0];<br>
+                groceryItems[j - 1, 1] = groceryItems[j, 1];<br>
+                groceryItems[j, 0] = tempName;<br>
+                groceryItems[j, 1] = tempPrice;}}}<br>
+                for(int i = 0; i<num; i++){<br>
+                Console.WriteLine("| {0,-15}|\t{1,-6} |", groceryItems[i, 0], groceryItems[i, 1]);<br>
+                if (i == num - 1){<br>
+                Console.WriteLine("--------------------------------");}}<br>
+                break;<br>
+                default:<br>
+                Console.WriteLine("\n\nYou Press Wrong Key");<br>
+                break;}}
+                
+                
+            </p>
+
+            <div class="line"></div>
+
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- Introduction to  Computer Architecture & Logic Design-->
+            <h2 id="Linked">2. Linked List </h2> <br>
+
+            <h5>1) Write a program to create a linked list and pertform: <br>
+                *Traversing<br>
+            </h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/2.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h3>Main Class:</h3>
+            <p style="background-color: black;
+            color: white;">
+LinkedList list = new LinkedList();<br>
+list.head = new Node(5);<br>
+Node second = new Node(10);<br>
+Node third = new Node(20);<br>
+list.head.next = second;<br>
+second.next = third;<br>
+list.printList();</p>
+<h3>Node Class:</h3> 
+<p style="background-color: black;
+            color: white;">
+public int data;<br>
+public Node next;<br>
+public Node(int d){<br>
+data = d;<br>
+next = null;}</p>
+<h3>LinkedList Class:</h3>
+<p style="background-color: black;
+            color: white;">
+public Node head;<br>
+public void printList(){<br>
+Node n=head;<br>
+while(n!=null){<br>
+Console.WriteLine(n.data + "\n");<br>
+n = n.next;}}</p>
+
+            
+
+            <div class="line"></div>
+
+            <h5>2) Write a program to create a linked list and pertform: <br>
+                *) Insertion
+            </h5>
+            <br><h5>Output:</h5>
+            <img src="image/2.2.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+<h3>Main Class:</h3>
+            <p style="background-color: black;
+            color: white;">
+               LinkedList list = new LinkedList();<br>
+               list.head = new Node(5);<br>
+               Node second = new Node(10);<br>
+               Node third = new Node(20);<br>
+               list.head.next = second;<br>
+               second.next = third;<br>
+               list.printList();<br>
+               list.append(6);<br>
+               list.push(7);<br>
+               list.push(1);<br>
+               list.insertAfter(list.head.next, 8);<br>
+               Console.Write("\n\nCreated Linked list is: \n\n");<br>
+               list.printList();                             <br>
+            </p>
+            <h3>LinkedList Class:</h3>
+            <p style="background-color: black;
+            color: white;">
+              public Node head;<br>
+              public void printList(){<br>
+              Node n=head;<br>
+              while(n!=null){<br>
+              Console.Write(n.data + " ");<br>
+              n = n.next;}}<br>
+              public void push(int new_data){<br>
+              Node new_node = new Node(new_data);<br>
+              new_node.next = head;<br>
+              head = new_node;}<br>
+              public void insertAfter(Node prev_node, int new_data){<br>
+              if (prev_node == null){<br>
+              Console.WriteLine("The given previous node cannot be null");<br>
+              return;}<br>
+              Node new_node = new Node(new_data);<br>
+              new_node.next = prev_node.next;<br>
+              prev_node.next = new_node;}<br>
+              public void append(int new_data){<br>
+              Node new_node = new Node(new_data);<br>
+              if (head == null){<br>
+              head = new Node(new_data);<br>
+              return;}<br>
+              new_node.next = null;<br>
+              Node last = head;<br>
+              while (last.next != null)<br>
+              last = last.next;<br>
+              last.next = new_node;<br>
+              return;}
+                            
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>3) Write a program to create a linked list and pertform: <br>
+                *Deletion
+            </h5>
+            <br><h5>Output:</h5>
+            <img src="image/2.3.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+<h3>Main Class:</h3>
+            <p style="background-color: black;
+            color: white;">
+                       LinkedList list = new LinkedList();<br>
+                       list.head = new Node(5);<br>
+                       Node second = new Node(10);<br>
+                       Node third = new Node(20);<br>
+                       list.head.next = second;<br>
+                       second.next = third;<br>
+                       list.printList();<br>
+                       list.append(6);<br>
+                       list.push(7);<br>
+                       list.push(1);<br>
+                       list.insertAfter(list.head.next, 8);<br>
+                       Console.Write("\n\nCreated Linked list is: \n\n");<br>
+                       list.printList();<br>
+                       list.deleteNode(1);                             
+            </p>
+            <h3>LinkedList Class:</h3>
+            <p style="background-color: black;
+            color: white;">
+                        public void deleteNode(int key){<br>
+                            Node temp = head, prev = null;<br>
+                            if (temp != null &&<br>
+                            temp.data == key){<br>
+                            head = temp.next;<br>
+                            return;}<br>
+                            while (temp != null &&<br>
+                            temp.data != key){<br>
+                            prev = temp;<br>
+                            temp = temp.next;}<br>
+                            if (temp == null)<br>
+                            return;<br>
+                            prev.next = temp.next;}    <br>                             
+            </p>
+
+
+            <div class="line"></div>
+
+            <div id="foremediaads-c1"></div>
+            <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- Double linked list-->
+            <h2 id="Double">3. Double linked list </h2> <br>
+
+            <h5>1) Write a program to create a doubly linked list and pertform: <br>
+                *Traversing <br>
+                * Insertion <br>
+	*Deletion
+
+            </h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/3.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h3>Main Class:</h3>
+            <p style="background-color: black;
+            color: white;">
+DLL dll = new DLL();<br>
+dll.head = new Node(1);<br>
+Node second = new Node(2);<br>
+Node third = new Node(3);<br>
+Node fourth = new Node(4);<br>
+Node fifth = new Node(5);<br>
+dll.head.next = second;<br>
+second.next = third;<br>
+third.next = fourth;<br>
+fourth.next = fifth;<br>
+fifth.prev = fourth;<br>
+fourth.prev = third;<br>
+third.prev = second;<br>
+second.prev = dll.head;<br>
+dll.printList(second);<br>
+dll.reverse(third);<br>
+dll.append(6);<br>
+dll.push(7);<br>
+dll.center(dll.head.next, 8);<br>
+Console.WriteLine("Created DLL is: ");<br>
+dll.printList(dll.head);<br>
+dll.deleteNode(dll.head.next);<br>
+Console.WriteLine("\nList after Deleting middle node: ");<br>
+dll.printList(dll.head);<br>
+Node head = null;<br>
+Console.WriteLine("\n\n* * * * AFTER DELETION * * * *");<br>
+dll.deleteNode(fourth);<br>
+dll.printList(dll.head);<br>
+Console.WriteLine("\n\n* * * * AFTER DELETION (AT GIVEN POSITION) * * * *");<br>
+dll.deleteNodeAtGivenPos(dll.head, 2);<br>
+dll.printList(dll.head);
+            </p>
+<h3>DLL Class:</h3>
+<p style="background-color: black;
+            color: white;">
+            public Node head;<br>
+            public void printList(Node node){<br>
+            Node last = null;<br>
+            Console.WriteLine("Traversal in Forward Direction");<br>
+            while (node != null){<br>
+            Console.Write(node.data + " ");<br>
+            last = node;<br>
+            node = node.next;}<br>
+            Console.WriteLine("\nTraversal in Reverse Direction");<br>
+            while (last != null){<br>
+            Console.Write(last.data + " ");<br>
+            last = last.prev;}}<br>
+            public void reverse(Node node)<br>
+            {<br>
+            Console.WriteLine("\n Node value in Reverse Direction");<br>
+            Node last = node;<br>
+            while (last != null)<br>
+            {<br>
+            Console.Write(last.data + " ");<br>
+            last = last.prev;}}<br>
+            public void push(int new_data) {<br>
+            Node new_Node = new Node(new_data);<br>
+            new_Node.next = head;<br>
+            new_Node.prev = null;<br>
+            if (head != null) {<br>
+            head.prev = new_Node;<br>
+            head = new_Node;}}<br>
+            public void center(Node prev_Node, int center_data){<br>
+            Node center_Node = new Node(center_data);<br>
+            if (prev_Node == null){<br>
+            Console.WriteLine("The given previous node cannot be NULL ");<br>
+            return;}<br>
+            center_Node.next = prev_Node.next;<br>
+            prev_Node.next = center_Node;<br>
+            center_Node.prev = prev_Node;<br>
+            if (center_Node.next != null){<br>
+            center_Node.next.prev = center_Node;} }<br>
+            public void append(int new_data){<br>
+            Node new_node = new Node(new_data);<br>
+            Node last = head;<br>
+            new_node.next = null;<br>
+            if (head == null){<br>
+            new_node.prev = null;<br>
+            head = new_node;<br>
+            return;}<br>
+            while (last.next != null)<br>
+            last = last.next;<br>
+            last.next = new_node;<br>
+            new_node.prev = last;}<br>
+            public void deleteNode(Node del) {<br>
+            if (head == null || del == null)<br>
+            return;<br>
+            if (head == del)<br>
+            head = del.next;<br>
+            if (del.next != null)<br>
+            del.next.prev = del.prev;<br>
+            if (del.prev != null)<br>
+            del.prev.next = del.next;<br>
+            return;}<br>
+            public void deleteNodeAtGivenPos(Node head, int n){<br>
+            if (head == null || n <= 0)<br>
+            return;<br>
+            Node current = head;<br>
+            int i;<br>
+            for (i = 1; current != null && i < n; i++)<br>
+            current = current.next;<br>
+            if (current == null)<br>
+            return;<br>
+            deleteNode(current);           <br> 
+        </p>
+        <h3>Node Class:</h3>
+        <p style="background-color: black;
+            color: white;">
+            public int data;<br>
+            public Node next;<br>
+            public Node prev;<br>
+            public Node(int d){<br>
+            data = d;}            
+        </p>
+            <div class="line"></div>
+
+<div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- Introduction to  Computer Architecture & Logic Design-->
+            <h2 id="Stacks">4. Stacks </h2> <br>
+
+            <h5>1) Write a program to build your own stack class. The minimum your stack class should include is using your enrollment no : <br>
+                	A Push(Object) method<br>
+                	A Pop() method<br>
+                	A Peek() method<br>
+                	A IsFull() method<br>
+                	A IsEmpty() method<br>
+                	A Display() method<br>
+                	A Count() method
+                </h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/4.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h3>Main Class:</h3>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+            color: white;">
+Stack myStack = new Stack();<br>
+Console.WriteLine("******* Push Method *******");<br>
+myStack.push(02131212007);<br>
+myStack.push(02131212008);<br>
+myStack.push(02131212009);<br>
+myStack.push(02131212010);<br>
+Console.WriteLine("\n******* Display Method *******");<br>
+myStack.printList();<br>
+Console.WriteLine("\n******* Peek Method *******");<br>
+myStack.peek();<br>
+Console.WriteLine("\n******* Full Method *******");<br>
+Console.WriteLine("Is the stack full? \n" + myStack.isFull());<br>
+Console.WriteLine("\n******* Pop Method *******");<br>
+Console.WriteLine("Items pop from top of stack is " + myStack.pop());<br>
+myStack.printList();<br>
+myStack.pop();<br>
+myStack.pop();<br>
+myStack.pop();<br>
+Console.WriteLine("\n******* Empty Method *******");<br>
+Console.WriteLine("The stack is empty {0} ", myStack.isEmpty());        
+
+            </p>
+            <h3>Stack Class:</h3>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+            color: white;">
+static readonly int max = 1000;<br>
+int top;<br>
+int[] stack = new int[max];<br>
+public bool isFull(){<br>
+return top >= max;}<br>
+public Stack(){<br>
+top = -1;}<br>
+internal bool push(int data){<br>
+if (top >= max){<br>
+Console.WriteLine("Stack Overflow");<br>
+return false;}<br>
+else{<br>
+stack[++top] = data;<br>
+return true;}}<br>
+internal int pop(){<br>
+if (top < 0){<br>
+Console.WriteLine("Stact Underflow");<br>
+return 0;}<br>
+else{<br>
+int value = stack[--top];<br>
+return value;}}<br>
+internal void peek(){<br>
+if (top < 0){<br>
+Console.WriteLine("Stack Underflow");<br>
+return;}<br>
+else{<br>
+Console.WriteLine("The top most value of Stack Array is {0} " + stack[top]);}}<br>
+internal void printList(){<br>
+if (top < 0){<br>
+Console.WriteLine("Stack Underflow");<br>
+return;}<br>
+else{<br>
+for (int i = top; i >= 0; i--){<br>
+Console.WriteLine(stack[i]);}}}<br>
+public bool isEmpty(){<br>
+return top < 0;}
+
+            </p>   
+
+            <div class="line"></div>
+
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- Recursion-->
+            <h2 id="Recursion">5. Recursion </h2> <br>
+
+            <h5>1) Write a code which prints the following series: <br>
+                2	4	8	-	-	-	-	n
+           </h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/5.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+            color: white;">
+static int Recursion(int n,int data){<br>
+    data *= 2;<br>
+    Console.WriteLine("The Square of 2 is "+data);<br>
+    return (n <= 1) ? 0 : Recursion(n - 1, data);}<br>
+    static void Main(string[] args){<br>
+    Console.WriteLine("Enter Numbers for printing Squaring");<br>
+    int n = int.Parse(Console.ReadLine());<br>
+    Recursion(n, 1);}
+    
+            </p>
+
+            <div id="foremediaads-e1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/e1"></script>
+
+            <div class="line"></div>
+
+            <h5>2) Write a program which calculates the square of a number using odd number series implemented with the help of recursion concept.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/5.2.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+               static int cubic(int n,int count,int data){<br>
+                data = count*count;<br>
+                Console.WriteLine(" "+count + " => "+data);<br>
+                count += 2;<br>
+                return n <= 1 ? 0 : cubic(n - 1, count,data);}<br>
+                static void Main(string[] args){<br>
+                Console.WriteLine("Enter Number ");<br>
+                int n = int.Parse(Console.ReadLine());<br>
+                Console.WriteLine("The Squaring of a Cubic Number are: ");<br>
+                cubic(n, 1,1);}
+                
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>3) Write a program which takes input of an integer number and returns the sum of all numbers. i.e., if input is 3453 then the output should be 15 (3+4+5+3).</h5>
+            <br><h5>Output:</h5>
+            <img src="image/5.3.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                   static int recursion(int n,int sum){<br>
+                    sum = n % 10 + sum;<br>
+                    return (n == 0) ? sum : recursion(n / 10, sum);}<br>
+                    static void Main(string[] args){<br>
+                    Console.WriteLine("Enter Number ");<br>
+                    int n = int.Parse(Console.ReadLine());<br>
+                    Console.WriteLine("The Sum of {0} Number is ",n);<br>
+                    Console.WriteLine(recursion(n, 0));}
+                              
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>4) Calculation of number of moves for N number of disk in Tower of Hanoi problem using recursion.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/5.4.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+               
+               static void towerOfHanoi(int n, char from_rod, char to_rod, char aux_rod, ref int moves){<br>
+                if (n == 1){<br>
+                moves += 1;<br>
+                Console.WriteLine("Move disk 1 from rod " + from_rod + " to rod " + to_rod);<br>
+                return;}<br>
+                towerOfHanoi(n - 1, from_rod, aux_rod, to_rod, ref moves);<br>
+                moves += 1;<br>
+                Console.WriteLine("Move disk " + n + " from rod " + from_rod + " to rod " +
+                to_rod);<br>
+                towerOfHanoi(n - 1, aux_rod, to_rod, from_rod, ref moves);}<br>
+                static void Main(string[] args){<br>
+                int moves = 0;<br>
+                int disk = 4;<br>
+                towerOfHanoi(disk, 'A', 'C', 'B', ref moves);<br>
+                Console.WriteLine("\n\tTotal Moves = " + moves);<br>
+                Console.ReadLine();}
+                
+            </p>
+
+            <div class="line"></div>
+            <h5>5) Write a program to calculate H.C.F of two numbers, using recursion.</h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/5.5.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+            color: white;">
+static int recursion(int num1,int num2){<br>
+    if(num2==0 || num1 == num2){<br>
+    return num1;}<br>
+    else if (num1 == 0){<br>
+    return num2;}<br>
+    else if (num1 > num2){<br>
+    return recursion(Math.Abs(num1 - num2), num2);}<br>
+    else{
+    return recursion(num2,Math.Abs(num1 - num2));}}<br>
+    static void Main(string[] args){<br>
+    Console.WriteLine("Enter First Number ");<br>
+    int num1 = int.Parse(Console.ReadLine());<br>
+    Console.WriteLine("Enter Second Number ");<br>
+    int num2 = int.Parse(Console.ReadLine());<br>
+    Console.Write("The H.C.F of {0} and {1} Number is ",num1,num2);<br>
+    Console.Write(recursion(num1, num2));}
+    
+            </p>
+            <div class="line"></div>
+            <div id="foremediaads-c3"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c3"></script>
+
+            <h5>6) Implement file code.</h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/5.6.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+            color: white;">
+static void Main(string[] args){<br>
+    File file = new File();<br>
+    file.SearchForFiles(@"C:\Intel");<br>
+    foreach(string filename in file.result){<br>
+    Console.WriteLine(filename);}}<br>
+    public Dictionary<string, string> errors = new Dictionary<string, string>();<br>
+    public List<string> result = new List<string>();<br>
+    public void SearchForFiles(string path){<br>
+    try{
+    foreach (string fileName in Dictionary.GetFiles(path)){<br>
+    result.Add(fileName);}<br>
+    foreach (string directory in Directory.GetDirectories(path))<br>
+    SearchForFiles(directory);}}<br>
+    catch (System.Exception ex){<br>
+    errors.Add(path, ex.Message);}}<br>
+    
+            </p>
+
+            <div class="line"></div>
+
+            <div id="foremediaads-c1"></div>
+            <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!--Merge and Quick Sort-->
+            <h2 id="Merge">6. Merge and Quick Sort </h2> <br>
+
+            <h5>1) Implement recursive method of merge sort algorithm to sort an array of 10 characters. </h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/6.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h3>Main Class:</h3>
+            <p style="background-color: black;
+            color: white;">
+char[] arr = { 'a','y','e','s','h','a','k','h','a',<br>'n'}; <br>
+Sort sort = new Sort(); <br>
+Console.Write("Before Sort = "); <br>
+sort.print(arr); <br>
+sort.mergeSort(arr, 0,9); <br>
+Console.Write("\nAfter Sort = "); <br>
+sort.print(arr); <br>
+Console.ReadKey(); <br>
+
+            </p>
+            <h3>Sort Class: </h3>
+            <p style="background-color: black;
+            color: white;">
+public class Sort { <br>
+    public void mergeSort(char[] arr, int left, int right) { <br>
+        if (left < right) { <br>
+            int mid = (left + right) / 2; <br>
+            mergeSort(arr, left, mid); <br>
+            mergeSort(arr, mid + 1, right); <br>
+            merge(arr, left, mid, right); } } <br>
+    protected void merge(char[] arr, int left, int mid, int right) { <br>
+        int size1 = (mid - left) + 1; <br>
+        int size2 = right - mid; <br>
+        char[] left_array = new char[size1]; <br>
+        char[] right_array = new char[size2]; <br>
+        int i = 0, j = 0; <br>
+        while (i < size1) { <br>
+            left_array[i] = arr[left + i]; <br>
+            i++; } <br>
+        while (j < size2) { <br>
+            right_array[j] = arr[mid + 1 + j]; <br>
+            j++; } <br>
+        int k = left; <br>
+        i = 0; j = 0; <br>
+        while (i < size1 && j < size2) { <br>
+            if (left_array[i].CompareTo(right_array[j]) > 0) { <br>
+<br>
+                arr[k++] = right_array[j++]; } <br>
+            else { <br>
+                arr[k++] = left_array[i++]; } } <br>
+        while (i < size1) { <br>
+            arr[k++] = left_array[i++]; } <br>
+        while (j < size2) { <br>
+            arr[k++] = right_array[j++]; } } <br>
+    public void print(char[] arr) { <br>
+        foreach (char item in arr) { <br>
+            Console.Write(item + " "); } <br>
+        Console.WriteLine(); } } <br>
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Implement Quick Sort Algorithm on string array using left value as first pivoting value. </h5>
+            <br><h5>Output:</h5>
+            <img src="image/6.2.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+<h3>Main Class:</h3>
+            <p style="background-color: black;
+            color: white;">
+               string[] arr = { "shoaib", "akhter", "jawwad", "surfaraz", "hussain", "usama"}; <br>
+               Sort obj = new Sort(); <br>
+               Console.Write("Before Quick Sorting = "); <br>
+               obj.printArray(arr); <br>
+               obj.Quick(arr, 0, 5); <br>
+               Console.Write("\n\nAfter  Quick Sorting = "); <br>
+               obj.printArray(arr); <br>
+               Console.ReadKey();   
+            </p>
+
+            <h3>Sort Class </h3>
+            <p style="background-color: black;
+            color: white;">
+               internal class Sort { <br>
+                private void swap(string[] arr, int l,int r) { <br>
+                    string temp  = arr[l]; <br>
+                    arr[l] = arr[r]; <br>
+                    arr[r] = temp;   } <br>
+                public void printArray(string[] arr) { <br>
+                    foreach (string i in arr) <br>
+                        Console.Write("{0}   ",i); } <br>
+                public void Quick(string[] arr,int left,int right) { <br>
+                    if(left < right) { <br>
+                        int pivot_Position = partition(arr, left, right); <br>
+                        Quick(arr, left, pivot_Position - 1); <br>
+                        Quick(arr, pivot_Position + 1, right); }       } <br>
+                private int partition(string[] arr , int low, int high) { <br>
+                    string pivot = arr[low]; <br>
+                    int i = low; <br>
+                    int j = high; <br>
+                    while (i < j) { <br>
+                        while (arr.Length > i && arr[i].CompareTo(pivot) <= 0) <br>
+                            i++; <br>
+                        while (arr[j].CompareTo(pivot) > 0) <br>
+                            j--; <br>
+                        if (i < j) <br>
+                            swap(arr, i, j); <br>
+                        else if(j < i) <br>
+                            swap(arr, j, low); }     <br>        
+                    return j; } }     
+        
+            </p>
+
+            <div class="line"></div>
+
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+
+            <!-- Introduction to  Computer Architecture & Logic Design-->
+            <h2 id="Queues">7. Queues </h2> <br>
+
+            <h5>1) Design & implement all methods of Simple Queue. </h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/7.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h3>Main Class:</h3>
+            <p style="background-color: black;
+            color: white;">
+queue ob = new queue();<br>
+ob.isempty();<br>
+ob.enqueue(9);<br>
+ob.enqueue(6);<br>
+ob.enqueue(8);
+ob.enqueue(1);<br>
+ob.enqueue(3);<br>
+ob.print();<br>
+ob.count();<br>
+ob.isfull();<br>
+ob.dequeue();<br>
+ob.dequeue();<br>
+ob.dequeue();<br>
+ob.dequeue();
+ob.dequeue();<br>
+ob.print();
+            </p>
+
+            <h3>Queue Class: </h3>
+            <p style="background-color: black;
+            color: white;">
+int[] arr;<br>
+int front;<br>
+int rear;<br>
+public queue(){<br>
+arr = new int[5];<br>
+front = -1;<br>
+rear = -1;}<br>
+public  bool isempty(){<br>
+if(front<0 || front>rear){<br>
+Console.WriteLine("Queue is Empty");<br>
+return true;}<br>
+else{<br>
+return false;}}<br>
+public bool isfull(){<br>
+if (rear == arr.Length - 1) {<br>
+Console.WriteLine("Queue is full");<br>
+return true;}<br>
+else{<br>
+return false}}<br>
+public void enqueue(int x){<br>
+if (rear == arr.Length - 1){<br>
+Console.WriteLine("Queue is full");}<br>
+else if (front == -1 || rear == -1){<br>
+front = 0;<br>
+rear = 0;<br>
+arr[rear] = x;}<br>
+else{<br>
+rear = rear + 1;<br>
+arr[rear] = x;}}<br>
+public void dequeue(){<br>
+if(front<0 || front>rear){<br>
+Console.WriteLine("Queue is Empty");}<br>
+else if(front==rear){<br>
+front = rear = -1;}<br>
+else{<br>
+front = front + 1;}}<br>
+public void count(){<br>
+if (front == -1){<br>
+Console.WriteLine("Queue is empty");}<br>
+else{<br>
+Console.WriteLine("Front value is " +arr[front]);}}<br>
+public void print(){<br>
+if (front ==-1){<br>
+Console.WriteLine("Queue is Empty");}<br>
+else{<br>
+for(int i = front; i <= rear; i++){<br>
+Console.WriteLine(arr[i]);}}
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Design & implement all methods of Circular Queue.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/7.2.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+<h3>Queue Class </h3>
+            <p style="background-color: black;
+            color: white;">
+               int[] arr;<br>
+               int front;<br>
+               int rear;<br>
+               public queue(){<br>
+               arr = new int[5];<br>
+               front = -1;<br>
+               rear = -1;}<br>
+               public  bool isempty(){<br>
+               if(front<0 || front>rear){<br>
+               Console.WriteLine("Queue is Empty");<br>
+               return true;}<br>
+               else{<br>
+               return false;}}<br>
+               public bool isfull(){<br>
+               if ((rear+1)%arr.Length==front) {<br>
+               Console.WriteLine("Queue is full");<br>
+               return true;}<br>
+               else{<br>
+               return false;}}<br>
+               public void enqueue(int x){<br>
+               if ((rear + 1) % arr.Length == front){<br>
+               Console.WriteLine("Queue is full");}<br>
+               else if (front == -1 || rear == -1){<br>
+               front = 0;<br>
+               rear = 0;<br>
+               arr[rear] = x;}<br>
+               else{<br>
+               rear = (rear + 1)%arr.Length;<br>
+               arr[rear] = x;}}<br>
+               public void dequeue(){<br>
+               if(front<0 || front>rear){<br>
+               Console.WriteLine("Queue is Empty");}<br>
+               else if(front==rear){<br>
+               front = rear = -1;}<br>
+               else{<br>
+               front = (front + 1)%arr.Length;}}<br>
+               public void count(){<br>
+               if (front == -1){<br>
+               Console.WriteLine("Queue is empty");}<br>
+               else{<br>
+               Console.WriteLine("Front value is " +arr[front]);}}<br>
+               public void print(){<br>
+               if (front ==-1){<br>
+               Console.WriteLine("Queue is Empty");}<br>
+               else if (rear >= front){<br>
+               for (int i = front; i <= rear; i++)<br>
+               Console.WriteLine( arr[i]);}<br>
+               else{<br>
+               for (int i = front; i < arr.Length; i++)<br>
+               { Console.WriteLine(arr[i]); }<br>
+               for (int i = 0; i <= rear; i++)<br>
+               { Console.WriteLine(arr[i]); }}<br>
+               
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>3) Design and implement for Priority Queue. <br>
+                Method 1: Ordering in/ after Enqueue method<br>
+                Method 2: Separate queues for different priorities
+                </h5>
+            <br><h5>Output:</h5>
+            <img src="image/7.3.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+<h3>Main Class:</h3>
+            <p style="background-color: black;
+            color: white;">
+             int choice, item, itemPriority; <br>
+             PriorityQueue p = new PriorityQueue(); <br>
+             while (true){                 <br>
+             Console.WriteLine("1.Insert a new item");<br>
+             Console.WriteLine("2.Delete an item");<br>
+             Console.WriteLine("3.Print the queue");<br>
+             Console.WriteLine("4.Quit");<br>
+             Console.Write("Enter your choice : ");<br>
+             choice = Convert.ToInt32(Console.ReadLine());<br>
+             if (choice ==4)<br>
+             break;<br>
+             // Switch Case<br>
+             switch (choice){<br>
+             case 1:<br>
+             Console.Write("Please enter any item to be inserted : ");<br>
+             item = Convert.ToInt32(Console.ReadLine());<br>
+             Console.Write("Enter it's priority : ");<br>
+             itemPriority = Convert.ToInt32(Console.ReadLine());<br>
+             p.Insert(item,itemPriority);<br>
+             break;<br>
+             case 2:<br>
+             Console.WriteLine("Deleted item is: " + p.Delete());<br>
+             break;<br>
+             case 3:<br>
+             p.Display();<br>
+             break;<br>
+             default:<br>
+             Console.WriteLine("Wrong choice");<br>
+             break;}
+                             
+            </p>
+
+            <h3>Node Class:</h3>
+            <p style="background-color: black;
+            color: white;">
+                      class Node{<br>
+                        public int priority;<br>
+                        public int information;<br>
+                        public Node link;<br>
+                        public Node(int info, int prior){<br>
+                        information = info;<br>
+                        priority = prior;<br>
+                        link = null;}}<br>
+                        // PriorityQueue Class<br>
+                        class PriorityQueue{<br>
+                        private Node front;<br>
+                        public PriorityQueue(){<br>
+                        front = null;}<br>
+                        //Insert Method<br>
+                        public void Insert(int item, int itemPriority){<br>
+                        Node temp, prio;<br>
+                        temp = new Node(item, itemPriority);<br>
+                        if (IsEmpty() || itemPriority < front.priority){<br>
+                        temp.link = front;<br>
+                        front = temp;}<br>
+                        else{<br>
+                        prio = front;<br>
+                        while (prio.link != null && prio.link.priority <= itemPriority)<br>
+                        prio = prio.link;<br>
+                        temp.link = prio.link;<br>
+                        prio.link = temp;}}<br>
+                        // Deletion of element Method<br>
+                        public int Delete(){<br>
+                        int item;<br>
+                        if ( IsEmpty() )<br>
+                        throw new System.InvalidOperationException("Queue Underflow");<br>
+                        else{<br>
+                        item = front.information;<br>
+                        front = front.link;}<br>
+                        return item;}<br>
+                        // Empty Method<br>
+                        public bool IsEmpty(){<br>
+                        return (front==null);}<br>
+                        // Display Method<br>
+                        public void Display(){<br>
+                        Node prio=front;<br>
+                        if ( IsEmpty())<br>
+                        Console.WriteLine("Queue is empty\n");<br>
+                        else{<br>
+                        Console.WriteLine("Queue is :");<br>
+                        Console.WriteLine("item  Priority");<br>
+                        while (prio!=null){<br>
+                        Console.WriteLine(prio.information + "       " + prio.priority);<br>
+                        prio=prio.link;}}<br>
+                        Console.WriteLine("");}}                               
+            </p>
+
+            <div class="line"></div>
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- Introduction to  Computer Architecture & Logic Design-->
+            <h2 id="BT">8. BT , Bucket +Radix Sort </h2> <br>
+
+            <h5>1) Implement bucket sort using linked list. </h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/8.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+            color: white;">
+static void Main(string[] args){<br>
+    Console.Write("Please enter the length of list : ");<br>
+    int n = Convert.ToInt32(Console.ReadLine());<br>
+    int[] array = new int[n];<br>
+    for (int i = 0; i < n; i++){<br>
+        Console.Write("element [{0}] = ", i);<br>
+        array[i] = Convert.ToInt32(Console.ReadLine());}<br>
+  // Printing of unsorted list<br>
+    Console.Write("\nUnsorted List is : { ");<br>
+    for (int i = 0; i < n; i++){<br>
+        Console.Write( array[i] + " ");}<br>
+    Console.WriteLine("}");<br>
+    Console.WriteLine("\nList after applying Bucket Sort algorithm  ");<br>
+    Console.Write("{ ");<br>
+    BucketSort(ref array);<br>
+    array.ToList();<br>
+    for (int i = 0; i < n; i++){<br>
+        Console.Write(array[i] + " ");}<br>
+    Console.WriteLine("}");<br>
+    Console.WriteLine("\nHave a nice Day !!!");}<br>
+// Bucket Sort Method<br>
+public static void BucketSort(ref int[] array){<br>
+    int minimum = int.MaxValue;<br>
+    int maximum = 0;<br>
+    for (int i = 0; i < array.Length; i++){<br>
+        if (array[i] < minimum)<br>
+            minimum = array[i];<br>
+        if (array[i] > maximum)<br>
+            maximum = array[i];}<br>
+    List<int>[] bucket = new List<int>[maximum - minimum + 1];<br>
+    for (int i = 0; i < bucket.Length; i++){<br>
+        bucket[i] = new List<int>();}<br>
+    for (int i = 0; i < array.Length; i++){<br>
+        bucket[array[i] - minimum].Add(array[i]);}<br>
+    int k = 0;<br>
+    for (int i = 0; i < bucket.Length; i++){<br>
+        if (bucket[i].Count > 0){<br>
+            for (int j = 0; j < bucket[j].Count; j++){<br>
+                array[k] = bucket[i][j];<br>
+                k++;}}}}
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Create static tree and perform inorder, preorder and post order traversal. Also search a required node in the tree.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/8.2.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <h3>Binary Class:</h3>
+            <p style="background-color: black;
+            color: white;">
+               class Binary{<br>
+                public int root = 0;<br>
+                public string[] str = new string[10];<br>
+                public void Root(string key){<br>
+                str[0] = key;}<br>
+                public void print(){
+                for (int i = 0; i < 10; i++){<br>
+                if (str[i] != null){<br>
+                Console.Write(str[i] + " ");}<br>
+                else{<br>
+                Console.Write("-");}}<br>
+                Console.WriteLine();}<br>
+                public void Left(string key, int root_index){<br>
+                int left_index = (root_index * 2) + 1;<br>
+                if (str[root_index] == null){<br>
+                Console.WriteLine("This " + root_index + " parent key is not exist");}<br>
+                else{<br>
+                str[left_index] = key;}}<br>
+                public void Right(string key, int root_index){<br>
+                int right_index = (root_index * 2) + 2;<br>
+                if (str[root_index] == null){<br>
+                Console.WriteLine("This " + root_index + " parent key is not exist");}<br>
+                else{<br>
+                str[right_index] = key;  }}<br>
+                public void InOrder(int root){<br>
+                if (root < str.Length){<br>
+                InOrder((root * 2) + 1);<br>
+                Console.Write(str[root] + " ");<br>
+                InOrder((root * 2) + 2); }}<br>
+                public void PreOrder(int root){<br>
+                if (root < str.Length){<br>
+                if (str[root] != ""){<br>
+                Console.Write(str[root] + " ");<br>
+                PreOrder((root * 2) + 1);<br>
+                PreOrder((root * 2) + 2);}}}<br>
+                public void PostOrder(int root){<br>
+                if (root < str.Length){<br>
+                if (str[root] != ""){<br>
+                PostOrder((root * 2) + 1);<br>
+                PostOrder((root * 2) + 2);<br>
+                Console.Write(str[root] + " ");}}}<br>
+                public void Search(){<br>
+                Console.WriteLine("Enter any element ");<br>
+                string search = Console.ReadLine();<br>
+                for (int i = 0; i < str.Length; i++){<br>
+                if (string.Equals(search, str[i])){<br>
+                Console.WriteLine("This " + search + " element is exist");<br>
+                return;}}<br>
+                Console.WriteLine("Sorry, this " + search + " element is not exist");}}
+                
+            </p>
+<h3>Main Class:</h3>
+<p style="background-color: black;
+            color: white;">
+             Binary b = new Binary();<br>
+             b.Root("s");<br>
+             b.Left("h",0);<br>
+             b.Right("o", 0);<br>
+             b.Left("a", 1);<br>
+             b.Right("a", 1);<br>
+             b.Left("i", 2);<br>
+             b.Right("b", 2);<br>
+             b.Left("l", 3);<br>
+             Console.WriteLine("The Tree is:");<br>
+             b.print();<br>
+             Console.WriteLine("\n******** InOrder of a tree ********");<br>
+             b.InOrder(0);<br>
+             Console.WriteLine("\n\n******** Pre Order of a tree ********");<br>
+             b.PreOrder(0);<br>
+             Console.WriteLine("\n\n******** Post Order of a tree ********");<br>
+             b.PostOrder(0);<br>
+             Console.WriteLine("\n\n******** Searching ********");<br>
+             b.Search();
+                             
+            </p>
+
+            <div class="line"></div>
+
+            <div id="foremediaads-c1"></div>
+            <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- 	BST and AVL-->
+            <h2 id="BST">9. BST and AVL </h2> <br>
+
+            <h5>1) Write a program to implement concept of Binary Search Tree using dynamic trees</h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/9.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+            color: white;">
+using System;
+using System.Collections.Generic;<br>
+using System.Linq;<br>
+using System.Text;<br>
+using System.Threading.Tasks;<br>
+namespace Lab_12_BST{<br>
+    class Program{   <br>
+        // Main Method<br>
+        static void Main(string[] args){<br>
+            Tree BST = new Tree();<br>
+            BST.Insert(20);<br>
+            BST.Insert(25);<br>
+            BST.Insert(45);<br>
+            BST.Insert(15);<br>
+            BST.Insert(67);<br>
+            BST.Insert(43);<br>
+            BST.Insert(80);<br>
+            BST.Insert(33);<br>
+            BST.Insert(67);<br>
+            BST.Insert(99);<br>
+            BST.Insert(91);<br>
+            Console.WriteLine("Inorder Traversal of BST: ");<br>
+            BST.Inorder(BST.ReturnRoot());<br>
+            Console.WriteLine(" ");<br>
+            Console.WriteLine();<br>
+            Console.WriteLine("Preorder Traversal of BST: ");<br>
+            BST.Preorder(BST.ReturnRoot());<br>
+            Console.WriteLine(" ");<br>
+            Console.WriteLine();<br>
+            Console.WriteLine("Postorder Traversal of BST: ");<br>
+            BST.Postorder(BST.ReturnRoot());<br>
+            Console.WriteLine(" ");<br>
+            Console.ReadLine();<br>
+            Console.WriteLine("Have a nice Day !!!");}}<br>
+    //Node Class<br>
+    class Node{<br>
+        public int item;<br>
+        public Node leftchild;<br>
+        public Node rightchild;<br>
+        public void display(){<br>
+            Console.Write("[");<br>
+            Console.Write(item);<br>
+            Console.Write("]");} }<br>
+    // Tree Class<br>
+    class Tree{<br>
+        public Node root;<br>
+        public Tree(){<br>
+            root = null;<br>
+            public Node ReturnRoot(){<br>
+            return root;}<br>
+        public void Insert(int id){<br>
+            Node newNode = new Node();<br>
+            newNode.item = id;<br>
+            if (root == null)<br>
+                root = newNode;<br>
+            else{<br>
+                Node current = root;<br>
+                Node parent;<br>
+                while (true){<br>
+                    parent = current;<br>
+                    if (id < current.item){<br>
+                        current = current.leftchild;<br>
+                        if (current == null){<br>
+                            parent.leftchild = newNode;<br>
+                            return;}}<br>
+                    else{<br>
+                        current = current.rightchild;<br>
+                        if (current == null){<br>
+                            parent.rightchild = newNode;<br>
+                            return;}}}}}<br>
+        public void Preorder(Node Root){<br>
+            if (Root != null){<br>
+                Console.Write(Root.item + " ");<br>
+                Preorder(Root.leftchild);<br>
+                Preorder(Root.rightchild); }}<br>
+        public void Inorder(Node Root){<br>
+            if (Root != null){<br>
+                Inorder(Root.leftchild);<br>
+                Console.Write(Root.item + " ");<br>
+                Inorder(Root.rightchild);}}<br>
+        public void Postorder(Node Root){<br>
+            if (Root != null){<br>
+                Postorder(Root.leftchild);<br>
+                Postorder(Root.rightchild);<br>
+                Console.Write(Root.item + " ");}}} }<br>
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Implement the AVL Tree by performing searching.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/9.2.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+               using System;<br>
+               using System.Collections.Generic;<br>
+               using System.Linq;<br>
+               using System.Text;<br>
+               using System.Threading.Tasks;   <br>
+               namespace Lab_12_AVL{<br>
+                   class Program{   <br>
+                       //Main Method
+                       static void Main(string[] args){
+                                       AVLtree tree = new AVLtree();<br>
+                           Console.WriteLine("data that you stored in the nodes of avl tree are as follows: ");<br>
+                           tree.Add(11);<br>
+                           tree.Add(4);<br>
+                           tree.Add(6);<br>
+                           tree.Add(1);<br>
+                           tree.Add(9);<br>
+                           tree.Add(12);<br>
+                           tree.display();<br>
+                           tree.Delete(4);<br>
+                           tree.Delete(1);<br>
+                           Console.WriteLine("after deleting nodes containing a data 4 & 1 from avl tree: ");<br>
+                           tree.display();<br>
+                           Console.Write("Enter the node you want to search in AVL Tree: ");<br>
+                           int node = int.Parse(Console.ReadLine());<br>
+                           tree.search(node);<br>
+                           Console.WriteLine("");<br>
+                           Console.ReadLine();<br>
+                           Console.WriteLine("Have a nice Day !!!");}}<br>
+                   //AVL Tree class<br>
+                   class AVLtree{<br>
+                       class Node{<br>
+                           public int data;<br>
+                           public Node left;<br>
+                           public Node right;<br>
+                           public Node(int data){<br>
+                               this.data = data;}}<br>
+                       Node root;<br>
+                       public AVLtree(){}<br>
+                       public void Add(int data){<br>
+                           Node newItem = new Node(data);<br>
+                           if (root == null){<br>
+                               root = newItem;}<br>
+                           else{<br>
+                               root = RecursiveInsert(root, newItem);}}<br>
+                       private Node RecursiveInsert(Node current, Node n){<br>
+                           if (current == null){<br>
+                               current = n;<br>
+                               return current;}<br>
+                           else if (n.data < current.data){<br>
+                               current.left = RecursiveInsert(current.left, n);<br>
+                               current = balance_tree(current);}<br>
+                           else if (n.data > current.data){<br>
+                               current.right = RecursiveInsert(current.right, n);<br>
+                               current = balance_tree(current);}<br>
+                           return current;}<br>
+                       private Node balance_tree(Node current) {<br>
+                           int b_factor = balance_factor(current);<br>
+                           if (b_factor > 1){<br>
+                               if (balance_factor(current.left) > 0){<br>
+                                   current = RotateLL(current);}<br>
+                               else{<br>
+                                   current = RotateLR(current);}}<br>
+                           else if (b_factor < -1){<br>
+                               if (balance_factor(current.right) > 0){<br>
+                                   current = RotateRL(current); }<br>
+                               else{<br>
+                                   current = RotateRR(current);}}<br>
+                           return current;}<br>
+                       public void Delete(int target){<br>
+                           root = Delete(root, target);}<br>
+                       private Node Delete(Node current, int target){<br>
+                           Node parent;<br>
+                           if (current == null)
+                           { return null; }<br>
+                           else{<br>
+                              
+                               if (target < current.data)<br>
+                               {<br>
+                                   current.left = Delete(current.left, target);<br>
+                                   if (balance_factor(current) == -2){<br>
+                                       if (balance_factor(current.right) <= 0){<br>
+                                           current = RotateRR(current);}<br>
+                                       else{<br>
+                                           current = RotateRL(current);}}}<br>
+                               
+                               else if (target > current.data){<br>
+                                   current.right = Delete(current.right, target);<br>
+                                   if (balance_factor(current) == 2){<br>
+                                       if (balance_factor(current.left) >= 0){<br>
+                                           current = RotateLL(current);}<br>
+                                       else{<br>
+                                           current = RotateLR(current);}}}<br>
+                               //if target is found<br>
+                               else{<br>
+                                   if (current.right != null){<br>
+                                       //delete its inorder successor<br>
+                                       parent = current.right;<br>
+                                       while (parent.left != null){<br>
+                                           parent = parent.left;}<br>
+                                       current.data = parent.data;<br>
+                                       current.right = Delete(current.right, parent.data);<br>
+                                       if (balance_factor(current) == 2)//rebalancing<br>
+                                       {<br>
+                                           if (balance_factor(current.left) >= 0){<br>
+                                               current = RotateLL(current);}<br>
+                                           else { current = RotateLR(current); }}}<br>
+                                   else{   <br>
+                                       return current.left;}}}<br>
+                           return current;}<br>
+                       public void search(int key){<br>
+                           if (search(key, root).data == key){<br>
+                               Console.WriteLine(key + " was found in avl tree!");}<br>
+                           else if (search(key, root).data != key){<br>
+                               Console.WriteLine("Nothing found!");}}<br>
+                       private Node search(int target, Node current){<br>
+               
+                           if (target < current.data){<br>
+                               if (target == current.data){<br>
+                                   return current;}<br>
+                               else<br>
+                                   return search(target, current.left);}<br>
+                           else{<br>
+                               if (target == current.data){<br>
+                                   return current;}<br>
+                               else<br>
+                                   return search(target, current.right);}}<br>
+                       public void display(){<br>
+                           if (root == null){<br>
+                               Console.WriteLine("Tree is empty");<br>
+                               return;}<br>
+                           InOrderDisplayTree(root);<br>
+                           Console.WriteLine();}<br>
+                       private void InOrderDisplayTree(Node current){<br>
+                           if (current != null) {<br>
+                               InOrderDisplayTree(current.left);<br>
+                               Console.Write("{0} ", current.data);<br>
+                               InOrderDisplayTree(current.right);}}<br>
+                       private int max(int l, int r){<br>
+                           return l > r ? l : r;}<br>
+                       private int getHeight(Node current){<br>
+                           int height = 0;<br>
+                           if (current != null){<br>
+                               int l = getHeight(current.left);<br>
+                               int r = getHeight(current.right);<br>
+                               int m = max(l, r);<br>
+                               height = m + 1;}<br>
+                           return height;}<br>
+                       private int balance_factor(Node current){<br>
+                           int l = getHeight(current.left);<br>
+                           int r = getHeight(current.right);<br>
+                           int b_factor = l - r;<br>
+                           return b_factor;}<br>
+                       private Node RotateRR(Node parent){<br>
+                           Node pivot = parent.right;<br>
+                           parent.right = pivot.left;<br>
+                           pivot.left = parent;<br>
+                           return pivot;}<br>
+                       private Node RotateLL(Node parent){<br>
+                           Node pivot = parent.left;<br>
+                           parent.left = pivot.right;<br>
+                           pivot.right = parent;<br>
+                           return pivot;}<br>
+                       private Node RotateLR(Node parent){<br>
+                           Node pivot = parent.left;<br>
+                           parent.left = RotateRR(pivot);<br>
+                           return RotateLL(parent);}<br>
+                       private Node RotateRL(Node parent){<br>
+                           Node pivot = parent.right;<br>
+                           parent.right = RotateLL(pivot);<br>
+                           return RotateRR(parent);}}}
+               
+            </p>
+
+            <div class="line"></div>
+
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- Graphs-->
+            <h2 id="Graphs">10. Graphs </h2> <br>
+
+            <h5>1) Create a program to implement Graphs With Adjacency matrix </h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/10.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+            color: white;">
+using System;<br>
+namespace BST{<br>
+class Program{<br>
+static void Main(string[] args){<br>
+Console.WriteLine("Enter the number of Nodes : ");<br>
+int n = int.Parse(Console.ReadLine());<br>
+string[] arr = new string[n];<br>
+for (int i = 0; i < n; i++){<br>
+Console.WriteLine((i + 1) + " is connected to nodes?");<br>
+arr[i] = Console.ReadLine();}<br>
+int[,] array = new int[n, n];<br>
+for (int i = 0; i < array.GetLength(0); i++){<br>
+for (int j = 0; j < array.GetLength(1); j++){<br>
+string temp = "" + (j + 1);<br>
+if (arr[i].Contains(temp)){<br>
+array[i, j] = 1;}<br>
+else{
+array[i, j] = 0;}}}<br>
+Console.Write("  ");<br>
+for (int i = 0; i < n; i++){<br>
+Console.Write(i + 1 + " ");}<br>
+Console.WriteLine();<br>
+for (int i = 0; i < array.GetLength(0); i++){<br>
+Console.Write((i + 1) + " ");<br>
+for (int j = 0; j < array.GetLength(1); j++){<br>
+Console.Write(array[i, j] + " ");}<br>
+Console.WriteLine();}<br>
+Console.WriteLine("Good Bye..!");}}}	<br>
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Create a program to implement Graphs With Adjacency list. </h5>
+            <br><h5>Output:</h5>
+            <img src="image/10.2.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+               using System;<br>
+               namespace BST{<br>
+               class Program{<br>
+               static void Main(string[] args){<br>
+               Console.WriteLine("Enter the number of nodes");<br>
+               int n = int.Parse(Console.ReadLine());<br>
+               string[] arr = new string[n];<br>
+               for (int i = 0; i < n; i++){<br>
+               Console.WriteLine((i + 1) + " is connected to nodes?");<br>
+               arr[i] = Console.ReadLine();}<br>
+               List<int>[] obj = new List<int>[n];<br>
+               for (int i = 0; i < n; i++){<br>
+               obj[i] = new List<int>();<br>
+               string[] temp = arr[i].Split(',');<br>
+               for (int a = 0; a < temp.Length; a++){<br>
+               obj[i].Add(int.Parse(temp[a]));}}<br>
+               for (int i = 0; i < n; i++){<br>
+               Console.Write((i + 1) + " => ");<br>
+               for (int l = 0; l < obj[i].Count; l++){<br>
+               Console.Write(obj[i][l] + " ");}<br>
+               Console.WriteLine();}<br>
+               Console.WriteLine("Good Bye...!");}}}
+               
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>3) Create a program to implement BFS.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/10.3.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                    static void Main(string[] args){<br>
+                        Graph g = new Graph(6);<br>
+                        g.AddEdge(0, 1);<br>
+                        g.AddEdge(1, 2);<br>
+                        g.AddEdge(2, 3);<br>
+                        g.AddEdge(3, 4);<br>
+                        g.AddEdge(4, 5);<br>
+                        Console.WriteLine("Following is Breadth First");<br>
+                        g.BFS(1);<br>
+                        Console.WriteLine();}<br>
+                        class Graph{<br>
+                        private int _V;<br>
+                        LinkedList<int>[] _adj;<br>
+                        public Graph(int V){<br>
+                        _adj = new LinkedList<int>[V];
+                        for (int i = 0; i < _adj.Length; i++){<br>
+                        _adj[i] = new LinkedList<int>();}<br>
+                        _V = V;}<br>
+                        public void AddEdge(int v, int w){<br>
+                        _adj[v].AddLast(w);}<br>
+                        public void BFS(int s){<br>
+                        bool[] visited = new bool[_V];<br>
+                        for (int i = 0; i < _V; i++)<br>
+                        visited[i] = false;<br>
+                        LinkedList<int> queue = new LinkedList<int>();<br>
+                        visited[s] = true;<br>
+                        queue.AddLast(s);<br>
+                        while (queue.Any()){<br>
+                        s = queue.First();<br>
+                        Console.Write(s + " ");<br>
+                        queue.RemoveFirst();<br>
+                        LinkedList<int> list = _adj[s];<br>
+                        foreach (var val in list){<br>
+                        if (!visited[val]){<br>
+                        visited[val] = true;<br>
+                        queue.AddLast(val);}}}}}<br>
+                                 
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>4) Create a program to implement DFS.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/10.4.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+               static void Main(string[] args){<br>
+                Graph graph = new Graph(11);<br>
+                graph.AddEdge(1, 2, false);<br>
+                graph.AddEdge(2, 3, false);<br>
+                graph.AddEdge(3, 4, false);<br>
+                graph.AddEdge(1, 5, false);<br>
+                graph.AddEdge(5, 6, false);<br>
+                graph.AddEdge(6, 7, false);<br>
+                graph.AddEdge(5, 8, false);<br>
+                graph.AddEdge(1, 9, false);<br>
+                graph.AddEdge(9, 10, false);<br>
+                graph.DFS();<br>
+                Console.WriteLine();}<br>
+                public class Graph{<br>
+                LinkedList<int>[] linkedListArray;<br>
+                public Graph(int v){<br>
+                linkedListArray = new LinkedList<int>[v];}<br>
+                public void AddEdge(int u, int v, bool blnBiDir = true){<br>
+                if (linkedListArray[u] == null){<br>
+                linkedListArray[u] = new LinkedList<int>();<br>
+                linkedListArray[u].AddFirst(v);}else{<br>
+                var last = linkedListArray[u].Last;<br>
+                linkedListArray[u].AddAfter(last, v);}<br>
+                if (blnBiDir){<br>
+                if (linkedListArray[v] == null){<br>
+                linkedListArray[v] = new LinkedList<int>();<br>
+                linkedListArray[v].AddFirst(u);}else{<br>
+                var last = linkedListArray[v].Last;<br>
+                linkedListArray[v].AddAfter(last, u);}}}<br>
+                internal void DFSHelper(int src, bool[] visited){<br>
+                visited[src] = true;<br>
+                Console.Write(src + "   ");<br>
+                if (linkedListArray[src] != null){<br>
+                foreach (var item in linkedListArray[src]){<br>
+                if (!visited[item] == true){<br>
+                DFSHelper(item, visited);}}}}<br>
+                internal void DFS(){<br>
+                Console.WriteLine("\t\tDFS");<br>
+                bool[] visited = new bool[linkedListArray.Length + 1];<br>
+                DFSHelper(1, visited);}}
+                
+                
+            </p>
+
+            <div class="line"></div>
+
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- Heap Sort-->
+            <h2 id="Heap">11. Heap Sort </h2> <br>
+
+            <h5>1) Write a program to implement concept of Heap Sort</h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/11.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+            color: white;">
+using System;<br>
+using System.Collections.Generic;<br>
+using System.Linq;<br>
+using System.Text;<br>
+using System.Threading.Tasks;<br>
+namespace Lab11_AVL{<br>
+class HeapSort{<br>
+public static void Sort(int[] array){<br>
+int heapSize = array.Length;<br>
+// Build the heap<br>
+for (int i = heapSize / 2 - 1; i >= 0; i--){<br>
+Heapify(array, heapSize, i);}<br>
+for (int i = heapSize - 1; i >= 0; i--){<br>
+int temp = array[0];<br>
+array[0] = array[i];<br>
+array[i] = temp;<br>
+
+Heapify(array, i, 0);}}<br>
+private static void Heapify(int[] array, int heapSize, int index){<br>
+int largest = index;<br>
+int left = 2 * index + 1;<br>
+int right = 2 * index + 2;<br>
+if (left < heapSize && array[left] > array[largest]){<br>
+largest = left;}<br>
+if (right < heapSize && array[right] > array[largest]){<br>
+largest = right;}<br>
+if (largest != index){<br>
+int temp = array[index];<br>
+array[index] = array[largest];<br>
+array[largest] = temp;<br>
+Heapify(array, heapSize, largest);}}<br>
+static void Main(string[] args){<br>
+int[] array = { 3, 5, 1, 2, 4 };<br>
+Console.Write("\n    Unsorted : ");<br>
+for (int i = 0; i < array.Length; i++){<br>
+Console.Write(array[i]+", ");}<br>
+HeapSort.Sort(array);<br>
+Console.Write("\n    Sorted :  ");<br>
+Console.Write(string.Join(", ", array)); // 1, 2, 3, 4, 5<br>
+Console.ReadLine();}}}
+
+            </p>
+
+            <div class="line"></div>
+
+
+
+        </div>
+    </div>
+    <footer class=" text-center text-white"style="background-color: hsl(207, 100%, 50%);">
+        <p style="color: white">&copy; Copyright 2023 codings Hub</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#sidebarCollapse").on('click', function () {
+                $("#sidebar").toggleClass('active');
+            });
+        });
+
+        var myCustomScrollbar = document.querySelector('.my-custom-scrollbar');
+var ps = new PerfectScrollbar(myCustomScrollbar);
+
+var scrollbarY = myCustomScrollbar.querySelector('.ps__rail-y');
+
+myCustomScrollbar.onscroll = function () {
+  scrollbarY.style.cssText = `top: ${this.scrollTop}px!important; height: 400px; right: ${-this.scrollLeft}px`;
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Architecture & Logic Design</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="cald.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <style>
+        .all-menu a {
+            background-color:#008cff;
+          /* background-color: #7386d5; Grey background color */
+          color: white; /* Black text color */
+          display: block; /* Make the links appear below each other */
+          padding: 12px; /* Add some padding */
+          text-decoration: none; /* Remove underline from links */
+        }
+        .all-menu {
+          width: 250px;
+          height: 505px;
+          overflow-y: auto;
+          background-color: #008cff;
+        }
+          </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+
+        <nav id="sidebar" >
+            <div id="all" style="position:fixed" >
+            <div class="sidebar-header" style="width: 225px;">
+                <a href="../../../index.html"><h3>Codings Hub</h3></a>
+            </div>
+            <div class="all-menu" style="height: 750px;">
+            <ul class="list-unstyled components">
+                <p>Programming Languages</p>
+                <li>
+                    <a href="../../coding.html">HTML</a>
+                </li>
+                <li>
+                    <a href="../css/css.html">CSS</a>
+                </li>
+                <li>
+                    <a href="../JavaScript/javaScript.html">JavaScript</a>
+                </li>
+                <li>
+                    <a href="../Java/java.html">Java</a>
+                </li>
+                <li>
+                    <a href="../C++/c++.html">C++</a>
+                 </li>
+                <li>
+                    <a href="../CSharp/cSharp.html">C#</a>
+                </li>
+                <li class="active" style="width: 233px;" >
+                        
+                    <a href="#cald" data-toggle="collapse" aria-expanded="false"  class="dropdown-toggle">Computer Architecture & Logic Design</a>
+                    
+                    <ul class="collapse list-unstyled" id="cald">
+                        <li>
+                            <a href="#introduction">1. Introduction to Visible Virtual Machine</a>
+                        </li>
+                        <li>
+                            <a href="#ao">2. Arithmetic Operations</a>
+                        </li>
+                        <li>
+                            <a href="#loop">3. Loop</a>
+                        </li>
+                        <li>
+                            <a href="#mips">4. Introduction to MIPs Architecture</a>
+                        </li>
+                        <li>
+                            <a href="#aos">5. Arithmetic Operation</a>
+                        </li>
+                        <li>
+                            <a href="#bit">6. BIT MANIPULATION INSTRUCTIONS</a>
+                        </li>
+                        <li>
+                            <a href="#if">7. IF THEN ELSE; CONTROL STRUCTURE</a>
+                        </li>
+                        <li>
+                            <a href="#for">8. FOR LOOP</a>
+                        </li>
+                        <li>
+                            <a href="#mul">9. MULTISIM AND LOGIC IMPLEMENTATION</a>
+                        </li>
+                        <li>
+                            <a href="#if">10. IF THEN ELSE; CONTROL STRUCTURE</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="../algorithm/algorithm.html">Data Structure & Algorithm</a>
+                </li>
+                <li>
+                    <a href="../os/os.html">Operating System</a>
+                </li>
+                <li>
+                    <a href="../sda/os.html">Software Design & Architecture</a>
+                </li>
+                <li>
+                    <a href="../dbms/os.html">Database Management System</a>
+                </li>
+                <li>
+                    <a target="_blank" href="../../../portfolio/index.html">Portfolio</a>
+                </li>
+                <li>
+                    <a target="_blank" href="../../../contact-us/contact/index.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </nav>
+
+
+
+    
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                             
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../../mcqs/mcqsOfProgrammingLanguage/html/todo/htmlMCQs.html">MCQs</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.fiverr.com/users/shoaibakhter18">Services by Fiverr</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- </div> -->
+            </nav>
+                <h1>Tasks & Solution of Computer Architecture & Logic Design</h1> <br>
+
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- Introduction to  Computer Architecture & Logic Design-->
+            <h2 id="introduction">1. Introduction to Visible Virtual Machine </h2> <br>
+
+            <h5>1) Write a program in which take input from user and add from input value.</h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/1.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <img src="image/1.2.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+            color: white;">
+IN INPUT <br>
+ADD 96<br>
+OUT OUTPUT<br>
+HLT HALT<br>
+*96<br>
+DAT 001<br>
+            </p>
+            <div id="foremediaads-e1"></div>
+            <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/e1"></script>
+
+            <div class="line"></div>
+
+            <h5>2) Write a program in which take input from user and subtract from user input value.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/2.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <img src="image/2.2.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                IN INPUT <br>
+                SUB 96<br>
+                OUT OUTPUT<br>
+                HLT HALT<br>
+                *96<br>
+                DAT 005
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>3) Write a program in which take two inputs from user and add both and check the answer.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/3.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <img src="image/3.2.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                IN INPUT <br>
+                STO 96<br>
+                IN INPUT<br>
+                ADD 96<br>
+                OUT OUTPUT<br>
+                HLT HALT                
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>4) Write a program in which two constant numbers and add them.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/4.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <img src="image/4.2.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                ADD 96 <br>
+                ADD 97<br>
+                OUT OUTPUT<br>
+                HLT HALT<br>
+                *96 <br>
+                DAT 005<br>
+                *97<br>
+                DAT 010
+                
+            </p>
+
+            <div class="line"></div>
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+             <!-- Arithmetic Operations-->
+             <h2 id="ao">2. Arithmetic Operations </h2> <br>
+
+             <h5>1) Write a program in which take input from user and add from input value.</h5><br>
+             <br><h5>Output:</h5>
+             <img src="image/1.1.png" class="img-thumbnail" alt="firstImage">
+             <br>
+             <img src="image/1.2.png" class="img-thumbnail" alt="secondImage">
+             <br>
+             <br>
+             <h5>Source Code:</h5>
+             <p style="background-color: black;
+             color: white;">
+ IN INPUT <br>
+ ADD 96<br>
+ OUT OUTPUT<br>
+ HLT HALT<br>
+ *96<br>
+ DAT 001<br>
+             </p>
+ 
+             <div class="line"></div>
+ 
+             <h5>2) Write a program in which take input from user and subtract from user input value.</h5>
+             <br><h5>Output:</h5>
+             <img src="image/2.1.png" class="img-thumbnail" alt="firstImage">
+             <br>
+             <img src="image/2.2.png" class="img-thumbnail" alt="secondImage">
+             <br>
+             <br>
+             <h5>Source Code:</h5>
+ 
+             <p style="background-color: black;
+             color: white;">
+                 IN INPUT <br>
+                 SUB 96<br>
+                 OUT OUTPUT<br>
+                 HLT HALT<br>
+                 *96<br>
+                 DAT 005
+             </p>
+ 
+             <div class="line"></div>
+ 
+ 
+             <h5>3) Write a program in which take two inputs from user and add both and check the answer.</h5>
+             <br><h5>Output:</h5>
+             <img src="image/3.1.png" class="img-thumbnail" alt="firstImage">
+             <br>
+             <img src="image/3.2.png" class="img-thumbnail" alt="secondImage">
+             <br>
+             <br>
+             <h5>Source Code:</h5>
+ 
+             <p style="background-color: black;
+             color: white;">
+                 IN INPUT <br>
+                 STO 96<br>
+                 IN INPUT<br>
+                 ADD 96<br>
+                 OUT OUTPUT<br>
+                 HLT HALT                
+             </p>
+ 
+             <div class="line"></div>
+ 
+ 
+             <h5>4) Write a program in which two constant numbers and add them.</h5>
+             <br><h5>Output:</h5>
+             <img src="image/4.1.png" class="img-thumbnail" alt="firstImage">
+             <br>
+             <img src="image/4.2.png" class="img-thumbnail" alt="secondImage">
+             <br>
+             <br>
+             <h5>Source Code:</h5>
+ 
+             <p style="background-color: black;
+             color: white;">
+                 ADD 96 <br>
+                 ADD 97<br>
+                 OUT OUTPUT<br>
+                 HLT HALT<br>
+                 *96 <br>
+                 DAT 005<br>
+                 *97<br>
+                 DAT 010
+                 
+             </p>
+ 
+             <div class="line"></div>
+
+
+             <div id="foremediaads-c1"></div>
+             <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+             <!-- Loop-->
+            <h2 id="loop">3. Loop </h2> <br>
+
+            <h5>1) Write a program in which take input if input is equal to 0 then
+                 print output otherwise again take input.Hint This is used by while loop.</h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/7.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <img src="image/7.2.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+            color: white;">
+            IN <br>
+            STO 95<br>
+            BRZ 05<br>
+            OUT <br>
+            BR 00<br>
+            OUT<br>
+            HLT
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Write a program in which take input and if input is less than 10 then add otherwise terminate the program.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/6.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <img src="image/6.2.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+            IN <br>
+            STO 99 <br>
+            SUB 98 <br>
+            BRP 08<br>
+            LDA 99<br>
+            ADD 99<br>
+            OUT<br>
+            BR 00<br>
+            HLT<br>
+            *98<br>
+            DAT 010
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>3) Write a program in which print table.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/5.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <img src="image/5.2.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+            IN <br>
+            STO 95<br>
+            lda 97<br>
+            add 96<br>
+            sto 97<br>
+            lda 98<br>
+            add 95<br>
+            sto 98<br>
+            out<br>
+            lda 94<br>
+            sub 97<br>
+            brz 13<br>
+            br 02<br>
+            hlt<br>
+            *94<br>
+            dat 010<br>
+            *96<br>
+            dat 001<br>
+            *97<br>
+            dat 000<br>
+            *98<br>
+            dat 000               
+            </p>
+
+            <div class="line"></div>
+
+
+           
+
+            <h1>Practice of MIPs Architecture</h1> <br>
+
+            <!-- Introduction to  Computer Architecture & Logic Design-->
+            <h2 id="mips">4. Introduction to MIPs Architecture </h2> <br>
+
+
+            <h5>1) Write a program to take three integers and add and display them.</h5>
+            <br><h5>Output:</h5>
+            
+            <img src="image/8.1.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                .data <br>
+                prompt: .asciiz "Enter three integers \n"<br>
+                sum_msg: .asciiz "The sum is "<br>
+                .text <br>
+                .globl main<br>
+                main:<br>
+                la $a0,prompt<br>
+                li $v0,4<br>
+                syscall<br>
+                li $v0,5<br>
+                syscall<br>
+                move $t1,$v0<br>
+                li $v0,5<br>
+                syscall<br>
+                move $t2,$v0<br>
+                li $v0,5<br>
+                syscall<br>
+                move $t3,$v0<br>
+                addu $t1,$t1,$t2<br>
+                addu $t1,$t1,$t3<br>
+                la $a0,sum_msg<br>
+                li $v0,4<br>
+                syscall<br>
+                move $a0,$t1<br>
+                li $v0,1<br>
+                syscall<br>
+                li $v0,10<br>
+                syscall
+                
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>2) Write a program in which take three inputs of two times from user and add  them.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/8.2.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                   .data <br>
+                   first: .asciiz "Enter three integers for 1st Addition\n"<br>
+                   second: .asciiz "Enter three integers for 2nd Addition\n"<br>
+                   first_msg: .asciiz "The sum of 1st Addition is "<br>
+                   second_msg: .asciiz "The sum of 2nd Addition is "<br>
+                   .text<br>
+                   .globl main<br>
+                   main:<br>
+                   la $a0,first<br>
+                   li $v0,4<br>
+                   syscall<br>
+                   li $v0,5<br>
+                   syscall<br>
+                   move $t1,$v0<br>
+                   li $v0,5<br>
+                   syscall<br>
+                   move $t2,$v0<br>
+                   li $v0,5<br>
+                   syscall<br>
+                   move $t3,$v0<br>
+                   addu $t1,$t1,$t2<br>
+                   addu $t1,$t1,$t3<br>
+                   la $a0,first_msg<br>
+                   li $v0,4<br>
+                   syscall<br>
+                   move $a0,$t1<br>
+                   li $v0,1<br>
+                   syscall<br>
+                   la $a0,second<br>
+                   li $v0,4<br>
+                   syscall<br>
+                   li $v0,5<br>
+                   syscall<br>
+                   move $t4,$v0<br>
+                   li $v0,5<br>
+                   syscall<br>
+                   move $t5,$v0<br>
+                   li $v0,5<br>
+                   syscall<br>
+                   move $t6,$v0<br>
+                   addu $t4,$t4,$t5<br>
+                   addu $t4,$t4,$t6<br>
+                   la $a0,second_msg<br>
+                   li $v0,4<br>
+                   syscall<br>
+                   move $a0,$t1<br>
+                   li $v0,1<br>
+                   syscall<br>
+                   li $v0,10<br>
+                   syscall           
+            </p>
+
+            <div class="line"></div>
+
+            <h5>3) Write a program in which take two inputs from user and multiply them.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/8.3.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                 .data <br>
+                 first: .asciiz "Enter first Number \n"<br>
+                 second: .asciiz "Enter second Number\n"<br>
+                 first_msg: .asciiz "The Multiply of two Numbers are "<br>
+                 .text<br>
+                 .globl main<br>
+                 main:<br>
+                 la $a0,first<br>
+                 li $v0,4<br>
+                 syscall<br>
+                 li $v0,5<br>
+                 syscall<br>
+                 move $t1,$v0<br>
+                 la $a0,second<br>
+                 li $v0,4<br>
+                 syscall<br>
+                 li $v0,5<br>
+                 syscall<br>
+                 move $t2,$v0<br>
+                 mul $t1,$t1,$t2<br>
+                 la $a0,first_msg<br>
+                 li $v0,4<br>
+                 syscall<br>
+                 move $a0,$t1<br>
+                 li $v0,1<br>
+                 syscall<br>
+                 li $v0,10<br>
+                 syscall
+                              
+            </p>
+
+            <div class="line"></div>
+            <div id="foremediaads-e1"></div>
+            <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/e1"></script>
+            <h5>4) Write a program in which take two inputs from user and add both and check the answer.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/8.5.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                  .data<br>
+                  first: .asciiz "Enter first Number \n"<br>
+                  second: .asciiz "Enter second Number\n"<br>
+                  first_msg: .asciiz "The Addition of two Numbers are "<br>
+                  .text<br>
+                  .globl main<br>
+                  main:<br>
+                  la $a0,first<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  li $v0,5<br>
+                  syscall<br>
+                  move $t1,$v0<br>
+                  la $a0,second<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  li $v0,5<br>
+                  syscall<br>
+                  move $t2,$v0<br>
+                  add $t1,$t1,$t2<br>
+                  la $a0,first_msg<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  move $a0,$t1<br>
+                  li $v0,1<br>
+                  syscall<br>
+                  li $v0,10<br>
+                  syscall
+                  
+                              
+            </p>
+
+            <div class="line"></div>
+
+
+
+            <h5>5) Write a program in which take two inputs from user and sub both and check the answer.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/8.6.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                  .data <br>
+                  first: .asciiz "Enter first Number \n"<br>
+                  second: .asciiz "Enter second Number\n"<br>
+                  first_msg: .asciiz "The Addition of two Numbers are "<br>
+                  .text<br>
+                  .globl main<br>
+                  main:<br>
+                  la $a0,first<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  li $v0,5<br>
+                  syscall<br>
+                  move $t1,$v0<br>
+                  la $a0,second<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  li $v0,5<br>
+                  syscall<br>
+                  move $t2,$v0<br>
+                  sub $t1,$t1,$t2<br>
+                  la $a0,first_msg<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  move $a0,$t1<br>
+                  li $v0,1<br>
+                  syscall<br>
+                  li $v0,10<br>
+                  syscall
+                  
+                              
+            </p>
+
+            <div class="line"></div>
+
+            <h5>6) Write an assembly program that Read and Print Hello world.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/8.7.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                   .data <br>
+                   question: .asciiz "Enter String: "<br>
+                   size: .space 25<br>
+                   .text<br>
+                   .globl main<br>
+                   main:<br>
+                   li $v0,4<br>
+                   la $a0,question<br>
+                   syscall<br>
+                   li $v0,8<br>
+                   la $a1,size<br>
+                   syscall<br>
+                   li $v0,4<br>
+                   syscall           
+            </p>
+
+            <div class="line"></div>
+            <div id="foremediaads-c1"></div>
+            <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+            
+
+            <!-- ARITHMETIC OPERATIONS-->
+            <h2 id="aos">5. Arithmetic Operation </h2> <br>
+
+
+            <h5>1) Write a program to print string.</h5>
+            <br><h5>Output:</h5>
+            
+            <img src="image/9.1.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+               .data <br>
+               prompt: .ascii "Shoaib \n"<br>
+               .text <br>
+               .globl main<br>
+               main:<br>
+               li $v0,4<br>
+               la $a0,prompt<br>
+               syscall<br>
+               li $v0,10<br>
+               syscall       
+                
+                
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>2) Add two Numbers and display the output with prompt</h5>
+            <br><h5>Output:</h5>
+            <img src="image/9.2.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                  .data <br>
+                  prompt: .ascii "The sum of Numbers are  \n"<br>
+                  num1: .word 10<br>
+                  num2: .word 15<br>
+                  .text <br>
+                  .globl main<br>
+                  main:<br>
+                  lw $t0,num1<br>
+                  lw $t1,num2<br>
+                  add $t2,$t0,$t1<br>
+                  li $v0,4<br>
+                  la $a0,prompt<br>
+                  syscall<br>
+                  move $a0,$t2<br>
+                  li $v0,1<br>
+                  syscall<br>
+                  li $v0,10<br>
+                  syscall
+                             
+            </p>
+
+            <div class="line"></div>
+            <div id="foremediaads-e1"></div>
+            <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/e1"></script>
+            <h5>3) Write the same program with small variation i.e. this time the program will ask for 3 integers twice and displays the result for each addition separately;<br>
+                Output will look like as follows: <br>
+                Enter 3 integers for 1st addition<br>
+                2             2               2<br>
+                Enter 3 integers for 2nd addition<br>
+                3              3               3<br>
+                The sum of 1st addition is 6<br>
+                The sum of 2nd addition is 9
+                </h5>
+            <br><h5>Output:</h5>
+            <img src="image/9.3.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                .data<br>
+                first: .asciiz "Enter three integers for 1st Addition\n"<br>
+                second: .asciiz "Enter three integers for 2nd Addition\n"<br>
+                first_msg: .asciiz "The sum of 1st Addition is "<br>
+                second_msg: .asciiz "The sum of 2nd Addition is "<br>
+                .text<br>
+                .globl main<br>
+                main:<br>
+                la $a0,first<br>
+                li $v0,4<br>
+                syscall<br>
+                li $v0,5<br>
+                syscall<br>
+                move $t1,$v0<br>
+                li $v0,5<br>
+                syscall<br>
+                move $t2,$v0<br>
+                li $v0,5<br>
+                syscall<br>
+                move $t3,$v0<br>
+                addu $t1,$t1,$t2<br>
+                addu $t1,$t1,$t3<br>
+                la $a0,first_msg<br>
+                li $v0,4<br>
+                syscall<br>
+                move $a0,$t1<br>
+                li $v0,1<br>
+                syscall<br>
+                la $a0,second<br>
+                li $v0,4<br>
+                syscall<br>
+                li $v0,5<br>
+                syscall<br>
+                move $t4,$v0<br>
+                li $v0,5<br>
+                syscall<br>
+                move $t5,$v0<br>
+                li $v0,5<br>
+                syscall<br>
+                move $t6,$v0<br>
+                addu $t4,$t4,$t5<br>
+                addu $t4,$t4,$t6<br>
+                la $a0,second_msg<br>
+                li $v0,4<br>
+                syscall<br>
+                move $a0,$t1<br>
+                li $v0,1<br>
+                syscall<br>
+                li $v0,10<br>
+                syscall
+                
+                              
+            </p>
+
+            <div class="line"></div>
+
+            <h5>4) Write an assembly program that Multiply two number within the range of 10.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/9.4.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                  .data<br>
+                  first: .asciiz "Enter first Number \n"<br>
+                  second: .asciiz "Enter second Number\n"<br>
+                  first_msg: .asciiz "The Multiply of two Numbers are "<br>
+                  .text<br>
+                  .globl main<br>
+                  main:<br>
+                  la $a0,first<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  li $v0,5<br>
+                  syscall<br>
+                  move $t1,$v0<br>
+                  la $a0,second<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  li $v0,5<br>
+                  syscall<br>
+                  move $t2,$v0<br>
+                  mul $t1,$t1,$t2<br>
+                  la $a0,first_msg<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  move $a0,$t1<br>
+                  li $v0,1<br>
+                  syscall<br>
+                  li $v0,10<br>
+                  syscall
+                  
+                  
+                              
+            </p>
+
+            <div class="line"></div>
+
+
+
+            <h5>5) Write an assembly program that Divide two number within the range of 10.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/9.5.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                  .data<br>
+                  first: .asciiz "Enter first Number \n"<br>
+                  second: .asciiz "Enter second Number\n"<br>
+                  first_msg: .asciiz "The Division of two Numbers are "<br>
+                  .text<br>
+                  .globl main<br>
+                  main:<br>
+                  la $a0,first<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  li $v0,5<br>
+                  syscall<br>
+                  move $t1,$v0<br>
+                  la $a0,second<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  li $v0,5<br>
+                  syscall<br>
+                  move $t2,$v0<br>
+                  div $t1,$t1,$t2<br>
+                  la $a0,first_msg<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  move $a0,$t1<br>
+                  li $v0,1<br>
+                  syscall<br>
+                  li $v0,10<br>
+                  syscall     
+                              
+            </p>
+
+            <div class="line"></div>
+
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+
+<!-- BIT MANIPULATION INSTRUCTIONS-->
+<h2 id="bit">6. BIT MANIPULATION INSTRUCTIONS </h2> <br>
+
+
+<h5>1) Add AND Operator by solving the bitwise instruction of all Logical gates.</h5>
+<br><h5>Output:</h5>
+
+<img src="image/10.1.png" class="img-thumbnail" alt="secondImage">
+<br>
+<img src="image/10.2.png" class="img-thumbnail" alt="secondImage">
+<br>
+<p style="color: black;">When we write li $t0,0x00000000 instead of  li $t0,0xffffffff then we will get:</p>
+<img src="image/10.3.png" class="img-thumbnail" alt="secondImage">
+<h5>Source Code:</h5>
+
+<p style="background-color: black;
+color: white;">
+    .data <br>
+    input: .asciiz "Enter integer Number: "<br>
+    result: .asciiz "The result is: "<br>
+    .text<br>
+    .globl main<br>
+    main:<br>
+    li $t0,0xffffffff<br>
+    la $a0,input<br>
+    li $v0,4<br>
+    syscall<br>
+    li $v0,5<br>
+    syscall<br>
+    move $t1,$v0<br>
+    and $t2,$t1,$t0<br>
+    la $a0,result<br>
+    li $v0,4<br>
+    syscall<br>
+    move $a0,$t2<br>
+    li $v0,1<br>
+    syscall <br>
+    li $v0,10<br>
+    syscall
+       
+    
+    
+</p>
+
+<div class="line"></div>
+
+<div id="foremediaads-e1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/e1"></script>
+<h5>2) Add OR Operator by solving the bitwise instruction of all Logical gates.</h5>
+<br><h5>Output:</h5>
+<img src="image/10.4.png" class="img-thumbnail" alt="secondImage">
+<br>
+<p style="color: black;">When we write li $t0,0xffffffff  instead of li $t0,0x00000000  then we will get:</p>
+<img src="image/10.5.png" class="img-thumbnail" alt="secondImage">
+<h5>Source Code:</h5>
+
+<p style="background-color: black;
+color: white;">
+     .data <br>
+     input: .asciiz "Enter integer Number: "<br>
+     result: .asciiz "The result is: "<br>
+     .text<br>
+     .globl main<br>
+     main:<br>
+     li $t0,0x00000000<br>
+     la $a0,input<br>
+     li $v0,4<br>
+     syscall<br>
+     li $v0,5<br>
+     syscall<br>
+     move $t1,$v0<br>
+     or $t2,$t1,$t0<br>
+     la $a0,result<br>
+     li $v0,4<br>
+     syscall<br>
+     move $a0,$t2<br>
+     li $v0,1<br>
+     syscall <br>
+     li $v0,10<br>
+     syscall
+     
+                 
+</p>
+
+<div class="line"></div>
+
+<h5>3) Add XOR Operator by solving the bitwise instruction of all Logical gates.</h5>
+<br><h5>Output:</h5>
+<img src="image/10.6.png" class="img-thumbnail" alt="secondImage">
+<br>
+
+<p style="color: black;">When we write li $t0,0x00000000  instead of li $t0,0xffffffff   then we will get:</p>
+<img src="image/10.7.png" class="img-thumbnail" alt="secondImage">
+<h5>Source Code:</h5>
+
+<p style="background-color: black;
+color: white;">
+   .data <br>
+   input: .asciiz "Enter integer Number: "<br>
+   result: .asciiz "The result is: "<br>
+   .text<br>
+   .globl main<br>
+   main:<br>
+   li $t0,0xffffffff<br>
+   la $a0,input<br>
+   li $v0,4<br>
+   syscall<br>
+   li $v0,5<br>
+   syscall<br>
+   move $t1,$v0<br>
+   xor $t2,$t1,$t0<br>
+   la $a0,result<br>
+   li $v0,4<br>
+   syscall<br>
+   move $a0,$t2<br>
+   li $v0,1<br>
+   syscall <br>
+   li $v0,10<br>
+   syscall
+   
+    
+                  
+</p>
+
+<div class="line"></div>
+
+<h5>4) Add NOT Operator by solving the bitwise instruction of all Logical gates.</h5>
+<br><h5>Output:</h5>
+<img src="image/10.8.png" class="img-thumbnail" alt="secondImage">
+<br>
+<br>
+<h5>Source Code:</h5>
+
+<p style="background-color: black;
+color: white;">
+       .data <br>
+       input: .asciiz "Enter Number "<br>
+       result: .asciiz "The result is "<br>
+       .text<br>
+       .globl main<br>
+       main:<br>
+       li $v0,4<br>
+       la $a0,input<br>
+       syscall<br>
+       li $v0,5<br>
+       syscall<br>
+       move $t0,$v0<br>
+       not $t1,$t0<br>
+       li $v0,4<br>
+       la $a0,result<br>
+       syscall<br>
+       move $a0,$t1<br>
+       li $v0,1<br>
+       syscall<br>
+       li $v0,10<br>
+       syscall
+                       
+</p>
+
+<div class="line"></div>
+
+<h5>5) Add XNOR Operator by solving the bitwise instruction of all Logical gates.</h5>
+<br><h5>Output:</h5>
+<img src="image/10.9.png" class="img-thumbnail" alt="secondImage">
+<br>
+
+<p style="color: black;">When we write li $t0,0x00000000  instead of li $t0,0xffffffff   then we will get:</p>
+<img src="image/10.10.png" class="img-thumbnail" alt="secondImage">
+<h5>Source Code:</h5>
+
+<p style="background-color: black;
+color: white;">
+     .data <br>
+     input: .asciiz "Enter integer Number: "<br>
+     result: .asciiz "The result is: "<br>
+     .text<br>
+     .globl main<br>
+     main:<br>
+     li $t0,0xffffffff<br>
+     la $a0,input<br>
+     li $v0,4<br>
+     syscall<br>
+     li $v0,5<br>
+     syscall<br>
+     move $t1,$v0<br>
+     xor $t2,$t1,$t0<br>
+     la $a0,result<br>
+     li $v0,4<br>
+     syscall<br>
+     not $t3,$t2<br>
+     move $a0,$t3<br>
+     li $v0,1<br>
+     syscall<br>
+     li $v0,10<br>
+     syscall
+                       
+</p>
+
+<div class="line"></div>
+
+<h5>6) Add NAND Operator by solving the bitwise instruction of all Logical gates.</h5>
+<br><h5>Output:</h5>
+<img src="image/10.11.png" class="img-thumbnail" alt="secondImage">
+<br>
+<br>
+<p style="color: black;">When we write li $t0,0x00000000  instead of li $t0,0xffffffff   then we will get:</p>
+<img src="image/10.12.png2" class="img-thumbnail" alt="secondImage">
+<h5>Source Code:</h5>
+
+<p style="background-color: black;
+color: white;">
+    .data <br>
+    input: .asciiz "Enter Number "<br>
+    result: .asciiz "The result is "<br>
+    .text<br>
+    .globl main<br>
+    main:<br>
+    li $t0,0xffffffff<br>
+    li $v0,4<br>
+    la $a0,input<br>
+    syscall<br>
+    li $v0,5<br>
+    syscall<br>
+    move $t1,$v0<br>
+    nor $t2,$t0,$t1<br>
+    li $v0,4<br>
+    la $a0,result<br>
+    syscall<br>
+    move $a0,$t2<br>
+    li $v0,1<br>
+    syscall<br>
+    li $v0,10<br>
+    syscall
+                       
+</p>
+
+<div class="line"></div>
+
+<h5>7) Add NAND Operator by solving the bitwise instruction of all Logical gates.</h5>
+<br><h5>Output:</h5>
+<img src="image/10.13.png" class="img-thumbnail" alt="secondImage">
+<br>
+<br>
+<p style="color: black;">When we write li $t0,0x00000000  instead of li $t0,0xffffffff   then we will get:</p>
+<img src="image/10.14.png" class="img-thumbnail" alt="secondImage">
+<h5>Source Code:</h5>
+
+<p style="background-color: black;
+color: white;">
+     .data<br>
+     input: .asciiz "Enter Number "<br>
+     result: .asciiz "The result is "<br>
+     .text<br>
+     .globl main<br>
+     main:<br>
+     li $t0,0xffffffff<br>
+     la $a0,input<br>
+     li $v0,4<br>
+     syscall<br>
+     li $v0,5<br>
+     syscall<br>
+     move $t1,$v0<br>
+     and $t2,$t1,$t0<br>
+     la $a0,result<br>
+     li $v0,4<br>
+     syscall<br>
+     not $t3,$t2<br>
+     move $a0,$t3<br>
+     li $v0,1<br>
+     syscall<br>
+     li $v0,10<br>
+     syscall
+     
+                       
+</p>
+
+<div class="line"></div>
+
+
+
+<h5>8) Add NOR Operator by solving the bitwise instruction of all Logical gates.</h5>
+<br><h5>Output:</h5>
+<img src="image/10.15.png" class="img-thumbnail" alt="secondImage">
+<br>
+<br>
+<p style="color: black;">When we write li $t0,0x00000000  instead of li $t0,0xffffffff   then we will get:</p>
+<img src="image/10.16.png" class="img-thumbnail" alt="secondImage">
+<h5>Source Code:</h5>
+
+<p style="background-color: black;
+color: white;">
+      .data <br>
+      input: .asciiz "Enter Number "<br>
+      result: .asciiz "The result is "<br>
+      .text<br>
+      .globl main<br>
+      main:<br>
+      li $t0,0xffffffff<br>
+      li $v0,4<br>
+      la $a0,input<br>
+      syscall<br>
+      li $v0,5<br>
+      syscall<br>
+      move $t1,$v0<br>
+      nor $t2,$t0,$t1<br>
+      li $v0,4<br>
+      la $a0,result<br>
+      syscall<br>
+      move $a0,$t2<br>
+      li $v0,1<br>
+      syscall<br>
+      li $v0,10<br>
+      syscall
+         
+                  
+</p>
+<p style="color: black;">All Result are shown here</p><br>
+<img src="image/10.17.PNG" class="img-thumbnail" alt="secondImage">
+<br>
+<div class="line"></div>
+<div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            
+<!-- IF THEN ELSE; CONTROL STRUCTURE-->
+<h2 id="if">7. IF THEN ELSE; CONTROL STRUCTURE </h2> <br>
+
+
+<h5>1) Write a program to take a and b as input and if a > 0 then add a +b else a-b.</h5>
+<br><h5>Output:</h5>
+<img src="image/11.1.png" class="img-thumbnail" alt="secondImage">
+<img src="image/11.2.png" class="img-thumbnail" alt="secondImage">
+<br>
+<br>
+<h5>Source Code:</h5>
+<p style="background-color: black;
+color: white;">
+    .data<br>
+    input1: .asciiz "Enter First Number "<br>
+    input2: .asciiz "Enter Second Number "<br>
+    add: .asciiz "The Addition is "<br>
+    sub: .asciiz "\nThe Subtraction is "<br>
+    .text <br>
+    .globl main<br>
+    main:<br>
+    la $a0,input1<br>
+    li $v0,4<br>
+    syscall<br>
+    li $v0,5<br>
+    Syscall<br>
+    Move $t1,$v0<br>
+    la $a0,input2<br>
+    li $v0,4<br>
+    syscall<br>
+    li $v0,5<br>
+    syscall<br>
+    move $t2,$v0<br>
+    bgtz  $t1,True<br>
+    sub $t3,$t1,$t2<br>
+    move $a0,$t3<br>
+    li $v0,1<br>
+    b Exit<br>
+    syscall<br>
+    True:<br>
+    add $t3,$t1,$t2<br>
+    move $a0,$t3<br>
+    li $v0,1<br>
+    syscall<br>
+    b Exit<br>
+    Exit:<br>
+    li $v0,10<br>
+    syscall
+            
+</p>
+
+<div class="line"></div>
+
+<h5>2) Write a program to take a and b as input and if a <  b then print “a is less than b” else print “a is greater than b”.</h5>
+<br><h5>Output:</h5>
+<img src="image/11.3.png" class="img-thumbnail" alt="secondImage">
+<br>
+<br>
+<h5>Source Code:</h5>
+<p style="background-color: black;
+color: white;">
+    .data<br>
+    input1: .asciiz "Enter First Number "<br>
+    input2: .asciiz "Enter Second Number "<br>
+    add: .asciiz "The Addition is "<br>
+    sub: .asciiz "\nThe Subtraction is "<br>
+    print1: .asciiz "The a is less than b"<br>
+    print2: .asciiz "The a is greater than b"<br>
+    .text <br>
+    .globl main<br>
+    main:<br>
+    la $a0,input1<br>
+    li $v0,4<br>
+    syscall<br>
+    li $v0,5<br>
+    syscall<br>
+    move $t1,$v0<br>
+    la $a0,input2<br>
+    li $v0,4<br>
+    syscall<br>
+    li $v0,5<br>
+    syscall<br>
+    move $t2,$v0<br>
+    blt  $t1,$t2,True<br>
+    la $a0,print2<br>
+    li $v0,4<br>
+    syscall<br>
+    b Exit<br>
+    True:<br>
+    la $a0,print1<br>
+    li $v0,4<br>
+    syscall<br>
+    b Exit<br>
+    Exit:<br>
+    li $v0,10<br>
+    syscall
+            
+</p>
+
+<div class="line"></div>
+<div id="foremediaads-e1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/e1"></script>
+<h5>3) Write a program to take a and b as input and if a != b then print “a” and increment a with 1 else print “b” with increment 1.</h5>
+<br><h5>Output:</h5>
+<img src="image/11.4.png" class="img-thumbnail" alt="secondImage">
+<br>
+<br>
+<h5>Source Code:</h5>
+<p style="background-color: black;
+color: white;">
+    .data<br>
+    input1: .asciiz "Enter First Number "<br>
+    input2: .asciiz "Enter Second Number "<br>
+    add: .asciiz "The Addition is "<br>
+    sub: .asciiz "\nThe Subtraction is "<br>
+    print1: .asciiz "The a is less than b"<br>
+    print2: .asciiz "The a is greater than b"<br>
+    .text <br>
+    .globl main<br>
+    main:<br>
+    la $a0,input1<br>
+    li $v0,4<br>
+    syscall<br>
+    li $v0,5<br>
+    syscall<br>
+    move $t1,$v0<br>
+    la $a0,input2<br>
+    li $v0,4<br>
+    syscall<br>
+    li $v0,5<br>
+    syscall<br>
+    move $t2,$v0<br>
+    bne $t1,$t2,True<br>
+    addi $t1,$t1,1<br>
+    move $a0,$t1<br>
+    li $v0,1<br>
+    syscall<br>
+    b Exit<br>
+    True:<br>
+    addi $t2,$t2,1<br>
+    move $a0,$t2<br>
+    li $v0,1<br>
+    syscall<br>
+    b Exit<br>
+    Exit:<br>
+    li $v0,10<br>
+    syscall
+            
+</p>
+
+<div class="line"></div>
+
+<h5>4) Write a program to check whether the input taken from user is greater than 0 or not. If the input is greater than 0, Do logical right shift operation on the input else do logical left shift operation on input.</h5>
+<br><h5>Output:</h5>
+<img src="image/11.5.png" class="img-thumbnail" alt="secondImage">
+<br>
+<br>
+<h5>Source Code:</h5>
+<p style="background-color: black;
+color: white;">
+    .data<br>
+    input1: .asciiz "Enter First Number "<br>
+    output1: .asciiz "Right shift "<br>
+    output2: .asciiz "left shift "<br>
+    .text <br>
+    .globl main<br>
+    main:<br>
+    la $a0,input1<br>
+    li $v0,4<br>
+    syscall<br>
+    li $v0,5<br>
+    syscall<br>
+    move $t1,$v0<br>
+    bgt $t1,$zero,True<br>
+    sll $t2,$t1,2<br>
+    la $a0,output1<br>
+    li $v0,4<br>
+    syscall<br>
+    move $a0,$t2<br>
+    li $v0,1<br>
+    syscall<br>
+    True:<br>
+    srl $t2,$t1,2<br>
+    la $a0,output1<br>
+    li $v0,4<br>
+    syscall<br>
+    move $a0,$t2<br>
+    li $v0,1<br>
+    syscall<br>
+    b Exit<br>
+    Exit:<br>
+    li $v0,10<br>
+    syscall
+            
+</p>
+
+<div class="line"></div>
+
+<h5>6) Write a program in MIPS assembly language that takes input from user and print whether the input is greater or less than 10 and also shift input left and right 4 bits.</h5>
+<br><h5>Output:</h5>
+<img src="image/11.6.png" class="img-thumbnail" alt="secondImage">
+<img src="image/11.7.png" class="img-thumbnail" alt="secondImage">
+<br>
+<br>
+<h5>Source Code:</h5>
+<p style="background-color: black;
+color: white;">
+    data<br>
+    greater: .asciiz "The Number is <br>
+    greater than 10 \n"<br>
+    less: .asciiz "The Number is <br>
+    less than 10 \n"<br>
+    num: .asciiz "Enter First Number"<br>
+    const: .word 10<br>
+    right: .asciiz  "The Right Shift "<br>
+    left: .asciiz  "The Left Shift "<br>
+    .text<br>
+    .globl main<br>
+    main:<br>
+    lw $t4,const<br>
+    la $a0,num<br>
+    li $v0,4<br>
+    syscall<br>
+    li $v0,5<br>
+    syscall<br>
+    move $t1,$v0<br>
+    bgt $t1,$t4,True<br>
+    la $a0,less<br>
+    li $v0,4<br>
+    syscall<br>
+    la $a0,left<br>
+    li $v0,4<br>
+    syscall<br>
+    sll $t2,$t1,4<br>
+    move $a0,$t2<br>
+    li $v0,1<br>
+    syscall<br>
+    b Exit<br>
+    True:<br>
+    la $a0,greater<br>
+    li $v0,4<br>
+    syscall<br>
+    la $a0,right<br>
+    li $v0,4<br>
+    syscall<br>
+    sll $t2,$t1,4<br>
+    move $a0,$t2<br>
+    li $v0,1<br>
+    syscall<br>
+    b Exit<br>
+    Exit:<br>
+    li $v0,10<br>
+    syscall
+            
+</p>
+
+<div class="line"></div>
+
+<div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+
+<!-- FOR LOOP-->
+<h2 id="for">8. FOR LOOP </h2> <br>
+
+
+<h5>1) Write a program to print table of 2 </h5>
+<br><h5>Output:</h5>
+<img src="image/12.1.png" class="img-thumbnail" alt="secondImage">
+<br>
+<br>
+<h5>Source Code:</h5>
+<p style="background-color: black;
+color: white;">
+    .data<br>
+    prompt: .asciiz "Enter lenght for table: "<br>
+    prompt1: .asciiz "Enter table : "<br>
+    tab: .asciiz " : "<br>
+    tab1: .asciiz "\n"<br>
+    .text<br>
+    .globl main<br>
+    main:<br>
+    la $a0,prompt<br>
+    li $v0,4<br>
+    syscall<br>
+    li $v0,5<br>
+    syscall<br>
+    move $t0,$v0<br>
+    la $a0,prompt1<br>
+    li $v0,4<br>
+    syscall<br>
+    li $v0,5<br>
+    syscall<br>
+    move $t5,$v0<br>
+    true:<br>
+    bgtz $t0,lop<br>
+    b exit<br>
+    lop:<br>
+    addi $t1,$t1,1<br>
+    mul $t3,$t1,$t5<br>
+    move $a0,$t1 <br>
+     li $v0,1<br>
+    syscall<br>
+    la $a0,tab  # print tab<br>
+    li $v0,4<br>
+    syscall<br>
+     move $a0,$t3<br> 
+     li $v0,1<br>
+    syscall<br>
+    la $a0,tab1  # print tab<br>
+     li $v0,4<br>
+    syscall<br>
+    subi $t0,$t0,1<br>
+    b true<br>
+    exit:<br>
+    li $v0,10<br>
+    syscall
+            
+</p>
+
+<div class="line"></div>
+
+<h5>2) Write a program in MIPS assembly language that takes input and display whether number is prime or not.</h5>
+<br><h5>Output:</h5>
+<img src="image/12.2.png" class="img-thumbnail" alt="secondImage">
+<img src="image/12.3.png" class="img-thumbnail" alt="secondImage">
+<br>
+<br>
+<h5>Source Code:</h5>
+<p style="background-color: black;
+color: white;">
+    .data<br>
+    input: .asciiz "Enter any number = "<br>
+    notPrime: .asciiz "This number is not prime number"<br>
+    prime: .asciiz "This is Prime Number"<br>
+    .text<br>
+    .globl main<br>
+    main:<br>
+    li $s0,2   #s0 ==> i<br>
+    la $a0,input<br>
+    li $v0,4<br>
+    syscall<br>
+    li $v0,5<br>
+    syscall<br>
+    move $t0,$v0 #t0 user input(n)<br>
+    blt $t0,$s0,notprime<br>
+    div $t0,$s0<br>
+    mflo $t1     #t1 ==> loop n/2 <br>
+    b condition<br>
+    condition:<br>
+    ble $s0,$t1,enterLoop<br>
+    la $a0,prime # this prime number<br>
+    li $v0,4<br>
+    syscall<br>
+    b exit<br>
+    enterLoop:<br>
+    div $t0,$s0   #n/i<br>
+    mfhi $t2   #t2 ==> 0 or 1<br>
+    beqz $t2,notprime<br>
+    addi $s0,$s0,1<br>
+    b condition<br>
+    notprime:<br>
+    la $a0,notPrime<br>
+    li $v0,4<br>
+    syscall<br>
+    b exit<br>
+    exit:<br>
+    li $v0,10<br>
+    syscall
+    
+            
+</p>
+
+<div class="line"></div>
+<div id="foremediaads-e1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/e1"></script>
+<h5>3) Write a program in MIPS assembly language that provide the sum from 1 to 10 using for Loop. </h5>
+<br><h5>Output:</h5>
+<img src="image/12.4.png" class="img-thumbnail" alt="secondImage">
+<br>
+<br>
+<h5>Source Code:</h5>
+<p style="background-color: black;
+color: white;">
+    .data<br>
+    input: .asciiz "Adding of from 1 to 10 Numbers is \n"<br>
+    .text<br>
+    .globl main<br>
+    main:<br>
+    la $a0,input<br>
+    li $v0,4<br>
+    syscall<br>
+    li $t0,10<br>
+    la $a0,0<br>
+    loop:<br>
+    add $a0,$a0,$t0<br>
+    subi $t0,$t0,1<br>
+    bgez $t0,loop<br>
+    li $v0,1<br>
+    syscall<br>
+    li $v0,10<br>
+    syscall        
+</p>
+
+<div class="line"></div>
+
+<h5>4) Write a program in MIPS assembly language that provide the sum from 1 to 99 using for Loop.</h5>
+<br><h5>Output:</h5>
+<img src="image/12.5.png" class="img-thumbnail" alt="secondImage">
+<img src="image/12.6.png" class="img-thumbnail" alt="secondImage">
+<img src="image/12.7.png" class="img-thumbnail" alt="secondImage">
+<br>
+<br>
+<h5>Source Code:</h5>
+<p style="background-color: black;
+color: white;">
+    .data<br>
+    promt:.asciiz"Enter number : "<br>
+    line:.asciiz"\n"<br>
+    .text<br>
+    .globl main<br>
+    main:<br>
+    li $v0,4<br>
+    la $a0,promt<br>
+    syscall<br>
+    li $v0,5<br>
+    syscall<br>
+    move $t3,$v0<br>
+    li $t0,0<br>
+    li $t1,1<br>
+    loop:<br>
+    add $t0,$t0,$t1<br>
+    move $a0,$t0<br>
+    li $v0,1<br>
+    syscall<br>
+    li $v0,4<br>
+    la $a0,line<br>
+    syscall<br>
+    addi $t1,$t1+1<br>
+    blt $t1,$t3,loop<br>
+    li $v0,10<br>
+    syscall
+    
+</p>
+
+<div class="line"></div>
+
+<div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+<!-- : MULTISIM AND LOGIC IMPLEMENTATION-->
+<h2 id="mul">9. MULTISIM AND LOGIC IMPLEMENTATION </h2> <br>
+
+
+<h5>1) Write a program in which take three inputs and do this logic:
+    (BC)(!A)</h5>
+<br><h5>Output:</h5>
+<img src="image/13.1.png" class="img-thumbnail" alt="secondImage">
+<br>
+<br>
+
+<div class="line"></div>
+
+<h5>2) Implement the following equations on MultiSim. <br>
+ 	ABCD + A ( B + C) + BCD + ABD+ BC 
+    </h5>
+<br><h5>Output:</h5>
+<img src="image/13.2.png" class="img-thumbnail" alt="secondImage">
+<br>
+<br>
+
+<div class="line"></div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <footer class=" text-center text-white"style="background-color: hsl(207, 100%, 50%);">
+        <p style="color: white">&copy; Copyright 2023 codings Hub</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#sidebarCollapse").on('click', function () {
+                $("#sidebar").toggleClass('active');
+            });
+        });
+
+        var myCustomScrollbar = document.querySelector('.my-custom-scrollbar');
+var ps = new PerfectScrollbar(myCustomScrollbar);
+
+var scrollbarY = myCustomScrollbar.querySelector('.ps__rail-y');
+
+myCustomScrollbar.onscroll = function () {
+  scrollbarY.style.cssText = `top: ${this.scrollTop}px!important; height: 400px; right: ${-this.scrollLeft}px`;
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/analytics"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4128752626691291"
+    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
+        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="c++.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <style>
+        .all-menu a {
+          background-color: #008cff; /* Grey background color */
+          color: white; /* Black text color */
+          display: block; /* Make the links appear below each other */
+          padding: 12px; /* Add some padding */
+          text-decoration: none; /* Remove underline from links */
+        }
+        .all-menu {
+          width: 250px;
+          height: 505px;
+          overflow-y: auto;
+          background-color: #008cff;
+        }
+          </style>
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+        <nav id="sidebar" >
+            <div id="all" style="position:fixed" >
+            <div class="sidebar-header" style="width: 225px;">
+                <a href="../../../index.html"><h3>Codings Hub</h3></a>
+            </div>
+            <div class="all-menu" style="height: 750px;">
+            <ul class="list-unstyled components">
+                <p>Programming Languages</p>
+                <li>
+                    <a href="../../coding.html">HTML</a>
+                </li>
+                <li>
+                    <a href="../css/css.html">CSS</a>
+                </li>
+                <li>
+                    <a href="../JavaScript/javaScript.html">JavaScript</a>
+                </li>
+
+                <li>
+                   <a href="../Java/java.html">Java</a>
+                </li>
+                <li class="active" style="width: 233px;" >
+                        
+                    <a href="#c++" data-toggle="collapse" aria-expanded="false"  class="dropdown-toggle">C++</a>
+                    
+                    <ul class="collapse list-unstyled" id="c++">
+                            <li>
+                                <a href="#cp">1. Introduction to C++</a>
+                            </li>
+                            <li>
+                                <a href="#vdt">2. Variables & Data types</a>
+                            </li>
+                            <li>
+                                <a href="#cs">3. Conditional Statement</a>
+                            </li>
+                            <li>
+                                <a href="#ssfl">4. Switch Statement & For Loop</a>
+                            </li>
+                            <li>
+                                <a href="#wdwl">5. While & Do-while Loop</a>
+                            </li>
+                            <li>
+                                <a href="#nl">6. Nested Loop</a>
+                            </li>
+                            <li>
+                                <a href="#a">7. Array</a>
+                            </li>
+                            <li>
+                                <a href="#f">8. Function</a>
+                            </li>
+                            <li>
+                                <a href="#s">9. String </a>
+                            </li>
+                            <li>
+                                <a href="#p">10. Pointers</a>
+                            </li>
+                            <li>
+                                <a href="#fh">11. File Handling</a>
+                            </li>
+                            <li>
+                                <a href="#st">12. Structures</a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../CSharp/cSharp.html">C#</a>
+                </li>
+                <li>
+                    <a href="../cald/cald.html">Computer Architecture & Logic Design</a>
+                </li>
+                <li>
+                    <a href="../algorithm/algorithm.html">Data Structure & Algorithm</a>
+                </li>
+                <li>
+                    <a href="../os/os.html">Operating System</a>
+                </li>
+                <li>
+                    <a href="../sda/os.html">Software Design & Architecture</a>
+                </li>
+                <li>
+                    <a href="../dbms/os.html">Database Management System</a>
+                </li>
+                <li>
+                    <a target="_blank" href="../../../portfolio/index.html">Portfolio</a>
+                </li>
+                <li>
+                    <a target="_blank" href="../../../contact-us/contact/index.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </nav>
+
+
+
+
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../../index.html">Home</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="../../../quiz/Quiz Project/Login box/index.html">Quiz</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../../mcqs/mcqsOfProgrammingLanguage/html/todo/htmlMCQs.html">MCQs</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.fiverr.com/users/shoaibakhter18">Services by Fiverr</a>
+                            </li>
+                        </ul>
+                    </div>
+                <!-- </div> -->
+            </nav>
+
+            <h1>Tasks & Solution of C++ Language</h1> <br>
+            <div id="foremediaads-c1"></div>
+            <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+            <!-- Alert Function -->
+             <h2 id="cp">Topic 1: Introduction to C++ </h2> <br>
+
+            <h5>Task 1: Find whether the sum of two numbers is greater than 25.</h5>
+            <br><h4>Output:</h4>
+            <img src="1.1.png" class="img-thumbnail" alt="1.1 image">
+
+            <br><br><h4>Source Code</h4>
+            <p style="background-color: black; color:white">
+                #include iostream <br>
+                    using namespace std; <br>
+                    int main()<br>
+                    {<br>
+                        int a;<br>
+                        int b;<br>
+                        cout << "Enter a value for variable a \n";<br>
+                        cin >> a;<br>
+                        cout << "Enter another value for variable b \n";<br>
+                        cin >> b;<br>
+                        int c = a+b;<br>
+                        if(c > 25){<br>
+                            cout << "Sum of variable a and b is greater than 25";<br>
+                        } else {<br>
+                        cout << "Sum of a and b is less than 25";<br>
+                        }<br>
+                        return 0;<br>
+                    } <br>
+                    
+            </p>
+            
+        <div class="line"></div>
+        <div id="foremediaads-e1"></div>
+        <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/e1"></script>
+
+        <h5>Task 2: Find the volume of the rectangular box. Note: volume = length x width x height</h5>
+        <br><h4>Output:</h4>
+        <img src="1.2.png" class="img-thumbnail" alt="1.2 image">
+
+        <br><br><h4>Source Code</h4>
+        <p style="background-color: black; color:white">
+            #include iostream <br>
+                using namespace std;<br>
+                int main()<br>
+                {<br>
+                int w;<br>
+                int h;<br>
+                int l;<br>
+                cout << "Enter width of a Rectangular box \n";<br>
+                cin >> w;<br>
+                
+                cout << "Enter height of a rectangular box \n";<br>
+                cin >> h;<br>
+                
+                cout << "Enter length of a rectangular box \n";<br>
+                cin >> l;<br>
+                
+                int V = w * h * l;<br>
+                
+                cout << "Volume of a rectangular box: " << V;<br>
+                    return 0;<br>
+                } 
+                
+        </p>
+        
+    <div class="line"></div>
+
+    <h5>Task 3: Find the value of A such that A = (4x – 3y) / 2z</h5>
+    <br><h4>Output:</h4>
+    <img src="1.3.png" class="img-thumbnail" alt="1.3 image">
+
+    <br><br><h4>Source Code</h4>
+    <p style="background-color: black; color:white">
+        #include iostream <br>
+
+            using namespace std;<br>
+            
+            int main()<br>
+            {<br>
+               double x;<br>
+               double y;<br>
+               double z;<br>
+               cout << "Enter a value for variable x \n";<br>
+               cin >> x;<br>
+               cout << "Enter a value for variable y \n";<br>
+               cin >> y;<br>
+               cout << "Enter a value for variable z \n";<br>
+               cin >> z;<br>
+            
+               double A = (4*x-3*y)/2*z;<br>
+            
+               cout << "A = " << A;<br>
+                return 0;<br>
+            }<br>
+    </p>
+    
+<div class="line"></div>
+    
+
+<h5>Task 4: Write a program to display your personal information. (Name, age, address, father's name, college name, NIC, phone number etc.)</h5>
+<br><h4>Output:</h4>
+<img src="1.4.png" class="img-thumbnail" alt="1.4 image">
+
+<br><br><h4>Source Code</h4>
+<p style="background-color: black; color:white">
+    #include iostream <br>
+using namespace std;<br>
+int main()<br>
+{<br>
+    cout << "Name:Muhammad Sharjeel Baig\n";<br>
+    cout << "Age: 18\n";<br>
+    cout << "Gulistan-e-johar Karachi Pakistan \n";<br>
+    cout << "Father's name: Muhammad Mujeeb Baig \n";<br>
+    cout << "collage name: Government collage hyderabad\n";<br>
+    cout << "Nic: 413034-205109-3\n";<br>
+    cout << "Phone Number: +92-3432595361";<br>
+    return 0;<br>
+}<br>
+</p>
+
+<div class="line"></div>
+
+<h5>Task 5: Write a program to display your semester courses along with teacher name and credit hour.</h5>
+        <br><h4>Output:</h4>
+        <img src="1.5.png" class="img-thumbnail" alt="1.5 image">
+
+        <br><br><h4>Source Code</h4>
+        <p style="background-color: black; color:white">
+            #include iostream <br>
+                namespace std;<br>
+                int main () {<br>
+                cout << "-------------------------------------<br>---------------------------------------------<br>------------------------" << endl;<br>
+                cout << "| \t Course Name \t \t \t | \t Teacher name \t \t \t | \t Credit Hour \t |" << endl;<br>
+                cout << "=================================<br>=================================<br>===================================<br>=====" << endl;<br>
+                cout << "| Computer Programming \t \t | Engr. Adnan ur Rehman \t \t | 3 + 1 \t \t |" << endl;<br>
+                cout << "| Computing Fundamentals \t \t | Engr. Mahwish Khan \t \t \t | 2 + 1 \t \t |" << endl;<br>
+                cout << "| Applied Physics \t \t \t | Engr. Rizwan Iqbal \t \t | 3 + 1 \t \t |" << endl;<br>
+                cout << "| English I \t \t \t \t | Engr.Bushra fazal \t \t \t | 3 + 0 \t \t |" << endl;<br>
+                cout << "---------------------------------------<br>---------------------------------------------<br>----------------------" << endl;<br>
+                return 0;}<br>
+                
+        </p>
+        
+    <div class="line"></div>
+
+    <div id="foremediaads-e1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/e1"></script>
+
+
+            <h2 id="vdt">Topic 2: Variables & Data types </h2> <br>
+
+            <h5>Task 1:	Write a C++ program that finds the (add, sub, divide, multiple) two integers. The two integers should be taken as input from the user. At the end, display the numbers that are input by the user and their sum with proper cout statements.</h5>
+            <br><h4>Output:</h4>
+            <img src="2.1.png" class="img-thumbnail" alt="2.1">
+
+            <br><br><h4>Source Code</h4>
+            <p style="background-color: black; color:white">
+                int main(int argc, char** argv) {<br>
+                    double a;<br>
+                    double b;<br>
+                    double sum;<br>
+                    double sub;<br>
+                    double mul;<br>
+                    double divide;<br>
+                    cout << "Enter value for a\n";<br>
+                    cin >> a;<br>
+                    cout << "Enter value for b\n";<br>
+                    cin >> b;<br>
+                    divide = a / b;<br>
+                    sum = a + b;<br>
+                    mul = a * b;<br>
+                    sub = a -b;<br>
+                    cout << "Result : \n";<br>
+                    cout << "sum : " <<  sum << endl;<br>
+                    cout << "sub : " <<  sub << endl;<br>
+                    cout << "mul : " <<  mul << endl;<br>
+                    cout << "divide : " <<  divide;<br>
+                    
+           
+                    return 0;<br>
+                }                
+            </p>
+            
+        <div class="line"></div>
+        <div id="foremediaads-c3"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c3"></script>
+
+        <h5>Task 2: Write a program and print the output of first equation of the motion. For values take input from user.</h5>
+        <br><h4>Output:</h4>
+        <img src="2.2.png" class="img-thumbnail" alt="2.3">
+
+        <br><br><h4>Source Code</h4>
+        <p style="background-color: black; color:white">
+            int main(int argc, char** argv) {<br>
+                double vf;<br>
+                double vi;<br>
+                double a;<br>
+                double t;<br>
+                cout << "Enter value of Vi \n";<br>
+                cin>> vi;<br>
+                cout << "Enter value of acceleration \n";<br>
+                cin >> a;<br>
+                cout << "Enter value of time \n";<br>
+                cin >> t;<br>
+                vf = vi + (a*t);<br>
+                cout << "Vf = " << vf;<br>
+                
+                return 0;<br>
+            }
+        </p>
+        
+    <div class="line"></div>
+
+    <h5>Task 3: Write a program that prompt user to input course name, obtained marks and total marks. Calculate the percentage using this formula and display the results as follows. <br> marks percentage = marks obtained / total * 100 
+</h5>
+    <br><h4>Output:</h4>
+    <img src="2.3.png" class="img-thumbnail" alt="2.3">
+
+    <br><br><h4>Source Code</h4>
+    <p style="background-color: black; color:white">
+        int main() <br>
+{<br>
+    	double m1,m2,m3,m4,m5;<br>
+    	double total=500;<br>
+    	double obtainedmarks;<br>
+    	double percentage;<br>
+	string coursename1,coursename2,<br> coursename3,coursename4,coursename5;<br>
+	cout<<"enter coursename"<<endl; <br>
+	cin>>coursename1;<br> 
+	cout<<"enter marks"<<endl; <br>
+	cin>>m1;<br>
+	cout<<"enter coursename"<<endl; <br>
+	cin>>coursename2; <br>
+	cout<<"enter marks"<<endl; <br>
+	cin>>m2;<br>
+	cout<<"enter coursename"<<endl; <br>
+	cin>>coursename3;<br>
+	cout<<"enter marks"<<endl; <br>
+	cin>>m3;<br>
+	cout<<"enter coursename"<<endl; <br>
+	cin>>coursename4;<br>
+	cout<<"enter marks"<<endl; <br>
+	cin>>m4;<br>
+	cout<<"enter coursename"<<endl; <br>
+	cin>>coursename5;<br>
+	cout<<"enter marks"<<endl; <br>
+	cin>>m5; <br>
+	obtainedmarks=m1+m2+m3+m4+m5;<br>
+	percentage=(obtainedmarks/total)*100;<br>
+	cout<<"percentage : "<<percentage; <br>
+}
+
+    </p>
+    
+<div class="line"></div>
+
+<h5>Task 4: Write a program that finds the value of X by using given formula. Take value of a and b from user. <br>
+    X= (a + b)2 – 2ab 
+</h5>
+<br><h4>Output:</h4>
+<img src="2.4.png" class="img-thumbnail" alt="2.4">
+
+<br><br><h4>Source Code</h4>
+<p style="background-color: black; color:white">
+    int main(int argc, char** argv) { <br>
+        double a,b,x;<br>
+        cout << "Enter value of a\n";<br>
+        cin >> a;<br>
+        cout << "Enter value of b\n";<br>
+        cin >> b;<br>
+        double s = a+b;<br>
+        double w = pow(2,s);<br>
+        x = w-2*a*b;<br>
+        cout << "X: " << x << endl;<br>
+        return 0;<br>
+    }
+</p>
+
+<div class="line"></div>
+
+
+
+  
+
+                       <h2 id="cs">Topic 3: Conditional Statement </h2> <br>
+
+                       <h5>Task 1: Make a logic to recognize if a number is even or odd?</h5>
+                       <br><h4>Output:</h4>
+                       <img src="3.1.png" class="img-thumbnail" alt="3.1">
+           
+                       <br><br><h4>Source Code</h4>
+                       <p style="background-color: black; color:white">
+                        int main()  <br>
+                        {<br>
+                        int number;<br>
+                        cout << "Enter a number \n";<br>
+                        cin >> number;<br>
+                        if((number % 2) == 0){<br>
+                            cout << "Even";<br>
+                        } else {<br>
+                            cout << "Odd";<br>
+                        }<br>
+                            return 0;<br>
+                        }
+                        
+                       </p>
+                       
+                   <div class="line"></div>
+           
+                   <h5>Task 2: Write a program that inputs a character as input and tells whetehr the entered character is vowel or not.</h5>
+                   <br><h4>Output:</h4>
+                   <img src="3.2.png" class="img-thumbnail" alt="3.2">
+           
+                   <br><br><h4>Source Code</h4>
+                   <p style="background-color: black; color:white">
+                    int main()<br>
+                    {<br>
+                    char character;<br>
+                    cout << "Enter a character \n";<br>
+                    cin >> character;<br>
+                    if(character == 'a'|| character == 'e'|| character == 'i'|| character =='o'|| character =='u'){<br>
+                        cout << "vowel";<br>
+                    } else {<br>
+                        cout << "not a vowel";<br>
+                    }<br>
+                        return 0;<br>
+                    }
+                    
+                   </p>
+                   
+               <div class="line"></div>
+           
+               <h5>Task 3: Write a program in which taking many inputs from user and print smallest input.</h5>
+               <br><h4>Output:</h4>
+               <img src="3.3.png" class="img-thumbnail" alt="">
+           
+               <br><br><h4>Source Code</h4>
+               <p style="background-color: black; color:white">
+                int main() <br>
+                {<br>
+                int a,b,c;<br>
+                cout << "Enter value for variable a\n";<br>
+                cin >> a;<br>
+                cout << "Enter value for variable b\n";<br>
+                cin >> b;<br>
+                cout << "Enter value for variable c\n";<br>
+                cin >> c;<br>
+                if(a<b&&a<c){<br><br>
+                    cout << "a is smallest";<br>
+                }else if(b < a&&b <c ){<br>
+                    cout << "b is smallest";<br>
+                } else if(c <a&&c< b ){<br>
+                    cout << "c is smallest";<br>
+                }<br>
+                    return 0;<br>
+                }
+                
+               </p>
+               
+           <div class="line"></div>
+           
+           
+
+  
+
+                       <h2 id="ssfl">Topic 4: Switch Statement & For Loop </h2> <br>
+
+                       
+           
+                   <h5>Task 1: Write a program in which user input value and you will show name of month.</h5>
+                   <br><h4>Output:</h4>
+                   <img src="4.1.png" class="img-thumbnail" alt="4.1">
+           
+                   <br><br><h4>Source Code</h4>
+                   <p style="background-color: black; color:white">
+                    int main (){<br>
+                        int month;<br>
+                        cout<<"Enter month: ";<br>
+                        cin>>month;<br>
+                    
+                        switch(month){<br>
+                        case 1:<br>
+                            cout<<"Jan"<<endl; <br>
+                            break;<br>
+                        case 2:<br>
+                            cout<<"Feb"<<endl; <br>
+                            break;<br>
+                        case 3:<br>
+                            cout<<"Mar"<<endl; <br>
+                            break;<br>
+                        case 4:<br>
+                            cout<<"Apr"<<endl; <br>
+                            break;<br>
+                        case 5:<br>
+                            cout<<"May"<<endl; <br>
+                            break;<br>
+                        case 6:<br>
+                            cout<<"Jun"<<endl; <br>
+                            break;<br>
+                        case 7:<br>
+                            cout<<"Jul"<<endl; <br>
+                            break;<br>
+                        case 8:<br>
+                            cout<<"Aug"<<endl; <br>
+                            break;<br>
+                        case 9:<br>
+                            cout<<"Sep"<<endl; <br>
+                            break;<br>
+                        case 10:<br>
+                            cout<<"Oct"<<endl; <br>
+                            break;<br>
+                        case 11:<br>
+                            cout<<"Nov"<<endl; <br>
+                            break;<br>
+                        case 12:<br>
+                            cout<<"Dec"<<endl; <br>
+                            break;<br>
+                    
+                        default: // default is for when you enter a number out of 1-12 range. for instance, 13 <br>
+                            cout<<"invalid input!"<<endl; <br>
+                        }<br>
+                    
+                        return (0);<br>
+                    }
+                    
+                   </p>
+                   
+               <div class="line"></div>
+           
+               <h5>Task 2: Write a program in which take any character and check whether it is digit or not.</h5>
+               <br><h4>Output:</h4>
+               <img src="4.2.png" class="img-thumbnail" alt="4.2">
+           
+               <br><br><h4>Source Code</h4>
+               <p style="background-color: black; color:white">
+                int main()<br>
+                {<br>
+                    char num;<br>
+                    cout<<"Enter a character:"<<endl; <br>
+                    cin>>num;<br>
+                    switch(num>='a'&& num<='z'||num>='A'&& num<='Z')<br>
+                    {<br>
+                        case 1:<br>
+                            cout<<"It's alphabet"<<endl; <br>
+                            break;<br>
+                            case 0:<br>
+                                switch(num>='0' && num<='9')<br>
+                                {<br>
+                                    case 1:<br>
+                                        cout<<"It's digit"<<endl; <br>
+                                        break;<br>
+                                        case 0:<br>
+                                            cout<<"It's not alphabet and not digit"<<endl; <br>
+                                            break;<br>
+                                }<br>
+                            break;	<br>
+                    }<br>
+                }
+                
+               </p>
+               
+           <div class="line"></div>
+           
+           <h5>Task 3: Write a program in which take number from user and print sum of all odd numbers until user's number.</h5>
+           <br><h4>Output:</h4>
+           <img src="4.3.png" class="img-thumbnail" alt="4.3">
+           
+           <br><br><h4>Source Code</h4>
+           <p style="background-color: black; color:white">
+            int main()<br>
+            {<br>
+                int i, num, sum=0;<br>
+             
+              
+                cout<<"Enter any number: "<<endl; <br>
+                cin>>num;<br>
+             
+                 for(i=1; i<=num; i+=2)<br>
+            
+                 {<br>
+                 
+                    sum += i;<br>
+                 }<br>
+                 cout<<"Sum of all odd number between 1 to " << num << ": "<<sum; <br>
+             
+                return 0;<br>
+            }
+            
+           </p>
+           
+           <div class="line"></div>
+           
+           
+           <h5>Task 4: Write a program in which take number from user and print square of all numbers until user's number.</h5>
+           <br><h4>Output:</h4>
+           <img src="4.4.png" class="img-thumbnail" alt="4.4">
+           
+           <br><br><h4>Source Code</h4>
+           <p style="background-color: black; color:white">
+            int main()<br>
+            {<br>
+               int i,x,cub;<br>
+             
+             
+             cout<<"Input number: ";<br>
+             cin>>x;<br>
+             
+              
+             for (i=1 ;i<=x; i++)<br>
+             {<br>
+              cub= i*i*i;<br>
+              cout<<"Number is: "<<i<< " and cube of "<<i<<" is: "<<cub <<endl; <br>
+            }<br>
+            
+                return 0;<br>
+            }
+            
+           </p>
+           <div id="foremediaads-c3"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c3"></script>
+           
+           <div class="line"></div>
+           <h5>Task 5: Write a program in which take number from user and print table of number.</h5>
+           <br><h4>Output:</h4>
+           <img src="4.5.png" class="img-thumbnail" alt="4.5">
+           
+           <br><br><h4>Source Code</h4>
+           <p style="background-color: black; color:white">
+            int main()<br>
+{<br>
+    int n = 5;<br>
+    for (int i = 1; i <= 10; ++i) {<br>
+        cout << n << " * " << i << " = " << n * i << endl;<br>
+    }<br>
+    
+    return 0;<br>
+}<br>
+
+            
+           </p>
+           
+           
+           
+           <div class="line"></div>
+           <h5>Task 6: Write a program in which take numbers from user and print sum of all numbers.</h5>
+           <br><h4>Output:</h4>
+           <img src="4.6.png" class="img-thumbnail" alt="4.6">
+           
+           <br><br><h4>Source Code</h4>
+           <p style="background-color: black; color:white">
+            int main(){ <br>
+                int i;<br>
+                int positiveNumber = 0;<br>
+                for (i = 1; i <= 10;i++){<br>
+                    int number;<br>
+                    cout << "Enter a number \n";<br>
+                    cin >> number;<br>
+                    if (number >= 0){<br>
+                        positiveNumber += number;<br>
+            
+                    }<br>
+                    
+            
+                }<br>
+                cout << "Sum of positive numbers: "<< positiveNumber;<br>
+                return 0;<br>
+            
+            }                        
+           
+           </p> 
+           
+           <div class="line"></div>
+                       <!-- User Input -->
+
+                        <h2 id="wdwl">Topic 5: While & Do-while Loop </h2> <br>
+
+                       <h5>Task 1: Write a while loop that counts backwards from 20 to 10</h5>
+                       <br><h4>Output:</h4>
+                       <img src="5.1.png" class="img-thumbnail" alt="">
+           
+                       <br><br><h4>Source Code</h4>
+                       <p style="background-color: black; color:white">
+                        int main()<br>
+                        { int a=20;<br>
+                        while(a>=10)<br>
+                        { cout<< "value of a: "<<a<<endl;<br>
+                        a=a-1;<br>
+                        }<br>
+                        return 0;<br>
+                        }<br>
+                        
+                       </p>
+                       
+                   <div class="line"></div>
+           
+                   <h5>Task 2: Write a C++ Program that displays a series of alphabets in descending order from ‘Z’ to ‘A</h5>
+                   <br><h4>Output:</h4>
+                   <img src="5.2.png" class="img-thumbnail" alt="">
+           
+                   <br><br><h4>Source Code</h4>
+                   <p style="background-color: black; color:white">
+                    int main()<br>
+                    { char c= 'Z';<br>
+                    cout<<"---Alphabets in decending order---"<<endl;<br><br>
+                    while(c >='A')<br>
+                    { cout<<c<<" ";<br>
+                    c--;<br>
+                    } return 0;<br>
+                    }
+                    
+                   </p>
+                   
+               <div class="line"></div>
+           
+               <h5>Task 3: Write a C ++ program to count number of digits in a number.</h5>
+               <br><h4>Output:</h4>
+               <img src="5.3.png" class="img-thumbnail" alt="">
+           
+               <br><br><h4>Source Code</h4>
+               <p style="background-color: black; color:white">
+                int main()<br>
+                {<br>
+                int num, tot=0;<br>
+                cout<<"Enter the Number: ";<br>
+                cin>>num;<br>
+                while(num>0)<br>
+                { tot++;<br>
+                num=num/10;<br>
+                }<br>
+                cout<<endl;<br>
+                cout<<"Total digits are: "<<tot;<br>
+                cout<<endl;<br>
+                return 0;<br>
+                }
+                
+               </p>
+               
+           <div class="line"></div>
+           
+           <h5>Task 4: Write a program that takes an integer value and decide if it is even or odd. Continue asking for. Numbers till the user enters a negative value. The program then displays the total number of even and odd integers given. Use do While statement</h5>
+           <br><h4>Output:</h4>
+           <img src="5.4.png" class="img-thumbnail" alt="">
+           
+           <br><br><h4>Source Code</h4>
+           <p style="background-color: black; color:white">
+            int main()<br>
+            { int num;<br>
+            int even=0;<br>
+            int odd=0;<br>
+            do<br>
+            {<br>
+            cout<<"Enter a number \n";<br>
+            cin>>num;<br>
+            if(num %2 ==0)<br>
+            {<br>
+            cout<<"Number is Even \n";<br>
+            even++;<br>
+            }<br>
+            else<br>
+            {<br>
+            cout<<"Number is Odd \n";<br>
+            odd++;<br>
+            }<br>
+            }<br>
+            while(num>0);<br>
+            cout<<"Even numbers: "<<even<<endl;<br>
+            cout<<"Odd numbers: "<<odd<<endl;<br>
+            return 0; <br>
+            } 
+           </p>
+           
+           <div class="line"></div>
+           
+           
+           <h5>Task 5: Write a program that inputs an integer larger than 1 and calculates the sum of squares from 1 to that integer. For example, if the integer equals 4, the sum of squares is 30 (1+4+9+16). The output should be the value of the integer and the sum, properly labeled. Continue the program till the user enters a value less than 1 which signals the end of the program. Use a do While statement.</h5>
+           <br><h4>Output:</h4>
+           <img src="5.5.png" class="img-thumbnail" alt="">
+           
+           <br><br><h4>Source Code</h4>
+           <p style="background-color: black; color:white">
+            int main(){ <br>
+                int n; <br>
+                do{<br>
+                    cout << "Enter a value\n";<br>
+                    cin>> n;<br>
+                    int formula = (n * (n + 1) / 2) * (2 * n + 1) / 3;<br>
+                cout << formula << endl; <br>
+                } while(n != 1);<br>
+                return 0; <br>
+                }<br>
+                
+           </p>
+           
+           <div class="line"></div>
+           <h5>Task 6: Write an exec with a DO WHILE loop that asks passengers on a commuter airline if they want a window seat and keeps track of their responses. The flight has 8 passengers and 4 window seats. Discontinue the loop when all the window seats are taken. After the loop ends, display the number of window seats taken and the number of passengers questioned.</h5>
+                       <br><h4>Output:</h4>
+                       <img src="5.6.png" class="img-thumbnail" alt="">
+           
+                       <br><br><h4>Source Code</h4>
+                       <p style="background-color: black; color:white">
+                        int main() <br>
+                        {<br>
+                        int window_seats=0;<br>
+                        int passenger=0;<br>
+                        char x;<br>
+                        do<br>
+                        {<br>
+                        cout<<"Do you want a window seat press y otherwise n: "<<endl;<br>
+                        cin>>x;<br>
+                        if(x=='y')<br>
+                        {<br>
+                        window_seats++;<br>
+                        passenger++;<br>
+                        }<br>
+                        else<br>
+                        passenger ++;<br>
+                        }while(passenger<=8&&window_seats<4); <br>
+                        cout<<"total no of window seats"<<window_seats; br>
+                        cout<<"total no of passenger"<<passenger; <br>
+                        return 0;<br>
+                        }
+                        
+                       </p>
+                       
+                   <div class="line"></div>
+
+
+
+                       <h2 id="nl">Topic 6: Nested Loop </h2> <br>
+
+                       <h5>Task 1: Write a nested if statement to print the appropriate activity depending on the value of a variable temperature and humidity as in the table below: Assume that the temperature can only be warm and cold, and the humidity can only be dry and humid.</h5>
+                       <br><h4>Output:</h4>
+                       <img src="6.1.png" class="img-thumbnail" alt="6.1">
+           
+                       <br><br><h4>Source Code</h4>
+                       <p style="background-color: black; color:white">
+                        int main() {<br>
+                            string temperature;<br>
+                            cout << "Enter Temperature\n";<br>
+                                cin >> temperature;<br>
+                            string humidity;<br>
+                            cout << "Enter humidity\n";<br>
+                            cin >> humidity;<br>
+                            if(temperature == "warm")<br>
+                            {<br>
+                                if(humidity == "dry"){<br>
+                                    cout << "play tennis";<br>
+                                } else if(humidity == "humid"){<br>
+                                    cout<<"Swim";<br>
+                                } else {<br>
+                                    cout << "Invalid Value";<br>
+                                }<br>
+                            } else if(temperature == "cold"){<br>
+                                if(temperature == "dry"){<br>
+                                    cout << "play basketball";<br>
+                                } else if(temperature == "humid"){<br>
+                                    cout << "watch tv";<br>
+                                }<br>
+                            } else{<br>
+                                cout << "Invalid Values Entered";<br>
+                            }<br>
+                            return 0;<br>
+                        }
+                        
+                       </p>
+                       
+                   <div class="line"></div>
+           
+                   <h5>Task 2: Generate Stars using 2 for loops <br>
+                    *<br>
+                    **<br>
+                    ***<br>
+                    ****<br>
+                    *****<br>
+                    ******
+                    </h5>
+                   <br><h4>Output:</h4>
+                   <img src="6.2.png" class="img-thumbnail" alt="6.2">
+           
+                   <br><br><h4>Source Code</h4>
+                   <p style="background-color: black; color:white">
+                    int main()<br>
+                    {<br>
+                        int rows = 6;<br>
+                        for(int i = 1; i <= rows; ++i)<br>
+                        {<br>
+                            for(int j = 1; j <= i; ++j)<br>
+                            {<br>
+                                cout << "* ";<br>
+                            }<br>
+                            cout << "\n";<br>
+                        }<br>
+                        return 0;<br>
+                    }
+                    
+                   </p>
+                   
+               <div class="line"></div>
+           
+               <h5>Task 3: Generate stars using nested for loop? <br>
+                **********<br>
+                *********<br>
+                ********<br>
+                *******<br>
+                ******<br>
+                *****<br>
+                ****<br>
+                ***<br>
+                **<br>
+                *<br>
+                </h5>
+               <br><h4>Output:</h4>
+               <img src="6.3.png" class="img-thumbnail" alt="6.3">
+           
+               <br><br><h4>Source Code</h4>
+               <p style="background-color: black; color:white">
+                int main()<br>
+                {<br>
+                int  i, j, n;<br>
+                n=10;<br>
+                for(i = n; i >= 1; i--)<br>
+                {<br>
+                for(j = 1; j <= i; j++)<br>
+                {<br>
+                cout << "* ";<br>
+                }<br>
+                cout << "\n";<br>
+                }<br>
+                return 0;<br>
+                }
+                
+               </p>
+               
+           <div class="line"></div>
+           
+           <h5>Task 4: Write a c# program using nested loop print chap 1 to chap 5 each chapter contain 5 section.</h5>
+           <br><h4>Output:</h4>
+           <img src="6.4.png" class="img-thumbnail" alt="6.4">
+           
+           <br><br><h4>Source Code</h4>
+           <p style="background-color: black; color:white">
+            int main()<br>
+            {<br>
+               for(int i = 1; i <= 5; i++){<br>
+                   cout<< "Chapter " << i<<endl;<br>
+                  for(int j = 1; j<=5;j++){<br>
+                   cout<< "Section " << j<<endl;   <br>
+                  }<br>
+               }<br>
+                return 0;<br>
+            }
+            
+           </p>
+           
+           <div class="line"></div>
+           
+           
+           <h5>Task 5: Print the time table of 1 to 9 using nested loop.(hint: you need to use an if-else statement to check whether the product is single-digit or double-digit)and print  an additional space if needed.<br>
+            1   2    3    4     5    6      7     8     9 <br>
+            2   4    6    8    10   12   14   16   18 <br>
+            </h5>
+           <br><h4>Output:</h4>
+           <img src="6.5.png" class="img-thumbnail" alt="6.5">
+           
+           <br><br><h4>Source Code</h4>
+           <p style="background-color: black; color:white">
+            int main()<br>
+            {<br>
+                int i,j,c;<br>
+                for(i=1; i<=10; i++)<br>
+                {<br>
+                    for(j=1; j<=9; j++)<br>
+                    {<br>
+                      c=i*j;<br>
+                      cout<<c<<" ";<br>
+                    }<br>
+                    cout<<"\n";<br>
+                }<br>   
+            }
+            
+           </p>
+           
+           <div class="line"></div>
+
+           <h5>Task 6: Write a program in C++ to make such a pattern like a pyramid with an asterisk.</h5>
+           <br><h4>Output:</h4>
+           <img src="6.6.png" class="img-thumbnail" alt="6.6">
+           
+           <br><br><h4>Source Code</h4>
+           <p style="background-color: black; color:white">
+            int main()<br>
+            {<br>
+               int i,j,spc,rows,k;<br>
+            rows = 5;<br>
+               spc=rows+4-1;<br>
+               for(i=1;i<=rows;i++)<br>
+               {<br>
+                     for(k=spc;k>=1;k--)<br>
+                        {<br>
+                          cout<<" ";<br>
+                        }<br>
+                   for(j=1;j<=i;j++)<br>
+                   cout<<"*"<<" ";<br>
+                cout<<endl;<br>
+                spc--;<br>
+               }<br>
+            }
+            
+           </p>
+           
+           <div class="line"></div>
+
+          
+
+
+
+                       <h2 id="a">Task 7: Array</h2> <br>
+
+                       <h5>Task 1: Write a program in C++ to count the positive, negative and zero values present in an array.</h5>
+                       <br><h4>Output:</h4>
+                       <img src="7.1.png" class="img-thumbnail" alt="7.1">
+           
+                       <br><br><h4>Source Code</h4>
+                       <p style="background-color: black; color:white">
+                        int main(){<br>
+                            int input[100], count, i, nCount=0, pCount=0, zCount=0;   <br>                          
+                            cout << "Enter Number of Elements in Array\n";<br>
+                            cin >> count;                       <br>
+                            cout << "Enter " << count << " numbers \n";           <br>       
+                            for(i = 0; i < count; i++){<br>
+                                cin >> input[i];<br>
+                            }                         <br>
+                            for(i = 0; i < count; i++){<br>
+                                if(input[i] < 0) {<br>
+                                    nCount++;<br>
+                                } else if(input[i] > 0) {<br>
+                                    pCount++;<br>
+                         } else {<br>
+                             zCount++;<br>
+                         }<br>
+                            }<br>                   
+                            cout << "Negative Numbers : " << nCount << endl;<br>
+                            cout << "Positive Numbers : " << pCount << endl;<br>
+                            cout << "Zeroes : " << zCount << endl;          <br>                
+                            return 0;<br>
+                        }
+                        
+                       </p>
+                       
+                   <div class="line"></div>
+           
+                   <h5>Task 2: Write a C program to search an element entered by user from array and display the searched element and its location.<br>
+                    Sample Inputs: <br>
+                    </h5>
+                   <br><h4>Output:</h4>
+                   <img src="7.2.png" class="img-thumbnail" alt="7.2">
+           
+                   <br><br><h4>Source Code</h4>
+                   <p style="background-color: black; color:white">
+                    int main()<br>
+                    {<br>
+                        int array[5];<br>
+                        cout<<"Enter Array Elements:"<<endl;<br>
+                        for(int i=0; i<=5; i++)<br>
+                        {<br>
+                            cin>>array[i];<br>
+                        }<br>
+                        for(int i=0; i<=5; i++)<br>
+                        {<br>
+                            if(array[i]==6)<br>
+                            {<br>
+                                cout<<"Item found at position "<<i<<endl;<br>
+                            }<br>        
+                        }<br>
+                        return 0;<br>
+                    }
+                    
+                   </p>
+                   
+               <div class="line"></div>
+           
+               <h5>Task 3: Make a program in C++ in which take 5 numbers from user and then give max and min value. Using arrays.</h5>
+               <br><h4>Output:</h4>
+               <img src="7.3.png" class="img-thumbnail" alt="7.3">
+           
+               <br><br><h4>Source Code</h4>
+               <p style="background-color: black; color:white">
+                int main()<br>
+                {<br>
+                    int array[5];<br>
+                    int i, max, min;<br>
+                    for(i=0; i<5; i++)<br>
+                        cin>>array[i];<br>
+                    max = array[0];<br>
+                    min = array[0];<br>
+                    for(i=1; i<5; i++)<br>
+                    {<br>
+                        if(array[i] > max)<br>
+                            max = array[i];<br>
+                        if(array[i] < min)<br>
+                            min = array[i];<br>
+                    }<br>
+                    cout<<"\nMaximum element =" << max << "\n";<br>
+                    cout<<"Minimum element =" << min;<br>
+                    return 0;<br>
+                }
+                
+               </p>
+               
+           <div class="line"></div>
+           
+           <h5>Task 4: Write a C++ program that ask user to enter 10 integer values. Store those values in one dimension array. Create another array of same size, and store the values of first array in reverse order. </h5>
+           <br><h4>Output:</h4>
+           <img src="7.4.png" class="img-thumbnail" alt="7.4">
+           
+           <br><br><h4>Source Code</h4>
+           <p style="background-color: black; color:white">
+            int main()<br>
+            {<br>
+                int arr[10], i;<br>
+                cout<<"Enter 10 Array Elements:\n ";<br>
+                for(i=0; i<10; i++) <br>
+                    cin>>arr[i];<br>
+                cout<<"The Original Array is: \n";<br>
+                for(i=0; i<10; i++)<br>
+                    cout<<arr[i]<<" ";<br>
+                cout<<"The Reverse of Given Array is \n: ";<br>
+                for(i=(10-1); i>=0; i--)<br>
+                    cout<<arr[i];<br>
+                return 0;<br>
+            }<br>
+            
+           </p>
+           
+           <div class="line"></div> 
+           
+
+
+                       <!-- User Input -->
+
+                        <h2 id="f">Topic 8: Function </h2> <br>
+
+                        <h5>Task 1: Create a calculator that takes a number, a basic math operator (+,-,*,/,^), and a second number all from user input, and have it print the result of the mathematical operation. The mathematical operations should be wrapped inside of functions.</h5>
+                       <br><h4>Output:</h4>
+                       <img src="8.1.png" class="img-thumbnail" alt="">
+           
+                       <br><br><h4>Source Code</h4>
+                       <p style="background-color: black; color:white">
+                        double calculateSalary(double grade,double house,double providance){<br>
+                            int netSalary=0;<br>
+                            cout<<"Enter a Basic Salary"<<endl;<br>
+                            double basicSalary;<br>
+                            cin>>basicSalary;<br>
+                            providance= providance*basicSalary;<br>
+                            house=house*basicSalary;<br>
+                            netSalary=basicSalary+house-providance-grade;<br>
+                            cout<<"your net salary :  "<<netSalary<<endl;<br>          
+                }<br>
+                int main()<br>
+                {<br>
+                     double a=1000;<br>
+                     double b=500;<br>
+                     double c=200;<br>
+                     cout<<"Select Grade"<<endl; <br>
+                     cout<<"A For Grade A"<<endl;<br>
+                     cout<<"B For Grade B"<<endl;<br>
+                     cout<<"C For Grade C"<<endl;<br>
+                     char grade;<br>
+                     cin>>grade;<br>
+                     switch(grade)<br>
+                    {<br>
+                        case 'a':<br>
+                calculateSalary(a,0.10,0.07);<br>
+                            break;<br>
+                        case 'b' :<br>
+                            calculateSalary(b,(7/100),(7/100));<br>
+                            break;<br>
+                        case 'c':<br>
+                            calculateSalary(c,(5/100),(7/100));<br>
+                            break;<br>
+                            default:<br>
+                                cout<<"Invalid input"<<endl;<br>
+                    }<br>
+                    return 0;<br>
+                }
+                       </p>
+                       
+                   <div class="line"></div> 
+           
+                    <h5>Task 2: Write a program to print the factorial of a number by defining a function named 'Factorial'.<br>
+                        Factorial of any number n is represented by n! And is equal to 1*2*3*....*(n-1)*n. E.g.-<br>
+                        4! = 1*2*3*4 = 24<br>
+                        3! = 3*2*1 = 6<br>
+                        2! = 2*1 = 2<br>
+                        Also,<br>
+                        1! = 1<br>
+                        0! = 0<br>
+                        </h5>
+                   <br><h4>Output:</h4>
+                   <img src="8.2.jpg" class="img-thumbnail" alt="">
+           
+                   <br><br><h4>Source Code</h4>
+                   <p style="background-color: black; color:white">
+                    double calculateSalary(double grade,double house,double providance){<br>
+                        int netSalary=0;<br>
+                        cout<<"Enter a Basic Salary"<<endl;<br>
+                        double basicSalary;<br>
+                        cin>>basicSalary;<br>
+                        providance= providance*basicSalary;<br>
+                        house=house*basicSalary;<br>
+                        netSalary=basicSalary+house-providance-grade;<br>
+                        cout<<"your net salary :  "<<netSalary<<endl;<br>
+            
+            }<br>
+            int main()<br>
+            {<br>
+                 double a=1000;<br>
+                 double b=500;<br>
+                 double c=200;<br>
+                 cout<<"Select Grade"<<endl;<br>
+                 cout<<"A For Grade A"<<endl;<br>
+                 cout<<"B For Grade B"<<endl;<br>
+                 cout<<"C For Grade C"<<endl;<br>
+                 char grade;<br>
+                 cin>>grade;<br>
+                 switch(grade)<br>
+                {<br>
+                    case 'a':<br>
+            calculateSalary(a,0.10,0.07);<br>
+                        break;<br>
+                    case 'b' :<br>
+                        calculateSalary(b,(7/100),(7/100));<br>
+                        break;<br>
+                    case 'c':<br>
+                        calculateSalary(c,(5/100),(7/100));<br>
+                        break;<br>
+                        default:<br>
+                            cout<<"Invalid input"<<endl;<br>
+                }<br>
+                return 0;<br>
+            }
+            
+                   </p> 
+                   
+               <div class="line"></div>
+               <div id="foremediaads-c3"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c3"></script>
+
+                       <h5>Task 3: Write a method table() which generates multiplicative table of an integer. The function receives three integers as its arguments. The first argument determine the table to be generated while the second and the third integer tell the starting and ending point respectively. Ask the user to provide the three integer as input in the main().</h5>
+                       <br><h4>Output:</h4>
+                       <img src="9.1.png" class="img-thumbnail" alt="">
+           
+                       <br><br><h4>Source Code</h4>
+                       <p style="background-color: black; color:white">
+                        void table(int table, int starter, int ender){<br>
+                            for(int i = starter; i <= ender; i++){<br>
+                            cout << table << " x " << i << " = "<< table * i<<endl;}} <br>
+                            int main()<br>
+                            {<br>
+                            
+                                table(5,1,50);<br>
+                                return 0;} <br>
+                            
+                       </p>
+                       
+                   <div class="line"></div>
+           
+                   
+                   
+           
+               <h5>Task 4: Write a method named square_cube() that computes the square and cube of the value passed to it and display the result. Ask the user to provide the integer input in the main() and then call the function.</h5>
+               <br><h4>Output:</h4>
+               <img src="9.3.png" class="img-thumbnail" alt="9.2">
+           
+               <br><br><h4>Source Code</h4>
+               <p style="background-color: black; color:white">
+                void square_cube(int input){<br>
+                    cout << "Square: " << input*input;<br>
+                    cout << "\nCube: "<< input*input*input;<br>
+                    }<br>
+                    int main()<br>
+                    {<br>
+                        int input;<br>
+                        cout << "Enter an input\n";<br>
+                        cin >> input;<br>
+                        square_cube(input);<br>
+                        return 0;<br>
+                    }
+                    
+               </p>
+               
+           <div class="line"></div>
+           
+           <h5>Task 5: Write a program in which swap two numbers.(call by value and call by reference )</h5>
+           <br><h4>Output:</h4>
+           <img src="9.4.png" class="img-thumbnail" alt="9.3">
+           
+           <br><br><h4>Source Code</h4>
+           <p style="background-color: black; color:white">
+            void swap(int num1,int num2){<br>
+                int reserved;<br>
+                reserved = num1;<br>
+                num1 = num2;<br>
+                num2 = reserved;<br>
+                cout << "number 1:<br> "<< num1<<endl;<br>
+                cout << "number 2:<br> "<< num2 << endl;<br>
+                }<br>
+                int main()<br>
+                {<br>
+                    int num1,num2;<br>
+                    cout << "Enter number 1: ";<br>
+                    cin >> num1;<br>
+                    cout << "Enter number 2: ";<br>
+                    cin >> num2;<br>
+                    swap(num1,num2);<br>
+                    return 0;<br>
+                }
+                
+           </p>
+           
+           <div class="line"></div>
+           
+           
+           <h5>Task 6: Write a program in C++ that receives temperature in degree Fahrenheit and prints its equivalent value in degree using function Celsius call by value .</h5>
+           <br><h4>Output:</h4>
+           <img src="9.5.png" class="img-thumbnail" alt="9.4">
+           
+           <br><br><h4>Source Code</h4>
+           <p style="background-color: black; color:white">
+            double celsius(double temp){<br>
+                double fereinheight = (temp - 32) * 5/9;<br>
+                return fereinheight;<br>
+                }<br>
+                
+                int main()<br>
+                {<br>
+                double fereinheight;<br>
+                cout << "Enter Fereignheight\n";<br>
+                cin >> fereinheight;<br>
+                cout << celsius(fereinheight);<br>
+                
+                
+                    return 0;<br>
+                }
+                
+           </p>
+           
+           <div class="line"></div>
+
+           <h5>Task 7: Write a C++ program to find the grade of student using function (pass by reference)
+            Whether the student should Re-sit or Redo depending on the following criteria.
+            33% or more on probation in exam Less than 33% repeat course. <br>
+            Program should prompt user for the number of subjects for which he/she wants to calculate the grade 2 or 3.<br>
+calcourse(s1,s2) // for two subjects.<br>
+calcourse(s1,s2,s3) // for three subjects.<br>
+calgrades():<br>
+These functions determine the grade of student on following:<br>
+ A grade: 87 - 100<br>
+B grade: 75 – 86<br>
+C grade: 65 – 74<br>
+D grade: 50 – 64 <br>
+F grade: < 50<br>
+
+            </h5>
+           <br><h4>Output:</h4>
+           <img src="9.6.png" class="img-thumbnail" alt="9.5">
+           
+           <br><br><h4>Source Code</h4>
+           <p style="background-color: black; color:white">
+            string grade(float &p)<br>
+            { <br>
+                if(p >86 && p<101)<br>
+             { <br>
+             return " Grade: A"; <br>
+             } <br>
+             else if(p >74 && p<87) <br>
+             { <br>
+             return " Grade: B"; <br>
+             }<br>
+             else if(p >64 && p<74)<br>
+             { <br>
+              return " Grade: C";<br>
+             }<br>
+              else if(p >49 && p<65)<br>
+              { <br>
+              return " Grade: D";<br>
+              }<br>
+              else if(p <50)<br>
+              { <br>
+              return " Grade: F"; <br>
+              }<br>
+          } <br>
+          int course1()<br>
+           { <br>
+           int s1; <br>
+           cout<<" Enter 1-Course Marks out of 100: ";<br>
+            return s1;<br>
+           } <br>
+           int course2()<br>
+            { <br>
+            int s2; <br>
+            cout<<" Enter 2-Course Marks out of 100: ";<br>
+             return s2; <br>
+            } <br>
+            int course3() <br>
+            { <br>
+            int s3; <br>
+            cout<<" Enter 3-Course Marks out of 100: ";<br>
+             return s3;<br>
+            } <br>
+            string repeatcourse1(int s1) <br>
+            { <br>
+            if(s1<33) <br>
+            { <br>
+            return " Course1: Resit";<br>
+            } <br>
+            else <br>
+            { <br>
+             return " Course1: Redo"; <br>
+            } <br>
+             
+            }  <br>
+            
+            string repeatcourse2(int s2) <br>
+            { <br>
+            if(s2<33)  <br>
+            { <br>
+            return " Course2: Resit";<br>
+            } <br>
+            else <br>
+            { <br>
+            return " Course2: Redo";<br>
+            } <br>
+            } <br>
+            string repeatcourse3(int s3) <br>
+            { <br>
+            if(s3<33) <br>
+            { <br>
+            return " Course3: Resit"; <br>
+            } <br>
+            else <br>
+            { <br>
+            return " Course3: Redo"; <br>
+            } } <br>
+            int main () <br>
+            { <br>
+            float obtain_marks; <br>
+            float p; int s1,s2,s3; s1=course1(); <br>
+            cin>>s1;<br>
+             s2=course2();<br>
+             cin>>s2;<br>
+             s3=course3(); <br>
+             cin>>s3; <br>
+             obtain_marks=s1+s2+s3; <br>
+             cout <<" obtained marks is: "<<obtain_marks<<endl; <br>
+             p=(obtain_marks/300)*100; <br>
+             cout<<" percentage is: "<<p; <br>
+             cout<<grade(p)<<endl; <br>
+             cout<<repeatcourse1(s1)<<endl; <br>
+             cout<<repeatcourse2(s2)<<endl; <br>
+             cout<<repeatcourse3(s3)<<endl; <br>
+          }
+          
+           </p>
+           
+           <div class="line"></div>
+
+           
+
+
+
+                       <h2 id="s">Topic 9: String  </h2> <br>
+
+                       <h5>Task 1: Find the length of the string (the String should be inserted by the user)</h5>
+                       <br><h4>Output:</h4>
+                       <img src="10.1.png" class="img-thumbnail" alt="">
+           
+                       <br><br><h4>Source Code</h4>
+                       <p style="background-color: black; color:white">
+                        int main() {<br>
+                            string myString;<br>
+                            getline(cin,myString);<br>
+                            cout << "Length : " << myString.length();<br>
+                        
+                            return 0;<br>
+                        }
+                        
+                       </p>
+                       
+                   <div class="line"></div>
+           
+                   <h5>Task 2: Take 2 strings as an input and concatenate them.</h5>
+                   <br><h4>Output:</h4>
+                   <img src="10.2.png" class="img-thumbnail" alt="10.2">
+           
+                   <br><br><h4>Source Code</h4>
+                   <p style="background-color: black; color:white">
+                    int main()<br>
+                    {<br>
+                        string str1, str2, newstr;<br>
+                        cout << "Enter string 1: ";<br>
+                        getline (cin, str1);<br>
+                        cout << "\n Enter string 2: ";<br>
+                        getline (cin, str2);<br>
+                        newstr = str1 + str2;//concatenation<br>
+                        cout << "\n Concated String: "<< newstr;<br>
+                        return 0;<br>
+                    }<br>
+                    
+                   </p>
+                   
+               <div class="line"></div>
+           
+               
+           
+           
+
+  
+
+                       <h2 id="p">Topic 10: Pointers  </h2> <br>
+
+                       <h5>Task 1: Initialize an integer array of 5 elements. Display values of all elements along with their addresses using pointers. </h5>
+                       <br><h4>Output:</h4>
+                       <img src="11.1.png" class="img-thumbnail" alt="11.1">
+           
+                       <br><br><h4>Source Code</h4>
+                       <p style="background-color: black; color:white">
+                        int main()<br>
+                        {<br>
+                            string array[5] = { "lorem ipsum", "shazi",<br> "welcome" , "OmG", "hi there" };<br>
+                            string* arraypointer= array;<br>
+                            cout<<"Adresses:"endl;<br>
+                            
+                        for(int i=0; i<5; i++ )<br>
+                        {<br>
+                            cout<<&arraypointer[i]<<endl;<br>
+                        }<br>
+                            cout<<endl;<br>
+                            cout<<endl;<br>
+                            cout<<"values:"<<endl;<br>
+                            
+                            for(int i=0; i<5; i++)<br>
+                            {<br>
+                                cout<< *(arraypointer + i)<<endl;<br>
+                            }<br>
+                            return 0;<br>
+                        }
+                        
+                       </p>
+                       
+                   <div class="line"></div>
+           
+                   <h5>Task 2: Write a program which uses a pointer variable pointing to three different integer values, one at a time. Alter the input integers by performing multiplication using the pointer variable and display the updated values.</h5>
+                   <br><h4>Output:</h4>
+                   <img src="11.2.png" class="img-thumbnail" alt="11.2">
+           
+                   <br><br><h4>Source Code</h4>
+                   <p style="background-color: black; color:white">
+                    void numswap(int &x, int &y)<br>
+                    {<br>
+                        int z=x;<br>
+                        
+                        x=y;<br>
+                        y=z;<br>
+                    }<br>
+                    
+                    int main()<br>
+                    {<br>
+                        int firstnum;<br>
+                        int secondnum;<br>
+                        
+                        cout<<"Enter first number"<<endl;<br>
+                        cin>>firstnum;<br>
+                        cout<<"Enter number 2"<<endl;<br>
+                        cin>>secondnum;<br>
+                        
+                        numswap(firstnum, secondnum);<br>
+                        cout<<"after swap"<<endl;<br>
+                        cout<<"first number:"<<firstnum<<endl;<br>
+                        cout<<"second number:"<<secondnum<<endl;<br>
+                        
+                        return 0;<br>
+                        
+                    }
+                    
+                    
+                   </p>
+                   
+               <div class="line"></div>
+           
+               <h5>Task 3: Write a program which use one function that swap the values by reference </h5>
+               <br><h4>Output:</h4>
+               <img src="11.3.png" class="img-thumbnail" alt="11.3">
+           
+               <br><br><h4>Source Code</h4>
+               <p style="background-color: black; color:white">
+                void getnumber(int *variable)<br>
+                {<br>
+                    cout<<"enter value"<<endl;<br>
+                    cin>>*variable;<br>
+                }<br>
+                
+                void doublevalue(int *variable)<br>
+                {<br>
+                     *variable=*variable*2;<br>
+                }<br>
+                
+                int main()<br>
+                {<br>
+                    int variableToStore;<br>
+                    getnumber(&variableToStore);<br>
+                    cout<<variableToStore<<endl;<br>
+                    doublevalue(&variableToStore);<br>
+                cout<<variableToStore<<endl;<br>
+                    return 0;<br>
+                }
+                
+               </p>
+               
+           <div class="line"></div>
+        
+           <h5>Task 4: Write a program which uses two functions and passes pointer as an argument .the function getNumber takes an input from the user and stores it in the pointer variable. The function double value doubles the value of the same.</h5>
+           <br><h4>Output:</h4>
+           <img src="11.4.png" class="img-thumbnail" alt="11.4">
+           
+           <br><br><h4>Source Code</h4>
+           <p style="background-color: black; color:white">
+            int main()<br>
+            {<br>
+                int a,b,c;<br>
+                a=2;<br>
+                b=6;<br>
+                c=8;<br>
+                int*pointer1 = &a;<br>
+                int* pointer2= &b;<br>
+                int* pointer3= &c;<br>  
+                *pointer1 =a*2;<br>
+                cout<<endl;<br>
+                *pointer2 =b*3;<br>
+                cout<<endl;<br>               
+                *pointer3 = c*4;<br>
+                cout<<endl;<br>
+                cout<<a<<endl;<br>       
+                cout<<b<<endl;<br>
+                cout<<c<<endl;<br>
+                
+                return 0;<br>
+            }
+            
+           </p>
+           
+           <div class="line"></div>
+           
+           
+
+
+                                  <h2 id="fh">Topic 11: File Handling  </h2> <br>
+
+                                  <h5>Task 1: Write a C++ that perform following task:<br>  
+                                    · Create a function Student () that prompt user to a student record. Student contains following details.<br> 
+                                    ID, Full Name, Email, Department and Phone Number. <br>
+                                    · Store the input in file student.txt <br>
+                                    · In main program call function Student() <br>
+                                    · Program should prompt user that you want to enter a new record. If ‘Y’ ask user for new details. If ‘N’, program should terminate. (Use event controlled loop) 
+                                    </h5>
+                                  <br><h4>Output:</h4>
+                                  <img src="12.1.png" class="img-thumbnail" alt="12.1">
+                      
+                                  <br><br><h4>Source Code</h4>
+                                  <p style="background-color: black; color:white">
+                                    void student(){<br>
+                                        int id,phone;<br>
+                                        string fullName,email,department;<br>
+                                        cout << "Enter student Id";<br>
+                                        cin >> id;<br>
+                                        cout << "Enter student full name";<br>
+                                        cin >> fullName;<br>
+                                        cout << "Enter student email";<br>
+                                        cin >> email;<br>
+                                        cout << "Enter student department";<br>
+                                        cin >> department;<br>
+                                        cout << "Enter student phone";<br>
+                                        cin >> phone;<br>
+                                        ofstream writeToStudent("student.txt");<br>
+                                        writeToStudent <<"full Name: "<<fullName<<"\n"<<"Id:"<<id<<"\n" <br>
+                                        <<"Email:"<<email<<"\n"<<"Department:"<<department<<"\n"<<"phone number:"<<phone ;}<br>
+                                    
+                                    
+                                    int main() {<br>
+                                        bool Continue;
+                                        <br>
+                                        do{	<br>
+                                        student();<br>
+                                        cout << "do you want to continue(Y/N)";<br>
+                                        cin >> Continue;<br>
+                                    } while(Continue);<br>
+                                        return 0;<br>
+                                    }
+                                   
+                                  </p>
+                                  
+                              <div class="line"></div>
+                      
+                              <h5>Task 2: Write a program and print the following output.</h5>
+                              <br><h4>Output:</h4>
+                              <img src="12.2.png" class="img-thumbnail" alt="12.2">
+                      
+                              <br><br><h4>Source Code</h4>
+                              <p style="background-color: black; color:white">
+                           
+                                int main() {<br>
+                                    string text;<br>
+                                    ifstream student("student.txt");<br>
+                                    while(getline(student,text)){<br>
+                                        cout << text<<endl;<br>
+                                    }<br>
+                                    student.close();<br>
+                                    return 0;<br>
+                                }
+                                
+                               
+                              </p>
+                              
+                          <div class="line"></div>
+                      
+                          <h5>Task 3: Write a C++ program for billing system of MovInPeak restaurant. The program should perform following tasks: <br>
+                            · Show menu to customer for orders. <br>
+                            · Allow the customer to select more than one item from the menu. <br>
+                            · Calculate and print the bill. <br>
+                            Assume that the restaurant offers the following items (the price of each item is shown to the right of the item): <br>
+                            · Omlet $1.45 <br>
+                            · French Omlet $2.45 <br>
+                            · Muffin $0.99 <br>
+                            · French Toast $1.99 <br>
+                            · Fruit Basket $2.49<br> 
+                            · Cereal $0.69 <br>
+                            · Coffee $0.75 <br>
+                            · Tea $0.50 
+                            </h5>
+                          <br><h4>Output:</h4>
+                          <img src="12.3.png" class="img-thumbnail" alt="12.3">
+                      
+                          <br><br><h4>Source Code</h4>
+                          <p style="background-color: black; color:white">
+                          
+                            int main() {<br>
+                                cout << "Menu\n";<br>
+                                cout << "1 - Omlet ($1.45)\n";<br>
+                                cout << "2 -French Omlet ($2.45)\n";<br>
+                                cout << "3 -Muffin ($0.99)\n";<br>
+                                cout << "4 -French Toast ($1.99)\n";<br>
+                                cout << "5 -Fruit Basket ($2.49)\n";<br>
+                                cout << "6 -Cereal ($0.69)\n";<br>
+                                cout << "7 -Coffee ($0.75)\n";<br>
+                                cout << "8 -Tea ($0.50)\n";<br>
+                                ofstream writeToBill("bill.txt");<br>
+                                bool Continue;<br>
+                                int option;<br>
+                                do{<br>
+                                    cout << "Enter food number";<br>
+                                    cin >> option;<br>
+                                if(option == 1){<br>
+                                    writeToBill << "1.45\n";<br>
+                                } else 	if(option == 2){<br>
+                                    writeToBill << "2.45\n";<br>
+                                } else 	if(option == 3){<br>
+                                    writeToBill << "0.99\n";<br>
+                                } else 	if(option == 4){<br>
+                                    writeToBill << "1.99\n";<br>
+                                } else 	if(option == 5){<br>
+                                    writeToBill << "2.49\n";<br>
+                                } else 	if(option == 6){<br>
+                                    writeToBill << "0.69\n";<br>
+                                } else 	if(option == 7){<br>
+                                    writeToBill << "0.75\n";<br>
+                                } else 	if(option == 8){<br>
+                                    writeToBill << "0.50\n";<br>
+                                } else{<br>
+                                    cout << "Invalid number";<br>
+                                }<br>
+                                    cout << "Do you want to continue\n";<br>
+                                    cin >> Continue;<br>
+                                } while(Continue);<br>
+                                    
+                                
+                                return 0;<br>
+                            }
+                            
+                          </p>
+                          
+                      <div class="line"></div>
+                      
+                      
+
+                    
+
+                       <h2 id="st">Topic 12: Structures  </h2> <br>
+
+                       <h5>Task 1: Write a program in C++ using structures and print properties of 3 cell phone.</h5>
+                       <br><h4>Output:</h4>
+                       <img src="13.1.png" class="img-thumbnail" alt="13.1">
+           
+                       <br><br><h4>Source Code</h4>
+                       <p style="background-color: black; color:white">
+                        struct Phone{<br>
+                            string manufecturer;<br>
+                            string os;<br>
+                            int ram;<br>
+                            float processor;<br>
+                        };<br>
+                        int main() {<br>
+                           Phone galaxy;<br>
+                           galaxy.manufecturer = "Samsung";<br>
+                           galaxy.os = "Android";<br>
+                           galaxy.ram = 6;<br>
+                           galaxy.processor = 2.5;<br>
+                           
+                           Phone iphone;<br>
+                           iphone.manufecturer = "Apple Inc.";<br>
+                           iphone.os = "IOS";<br>
+                           iphone.ram = 4;<br>
+                           iphone.processor = 3.5;<br>
+                           
+                           Phone lumia;<br>
+                           lumia.manufecturer = "Nokia";<br>
+                           lumia.os = "Windows-Mobile";<br>
+                           lumia.ram = 3;<br>
+                           lumia.processor = 1.5;<br>
+                           
+                           cout << "1-----Galaxy\n";<br>
+                           cout << "manufecturer: "<<galaxy.manufecturer<< endl;<br>
+                           cout << "os:<br> "<<galaxy.os<<endl;<br>
+                           cout << "ram:<br> "<< galaxy.ram<<" gb"<<endl;<br>
+                           cout << "processor:<br> "<<galaxy.processor<<" ghz"<<endl;<br>
+                           
+                            cout << "2-----Iphone\n";<br>
+                           cout << "manufecturer:<br> "<<iphone.manufecturer<< endl;<br>
+                           cout << "os:<br> "<<iphone.os<<endl;<br>
+                           cout << "ram:<br> "<<iphone.ram<<" gb"<<endl;<br>
+                           cout << "processor:<br> "<<iphone.processor<<" ghz"<<endl;<br>
+                           
+                           cout << "3-----Lumia\n";<br>
+                           cout << "manufecturer:<br> "<<lumia.manufecturer<< endl;<br>
+                           cout << "os:<br> "<<lumia.os<<endl;<br>
+                           cout << "ram:<br> "<<lumia.ram<<" gb"<<endl;<br>
+                           cout << "processor:<br> "<<lumia.processor<<" ghz"<<endl;<br>
+                           
+                           
+                            return 0;} <br>
+                        
+                        
+                       </p>
+                       
+                   <div class="line"></div>
+           
+                   <h5>Task 2: Write a program in C++ using structures and print properties of 5 Books.</h5>
+                   <br><h4>Output:</h4>
+                   <img src="13.2.png" class="img-thumbnail" alt="13.2">
+           
+                   <br><br><h4>Source Code</h4>
+                   <p style="background-color: black; color:white">
+                    struct Book{<br>
+                        string name;<br>
+                        string author;<br>
+                        int pages;<br>
+                    };<br>
+                    int main() {<br>
+                       Book myBook;<br>
+                       myBook.name = "Meri Book";<br>
+                       myBook.author = "Sharjeel Baig";<br>
+                       myBook.pages = 120;<br>
+                       
+                       Book book2;<br>
+                       book2.name = "Harry Potter";<br>
+                       book2.author = "JK Rowling";<br>
+                       book2.pages = 500;<br>
+                       
+                       Book book3;<br>
+                       book3.name = "Think and grow rich";<br>
+                       book3.author = "Napolian Hill";<br>
+                       book3.pages = 125;
+                       <br>
+                       Book book4;<br>
+                       book4.name = "Power of positive thinking";<br>
+                       book4.author = "Norman Vincent";<br>
+                       book4.pages = 126;<br>
+                       
+                       Book book5;<br>
+                       book5.name = "Fantastic Beasts";<br>
+                       book5.author = "J.K Rowlings";<br>
+                       book5.pages = 680;<br>
+                       
+                       cout << "[[[[[[[Book1]]]]]]\n";<br>
+                       cout << "Name:<br> "<<myBook.name<<endl;<br>
+                       cout << "Author:<br> "<<myBook.author<<endl;<br>
+                       cout << "Name:<br> "<<myBook.pages<<endl;<br>
+                     
+                         cout << "[[[[[[[Book2]]]]]]\n";<br>
+                       cout << "Name:<br> "<<book2.name<<endl;<br>
+                       cout << "Author:<br> "<<book2.author<<endl;<br>
+                       cout << "Name:<br> "<<book2.pages<<endl;<br>
+                       
+                         cout << "[[[[[[[Book3]]]]]]\n";<br>
+                       cout << "Name:<br> "<<book3.name<<endl;<br>
+                       cout << "Author:<br> "<<book3.author<<endl;<br>
+                       cout << "Name:<br> "<<book3.pages<<endl;<br>
+                       
+                       cout << "[[[[[[[Book4]]]]]]\n";<br>
+                       cout << "Name:<br> "<<book4.name<<endl;<br>
+                       cout << "Author:<br> "<<book4.author<<endl;<br>
+                       cout << "Name:<br> "<<book4.pages<<endl;<br>
+                       
+                       cout << "[[[[[[[Book5]]]]]]\n";<br>
+                       cout << "Name:<br> "<<book5.name<<endl;<br>
+                       cout << "Author:<br> "<<book5.author<<endl;<br>
+                       cout << "Name:<br> "<<book5.pages<<endl;<br>
+                       
+                        return 0;} 
+                        <br>
+                    
+                    
+                   </p>
+                   
+               <div class="line"></div>
+           
+               <h5>Task 3: Write a program in C++ using structures, take input of employees basic information and salary details (including basic salary (BS), house rent (HR), transport rent (TR), medical allowance (MA)) and print properties of 3 employees along with the total salary of that employee. 
+                FORMULA: Total Salary= (BS + TR + HR + MA)
+            </h5>
+               <br><h4>Output:</h4>
+               <img src="13.3.png" class="img-thumbnail" alt="13.3">
+           
+               <br><br><h4>Source Code</h4>
+               <p style="background-color: black; color:white">
+                struct Employee {<br>
+                    double bs;<br>
+                    double tr;<br>
+                    double hr;<br>
+                    double ma;<br>
+                    double pf;<br>
+                };<br>
+                
+                Employee getData(Employee e) {<br>
+                
+                    cout << "Enter BS: ";<br>
+                    cin>>e.bs;<br>
+                    cout << "Enter TR: ";<br>
+                    cin>>e.tr;<br>
+                    cout << "Enter HR: ";<br>
+                    cin>>e.hr;<br>
+                    cout << "Enter MA: ";<br>
+                    cin>>e.ma;<br>
+                    cout << "Enter PF: ";<br>
+                    cin>>e.pf;<br>
+                
+                    return e;<br>
+                }<br>
+                
+                void displayData(Employee e) {<br>
+                    double totalSalary = (e.bs+e.tr+e.hr+e.ma) - e.pf;<br>
+                    cout << "Total Salary: "<< totalSalary<<endl;<br>
+                } <br>
+                
+                int main() {<br>
+                
+                    Employee e1,e2,e3;<br>
+                    Employee employeeArray[3]={e1,e2,e3};<br>
+                    for(int i = 0;i<3;i++){<br>
+                        cout << "for employee "<<i+1<<endl;<br>
+                    employeeArray[i] = getData(employeeArray[i]);<br>    
+                    }<br>
+                    for(int i = 0; i<3; i++){<br>
+                        cout << "information of employee "<<i+1<<endl;<br>
+                    displayData(employeeArray[i]);<br>
+                
+                }<br>
+                    return 0;}                <br>
+                
+               </p>
+               
+           <div class="line"></div> 
+           
+           
+           
+
+            
+
+        </div>
+    </div>
+    <footer class=" text-center text-white"style="background-color: hsl(207, 100%, 50%);">
+        <p style="color: white">&copy; Copyright 2023 codings Hub</p>
+    </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+        <script>
+            $(document).ready(function () {
+                $("#sidebarCollapse").on('click', function () {
+                    $("#sidebar").toggleClass('active');
+                });
+            });
+        </script>
+</body>
+
+</html>

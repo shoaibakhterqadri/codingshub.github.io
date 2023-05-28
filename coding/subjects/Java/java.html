@@ -1,0 +1,3383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="java.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <style>
+        .all-menu a {
+            background-color:#008cff;
+          /* background-color: #7386d5; Grey background color */
+          color: white; /* Black text color */
+          display: block; /* Make the links appear below each other */
+          padding: 12px; /* Add some padding */
+          text-decoration: none; /* Remove underline from links */
+        }
+        .all-menu {
+          width: 250px;
+          height: 505px;
+          overflow-y: auto;
+          background-color: #008cff;
+        }
+          </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" >
+            <div id="all" style="position:fixed" >
+            <div class="sidebar-header" style="width: 225px;">
+                <a href="../../../index.html"><h3>Codings Hub</h3></a>
+            </div>
+            <div class="all-menu" style="height: 750px;">
+            <ul class="list-unstyled components">
+                <p>Programming Languages</p>
+                <li>
+                    <a href="../../coding.html">HTML</a>
+                </li>
+                <li>
+                    <a href="../css/css.html">CSS</a>
+                </li>
+                <li>
+                    <a href="../JavaScript/javaScript.html">JavaScript</a>
+                </li>
+                <li class="active" style="width: 233px;" >
+                        
+                    <a href="#java" data-toggle="collapse" aria-expanded="false"  class="dropdown-toggle">Java (OOPs)</a>
+                    
+                    <ul class="collapse list-unstyled" id="java">
+                        <li>
+                            <a href="#introduction">1. Introduction to Java</a>
+                        </li>
+                        <li>
+                            <a href="#classes">2. Classes & Objects</a>
+                        </li>
+                        <li>
+                            <a href="#access">3. Access Modifiers</a>
+                        </li>
+                        <li>
+                            <a href="#constructor">4. Constructors</a>
+                        </li>
+                        <li>
+                            <a href="#static">5. Static Classes & Members</a>
+                        </li>
+                        <li>
+                            <a href="#function">6. Function Overloading</a>
+                        </li>
+                        <li>
+                            <a href="#inheritance">7. Inheritance</a>
+                        </li>
+                        <li>
+                            <a href="#association">8. Association, Aggregation & Composition</a>
+                        </li>
+                        <li>
+                            <a href="#abstract">9. Abstract Class</a>
+                        </li>
+                        <li>
+                            <a href="#interface">10. Interfaces</a>
+                        </li>
+                        <li>
+                            <a href="#exception">11. Exceptions Handling</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../C++/c++.html">C++</a>
+                 </li>
+                <li>
+                    <a href="../CSharp/cSharp.html">C#</a>
+                </li>
+                <li>
+                    <a href="../cald/cald.html">Computer Architecture & Logic Design</a>
+                </li>
+                <li>
+                    <a href="../algorithm/algorithm.html">Data Structure & Algorithm</a>
+                </li>
+                <li>
+                    <a href="../os/os.html">Operating System</a>
+                </li>
+                <li>
+                    <a href="../sda/os.html">Software Design & Architecture</a>
+                </li>
+                <li>
+                    <a href="../dbms/os.html">Database Management System</a>
+                </li>
+                <li>
+                    <a target="_blank" href="../../../portfolio/index.html">Portfolio</a>
+                </li>
+                <li>
+                    <a target="_blank" href="../../../contact-us/contact/index.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </nav>
+
+    
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                             
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../../mcqs/mcqsOfProgrammingLanguage/html/todo/htmlMCQs.html">MCQs</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.fiverr.com/users/shoaibakhter18">Services by Fiverr</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- </div> -->
+            </nav>
+            
+            <h1>Tasks & Solution of Java Language</h1> <br>
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- Introduction to java -->
+            <h2 id="introduction">1. Introduction to Java </h2> <br>
+
+            <h5>1) Write a program that prints a mosque.</h5><br>
+            <h5>Output:</h5>
+            <img src="first.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+            color: white;">
+
+                public static void main(String[] args){ <br>
+                Scanner input=new Scanner(System.in);<br>
+                System.out.println("^ \t ^ \t ^");<br>
+                System.out.println("//|/ \t /|/ \t /|/");<br>
+                System.out.println("((&)) \t .((^)). \t ((&))");<br>
+                System.out.println("|.| \t (((^))) \t |.|");<br>
+                System.out.println("|.| \t ((((^)))) \t |.|");<br>
+                System.out.println("|.| \t (((((^))))) \t |.|");<br>
+                System.out.println("|.| \t ((((^)))) \t |.|");<br>
+                System.out.println("|.| \t (((^))) \t |.|");<br>
+                System.out.println("|.| \t (((^))) \t |.|");<br>
+                System.out.println(" {**********************}");<br>
+                System.out.println("*|*******************<br>***********|**");<br>
+                System.out.println(" | \t \t \t \t|");<br>
+                System.out.println(" | \t \t \t \t|");<br>
+                System.out.println(" | \t \t _{#}_ \t \t|");<br>
+                System.out.println(" | \t \t {####} \t|");<br>
+                System.out.println(" | \t \t \t \t|");<br>
+                System.out.println(" | \t \t {######} \t|");<br>
+                System.out.println(" | \t \t {######} \t|");<br>
+                System.out.println(" | \t \t {######} \t|");<br>
+                System.out.println(" | \t \t {######} \t|");<br>
+                System.out.println(" | \t \t {######} \t|");<br>
+                System.out.println(" | \t \t_{######}_ \t|");<br>
+                System.out.println(" (@@@@@@@@@@@@@@@@<br>@@@@@@@@@@@@@@)");<br>
+                System.out.println(" (++++++++++/===========++++++++)");<br>
+                System.out.println("[%%%%%%%%%%/==============/%%%%%]");<br>
+                System.out.println("[^^^^^^^^^^/============/^^^^^^^]");}<br>
+
+
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Write a JAVA program, which receives the input of two integer numbers, operation (+,-
+                ,*,/,%, power, square-root and factorial) and compute arthematic operations. Generate a menu for
+                operations and ask user after every operation if they want to do another. (Hint use switch case).</h5>
+            <h5>Output:</h5>
+            <img src="second.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                public static void main(String[] args){<br>
+                int num1,num2,op;<br>
+                double ans;<br>
+                char res;<br>
+                boolean con = true;<br>
+                Scanner input = new Scanner(System.in);<br>
+                do{<br>
+                System.out.println("Select
+                operator:\n1)Addition\n2)Subtraction\n<br>3)Multiplication\n4)Division\n5)Reminder<br>\n6)Power\n7)Square
+                Root\n8)Factorial\n");<br>
+                op = input.nextInt();<br>
+
+                switch(op){<br>
+                case 1:<br>
+                System.out.println("Enter number 1:");<br>
+                num1 = input.nextInt();<br>
+                System.out.println("Enter number 2:");<br>
+                num2 = input.nextInt();<br>
+                ans = num1+num2;<br>
+                System.out.println(num1+" + "+num2+" = "+ans);<br>
+                break;<br>
+                case 2:<br>
+                System.out.println("Enter number 1:");<br>
+                num1 = input.nextInt();<br>
+                System.out.println("Enter number 2:");<br>
+                num2 = input.nextInt();<br>
+                ans = num1-num2;<br>
+                System.out.println(num1+" - "+num2+" = "+ans);<br>
+                break;<br>
+                case 3:<br>
+                System.out.println("Enter number 1:");<br>
+                num1 = input.nextInt();<br>
+                System.out.println("Enter number 2:");<br>
+                num2 = input.nextInt();<br>
+                ans = num1*num2;<br>
+                System.out.println(num1+" x "+num2+" = "+ans);<br>
+                break;<br>
+                case 4:<br>
+                System.out.println("Enter number 1:");<br>
+                num1 = input.nextInt();<br>
+                System.out.println("Enter number 2:");<br>
+                num2 = input.nextInt();<br>
+                ans = (double)num1/(double)num2;<br>
+                System.out.println(num1+" / "+num2+" = "+ans);<br>
+                break;<br>
+                case 5:<br>
+                System.out.println("Enter number 1:");<br>
+                num1 = input.nextInt();<br>
+                System.out.println("Enter number 2:");<br>
+                num2 = input.nextInt();<br>
+                ans = num1%num2;<br>
+                System.out.println(num1+" % "+num2+" = "+ans);<br>
+                break;<br>
+                case 6:<br>
+                System.out.println("Enter number 1:");<br>
+                num1 = input.nextInt();<br>
+                System.out.println("Enter number 2:");<br>
+                num2 = input.nextInt();<br>
+                ans = Math.pow(num1,num2);<br>
+                System.out.println(num1+" ^ "+num2+" = "+ans);<br>
+                break;<br>
+                case 7:<br>
+                System.out.println("Enter number 1:");<br>
+                num1 = input.nextInt();<br>
+                ans = Math.sqrt(num1);<br>
+                System.out.println(num1+" ^ 0.5 = "+ans);<br>
+                break;<br>
+                case 8:<br>
+                System.out.println("Enter number 1:");<br>
+                num1 = input.nextInt();<br>
+                num2 = num1;<br>
+                ans = 1;<br>
+                do{<br>
+                ans*=num1;<br>
+                num1--;<br>
+                }while(num1>0);<br>
+                System.out.println(num2+"! = "+ans);<br>
+                break;<br>
+                default:<br>
+                System.out.println("Invalid operation!");<br>
+                break;}<br>
+                System.out.println("try again? (y/n)");<br>
+                res = input.next().charAt(0);<br>
+                }while(res == 'y' || res == 'Y');}<br>
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>3) Make a program in JAVA in which take no. of items, price of items and name of items as input from
+                the user and give the discount according to the following conditions: <br>
+                a) If from Bahria University give discount of 30%. <br>
+                b) Else if the total amount is greater then 50,000 and less than 100,000 give discount of 20%. <br>
+                c) Else if the total amount is greater then 100,000 give discount of 30%.</h5>
+
+            <h5>Output:</h5>
+            <img src="third1.png" class="img-thumbnail" alt="firstImage">
+            <img src="third2.png" class="img-thumbnail" alt="firstImage">
+            <img height="385px" class="img-thumbnail" width="300px" src="third3.png" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                public static void main(String[] args){<br>
+                int n,q,price,total = 0;<br>
+                double d = 1,dtotal;<br>
+                String name;<br>
+                char res;<br>
+                Scanner input = new Scanner(System.in);<br>
+                System.out.print("Enter number of items: ");<br>
+                n = input.nextInt();<br>
+                for(int i = 1; i<=n; i++){<br>
+                    System.out.println("\n\t\tItem "+i);<br>
+                    System.out.print("Enter name of item "+i+": ");<br>
+                    name = input.next();<br>
+                    System.out.print("Enter price of item "+i+": ");<br>
+                    price = input.nextInt();<br>
+                    System.out.print("Enter quantity of item "+i+": ");<br>
+                    q = input.nextInt();<br>
+                    total += (q*price);}<br>
+                    if(total > 50000 && total < 100000){<br>
+                        d = 0.8;}<br>
+                        else if(total >= 100000){<br>
+                        d = 0.7;}<br>
+                        System.out.print("\nAre you from BUKC? (y/n): ");<br>
+                        res = input.next().charAt(0);<br>
+
+                        if(res == 'y' || res == 'Y'){<br>
+                        d = 0.7;}<br>
+                        dtotal = total*d;<br>
+
+                        if(d == 1){<br>
+                        System.out.println("\nYour total is :$"+dtotal);<br>
+                        }else{<br>
+                        System.out.println("\nTotal :$"+total);<br>
+                        System.out.println("Discount :$"+(total-dtotal));<br>
+                        System.out.println("Discounted Total :$"+dtotal);}}<br>
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>4) Write a JAVA program which will implement the following formulae using methids. <br> <br>
+                a. Automobile Tire Pressure: <br> P = 0.37m(T + 460)/V P = pressure in psi.<br>
+                V = volume in cubic feet <br>
+                m = mass of air in pounds<br>
+                T = temperature in Fahrenheit <br><br>
+                b. Pulley formulas<br>
+                i) calculate the speed of one pulley if there are 2 pulleys connected with a belt:<br>
+                RPM2 = diameter1/diameter2 * RPM1<br>
+                ii) calculate the amount of weight that can be lifted with a multiple pulley system:
+                weight lifted = force exerted * number of up ropes<br><br>
+                c. The body mass index (BMI), is a heuristic proxy for human body fat based on an individual's weight
+                and height. BMI does not actually measure the percentage of body fat. We will be building a BMI
+                calculator method. Body mass index (BMI) is computed using the the formula, <br> <br>
+
+
+                Where mass is the subject's weight in pounds (lb) and height is the height in inches (in). The value 703
+                is a factor to convert BMI to a value that matches the original BMI calculations done in metric units
+                (i.e. kilograms-meters).
+            </h5>
+
+            <h5>Output:</h5>
+            <img src="fourth1.png" class="img-thumbnail" alt="firstImage">
+            <img src="fourth2.png" class="img-thumbnail" alt="firstImage">
+            <hr>
+            <img src="fourth3.png" class="img-thumbnail" alt="firstImage">
+            <img src="fourth4.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                public static void main(String[] args){<br>
+                int op;<br>
+                boolean con = true;<br>
+                Scanner input = new Scanner(System.in);<br>
+                System.out.println("Select 1 option:\n1)Tyre pressure\n2)Pulley\n3)BMI");<br>
+                op = input.nextInt();<br>
+                switch(op){<br>
+                case 1:<br>
+                int m,t,v;<br>
+                System.out.print("\nEnter mass of air in pounds: ");<br>
+                m = input.nextInt();<br>
+                System.out.print("Enter temperature in fahrenheit: ");<br>
+                t = input.nextInt();<br>
+                System.out.print("Enter volume in cubic feet: ");<br>
+                v = input.nextInt();<br>
+                calPressure(m,t,v);<br>
+                break;<br>
+                case 2:<br>
+                do{<br>
+                System.out.println("\nSelection 1 option:\n1)Speed\n2)Liftable weight");<br>
+                op = input.nextInt();<br>
+                if(op == 1){<br>
+                int rpm1,dm1,dm2;<br>
+                System.out.print("Enter speed of pulley 1 in RPM: ");<br>
+                rpm1 = input.nextInt();<br>
+                System.out.print("Enter diameter in meter of pulley 1: ");<br>
+                dm1 = input.nextInt();<br>
+                System.out.print("Enter diameter in meter of pulley 2 :");<br>
+                dm2 = input.nextInt();<br>
+
+                calPulleySpeed(rpm1,dm1,dm2);}<br>
+                else if(op == 2){<br>
+                int force,n;<br>
+                System.out.print("Enter force exerted: ");<br>
+                force = input.nextInt();<br>
+                System.out.print("Enter number of ropes: ");<br>
+                n = input.nextInt();<br>
+
+                calLWeight(force,n);<br>
+                }else{<br>
+                System.out.println("\nInvalid option");<br>
+                con = false;}<br>
+                }while(!con);<br>
+                break;<br>
+                case 3:<br>
+                int w,h;<br>
+                System.out.print("\nEnter mass in pounds: ");<br>
+                w = input.nextInt();<br>
+                System.out.print("Enter height in inches: ");<br>
+                h = input.nextInt();<br>
+                calBMI(w,h);<br>
+                break;<br>
+                default:<br>
+                System.out.println("Invalid option selected!");<br>
+                break;}}<br>
+                public static void calPressure(int m, int t, int v){<br>
+                double p;<br>
+                p = (0.37*m*(t+460))/v;<br>
+                System.out.println("Tire pressure in = "+p+" Psi");}<br>
+                public static void calBMI(int w, int h){<br>
+                double bmi;<br>
+                bmi = ((double)w/(h*h))*703;<br>
+                System.out.println("\nBMI : "+bmi);}<br>
+                public static void calPulleySpeed(int rpm1 , int dm1, int dm2){<br>
+                double rpm2;<br>
+                rpm2 = ((double)dm1/dm2)*rpm1;<br>
+                System.out.println("\nSpeed of pulley 2: "+rpm2+" RPM");}<br>
+                public static void calLWeight(int f, int n){<br>
+                double lw;<br>
+                lw = f*n;<br>
+                System.out.println("\nTotal Liftabele Weight: "+lw+" N");}<br>
+
+            </p>
+
+            <div class="line"></div>
+
+            <!-- Classes & Objects -->
+
+            <h2 id="classes">2. Classes & Objects </h2> <br>
+
+            <h5>1) Create a class student which contains the basic data about the student that takes the basic
+                student data and displays it by using display method. An option of update is being provided to the user
+                if he/she want to update the data, the required data being updated.</h5>
+            <h5>Output:</h5>
+            <img src="fifth.png"  class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                import java.util.Scanner;<br>
+                public class Task_2 {<br>
+                public static void main(String[] args) {<br>
+                char res;<br>
+                boolean update = false;<br>
+                Scanner input = new Scanner(System.in);<br>
+                Student data = new Student();<br>
+                System.out.print("Input student info?(y/n): ");<br>
+                res = input.next().charAt(0);<br>
+                if(res == 'y'){<br>
+                System.out.print("\nEnter name :");<br>
+                String name = input.next();<br>
+                System.out.print("Enter subject :");<br>
+                String subject = input.next();<br>
+                System.out.print("Enter age :");<br>
+                int age = input.nextInt();<br>
+                data.studentSetter(name,subject,age);<br>
+                update = true;}<br>
+                if(update){<br>
+                System.out.print("Update?(y/n): ");<br>
+                res = input.next().charAt(0);<br>
+                if(res == 'y'){<br>
+                data.studentUpdate();}}}}<br>
+            </p>
+
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                import java.util.*;<br>
+                public class Student {<br>
+                String name = "null", subject = "null";<br>
+                int age = 0;<br>
+                Scanner input = new Scanner(System.in);<br>
+                public void studentSetter(String name, String subject, int age){<br>
+                this.name = name;<br>
+                this.subject = subject;<br>
+                this.age = age;<br>
+                System.out.println("\nSuccess\n");}<br>
+                public void studentUpdate(){<br>
+                System.out.println("\nName : "+this.name+"\nSubject : "+this.subject+"\nAge : "+this.age);<br>
+
+                System.out.print("Enter name: ");<br>
+                this.name = input.next();<br>
+                System.out.print("Enter subject: ");<br>
+                this.subject = input.next();<br>
+                System.out.print("Enter age: ");<br>
+                this.age = input.nextInt();<br>
+                System.out.println("\nSuccess\n");}}<br>
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Create a class “computer” which contains specifications of computer, the program shall ask the
+                user does he/she wants to open the system, if the user press “yes” then the system starts shows the
+                initial loading and then displays the basic configuration of a system (by calling the method of display
+                () , update option is being provided by the user, values of the specified items are being updated once
+                user decides to update that item.</h5>
+            <h5>Output:</h5>
+            <img src="sixth.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                import java.util.Scanner;<br>
+                public class Task_2 {<br>
+                public static void main(String[] args) {<br>
+                char res;<br>
+                boolean sys = false;<br>
+                Scanner input = new Scanner(System.in);<br>
+                Computer comp = new Computer();<br>
+                System.out.print("\nOpen system?(y/n) : ");<br>
+                res = input.next().charAt(0);<br>
+                if(res == 'y'){<br>
+                comp.Display();<br>
+                sys = true;<br>
+                }else{<br>
+                System.out.println("\nBye");}<br>
+                if(sys){<br>
+                System.out.print("Do you want to update specifications?(y/n) : ");<br>
+                res = input.next().charAt(0);<br>
+                if(res == 'y'){<br>
+                System.out.println("\nWhat you want to update?\n1)Processor\n2)Graphics Card\n3)Generation\n4)RAM");<br>
+                res = input.next().charAt(0);<br>
+                switch (res){<br>
+                case '1':<br>
+                comp.updateCpu();<br>
+                break;<br>
+                case '2':<br>
+                comp.updateGpu();<br>
+                break;<br>
+                case '3':<br>
+                comp.updateGen();<br>
+                break;<br>
+                case '4':<br>
+                comp.updateRam();<br>
+                break;<br>
+                default:<br>
+                System.out.println("Invalid option selected");<br>
+                sys = false;}<br>
+                }else{<br>
+                System.out.println("\nBye");}<br>
+                if(sys){<br>
+                comp.Display();}}}}<br>
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                import java.util.Scanner;<br>
+                public class Computer {<br>
+                String cpu = "Intel", gpu = "AMD";<br>
+                int gen = 5, ram = 8;<br>
+                Scanner input = new Scanner(System.in);<br>
+                public void Display(){<br>
+                System.out.println("\nLoading...\n");<br>
+                System.out.println("Processor : "+cpu+"\t\tGraphics card : "+gpu+"\nGeneration : "+gen+"\t\tRAM :
+                "+ram+"\n");}<br>
+                public void updateCpu(){<br>
+                System.out.print("Enter new Processor : ");<br>
+                this.cpu = input.next();<br>
+                System.out.println("Success!");}<br>
+                public void updateGpu(){<br>
+                System.out.print("Enter new Graphics Crad : ");<br>
+                this.gpu = input.next();<br>
+                System.out.println("Success!");}<br>
+                public void updateGen(){<br>
+                System.out.print("Enter new Generation : ");<br>
+                this.gen = input.nextInt();<br>
+                System.out.println("Success!");}<br>
+                public void updateRam(){<br>
+                System.out.print("Enter new RAM : ");<br>
+                this.ram = input.nextInt();<br>
+                System.out.println("Success!");}}<br>
+            </p>
+
+            <div class="line"></div>
+
+            <h5>3) Create a class of Employee which contains basic information about an employee, employee name,
+                father’s name and salary etc are being displayed by the display method and the salary of employees or
+                the designation of the employees are being set/updated as per need.</h5>
+            <h5>Output:</h5>
+            <img src="seventh.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                import java.util.Scanner;<br>
+                public class Task_2 {<br>
+                public static void main(String[] args) {<br>
+                String name,fname,desig;<br>
+                int sal;<br>
+                char res;<br>
+                boolean upd = false;<br>
+                Scanner input = new Scanner(System.in);<br>
+                Employee data1 = new Employee();<br>
+                System.out.print("Enter details of employee 1:\nName :");<br>
+                name = input.next();<br>
+                System.out.print("Father Name : ");<br>
+                fname = input.next();<br>
+                System.out.print("Designation : ");<br>
+                desig = input.next();<br>
+                System.out.print("Salary : ");<br>
+                sal = input.nextInt();<br>
+                data1.setEmployee(name,fname,desig,sal);<br>
+                data1.display();<br>
+                System.out.print("\nDo you want to update Salary(s) or Designation(d) of Employee?(s/d/n) : ");<br>
+                res = input.next().charAt(0);<br>
+                if(res == 's'){<br>
+                System.out.print("\nEnter new Salary : ");<br>
+                sal = input.nextInt();<br>
+                data1.updateSal(sal);<br>
+                upd = true;<br>
+                }else if(res == 'd'){<br>
+                System.out.print("\nEnter new Designation : ");<br>
+                desig = input.next();<br>
+                data1.updateDesig(desig);<br>
+                upd = true;<br>
+                }else{<br>
+                System.out.println("\n Bye");}<br>
+                if(upd){<br>
+                data1.display();}}}<br>
+
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                import java.util.Scanner;<br>
+                public class Employee {<br>
+                String name = "", fname = "", desig = "";<br>
+                int sal = 0;<br>
+                public void setEmployee(String name, String fname, String desig, int sal){<br>
+                this.name = name;<br>
+                this.fname = fname;<br>
+                this.desig = desig;<br>
+                this.sal = sal;<br>
+                System.out.println("\nSuccess");}<br>
+                public void display(){<br>
+                System.out.println("\n\t\tEmployee\t\t\nName : "+name+"\tFather Name : "+fname+"\nDesignation :
+                "+desig+"\tSalary : "+sal+"\n");}<br>
+                public void updateDesig(String desig){<br>
+                this.desig = desig;<br>
+                System.out.println("\nSuccess");}<br>
+                public void updateSal(int sal){<br>
+                this.sal = sal;<br>
+                System.out.println("\nSuccess");}}<br>
+
+
+            </p>
+
+            <div class="line"></div>
+            <div id="foremediaads-e1"></div>
+            <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/e1"></script>
+            <h5>4) Create a class of Automobile which contains specifications of a car, check whether the car is in
+                - ON/start state if not them asks the user if he/she want to start the car, If the car is already in
+                start state then first display the current status of the car which includes the horse power, color,
+                made, engine type etc. providing an option to the user if he/she wants to update any of the mentioned
+                part from the car, if user selects “YES” then it is updated according to the need of the user, else the
+                program will be ended.</h5>
+            <h5>Output:</h5>
+            <img src="eighth.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                import java.util.Scanner;<br>
+                public class Task_2 {<br>
+                public static void main(String[] args) {<br>
+                String color,made,et;<br>
+                int hp;<br>
+                char res;<br>
+                boolean upd = false;<br>
+                Automobile car = new Automobile();<br>
+                Scanner input = new Scanner(System.in);<br>
+                System.out.print("Is car on?(y/n) : ");<br>
+                res = input.next().charAt(0);<br>
+                if(res == 'y'){<br>
+                car.display();<br>
+                }else{<br>
+                upd = true;}<br>
+                if(upd){<br>
+                upd = false;<br>
+                System.out.print("\nStart car? (y/n) : ");<br>
+                res = input.next().charAt(0);}<br>
+                if(res == 'y'){<br>
+                System.out.print("\nDo you want to update any info of car? (y/n) : ");<br>
+                res = input.next().charAt(0);<br>
+                if(res == 'y'){<br>
+                System.out.println("\nWhat do you want to update?\n1)Made\n2)Color\n3)Engine Type\n4)Horse Power");<br>
+                res = input.next().charAt(0);<br>
+                switch (res){<br>
+                case '1':<br>
+                System.out.print("\nEnter new Made : ");<br>
+                made = input.next();<br>
+                car.updateMade(made);<br>
+                upd = true;<br>
+                break;<br>
+                case '2':<br>
+                System.out.print("\nEnter new Color : ");<br>
+                color = input.next();<br>
+                car.updateColor(color);<br>
+                upd = true;<br>
+                break;<br>
+                case '3':<br>
+                System.out.print("\nEnter new Engine Type : ");<br>
+                et = input.next();<br>
+                car.updateEt(et);<br>
+                upd = true;<br>
+                break;<br>
+                case '4':<br>
+                System.out.print("\nEnter new Horse Power : ");<br>
+                hp = input.nextInt();<br>
+                car.updateHp(hp);<br>
+                upd = true;<br>
+                break;<br>
+                default:<br>
+                System.out.println("\nInvalid Option!");;<br>
+                break;}}}<br>
+                if(upd){<br>
+                car.display();}<br>
+                System.out.println("\nByee");}}<br>
+
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                public class Automobile {<br>
+                String made = "Toyota",color = "Black", enginetype = "Petrol";<br>
+                int hp = 120;<br>
+                public void display(){<br>
+                System.out.println("Made : "+made+"\t\tEngine Type : "+enginetype+"\nColor : "+color+"\t\tHorse Power :
+                "+hp+"\n");}<br>
+                public void updateMade(String made){<br>
+                this.made = made;<br>
+                System.out.println("\nSuccess");}<br>
+                public void updateColor(String color){<br>
+                this.color = color;<br>
+                System.out.println("\nSuccess");}<br>
+                public void updateEt(String et){<br>
+                this.enginetype = et;<br>
+                System.out.println("\nSuccess");}<br>
+                public void updateHp(int hp){<br>
+                this.hp = hp;<br>
+                System.out.println("\nSuccess");}}<br>
+
+
+            </p>
+
+            <div class="line"></div>
+            <div id="foremediaads-e1"></div>
+            <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/e1"></script>
+
+            <h5>5) Implement a class Car, that has the following characteristics: <br>
+                a) Brandname<br>
+                b) PriceNew, which represents the price of the car when it was new<br>
+                c) Color and<br>
+                d) Odometer,which is milo meter shows number of milage travelled by car<br>
+                The class should have:<br>
+                A. A method getPriceAfterUse() which should return the price of the car after being used according to
+                the following formula: car price after being used=priceNew*(1-(odometer/600,00))<br>
+                B. A method updateMilage (double travelled distance) that changes the current state of the car by
+                increasing its milage, and <br>
+                D. A method outputDetails() that will output to the screen all the information of the car, i.e.
+                brandname, priceNew,price used,color and odometer.
+            </h5>
+            <h5>Output:</h5>
+            <img src="nineth.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                import java.util.Scanner;<br>
+                public class Task_2 {<br>
+                public static void main(String[] args) {<br>
+                Car car = new Car();<br>
+                Scanner input = new Scanner(System.in);<br>
+                System.out.print("Enter the Brand of car : ");<br>
+                String bname = input.next();<br>
+                System.out.print("Enter the Color of car : ");<br>
+                String color = input.next();<br>
+                System.out.print("Enter the Price of car brand new: ");<br>
+                int pnew = input.nextInt();<br>
+                System.out.print("Enter Mileage of car : ");<br>
+                int mileage = input.nextInt();<br>
+                car.setCar(bname,color,pnew,mileage);<br>
+                System.out.println("\nPrice of car after running "+mileage+"Km its worth is :
+                "+car.getPriceAfterUse()+"$");<br>
+                System.out.print("Distance traveled : ");<br>
+                int dis = input.nextInt();<br>
+                car.updateMileage(dis);<br>
+                car.outputDetails();}}<br>
+
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                public class Car {<br>
+                String bname = "",color = "";<br>
+                int pnew, odometer;<br>
+                double pused;<br>
+                public void setCar(String bname, String color, int pnew, int mileage){<br>
+                this.bname = bname;<br>
+                this.color = color;<br>
+                this.pnew = pnew;<br>
+                this.odometer = mileage;}<br>
+                public double getPriceAfterUse(){<br>
+                this.pused = pnew*(1-((double)odometer/600000));<br>
+                return this.pused;}<br>
+                public void updateMileage(int dis){<br>
+                this.odometer += dis;<br>
+                getPriceAfterUse();}<br>
+                public void outputDetails(){<br>
+                System.out.println("\n\t\tDetails\nBrand : "+this.bname+"\tColor : "+this.color+"\nPrice New :
+                "+this.pnew+"$\tPrice Used : "+this.pused+"$\nOdometer : "+this.odometer+"Km");}}<br>
+
+
+            </p>
+
+
+            <div class="line"></div>
+
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+
+            <!-- Access Modifiers -->
+
+            <h2 id="access">3. Access Modifiers </h2> <br>
+
+            <h5>1) Write a program to display the radius and color of a circle in Java. Use private Access modifiers
+                for member variables of circle class and accessor and mutator methods to get and set the member values.
+            </h5>
+            <h5>Output:</h5>
+            <img src="fourth1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class</h5>
+            <p style="background-color: black;
+            color: white;">
+package task3;<br>
+import java.util.Scanner;<br>
+public class Task3 {<br>
+    public static void main(String[] args) {<br>
+       Scanner input=new Scanner(System.in);<br>
+       circle c=new circle();<br>
+       System.out.print(" Enter Color of a Circle: ");<br>
+       String color=input.next();<br>
+       c.setcolor(color);      <br>
+       System.out.print(" Enter radius of a Circle");<br>
+       double radius=input.nextDouble();<br>
+       c.setradius(radius);<br>
+       System.out.println(" *********************************");<br>
+       System.out.println("The Color of a Circle is " + c.getcolor());<br>
+       System.out.println("The radius of a Circle is: " + c.getradius());}}<br>
+
+
+            </p>
+            <h5>Sub Class</h5>
+            <p style="background-color: black;
+            color: white;">
+package task3;<br>
+public class circle {<br>
+    private String color;<br>
+    private double radius;<br>
+    public void setcolor(String color){<br>
+        this.color=color;}<br>
+    public String getcolor(){<br>
+        return color;}<br>
+    public void setradius(double radius){<br>
+        this.radius=radius;}<br>
+    public double getradius(){<br>
+        return radius;}}<br>
+
+
+            </p>
+            <div class="line"></div>
+
+            <h5>2) Create a class sphere and use getters and setters to set its radius and height. Also calculate
+                surface area and volume of the sphere.</h5>
+                <img src="" class="img-thumbnail" alt="">
+                <br>
+<h5>Source Code</h5>
+            <p style="background-color: black;
+                color: white;">
+<h5>Main Class</h5>
+<p style="background-color: black;
+color: white;">
+package com.mycompany.task33;<br>
+public class Task33 {<br>
+public static void main(String[] args) {<br>
+        sphere c=new sphere();<br>
+        c.setradius(8);<br>
+        System.out.println("Radius is " + c.getradius());<br>
+        c.setheight(10);<br>
+        System.out.println(" Height is " + c.getheight());<br>
+        System.out.println("The Volume is "+ c.volume());<br>
+        System.out.println("The Surface Area is "+ c.surfacearea());}}<br>
+
+</p>
+<h5>Sub Class</h5>
+<p style="background-color: black;
+color: white;">
+package com.mycompany.task33;<br>
+public class sphere {<br>
+    private int radius;<br>
+        private int height;  <br>
+        public void setradius(int radius){<br>
+            this.radius=radius;}<br>
+        public int getradius(){           <br>
+            return radius;}<br>
+        public void setheight(int height){<br>
+            this.height=height;}<br>
+        public int getheight(){<br>
+            return height;}        <br>
+        public double volume(){<br>
+            return 3.142*radius*radius*height;}<br>
+        public double surfacearea(){<br>
+           return 2*3.142*radius*radius+2*3.142*radius*height;}}<br>
+
+</p>
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>3) Consider a computer system whose name, type, processor specification, ram, hard disk drives,
+                mother board, optical drive etc are its member variables and its desired values cannot be accessed
+                directly. They are entered by the user in a get method (that takes information from the user) and the
+                displays the inputted information via display method. The user shall be asked to change any of the
+                provided information if he/she agrees to change the information then new values shall be asked from the
+                user.</h5>
+            <h5>Output:</h5>
+            <img src="fourth1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class</h5>
+            <p style="background-color: black;
+                color: white;">
+package task3;<br>
+import java.util.Scanner;<br>
+public class Task3 {<br>
+    public static void main(String[] args) {<br>
+       Scanner input=new Scanner(System.in);<br>
+       computer c=new computer();<br>
+       System.out.print(" Enter Name of a Computer: ");<br>
+       String name=input.next();<br>
+       c.setname(name);       <br>
+       System.out.print(" Enter Type of a Computer: ");<br>
+       String type=input.next();<br>
+       c.settype(type);       <br>
+       System.out.print(" Enter Processor Specification of a Computer: ");<br>
+       String processor=input.next();<br>
+       c.setprocessor(processor);       <br>
+       System.out.print(" Enter Ram of a Computer of a Computer: ");<br>
+       int ram=input.nextInt();<br>
+       c.setram(ram);       <br>
+       System.out.print(" Enter Hard Disk Drives of a Computer: ");<br>
+       int hard_disk=input.nextInt();<br>
+       c.sethard_disk(hard_disk);       <br>
+       System.out.print(" Enter Mother Board of a Computer: ");<br>
+       String motherboard=input.next();<br>
+       c.setmotherboard(motherboard);      <br>
+       System.out.print(" Enter Optical Drive of a Computer: (yes or no) ");<br>
+       String optical=input.next();<br>
+       c.setoptical(optical);               <br>                                                           
+       System.out.println("\n *******************  Computer Specification  ********************");<br>
+       System.out.println("The Name of a Computer is: "+ c.getname());<br>
+       System.out.println("The Type of a Computer is: "+ c.gettype());<br>
+       System.out.println("The Processor Specification of a Computer is: "+ c.getprocessor());<br>
+       System.out.println("The Ram of a Computer is: "+ c.getram());<br>
+       System.out.println("The Hard Disk Drives of a Computer is: "+ c.gethard_disk());<br>
+       System.out.println("The Mother Board of a Computer is: "+ c.getmotherboard());<br>
+       System.out.println("The Optical Drive of a Computer is: "+ c.getoptical());     <br>  
+       System.out.println("\n Do you want to update information of computer again?");<br>
+       String answer=input.next();<br>
+       if(answer.equals("yes")){<br>
+           System.out.print(" Enter Name of a Computer: ");<br>
+       String name1=input.next();<br>
+       c.setname1(name1);       <br>
+       System.out.print(" Enter Type of a Computer: ");<br>
+       String type1=input.next();<br>
+       c.settype1(type1);       <br>
+       System.out.print(" Enter Processor Specification of a Computer: ");
+       String processor1=input.next();<br>
+       c.setprocessor1(processor1);       <br>
+       System.out.print(" Enter Ram of a Computer of a Computer: ");<br>
+       int ram1=input.nextInt();<br>
+       c.setram1(ram1);       <br>
+       System.out.print(" Enter Hard Disk Drives of a Computer: ");<br>
+       int hard_disk1=input.nextInt();<br>
+       c.sethard_disk1(hard_disk1);       <br>
+       System.out.print(" Enter Mother Board of a Computer: ");<br>
+       String motherboard1=input.next();<br>
+       c.setmotherboard1(motherboard1);      <br>
+       System.out.println(" Enter Optical Drive of a Computer: (yes or no) ");<br>
+       String optical1=input.next();<br>
+       c.setoptical1(optical1);<br>
+       System.out.println("\n *******************  Updated Computer Specification  ********************");<br>
+       System.out.println("The Name of a Computer is: "+ c.getname1());<br>
+       System.out.println("The Type of a Computer is: "+ c.gettype1());<br>
+       System.out.println("The Processor Specification of a Computer is: "+ c.getprocessor1());<br>
+       System.out.println("The Ram of a Computer is: "+ c.getram1());<br>
+       System.out.println("The Hard Disk Drives of a Computer is: "+ c.gethard_disk1());<br>
+       System.out.println("The Mother Board of a Computer is: "+ c.getmotherboard1());<br>
+       System.out.println("The Optical Drive of a Computer is: "+ c.getoptical1());}<br>
+       else{<br>
+           System.out.println(" Thank You");}}}<br>
+
+
+            </p>
+
+            <h5>Sub Class</h5>
+            <p style="background-color: black;
+                color: white;">
+package task3;<br>
+public class computer {<br>
+    private String name;<br>
+    private String type;<br>
+    private String processor;<br>
+    private int  ram;<br>
+    private int hard_disk;<br>
+    private String motherboard;<br>
+    private String optical;<br>
+    public void setname(String name){<br>
+        this.name=name;}<br>
+    public String getname(){<br>
+        return name;}   <br>
+    public void settype(String type){<br>
+        this.type=type;}<br>
+    public String gettype(){<br>
+        return type;}   <br>
+    public void setprocessor(String processor){<br>
+        this.processor=processor;}<br>
+    public String getprocessor(){<br>
+        return processor;}    <br>
+    public void setram(int ram){<br>
+        this.ram=ram;}<br>
+    public int getram(){<br>
+        return ram;}    <br>
+    public void sethard_disk(int hard_disk){<br>
+        this.hard_disk=hard_disk;}<br>
+    public int gethard_disk(){<br>
+        return hard_disk;}   <br>
+    public void setmotherboard(String motherboard){<br>
+        this.motherboard=motherboard;}<br>
+    public String getmotherboard(){<br>
+        return motherboard;}   <br>
+    public void setoptical(String optical){<br>
+        this.optical=optical;}<br>
+    public String getoptical(){<br>
+        return optical;}<br>
+         private String name1;<br>
+    private String type1;<br>
+    private String processor1;<br>
+    private int  ram1;<br>
+    private int hard_disk1;<br>
+    private String motherboard1;<br>
+    private String optical1;<br>
+    public void setname1(String name){<br>
+        this.name1=name1;}<br>
+    public String getname1(){<br>
+        return name1;}   <br>
+    public void settype1(String type){<br>
+        this.type1=type1;}<br>
+    public String gettype1(){<br>
+        return type1;}   <br>
+    public void setprocessor1(String processor){<br>
+        this.processor1=processor1;}<br>
+    public String getprocessor1(){<br>
+        return processor1;}    <br>
+    public void setram1(int ram1){<br>
+        this.ram1=ram1;}<br>
+    public int getram1(){<br>
+        return ram1;}    <br>
+    public void sethard_disk1(int hard_disk1){<br>
+        this.hard_disk1=hard_disk1;}<br>
+    public int gethard_disk1(){<br>
+        return hard_disk1;}   <br>
+    public void setmotherboard1(String motherboard){<br>
+        this.motherboard1=motherboard1;}<br>
+    public String getmotherboard1(){<br>
+        return motherboard1;}   <br>
+    public void setoptical1(String optical){<br>
+        this.optical1=optical1;}<br>
+    public String getoptical1(){<br>
+        return optical1;}}<br>
+
+
+            </p>
+
+
+            <div class="line"></div>
+
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- Constructors -->
+
+            <h2 id="constructor">4. Constructors </h2> <br>
+
+            <h5>1) Write a program using the concepts of a default constructor. Consider a computer system whose
+                name, type, processor specification, ram, hard disk drives, mother board, optical drive etc, in a
+                default constructor, desired values are entered by the user in a get method (that takes information from
+                the user) and the displays the inputted information via display method. The user shall be asked to
+                change any of the provided information if he/she agrees to change the information then new values shall
+                be asked from the user.</h5>
+            <h5>Output:</h5>
+            <img src="fourth1.png" class="img-thumbnail" alt="firstImage">
+            <img src="fourth2.png" class="img-thumbnail" alt="firstImage">
+            <hr>
+            <img src="fourth3.png" class="img-thumbnail" alt="firstImage">
+            <img src="fourth4.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+                color: white;">
+
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Use constructor overloading to initialize a rectangle of length 4 and breadth 5 for using custom
+                parameters.</h5>
+            <h5>Output:</h5>
+            <img src="fourth1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class</h5>
+            <p style="background-color: black;
+                color: white;">
+
+
+            </p>
+
+            <h5>Sub Class</h5>
+            <p style="background-color: black;
+                color: white;">
+
+
+            </p>
+            <div class="line"></div>
+
+            <h5>3) Use Constructor to set the radius and height of cylinder and calculate surface area and Volume of
+                cylinder.</h5>
+            <h5>Output:</h5>
+            <img src="fourth1.png" class="img-thumbnail"alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class</h5>
+            <p style="background-color: black;
+                color: white;">
+
+package task4;<br>
+public class Task4 {<br>
+    public static void main(String[] args) {<br>
+        cylinder c=new cylinder();<br>
+        System.out.println("Volume is " + c.volume());<br>
+        System.out.println("Surface  is " + c.surfacearea());}}<br>
+
+            </p>
+            <h5>Sub Class</h5>
+            <p style="background-color: black;
+                color: white;">
+
+package task4;<br>
+public class cylinder {<br>
+         private int radius;<br>
+        private int height;     <br>   
+        public cylinder(){<br>
+            radius=15;<br>
+            height=220;}<br>
+        public double volume(){<br>
+            return 3.142*radius*radius*height;}<br>
+        public double surfacearea(){<br>
+           return 2*3.142*radius*radius+2*3.142*radius*height;}}<br>
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>4) Design then implement a class to represent a Flight. A Flight has a flight number, a source, a
+                destination and a number of available seats. This should be implemented using proper access modifier.
+                The class should have: <br>
+                a. A constructor to initialize the 4 instance variables. You have to shorten the name of the source and
+                the destination to 3 characters only if it is longer than 3 characters by a call to the method in the
+                ‘h’ part.
+                b. An overloaded constructor to initialize the flight number and the number of available seats instance
+                variables only.<br>
+                (NOTE: Initialize the source and the destination instance variables to empty string, i.e." ")<br>
+                c. An overloaded constructor to initialize the flight number instance variable only.<br>
+                (NOTE: Initialize the source and the destination instance variables to empty string; and the number of
+                available seats to zero)<br>
+                d. A method public void reserve(int numberOfSeats) to reserve seats on the flight. (NOTE: You have to
+                check that there is enough number of seats to reserve)<br>
+                e. A method public void cancel(int numberOfSeats) to cancel one or more reservations<br>
+                f. A toString method to easily return the flight information: <br>
+                g. An equals method to compare 2 flights.<br>
+                (NOTE: 2 Flights considered being equal if they have the same flight number)<br>
+                Write a test class for the Flight class you wrote. You should try to use all the methods you wrote.
+            </h5>
+            <h5>Output:</h5>
+            <img src="fourth1.png" class="img-thumbnail" alt="firstImage">
+            <img src="fourth2.png" class="img-thumbnail" alt="firstImage">
+            <hr>
+            <img src="fourth3.png" class="img-thumbnail" alt="firstImage">
+            <img src="fourth4.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+            color: white;">
+
+
+            </p>
+
+            <div class="line"></div>
+
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- Static Classes & Members -->
+
+            <h2 id="static">5. Static Classes & Members </h2> <br>
+
+            <h5>1) Write a program to calculate area of rectangle by using static method.Use parameterized
+                constructor to assign width and height to the instance. Use Output area method which uses the static
+                method to calculate the area.</h5>
+            <h5>Output:</h5>
+            <img height="200px" class="img-thumbnail" width="400px" src="10.png" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                public class Main {<br>
+                public static void main(String[] args){<br>
+                Rectangle r = new Rectangle(5,6);<br>
+                r.displayArea();}}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                public class Rectangle {<br>
+                Scanner input = new Scanner(System.in);<br>
+                private static int area;<br>
+                private static int bass,height;<br>
+                public Rectangle(int bass,int height){<br>
+                this.bass = bass;<br>
+                this.height = height;}<br>
+                public static void displayArea(){<br>
+                area = bass*height;<br>
+                System.out.println("The area is: "+area);}}<br>
+
+            </p>
+            <div class="line"></div>
+
+            <h5>2) Write a program to display Name, Enrollment Number, University Name and ,Semester of students
+                that are from same university and semester using static fields and methods.(Hint: first set the
+                university name and semester: <br>
+                Then use static variable counter to get unique roll numbers
+            </h5>
+            <h5>Output:</h5>
+            <img src="11.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                public class Main { <br>
+                public static void main(String[] args){<br>
+                University.setUni("Bahria");<br>
+                University.setSem("3");<br>
+                University u = new University();<br>
+                u.setData("hamza","21");<br>
+                u.displayData();}}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                public class University {<br>
+                private static String university,semester;<br>
+                private String name,age;<br>
+                private static int enrNum = 10;<br>
+                public static void setUni(String uni){<br>
+                university = uni;}<br>
+                public static void setSem(String sem){<br>
+                semester = sem;}<br>
+                public void setData(String name, String age){<br>
+                this.name = name;<br>
+                this.age = age;}<br>
+                public static int setenrNum(){<br>
+                enrNum++;<br>
+                return enrNum;}<br>
+                public void displayData(){<br>
+                System.out.println("Name : "+name+"\nUniversity : "+University.university+"\nSemester :
+                "+University.semester+"\nAge : "+age+"\nEnrollment Number : "+University.setenrNum());}}<br>
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>3) Write a static method called printNTimes that takes an integer n and a string (in that order) as
+                its parameters and prints the string n times.</h5>
+            <h5>Output:</h5>
+            <img src="12.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                import java.util.Scanner;<br>
+                public class Main {<br>
+                public static void main(String[] args){<br>
+                University.prinNTimes(5,"Static method"); }}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                import java.util.Scanner;<br>
+                public class University {<br>
+                public static String insult( int age,String name){<br>
+                if(age>= 1 && age<=10){<br>
+                    return name+" is sweet";<br>
+                    }else if(age>10 && age <= 17){<br>
+                        return name+" is not dweebs";<br>
+                        }else if(age>17 && age <=20){<br>
+                            return name+" is illigal";<br>
+                            }else if(age == 21){<br>
+                            return name+" just became legal";<br>
+                            }else if(age >21 && age <=29){<br>
+                                return name+" is suffering";<br>
+                                }else if(age > 29){<br>
+                                return name+" is dying";<br>
+                                }else{<br>
+                                return name+" has stupid age";}}}
+                                <br>
+            </p>
+            <div class="line"></div>
+
+            <h5>4) Write a static method called insult that has two paramaters, a String which represents a person’s
+                name and an integer which represents the persons age. This method should create and return a String
+                which is a personal insult based on the value of the argument age that was passed. Use the following age
+                cuttoffs (or variations of your choosing) for creating your insults.</h5>
+            <h5>Output:</h5>
+            <img src="13.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+                import java.util.Scanner;<br>
+                public class Main {<br>
+                public static void main(String[] args){ <br>
+                System.out.println(University.insult(87,"Jack ma"));<br>
+                System.out.println(University.insult(5,"Jelly beans"));<br>
+                System.out.println(University.insult(15,"Teen Tweet"));}}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+                import java.util.Scanner;<br>
+                public class University {<br>
+                public static String insult( int age,String name){<br>
+                if(age>= 1 && age<=10){<br>
+                    return name+" is sweet";<br>
+                    }else if(age>10 && age <= 17){<br>
+                        return name+" is not dweebs";<br>
+                        }else if(age>17 && age <=20){<br>
+                            return name+" is illigal";<br>
+                            }else if(age == 21){<br>
+                            return name+" just became legal";<br>
+                            }else if(age >21 && age <=29){<br>
+                                return name+" is suffering";<br>
+                                }else if(age > 29){<br>
+                                return name+" is dying";<br>
+                                }else{<br>
+                                return name+" has stupid age";}}}<br>
+
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>5) Write a static method called greetMe that greets you. The method should issue a prompt asking for
+                your name, display a polite (or not so polite) greeting message and then prompt you to enter your age.
+            </h5>
+            <h5>Output:</h5>
+            <img src="14.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+                import java.util.Scanner;<br>
+                public class Main {<br>
+                public static void main(String[] args){<br>
+                University.greetMe();}}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+                import java.util.Scanner;<br>
+                public class University {<br>
+                static Scanner input = new Scanner(System.in);<br>
+                public static void greetMe(){<br>
+                System.out.print("Enter your name : ");<br>
+                String name = input.next();<br>
+                System.out.print("Hello hamza u come again.\nTell me your age : ");<br>
+                int age = input.nextInt();}}<br>
+
+            </p>
+
+            <div class="line"></div>
+
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- Function Overloading -->
+
+            <h2 id="function">6. Function Overloading </h2> <br>
+
+            <h5>1) Write a program which contains a class ‘Calculator’ contains multiple sum method by using method
+                overloading concept.</h5>
+            <h5>Output:</h5>
+            <img src="15.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                public class Main {<br>
+                public static void main(String[] args){<br>
+                Calculator c = new Calculator();<br>
+                System.out.println(c.sum(2,3));<br>
+                System.out.println(c.sum(2,3,4));}}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                public class Calculator {<br>
+                public int sum(int n1, int n2){<br>
+                return n1+n2;}<br>
+                public int sum(int n1, int n2, int n3){<br>
+                return n1+n2+n3;}}<br>
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Create a class to print the area of a square and a rectangle. The class has two methods with the
+                same name but different number of parameters. The method for printing area of rectangle has two
+                parameters which are length and breadth respectively while the other method for printing area of square
+                has one parameter which is side of square.</h5>
+            <h5>Output:</h5>
+            <img src="16.png"  class="img-thumbnail" alt="firstImage">
+
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                public class Main {<br>
+                public static void main(String[] args){<br>
+                Calculator c = new Calculator();<br>
+                System.out.println("Area of square = "+c.calArea(5));<br>
+                System.out.println("Area of rectangle = "+c.calArea(5,6));}}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                public class Calculator {<br>
+                public int calArea(int n1, int n2){<br>
+                return n1*n2;}<br>
+                public int calArea(int n1){<br>
+                return n1*n1;}}<br>
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>3) Create a class 'Student' with three data members which are name, age and address. The constructor
+                of the class assigns default values name as "unknown", age as '0' and address as "not available". It has
+                two members with the same name 'setInfo'. First method has two parameters for name and age and assigns
+                the same whereas the second method takes has three parameters which are assigned to name, age and
+                address respectively. Print the name, age and address of 4 students. </h5>
+            <h5>Output:</h5>
+            <img src="17.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                public class Main {<br>
+                public static void main(String[] args){<br>
+                Student s1 = new Student();<br>
+                Student s2 = new Student();<br>
+                Student s3 = new Student();<br>
+                Student s4 = new Student();<br>
+                s1.setInfo("Rizvi","21","karachi");<br>
+                s2.setInfo("Shoaib","20","China");<br>
+                s3.setInfo("Akhter","19");<br>
+                s1.print();<br>
+                s2.print();<br>
+                s3.print();<br>
+                s4.print();}}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                public class Student {<br>
+                private String name,age,adress;<br>
+                Student(){<br>
+                name = "unknown";<br>
+                age = "0";<br>
+                adress = "not available";}<br>
+                public void setInfo(String name, String age){<br>
+                this.name = name;<br>
+                this.age = age;}<br>
+                public void setInfo(String name, String age, String adress){<br>
+                this.name = name;<br>
+                this.age = age;<br>
+                this.adress = adress;}<br>
+                public void print(){<br>
+                System.out.println("\nName : "+name+"\tAge : "+age+"\nAdress : "+adress);}}<br>
+
+            </p>
+
+            <div class="line"></div>
+            <div id="foremediaads-e1"></div>
+            <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/e1"></script>
+            <h5>4) Implement the Circle class to overload the + operator so that you can add two Circle objects.
+                Adding two Circle object should give another Circle whose radius is the sum of the radii of the two
+                Circle objects.</h5>
+            <h5>Output:</h5>
+            <img src="18.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                using System;<br>
+                namespace Task_6{<br>
+                class Program{<br>
+                static void Main(string[] args)<br>
+                {<br>
+                Circle c1 = new Circle(5);<br>
+                Circle c2 = new Circle(8);<br>
+                Console.WriteLine("Radius of circle 1 : " + c1.displayRadius());<br>
+                Console.WriteLine("Radius of circle 2 : " + c2.displayRadius());<br>
+                Circle c3 = c1 + c2;<br>
+                Console.WriteLine("Radius of circle 1+2 : " + c3.displayRadius());}}}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                using System;<br>
+                namespace Task_6{<br>
+                class Circle{<br>
+                int radius;<br>
+                public Circle(){<br>
+                radius = 0;}<br>
+                public Circle(int radius){<br>
+                this.radius = radius;}<br>
+                public string displayRadius(){<br>
+                return string.Format("Radius : {0}", radius);}<br>
+                public static Circle operator +(Circle c1, Circle c2){<br>
+                Circle c3 = new Circle();<br>
+                c3.radius = c2.radius + c1.radius;<br>
+                return c3;}}}<br>
+
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>5) Implement the Rectangle class to overload the + operator so that you can add two Rectangle
+                objects. Adding two Rectangle objects should give another Rectangle object whose length is the sum of
+                the lengths of the two Rectangle objects and whose breadth is the sum of the breadths of the two
+                Rectangle objects.</h5>
+            <h5>Output:</h5>
+            <img src="19.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                using System;<br>
+                namespace Task_6{<br>
+                class Program{<br>
+                static void Main(string[] args){<br>
+                Rectangle r1 = new Rectangle(5, 6);<br>
+                Rectangle r2 = new Rectangle(7,8);<br>
+                r1.PrintRectangle();<br>
+                r2.PrintRectangle();<br>
+                Rectangle r3 = r1 + r2;<br>
+                r3.PrintRectangle();}}}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                using System;<br>
+                namespace Task_6{<br>
+                class Rectangle{<br>
+                int breadth, height;<br>
+                public Rectangle(){<br>
+                breadth = 0;<br>
+                height = 0;}<br>
+                public Rectangle(int breadth, int height){<br>
+                this.breadth = breadth;<br>
+                this.height = height;}<br>
+                public void PrintRectangle(){<br>
+                Console.WriteLine("\nBreadth = {0}\theight = {1}",breadth,height);}<br>
+                public static Rectangle operator +(Rectangle r1, Rectangle r2){<br>
+                Rectangle r3 = new Rectangle();<br>
+                r3.breadth = r1.breadth + r2.breadth;<br>
+                r3.height = r1.height + r2.height;<br>
+                return r3;}}}<br>
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>6) Write a class Time which represents time. the class should have three fields for hours, minutes
+                and seconds. It should have constructor to initialize the hours, minutes and seconds.
+                A method printTime() to print the current time.
+                Overload the following operators:
+                plus operator (+) (add two time objects based on 24 hour clock)
+                and (compare two time objects)
+            </h5>
+            <h5>Output:</h5>
+            <img src="21.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+                using System;<br>
+                namespace Task_6{<br>
+                class Program{<br>
+                static void Main(string[] args){<br>
+                DateTime dt = DateTime.Now; <br>
+                Time t1 = new Time(dt.Hour,dt.Minute,dt.Second);<br>
+                Time t2 = new Time(15,45,7);<br>
+                Time t3 = t1+ t2;<br>
+                t1.printTime();<br>
+                t2.printTime(); <br>
+                t3.printTime();<br>
+                if (t1<t2){<br>
+                    Console.WriteLine("Time 1 is small");} <br>
+                    else{<br>
+                    Console.WriteLine("Time 2 is small");}}}} <br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+                using System;<br>
+                namespace Task_6{<br>
+                class Time{<br>
+                int hours, minutes, seconds;<br>
+                public Time(){<br>
+                hours = 0;<br>
+                minutes = 0;<br>
+                seconds = 0;}<br>
+                public Time(int hours, int minutes, int seconds){<br>
+                this.hours = hours;<br>
+                this.minutes = minutes;<br>
+                this.seconds = seconds;}<br>
+                public void printTime(){<br>
+                Console.WriteLine("Time is : {0}h:{1}mm:{2}sec",hours,minutes,seconds);}<br>
+                public static Time operator +(Time t1, Time t2){<br>
+                Time t3 = new Time();<br>
+                t3.hours = t1.hours + t2.hours;<br>
+                t3.minutes = t1.minutes + t2.minutes;<br>
+                t3.seconds = t1.seconds + t2.seconds;<br>
+                if (t3.seconds > 60){<br>
+                t3.minutes++;<br>
+                t3.seconds -= 60;}<br>
+                if (t3.minutes > 60){<br>
+                t3.hours++;<br>
+                t3.minutes -= 60;}<br>
+                if (t3.hours > 24){<br>
+                t3.hours -= 24;}<br>
+                return t3; }<br>
+                public static Boolean operator <(Time t1, Time t2){<br>
+                    if(t1.hours <= t2.hours && t1.hours!=t2.hours){<br>
+                        return true;}<br>
+                        else if(t1.minutes < t2.minutes && t1.minutes !=t2.minutes && t1.hours <=t2.hours){<br>
+                            return true;}<br>
+                            else if(t1.seconds<=t2.seconds && t1.seconds !=t2.seconds && t1.minutes <=t2.minutes &&
+                                t1.hours>= t2.hours){<br>
+                                return true;}<br>
+                                return false; }<br>
+                                public static Boolean operator >(Time t1, Time t2){<br>
+                                if (t1.hours >= t2.hours && t1.hours != t2.hours){<br>
+                                return true;}<br>
+                                else if (t1.minutes >= t2.minutes && t1.minutes != t2.minutes && t1.hours >=
+                                t2.hours){<br>
+                                return true;}<br>
+                                else if (t1.seconds <= t2.seconds && t1.seconds !=t2.seconds && t1.minutes>= t2.minutes
+                                    && t1.hours >= t2.hours){<br>
+                                    return true;}<br>
+                                    return false;}}}<br>
+
+            </p>
+
+            <div class="line"></div>
+
+<div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- Inheritance -->
+
+            <h2 id="inheritance">7. Inheritance </h2> <br>
+
+            <h5>1) Write the classes below containing the given instance variables and methods, following the
+                inherited hierarchy.</h5>
+            <h5>Output:</h5>
+            <img src="22.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+import java.util.Scanner;<br>
+public class Main {<br>
+    public static void main(String[] args){<br>
+        Scanner scan = new Scanner(System.in);<br>
+        while (true) {<br>
+            System.out.println("Enter the number which you want to compute the area");<br>
+            System.out.print("(1) Triangle (2) Rectangle (3) Circle ? ");<br>
+            switch (scan.nextInt()) {<br>
+                case 1:<br>
+                    Triangle triangle = new Triangle();<br>
+                    System.out.print("Base: ");<br>
+                    triangle.setBase(scan.nextDouble());<br>
+                    System.out.print("Height: ");<br>
+                    triangle.setHeight(scan.nextDouble());<br>
+                    System.out.println("Area of triangle: " + triangle.getArea());<br>
+                    break;<br>
+                case 2:<br>
+                    Rectangle rectangle = new Rectangle();<br>
+                    System.out.print("Width: ");<br>
+                    rectangle.setWidth(scan.nextDouble());<br>
+                    System.out.print("Height: ");<br>
+                    rectangle.setHeight(scan.nextDouble());<br>
+                    System.out.println("Area of rectangle: " + rectangle.getArea());<br>
+                    break;<br>
+                case 3:<br>
+                    Circle circle = new Circle();<br>
+                    System.out.print("Radius: ");<br>
+                    circle.setRadius(scan.nextDouble());<br>
+                    System.out.println("Area of circle: " + circle.getArea());<br>
+                    break;<br>
+                default:<br>
+                    System.out.println("What do u mean?");}}}}<br>
+            </p>
+            <h5>Parent Class Shape:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Shapes {<br>
+    protected double area;<br>
+    public Shapes(){<br>
+        area = 0;}<br>
+    public double getArea(){<br>
+        return this.area;}<br>
+
+    public void onAreaChange() {}}<br>
+            </p>
+            <h5>Child Class Cirlce:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Circle extends Shapes{<br>
+    private double radius;<br>
+    private double pi;<br>
+    public Circle(){<br>
+        radius = 0;<br>
+        pi = Math.PI;}<br>
+    public void setRadius(double radius){<br>
+        this.radius = radius;<br>
+        onAreaChange();}<br>
+    public void onAreaChange(){<br>
+        this.area = pi*(radius*radius);}}<br>
+            </p>
+            <h5>Child Class Triangle:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Triangle  extends Shapes{<br>
+    private double height;<br>
+    private double base;<br>
+    public Triangle(){<br>
+        height = 0;<br>
+        base = 0;}<br>
+    public void setHeight(double height){<br>
+        this.height = height;<br>
+        onAreaChange();}<br>
+    public void setBase(double base){<br>
+        this.base = base;<br>
+        onAreaChange();}<br>
+    public void onAreaChange(){<br>
+        this.area = 0.5*this.height*this.base;}}<br>
+            </p>
+            <h5>Child Class Rectangle:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Rectangle extends Shapes{<br>
+    private double height;<br>
+    private double width;<br>
+    public Rectangle(){<br>
+        height = 0;<br>
+        width = 0;}<br>
+    public void setHeight(double height){<br>
+        this.height = height;<br>
+        onAreaChange();}<br>
+    public void setWidth(double width){<br>
+        this.width = width;<br>
+        onAreaChange();}<br>
+    public void onAreaChange(){<br>
+        this.area = this.height * this.width;}}<br>
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Write a program that inherits a class named Alien and Pirates from a parent class Human. The
+                human class has its own features like, Human can sleep, walk, talk etc. the Alien and Pirates class
+                inheriting these functionalities as well as they have their characteristics, thus explaining the
+                concepts of inheritance.</h5>
+            <h5>Output:</h5>
+            <img src="23.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+import java.util.PrimitiveIterator;<br>
+import java.util.Scanner;<br>
+public class Main {<br>
+    public static void main(String[] args){<br>
+        Human h = new Human();<br>
+        Alien a = new Alien();<br>
+        Pirate p = new Pirate();<br>
+        System.out.println("\nHumans can do this:");<br>
+        h.displayFeature();<br>
+        System.out.println("\nAlien can do this:");<br>
+        a.displayFeature();<br>
+        System.out.println("\nPirate can do this:");<br>
+        p.displayFeature();}}<br>
+
+            </p>
+            <h5>Parent Class Human:</h5>
+            <p style="background-color: black;
+                color: white;">
+public class Human {<br>
+    String[] featureH = {"Sleep","Walk","Talk","Write","Read"};<br>
+    public void displayFeature(){<br>
+        for (String feaure:featureH) {<br>
+            System.out.print(feaure+",");}}}<br>
+
+            </p>
+            <h5>Child Class Alien:</h5>
+            <p style="background-color: black;
+                color: white;">
+public class Alien extends Human{<br>
+    String[] featureA = {"big eye","super strength","10 legs"};<br>
+    public void displayFeature(){<br>
+        super.displayFeature();<br>
+        for (String feaure:featureA) {<br>
+            System.out.print(feaure+",");}}}<br>
+
+            </p>
+            <h5>Child Class Pirate:</h5>
+            <p style="background-color: black;
+                color: white;">
+public class Pirate extends Human{<br>
+    String[] featureP = {"eye patch", "Parrot", "Sword", "Welth"};<br>
+    public void displayFeature(){<br>
+        super.displayFeature();<br>
+        for (String feaure:featureP) {<br>
+            System.out.print(feaure+",");}}}<br>
+
+            </p>
+
+            <div class="line"></div>
+            <div id="foremediaads-e1"></div>
+            <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/e1"></script>
+            <h5>3) Write a program that inherits a class named Produce, Cosmetics, Pharmacy, electronic Item and
+                Cloth from a parent class Item. The Item class has its own features like, name and price etc. the Child
+                classes inheriting these functionalities as well as they have their characteristics, thus explaining the
+                concepts of inheritance. Chile classes like Produce, can have their own child classes i.e., Frozen and
+                Fresh.</h5>
+            <h5>Output:</h5>
+            <img src="24.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+import java.util.PrimitiveIterator;<br>
+import java.util.Scanner;<br>
+public class Main {<br>
+    public static void main(String[] args){<br>
+        Scanner scan = new Scanner(System.in);<br>
+        Hair h = new Hair("SunSilk",500,"hair product","shampoo");<br>
+        Facial f = new Facial("Vita",100,"Facial product","face mask");<br>
+        Produce p = new Produce("Zinger",250,"Burger");<br>
+        Electronic e = new Electronic("Samsung", 20000, "Mobile");<br>
+        h.display();<br>
+        f.display();<br>
+        p.display();<br>
+        e.display();}}<br>
+
+            </p>
+            <h5>Parent Class Item:</h5>
+            <p style="background-color: black;
+                color: white;">
+public class Item {<br>
+    String name;<br>
+    int price;<br>
+    public Item(){<br>
+        this.name = "";<br>
+        this.price = 0;}<br>
+    public Item(String name, int price){<br>
+        this.name = name;<br>
+        this.price = price;}<br>
+    public void display(){<br>
+        System.out.println("\n\nName : "+name+"\tPrice : "+price);}}<br>
+
+            </p>
+            <h5>Child Class Electronic:</h5>
+            <p style="background-color: black;
+                color: white;">
+public class Electronic extends Item{<br>
+    String type;<br>
+    // comp,tv<br>
+    public Electronic(){<br>
+        this.name = "";<br>
+        this.price = 0;<br>
+        this.type = "";}<br>
+    public Electronic(String name, int price, String type){<br>
+        this.name = name;<br>
+        this.price = price;<br>
+        this.type = type;}<br>
+    public void display(){<br>
+        super.display();<br>
+        System.out.println("Type : "+type);}}<br>
+
+            </p>
+            <h5>Child Class Produce:</h5>
+            <p style="background-color: black;
+                color: white;">
+public class Produce extends Item{<br>
+    String type;<br>
+    //burger,sandwitch<br>
+    public Produce(){<br>
+        this.name = "";<br>
+        this.price = 0;<br>
+        this.type = "";}<br>
+    public Produce(String name, int price, String type){<br>
+        this.name = name;<br>
+        this.price = price;<br>
+        this.type = type;}<br>
+    public void display(){<br>
+    super.display();<br>
+    System.out.println("Type : "+type);}}<br>
+
+            </p>
+            <h5>Child-Parent Class Cosmetics:</h5>
+            <p style="background-color: black;
+                color: white;">
+public class Cosmetics extends Item{<br>
+    String type;<br>
+    //Facial,Hair<br>
+    public Cosmetics(){<br>
+        this.name = "";<br>
+        this.price = 0;<br>
+        this.type = "";}<br>
+    public Cosmetics(String name, int price, String type){<br>
+        this.name = name;<br>
+        this.price = price;<br>
+        this.type = type;}<br>
+    public void display(){<br>
+        super.display();<br>
+        System.out.println("Type : "+type);}}<br>
+
+            </p>
+            <h5>Child Class Hair:</h5>
+            <p style="background-color: black;
+                color: white;">
+public class Hair extends Cosmetics{<br>
+    String product;<br>
+    //oil,shampoo<br>
+    public Hair(){<br>
+        this.name = "";<br>
+        this.price = 0;<br>
+        this.type = "";<br>
+        this.product = "";}<br>
+    public Hair(String name, int price, String type, String product){<br>
+        this.name = name;<br>
+        this.price = price;<br>
+        this.type = type;<br>
+        this.product = product;}<br>
+    public void display(){<br>
+        super.display();<br>
+        System.out.print("Product : "+product);}}<br>
+
+            </p>
+            <h5>Child Class Facial:</h5>
+            <p style="background-color: black;
+                color: white;">
+public class Facial extends Cosmetics{<br>
+    String product;<br>
+    //Face wash,Soap<br>
+    public Facial(){<br>
+        this.name = "";<br>
+        this.price = 0;<br>
+        this.type = "";<br>
+        this.product = "";}<br>
+    public Facial(String name, int price, String type, String product){<br>
+        this.name = name;<br>
+        this.price = price;<br>
+        this.type = type;<br>
+        this.product = product;}<br>
+    public void display(){<br>
+        super.display();<br>
+        System.out.print("Product : "+product);}}<br>
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>4) Write a program that inherits a class named Pakistani, BBQ, Chines, Fast Food and Beverages etc.
+                from a parent class Cuisines. The Cuisines class has its own features like, name, quantity and price
+                etc. the Child classes inheriting these functionalities as well as they have their characteristics, thus
+                explaining the concepts of inheritance. Child classes can have their own child classes.</h5>
+            <h5>Output:</h5>
+            <img src="25.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+import java.util.PrimitiveIterator;<br>
+import java.util.Scanner;<br>
+public class Main {<br>
+    public static void main(String[] args){<br>
+        HotDrink hd = new HotDrink("Chai",2,50,"Bevrage","cup");<br>
+        ColdDrink cd = new ColdDrink("Pepsi",1,150,"Bevrage","can");<br>
+        FastFood ff = new FastFood("Zinger",1,250,"Burger");<br>
+        BBQ bbq = new BBQ("Tikka",1,150,"Chicken");<br>
+        Pakistani p = new Pakistani("Biryani",1,180,"Beef");<br>
+        hd.display();<br>
+        cd.display();<br>
+        ff.display();<br>
+        bbq.display();<br>
+        p.display();}}<br>
+
+            </p>
+            <h5>Parent Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Cuisines {<br>
+    private String name;<br>
+    private int quantity;<br>
+    private double price;<br>
+    public Cuisines(){<br>
+        name = "";<br>
+        quantity = 0;<br>
+        price = 0;}<br>
+    public Cuisines(String name, int quantity, double price){<br>
+        this.name = name;<br>
+        this.price = price;<br>
+        this.quantity = quantity;}<br>
+    public void display(){<br>
+        System.out.print("\n\nName : "+this.name+"\tPrice : "+this.price+"\nQuantity : "+this.quantity);}}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Pakistani extends Cuisines{<br>
+    String foodtype;<br>
+    Pakistani(){<br>
+        super();<br>
+        foodtype = "";}<br>
+    Pakistani(String name, int quantity, double price, String type){<br>
+        super(name,quantity,price);<br>
+        this.foodtype = type;}<br>
+    public void display(){<br>
+        super.display();<br>
+        System.out.print("\tFood-Type : "+foodtype);}}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class BBQ extends Cuisines{<br>
+    String meattype;<br>
+    BBQ(){<br>
+        super();<br>
+        meattype = "";}<br>
+    BBQ(String name, int quantity, double price, String type){<br>
+        super(name,quantity,price);<br>
+        this.meattype = type;}<br>
+    public void display(){<br>
+        super.display();<br>
+        System.out.print("\tMeat-Type : "+meattype);}}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class FastFood extends Cuisines{<br>
+    String meal;<br>
+    FastFood(){<br>
+        super();<br>
+        meal = "";}<br>
+    FastFood(String name, int quantity, double price, String type){<br>
+        super(name,quantity,price);<br>
+        this.meal = type;}<br>
+    public void display(){<br>
+        super.display();<br>
+        System.out.print("\tType : "+meal);}}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Beverages extends Cuisines{<br>
+    String drinktype;<br>
+    public Beverages(){<br>
+        super();<br>
+        drinktype = "";}<br>
+    public Beverages(String name, int quantity, double price, String type){<br>
+        super(name,quantity,price);<br>
+        drinktype = type;}<br>
+    public void display() {<br>
+        super.display();<br>
+        System.out.print("\tType : "+drinktype);}}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class HotDrink extends Beverages{<br>
+    String hotdrinksize;<br>
+    HotDrink(){<br>
+        super();<br>
+        hotdrinksize = "";}<br>
+    HotDrink(String name, int quantity, double price, String type, String hotdrinksize){<br>
+        super(name,quantity,price,type);<br>
+        this.hotdrinksize = hotdrinksize;}<br>
+    public void display(){<br>
+        super.display();<br>
+        System.out.print("\nSize : "+hotdrinksize);}}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class ColdDrink extends Beverages{<br>
+    String colddrinksize;<br>
+    ColdDrink(){<br>
+        super();<br>
+        colddrinksize = "";}<br>
+    ColdDrink(String name, int quantity, double price, String type, String colddrinksize){<br>
+        super(name,quantity,price,type);<br>
+        this.colddrinksize = colddrinksize;}<br>
+    public void display(){<br>
+        super.display();<br>
+
+            </p>
+            
+            <div class="line"></div>
+
+
+            <h5>5) Write code according to given guide.You must draw a class diagram first to start writing your
+                code.
+                Consider a superclass Items which models customer’s purchases. This class has: <br>
+                • Two private instance variables name (String) and unitPrice (double).<br>
+                • One constructor to initialize the instance variables.<br>
+                • A default constructor to initialize name to “no item”, and unitPrice to 0. use this()<br>
+                • A method getPrice that returns the unitPrice.<br>
+                • Accessor and mutator methods.<br>
+                • A toString method to return the name of the item followed by @ symbol, then the unitPrice.<br>
+
+                Consider two subclasses WeighedItem and CountedItem. WeighedItem has an additional instance variable
+                weight (double) in Kg while CountedItem has an additional variable quantity (int) both private.<br>
+                • Write an appropriate constructor for each of the classes making use of the constructor of the
+                superclass in defining those of the subclasses. <br>
+                • Override getPrice method that returns the price of the purchasedItem based on its unit price and
+                weight (WeighedItem), or quantity (CountedItem). Make use of getPrice of the superclass<br>
+                • Override also toString method for each class making use of the toString method of the superclass in
+                defining those of the subclasses.<br>
+                toString should return something that can be printed on the receipt.
+                For example <br>
+                Banana @ 3.00 1.37 Kg 4.11 PKR (in case of WeighedItem class)<br>
+                Pens @ 4.5 10 units 45 PKR (in case of CountedItem class) <br>
+            </h5>
+            <h5>Output:</h5>
+            <img src="26.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+import java.util.PrimitiveIterator;<br>
+import java.util.Scanner;<br>
+public class Main {<br>
+    public static void main(String[] args){<br>
+        WeighedItem w = new WeighedItem("Bnana",50,2.5);<br>
+        CountedItem c = new CountedItem("Apple",10,5);<br>
+        
+        System.out.println(w.toString());<br>
+        System.out.println(c.toString());}}
+        <br>
+            </p>
+            <h5>Parent Class Item:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Item {<br>
+    private double unitprice;<br>
+    private String name;<br>
+    Item(){<br>
+        unitprice = 0;<br>
+        name = "";}<br>
+    Item(String name, double unitprice){<br>
+        this.unitprice = unitprice;<br>
+        this.name = name;}<br>
+    public void setUnitprice(double price){<br>
+        this.unitprice = price;}<br>
+    public void setName(String name){<br>
+        this.name = name;}<br>
+    public double getPrice(){<br>
+        return this.unitprice;}<br>
+    public String getName(){<br>
+        return this.name;}<br>
+    public String toString(){<br>
+        return this.name+" @ "+this.unitprice;}}<br>
+
+            </p>
+            <h5>Child Class WeighedItem:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class WeighedItem extends Item{<br>
+    private double weight;<br>
+    public WeighedItem(){<br>
+        weight = 0;}<br>
+    public WeighedItem(String name, double price, double weight){<br>
+        super(name,price);<br>
+        this.weight = weight;}<br>
+    public double getPrice(){<br>
+        return super.getPrice()*this.weight;}<br>
+    public String toString(){<br>
+        return super.toString()+" "+this.weight+"Kg "+getPrice()+"PKR";}}<br>
+
+            </p>
+            <h5>Child Class CountedItem:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class CountedItem extends Item{<br>
+    private int quantity;<br>
+    public CountedItem(){<br>
+        quantity = 0;}<br>
+    public CountedItem(String name, double price, int quantity){<br>
+        super(name,price);<br>
+        this.quantity = quantity;}<br>
+    public double getPrice(){<br>
+        return super.getPrice()*this.quantity;}<br>
+    public String toString(){<br>
+        return super.toString()+" "+this.quantity+"Units "+getPrice()+"PKR";}}<br>
+
+            </p>
+
+
+            <div class="line"></div>
+
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- Association, Composition & Composition -->
+
+            <h2 id="association">8. Association, Composition & Composition </h2> <br>
+
+            <h5>1) Write a program and create the objects of classes in class car to explain the concept of
+                composition. Create several classes as engine, doors, capacity and wheel having their individual methods
+                attributes. The object of these classes are created in a car class and they are set as public. The
+                object of this car class is created in Main method and this with the help of this object we can call
+                other classes as well and can use their functionalities and design UML class diagram.</h5>
+            <h5>Output:</h5>
+            <img src="27.png" class="img-thumbnail" alt="firstImage">
+
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Main {<br>
+    public static void main(String[] args){<br>
+        Car car = new Car("Toyota","Petrol",1300,4,5,4);<br>
+        car.display();}}<br>
+
+            </p>
+            <h5>Class car:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Car {<br>
+    private String name;<br>
+    public Engine engine;<br>
+    public Doors doors;<br>
+    public Capacity capacity;<br>
+    public Wheel wheel;<br>
+    public Car(){<br>
+        engine = new Engine();<br>
+        doors = new Doors();<br>
+        capacity = new Capacity();<br>
+        wheel = new Wheel();}<br>
+    public Car(String name,String type, int cc, int doorQuantity, int capacityQuantity, int wheelQuantity){<br>
+        this.name = name;<br>
+        engine = new Engine(cc,type);<br>
+        doors = new Doors(doorQuantity);<br>
+        capacity = new Capacity(capacityQuantity);<br>
+       wheel = new Wheel(wheelQuantity);}<br>
+    public String getName() {<br>
+        return name;}<br>
+    public void setName(String name){<br>
+        this.name = name;}<br>
+    public void display(){<br>
+        System.out.println("Name : "+name+"\nCar has a Engine of "+engine.getCC()+"cc of Type : "+engine.getType()+"\nCar has "+doors.getQuantity()+" doors and "+wheel.getQuantity()+" wheels and it has capacity of "+capacity.getQuantity());}}<br>
+
+            </p>
+            <h5>Class Engine:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Engine {<br>
+    private int cc;<br>
+    private String type;<br>
+    public Engine(){<br>
+        cc = 0;<br>
+        type = "";}<br>
+    public Engine(int cc, String type){<br>
+        this.cc = cc;<br>
+        this.type = type;}<br>
+    public int getCC() {<br>
+        return cc;}<br>
+    public void setCC(int cc){<br>
+        this.cc = cc;}<br>
+    public String getType() {<br>
+        return type;}<br>
+    public void setType(String type){<br>
+        this.type = type;}}<br>
+
+            </p>
+            <h5>Class Doors:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Doors {<br>
+    private int quantity;<br>
+    public Doors(){<br>
+        quantity = 0;}<br>
+    public Doors(int quantity){<br>
+        this.quantity = quantity;}<br>
+    public int getQuantity() {<br>
+        return quantity;}<br>
+    public void setQuantity(int quantity){<br>
+        this.quantity = quantity;}}<br>
+
+            </p>
+            <h5>Class Wheels:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Wheel {<br>
+    private int quantity;<br>
+    public Wheel(){<br>
+        quantity = 0;}<br>
+    public Wheel(int quantity){<br>
+        this.quantity = quantity;}<br>
+    public int getQuantity() {<br>
+        return quantity;}<br>
+    public void setQuantity(int quantity){<br>
+        this.quantity = quantity;}}<br>
+
+            </p>
+            <h5>Class Capacity:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Capacity {<br>
+    private int quantity;<br>
+    public Capacity(){<br>
+        quantity = 0;}<br>
+    public Capacity(int quantity){<br>
+        this.quantity = quantity;}<br>
+    public int getQuantity() {<br>
+        return quantity;}<br>
+    public void setQuantity(int quantity){<br>
+        this.quantity = quantity;}}<br>
+
+            </p>
+            <div id="foremediaads-e1"></div>
+            <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/e1"></script>
+            <div class="line"></div>
+
+            <h5>2) Write complete program for Flight's class, Time's class and Passenger's class with the concept of
+                association and aggregation and design UML class diagram. Functions information also been given in the
+                table below:</h5>
+            <h5>Output:</h5>
+            <img src="28.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+import java.util.ArrayList;<br>
+import java.util.List;<br>
+public class Main {<br>
+    public static void main(String[] args){<br>
+        Pasanger p1 = new Pasanger(852);<br>
+        Pasanger p2 = new Pasanger(456);<br>
+        Pasanger p3 = new Pasanger(987);<br>
+        Pasanger p4 = new Pasanger(741);<br>
+        Pasanger p5 = new Pasanger(369);<br>
+        Time t1 = new Time(5,30);<br>
+        Time t2 = new Time(8,00);<br>
+        List<Pasanger> p = new ArrayList<Pasanger>();<br>
+        p.add(p1);<br>
+        p.add(p2);<br>
+        p.add(p3);<br>
+        p.add(p4);<br>
+        p.add(p5);<br>
+        Flight f1 = new Flight("F-456", "Lahore","Hyderabad", t1, t2, p);<br>
+        f1.display();}}<br>
+
+            </p>
+            <h5>Class Flight:</h5>
+            <p style="background-color: black;
+                color: white;">
+import java.util.ArrayList;<br>
+import java.util.List;<br>
+public class Flight {<br>
+    private String flightNo,destination,origin;<br>
+    private Time arrival,departure;<br>
+    private List<Pasanger> pasanger;<br>
+    public Flight(){<br>
+        flightNo = "";<br>
+        destination = "";<br>
+        origin = "";<br>
+        arrival = new Time();<br>
+        departure = new Time();<br>
+        pasanger = new ArrayList<Pasanger>();}<br>
+    public Flight(String flightNo, String destination,String origin, Time arrival, Time departure, List<Pasanger> pasanger){<br>
+        this.flightNo = flightNo;<br>
+        this.destination = destination;<br>
+        this.origin = origin;<br>
+        this.arrival = arrival;<br>
+        this.departure = departure;<br>
+        this.pasanger = pasanger;}<br>
+    public void setFlightNo(String flightNo){<br>
+        this.flightNo = flightNo;}<br>
+    public String getFlightNo(){<br>
+        return flightNo;}<br>
+    public void setDestination(String destination){<br>
+        this.destination = destination;}<br>
+    public String getDestination(){<br>
+        return destination;}<br>
+    public void display(){<br>
+        System.out.println("Flight number : "+flightNo+"\nDestination : "+destination+"\nOrigin :"+origin+"\nArrival : "+arrival.getHoure()+":"+arrival.getMinute()+<br>"\nDeparture : "+departure.getHoure()+":"+departure.getMinute()+<br>"\nList of pasanger :");<br>
+        int cnt = 0;<br>
+        for (Pasanger p:pasanger) {<br>
+            System.out.println(p.getId());<br>
+            cnt++;}<br>
+        System.out.println("Total pasanger : "+cnt);}}<br>
+
+            </p>
+            <h5>Class Time:</h5>
+            <p style="background-color: black;
+                color: white;">
+public class Time {<br>
+    private int houre,minute;<br>
+    public Time(){<br>
+        houre = 0;<br>
+        minute = 0;}<br>
+    public Time(int houre, int minute){<br>
+        this.houre = houre;<br>
+        this.minute = minute;}<br>
+    public void setHoure(int houre){<br>
+        this.houre = houre;}<br>
+    public int getHoure(){<br>
+        return houre;}<br>
+    public void setMinute(int minute){<br>
+        this.minute = minute;}<br>
+    public int getMinute(){<br>
+        return minute;}}<br>
+
+            </p>
+            <h5>Class Pasanger:</h5>
+            <p style="background-color: black;
+                color: white;">
+public class Pasanger {<br>
+    private int id;<br>
+    public Pasanger(){<br>
+        id = 0;}<br>
+    public Pasanger(int id){<br>
+        this.id = id;}<br>
+    public void setId(int id){<br>
+        this.id = id;}<br>
+    public int getId(){<br>
+        return id;}}<br>
+
+            </p>
+            
+
+            <div class="line"></div>
+
+            <h5>3) : A company manages many stores. Each Store contains many Products. Implement Product, Store and
+                Company classes using association and aggrigation concepts and design UML class diagram.</h5>
+            <h5>Output:</h5>
+            <img src="29.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+import java.util.ArrayList;<br>
+import java.util.List;<br>
+public class Main {<br>
+    public static void main(String[] args){<br>
+        Product p1 = new Product("Shampoo",400);<br>
+        Product p2 = new Product("Comb",50);<br>
+        Product p3 = new Product("Bag",1500);<br>
+        Product p4 = new Product("Mobile",25000);<br>
+        Product p5 = new Product("Apple",20);<br>
+        List<Product> p = new ArrayList<Product>();<br>
+        p.add(p1);<br>
+        p.add(p2);<br>
+        p.add(p3);<br>
+        p.add(p4);<br>
+        p.add(p5);<br>
+        Store s1 = new Store("Hyderabad",p);<br>
+        Store s2 = new Store("Karachi",p);<br>
+        Store s3 = new Store("Quetta",p);<br>
+        List<Store> s = new ArrayList<Store>();<br>
+        s.add(s1);<br>
+        s.add(s2);<br>
+        s.add(s3);<br>
+        Company c = new Company("Arslan Traders",s);<br>
+        c.display();}}<br>
+
+            </p>
+            <h5>Class Store:</h5>
+            <p style="background-color: black;
+            color: white;">
+import java.util.ArrayList;<br>
+import java.util.List;<br>
+public class Store {<br>
+    private String name;<br>
+    private List<Product> product;<br>
+    public Store(){<br>
+        name = "";<br>
+        product = new ArrayList<Product>();}<br>
+    public Store(String name, List<Product> product){<br>
+        this.name = name;<br>
+        this.product = product;}<br>
+    public void setName(String name){<br>
+        this.name = name;}<br>
+    public String getName(){<br>
+        return name;}<br>
+    public List<Product> getProduct(){<br>
+        return product;}}<br>
+
+            </p>
+            <h5>Class Product:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Product {<br>
+    private String name;<br>
+    private double price;<br>
+    public Product(){<br>
+        name = "";<br>
+        price = 0;}<br>
+    public Product(String name, double price){<br>
+        this.name = name;<br>
+        this.price = price;}<br>
+    public void setName(String name){<br>
+        this.name = name;}<br>
+    public void setPrice(double price){<br>
+        this.price = price;}<br>
+    public String getName(){<br>
+        return name;}<br>
+    public double getPrice(){<br>
+        return price;}}<br>
+
+            </p>
+            <h5>Class Company:</h5>
+            <p style="background-color: black;
+            color: white;">
+import java.util.ArrayList;<br>
+import java.util.List;<br>
+public class Company {<br>
+    private String name;<br>
+    private List<Store> stores;<br>
+    public Company(){<br>
+        name = "";<br>
+        stores = new ArrayList<Store>();}<br>
+    public Company(String name, List<Store> stores){<br>
+        this.name = name;<br>
+        this.stores = stores;}<br>
+    public void setName(String name){<br>
+        this.name = name;}<br>
+    public String getName(){<br>
+        return name;}<br>
+    public void display(){<br>
+        System.out.println("Company name : "+name);<br>
+        for (Store store: stores) {<br>
+            System.out.println("-------------------------\nStore name : "+store.getName()+"\nProducts :<br> \nItem\tPrice");<br>
+            for (Product p: store.getProduct()) {<br>
+                System.out.println(p.getName()+"\t"+p.getPrice());<br>}}}}<br>
+            </p>
+            <div class="line"></div>
+
+            <div id="foremediaads-c1"></div>
+            <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+            
+            <!-- Abstract Class -->
+
+            <h2 id="abstract">9. Abstract Class </h2> <br>
+
+            <h5>1) Write a program for exam department which provide abstract class and method of Exam type which
+                contains general methods related to exams and can be used by different department for conducting exams.
+            </h5>
+            <h5>Output:</h5>
+            <img src="fourth1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class JavaApplication9 {<br>
+    public static void main(String[] args) {<br>
+        Exam bse=new BSE();<br>
+        bse.examDate();<br>
+        bse.fees();<br>
+        bse.universityName();    <br>
+        Exam bba=new BBA();<br>
+        System.out.println();<br>
+         bba.examDate();<br>
+        bba.fees();<br>
+        bba.universityName();<br>
+        bba.name();}}<br>
+
+            </p>
+            <h5>BBA Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+package javaapplication9;<br>
+public  class BBA extends Exam{<br>
+    public void examDate(){<br>
+        System.out.println("The Exam date is 10/03/2022");}<br>
+    public void fees(){<br>
+        System.out.println("The fees per Semester is 30000");}<br>
+    public void display(){<br>
+        examDate();<br>
+        fees();}  }<br>
+
+            </p>
+            <h5>BSE Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+package javaapplication9;<br>
+public  class BSE extends Exam{<br>
+    public void examDate(){<br>
+        System.out.println("The Exam date is 20/12/2022");}<br>
+    public void fees(){<br>
+        System.out.println("The fees per Semester is 45000");}}<br>
+
+            </p>
+            <h5>Exam Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+package javaapplication9;<br>
+public abstract class Exam {<br>
+    abstract void examDate();<br>
+    abstract void fees();<br>
+    void name(){<br>
+        System.out.println("University Name is Bahria University");}<br>
+   public void universityName(){<br>
+        System.out.println("University Name is Bahria University");}}<br>
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) You have to implement the UML diagram given below.Also Design and implement a subclass
+                “EquilateralTriangle” having a double variable side denoting the three sides of the equilateral triangle
+                [Note that since all the 3 sides are equal, the constructor will have only one parameter]. The area and
+                perimeter of the equilateral triangle are given as follows: <br>
+                Area = ¼*3 *(side)2<br>
+                Perimeter = 3*side<br>
+                Provide accessor methods for the sides. Test your class using the TestShapes and DownCastingShapes
+                classes.
+            </h5>
+            <h5>Output:</h5>
+            <img src="30.1.png" class="img-thumbnail" alt="firstImage">
+            <img src="30.2.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main TestShape Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+import java.util.Random;<br>
+public class TestShape {<br>
+    public static Shape[] createShape() {<br>
+        final int SIZE = 5;<br>
+        final double DIMENSION = 100;<br>
+        final int NUMBEROFSHAPES = 4;<br>
+        Random generator = new Random();<br>
+        //create an array having b/w 1 and SIZE entries<br>
+        Shape[] randomShapes = new Shape[generator.nextInt(SIZE) + 1];<br>
+        for(int i = 0; i < randomShapes.length; i++){<br>
+            //randomly generate values b/w 0 and NUMBEROFSHAPES - 1<br>
+            int assigner = generator.nextInt(NUMBEROFSHAPES);<br>
+            switch(assigner) {<br>
+                case 0:<br>
+                    randomShapes[i] = new EquilateralTriangle(generator.nextDouble()*<br>DIMENSION);<br>
+                    break;<br>
+                case 1:<br>
+                    randomShapes[i] = new Circle(generator.nextDouble()*DIMENSION);<br>
+                    break;<br>
+                case 2: randomShapes[i] = new Square(generator.nextDouble()*DIMENSION);<br>
+                    break;<br>
+                case 3: randomShapes[i] = new Rectangle(generator.nextDouble()*DIMENSION, generator.nextDouble()*DIMENSION);
+                    break;}}<br>
+        return randomShapes;}<br>
+    public static void main(String[] args) {<br>
+        Shape[] randomShapes = TestShape.createShape();<br>
+        for(int i = 0; i < randomShapes.length; i++)<br>
+            System.out.println(randomShapes[i].toString());}}<br>
+
+            </p>
+            <h5>Class DownCastingShape:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class DownCastingShapes {<br>
+    public static void main(String[] args){<br>
+        Shape[] randomShapes = TestShape.createShape();<br>
+        for(int i = 0; i < randomShapes.length; i++){<br>
+            System.out.println(randomShapes[i]);<br>
+            if(randomShapes[i] instanceof Circle)<br>
+                System.out.println("Radius= " + ((Circle) randomShapes[i]).getRadius());<br>
+            else if(randomShapes[i] instanceof Square)<br>
+                System.out.println("Length= " + ((Square) randomShapes[i]).getLength());<br>
+            else if(randomShapes[i] instanceof Rectangle)<br>
+                System.out.println("Length= " + ((Rectangle) randomShapes[i]).getLength() + "\nWidth= " + ((Rectangle) randomShapes[i]).getWidth());<br>
+            else if(randomShapes[i] instanceof EquilateralTriangle)<br>
+                System.out.println("Length= " + ((EquilateralTriangle) randomShapes[i]).getSide());}}}<br>
+
+            </p>
+            <h5>Class Shape:</h5>
+            <p style="background-color: black;
+            color: white;">
+public abstract class Shape {<br>
+    public String name(){<br>
+        return getClass().getName();}<br>
+    public abstract double area();<br>
+    public abstract double perimeter();<br>
+    public String toString() {<br>
+        return "\n" +name() +"\n Area=" +area() +"\nPerimeter=" +perimeter();}}<br>
+
+            </p>
+            <h5>Class Square:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Square extends Rectangle{<br>
+    public Square(double length){<br>
+        super(length, length);}}<br>
+
+            </p>
+            <h5>Class Rectangle:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Rectangle extends Shape{<br>
+    private double length;<br>
+private double width;<br>
+    public Rectangle(double length, double width){<br>
+        this.length = length;<br>
+        this.width = width;}<br>
+    public double area(){<br>
+        return length * width;}<br>
+    public double perimeter(){<br>
+        return 2*(length+width);}<br>
+    public double getLength(){<br>
+        return length;}<br>
+    public double getWidth(){<br>
+        return width;}}<br>
+
+            </p>
+            <h5>Class Circle:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Circle  extends Shape{<br>
+    private double radius;<br>
+    public Circle(double r){<br>
+        radius = r;}<br>
+    public double area(){<br>
+        return Math.PI * (radius * radius);}<br>
+    public double perimeter(){<br>
+        return 2.0 * Math.PI * radius;}<br>
+    public double getRadius(){<br>
+        return radius;}}<br>
+
+            </p>
+            <h5>Class EquilateralTriangle:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class EquilateralTriangle extends Shape{<br>
+    private double side;<br>
+    public EquilateralTriangle(double side){<br>
+        this.side = side;}<br>
+    public double area(){<br>
+        return (0.25*Math.sqrt(3)*(side*side));}<br>
+    public double perimeter() {<br>
+        return side*side*side;}<br>
+    public double getSide(){<br>
+        return side;}}<br>
+
+            </p>
+
+            <div class="line"></div>
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+      <!-- Interfaces -->
+
+            <h2 id="interface">10. Interfaces </h2> <br>
+
+            <h5>1) Write a program which implements a interface of Banking System by having all standard
+                functionalities and will be implemented by branches. <br>
+                Hint:(Interface Methods)<br>
+                CreateAccount()<br>
+                Search Account details()<br>
+                Update CustInfo()<br>
+                Cash Withdraw()<br>
+                Cash Deosit()<br>
+            </h5>
+            <h5>Output:</h5>
+            <img src="fourth1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+package com.mycompany.lab11;<br>
+public class Lab11 {<br>
+    public static void main(String[] args) {<br>
+         Banking obj=new Banking();<br>
+        obj.CreateAccount();<br>
+        obj.AccountDetails();<br>
+        obj.UpdateCustInfo();        <br>
+        obj.CashDeposit();<br>
+        obj.CashWithdraw();}}<br>
+
+            </p>
+            <h5>Interface Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+package com.mycompany.lab11;<br>
+public interface IBankingSystem {<br>
+    void CreateAccount();<br>
+ void AccountDetails();<br>
+ void UpdateCustInfo();<br>
+ void CashWithdraw();<br>
+ void CashDeposit();}<br>
+
+            </p>
+            <h5>Derived Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+package com.mycompany.lab11;<br>
+import java.util.Scanner;<br>
+public class Banking implements IBankingSystem{<br>
+    String name,fatherName,cnic,answer,answer2;<br>
+    int number;<br>
+    Scanner obj=new Scanner(System.in); <br>
+   public void CreateAccount(){<br>
+        System.out.println(" ********* Create Account ********* ");<br>
+        System.out.println("Do you want to create your account?");<br>
+         answer=obj.next();<br>
+        if("yes".equals(answer)){<br>
+                    System.out.println(" Enter your Full Name");<br>
+                     name=obj.next();<br>
+                    System.out.println(" Enter your Father Name");<br>
+                     fatherName=obj.next();<br>
+                    System.out.println(" Enter your CNIC");<br>
+                     cnic=obj.next();<br>
+                    System.out.println(" Enter your phone Number");<br>
+                     number=obj.nextInt();                <br>
+                    System.out.println("Congratulation! Your account has been created. ");}<br>
+        else{<br>
+                    System.out.println(" ********* Thank you ********* ");}}   <br>
+ public void AccountDetails(){<br>
+     System.out.println("\n ********* Search Account Details ********* ");<br>
+     System.out.println("Do you want to search account details?");<br>
+      answer2=obj.next();<br>
+     if("yes".equals(answer2)){<br>
+        System.out.println("\nThe name is "+ name); <br>
+        System.out.println("The father name is "+fatherName);<br>
+        System.out.println("The CNIC is "+cnic);<br>
+        System.out.println("The number is "+ number);}}<br>
+  public void UpdateCustInfo(){<br>
+     System.out.println("\n ********* Update Cust Information ********* ");<br>
+     System.out.println("Do you want to update cust information?");<br>
+     String answer1=obj.next();<br>
+     if("no".equals(answer1)){<br>
+         System.out.println("Thank you");}}<br>
+  public void CashWithdraw(){<br>
+     System.out.println("\n ********* Cash Withdraw ********* ");<br>
+     System.out.println(" How many rupees do you want to withdraw? ");<br>
+     int withdraw=obj.nextInt();<br>
+     if(withdraw<500){<br>
+         System.out.println("Please withdraw amount more than 500 rupees");}}<br>
+ public void CashDeposit(){<br>
+     System.out.println("\n ********* Cash Deposit ********* ");<br>
+     System.out.println(" How many rupees do you want to deposit? ");<br>
+     int deposit=obj.nextInt();<br>
+     if(deposit<500){<br>
+         System.out.println("Please deposit amount more than 500 rupees");}}}<br>
+
+            </p>
+            <div class="line"></div>
+
+            <h5>2) By looking at the formulae for an ellipse, provide the missing code for all of the methods in the
+                class Ellipse including the toString() method. Test your program using the TestShapes.java class. Your
+                output should look as follows (for an ellipse with a = 10 and b = 7) (values are randomly generated).
+            </h5>
+            <h5>Output:</h5>
+            <img src="fourth1.png" class="img-thumbnail" alt="firstImage">
+            <img src="fourth2.png" class="img-thumbnail" alt="firstImage">
+            <hr>
+            <img src="fourth3.png" class="img-thumbnail" alt="firstImage">
+            <img src="fourth4.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+public static void main(String[] args) { <br>
+    Scanner q = new Scanner(System.in);<br>
+     do { <br>
+    System.out.println("Select option to calculate ...");<br>
+     System.out.println("1) Ellipse");<br>
+     System.out.println("2) Circle"); <br>
+    System.out.println("3) Rectangle");<br>
+     System.out.println("4) Square"); <br>
+    System.out.println("5) Exit");<br>
+     char d = q.next().charAt(0); <br>
+    switch (d) { <br>
+    case '1': Shape e=new Ellipse(12,23);<br>
+     e.area();<br>
+     e.eccentricity();<br>
+     e.perimeter();<br>
+     System.out.println(e.toString());<br>
+     break; <br>
+    case '2': Shape c=new Circle(12);<br>
+     c.area();<br>
+    c.eccentricity();<br>
+    c.perimeter();<br>
+     System.out.println(c.toString()); <br>
+    break; <br>
+    case '3': Shape r=new Rectangle(23,46);<br>
+     r.area();<br>
+    r.eccentricity();<br>
+    r.perimeter();<br>
+    r.toString(); <br>
+    System.out.println(r.toString());<br>
+     break;<br>
+     case '4': Shape v=new Square(12,12); <br>
+    v.area();<br>
+    v.eccentricity();<br>
+    v.perimeter();<br>
+    v.toString(); <br>
+    System.out.println(v.toString()); <br>
+    break;<br>
+     case '5':<br>
+     break; <br>
+    default:<br>
+     break; } } <br>
+    while (true); } <br>
+    
+            </p>
+            <h5>Interface Eccentric :</h5>
+            <p style="background-color: black;
+            color: white;">
+public interface Eccentric { <br>
+    double eccentricity();}<br>
+    
+            </p>
+            <h5>Shaoe Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+ public class Shape {<br>
+    double perimeter, area, eccentricity; <br>
+   public double perimeter() {<br>
+    return perimeter; } <br>
+   public double area() { <br>
+   return area; } <br>
+   public double eccentricity() { <br>
+   return eccentricity; } <br>
+   public String toString() { <br>
+   return " " + area + "\n " + perimeter + "\n " + eccentricity; }} <br>
+   
+            </p>
+            <h5>Ellipse Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Ellipse extends Shape implements Eccentric {<br>
+    double a, b;<br>
+    public Ellipse(double s1, double s2) {<br>
+    if (s1 < s2) { a = s2; b = s1; } <br>
+   else { a = s1; b = s2; } } <br>
+   public double perimeter(){<br>
+   perimeter=3.142*(Math.sqrt(2*(a*a+b*b)-(a*a+b*b-2*a*b)/2));return perimeter; } <br>
+   public double area() { area=Math.PI*a*b; return area; }<br>
+    public double eccentricity() { <br>
+   eccentricity= Math.sqrt(1 - b/a); return eccentricity; } <br>
+   public String toString() { return "Ellipse\narea: " + area + "\nperimeter: " + perimeter + "\neccentricity: " + eccentricity; }}<br>
+   
+            </p>
+            <h5>Circle Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Circle extends Ellipse { <br>
+    double radius; public Circle(double radius) { <br>
+    super(radius, radius); } <br>
+    public double perimeter() { <br>
+    perimeter=2*Math.PI*radius; return perimeter; } <br>
+    public double area() { <br>
+    area=Math.PI*radius*radius; return area; } <br>
+    public double eccentricity() { <br>
+    eccentricity=0; return eccentricity; }<br>
+     public String toString() { <br>
+    return "Circle\narea: " + area + "\nperimeter: " + perimeter + "\neccentricity: " + eccentricity; }}<br>
+    
+            </p>
+            <h5>Rectangle Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+ public class Rectangle extends Shape {<br>
+    double length,width;<br>
+    public Rectangle(double length, double width) { <br>
+   this.length = length; this.width = width; } <br>
+   public double perimeter() { <br>
+   perimeter=length+width; return perimeter; } <br>
+   public double area() {<br>
+    area=length*width; return area; } public String toString() { <br>
+   return "Rectangle\narea: " + area + "\nperimeter: " + perimeter; }}<br>
+   
+            </p>
+            <h5>Square Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+public class Square extends Rectangle { <br>
+    public Square(double length, double width) { super(length, width); }<br>
+     public double perimeter() {<br>
+     perimeter=4*length; return perimeter; } <br>
+    public double area() { area=length*width; return area; }<br>
+     public String toString() { return "Rectangle\narea: " + area + "\nperimeter: " + perimeter; }}<br>
+    
+            </p>
+
+            <div class="line"></div>
+
+            <div id="foremediaads-c1"></div>
+<script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+
+            <!-- Exception Handling -->
+
+            <h2 id="exception">11. Exception Handling </h2> <br>
+
+            <h5>1) Write a Fraction class that has a constructor that takes a numerator and a denominator. If the
+                user passes in a denominator of 0, throw an exception of type std::runtime_error (included in the
+                stdexcept header). In your main program, ask the user to enter two integers. If the Fraction is valid,
+                print the fraction. If the Fraction is invalid, catch a std::exception, and tell the user that they
+                entered an invalid fraction.</h5>
+            <h5>Output:</h5>
+            <img src="fourth1.png" class="img-thumbnail" alt="firstImage">
+            <img src="fourth2.png" class="img-thumbnail" alt="firstImage">
+            <hr>
+            <img src="fourth3.png" class="img-thumbnail" alt="firstImage">
+            <img src="fourth4.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+package lab12;<br>
+import java.io.*;<br>
+import java.util.Scanner;<br>
+public class LAB12 {<br>
+    public static void main(String[] args) throws Exception {<br>
+        Scanner input=new Scanner(System.in);<br>
+        int numerator,denumerator;<br>
+        System.out.println("Enter Numerator");<br>
+         numerator=input.nextInt();<br>
+        System.out.println("Enter denumerator");<br>
+         denumerator=input.nextInt();<br>
+        Fraction num=new Fraction(numerator, denumerator);<br>
+        num.print();}}<br>
+
+            </p>
+            <h5>Sub Class:</h5>
+            <p style="background-color: black;
+                color: white;">
+package lab12;<br>
+import java.io.*;<br>
+import java.util.*;<br>
+public class Fraction {    <br>
+    int denomerator,numerator; <br>
+    public Fraction(int numerator,int denumerator) throws Exception{<br>
+        this.denomerator=denumerator;<br>
+        this.numerator=numerator;<br>
+         if(denomerator<=0){<br>
+    throw new Exception("Enter number but greater than 0");}}    <br> 
+    public void print(){<br>
+        System.out.println("The answer is "+ numerator/denomerator);}}<br>
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Write a program which implements Banking System by having all standard functionalities and will
+                be implemented by branches. Try to identify and implement user defined exceptions for the system. <br>
+                Hint:<br>
+                Create Bank Class<br>
+                public void Create Account(){}<br>
+                public void deposit() throws Exception{<br>
+                System.out.println(“Enter Amount to be deposited:);<br>
+                If(deposit>100000)<br>
+                throw new Exception(“\n you cant deposit this big amount”);<br>
+                Else <br>
+                balance=balance+deposit;<br>
+                }<br>
+                Public void withdraw() throws Exception{} (same logic as deposit)<br>
+            </h5>
+            <h5>Output:</h5>
+            <img src="fourth1.png" class="img-thumbnail" alt="firstImage">
+            <img src="fourth2.png" class="img-thumbnail" alt="firstImage">
+            <hr>
+            <img src="fourth3.png" class="img-thumbnail" alt="firstImage">
+            <img src="fourth4.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <h5>Main Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+package lab12;<br>
+import java.io.*;<br>
+import java.util.Scanner;<br>
+public class LAB12 {<br>
+    public static void main(String[] args) throws Exception {<br>
+        Scanner input=new Scanner(System.in);<br>
+        UBL obj=new UBL();<br>
+        Bank obj1=new HBL();<br>
+        obj.createAccount();<br>
+        obj.deposit();<br>
+        obj.withDraw();<br>
+        obj1.createAccount();<br>
+        obj1.deposit();<br>
+        obj1.withDraw();}}<br>
+
+            </p>
+            <h5>Bank Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+package lab12;<br>
+import java.io.*;<br>
+import java.util.Scanner;<br>
+public class Bank {<br>
+    int deposit,balance=0,withDraw;<br>
+    Scanner input=new Scanner(System.in);   <br>
+    public void createAccount(){<br>
+        System.out.println("Enter your name");<br>
+        String name=input.next();<br>
+        System.out.println("Enter your father name");<br>
+        String fatherName=input.next();<br>
+        System.out.println("Enter your phone Number");<br>
+        int num=input.nextInt();<br>
+        System.out.println("Enter your CNIC");<br>
+        int cnic=input.nextInt();}<br>
+    public void deposit() throws Exception{<br>
+        System.out.println("Enter Amount to be deposited:");<br>
+        deposit=input.nextInt();<br>
+if(deposit>100000){<br>
+    throw new Exception("\n YOu cannot deposit this big amount");}<br>
+else {<br>
+        balance=balance+deposit;}}   <br>
+    public void withDraw() throws Exception{<br>
+        System.out.println("Enter Amount to be withdraw:");<br>
+        withDraw=input.nextInt();<br>
+if(withDraw>balance){<br>
+    throw new Exception("\n YOu cannot withdraw because you donot have big balance");} <br>
+else if(withDraw<500){<br>
+        
+throw  new Exception("You cannot withdraw because your amount is less than 500");}<br>
+else{<br>
+    System.out.println("Congratulation!");}}}<br>
+
+            </p>
+            <h5>UBL Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+package lab12;<br>
+public class UBL extends Bank{    <br>
+    public void createAccount(){<br>
+        System.out.println("UBL Bank System");<br>
+       super.createAccount();}<br>
+    public void deposit() throws Exception{<br>
+        super.deposit();}<br>
+    public void withDraw() throws Exception{<br>
+        super.withDraw();}}<br>
+
+            </p>
+            <h5>HBL Class:</h5>
+            <p style="background-color: black;
+            color: white;">
+package lab12;<br>
+public class HBL extends Bank{<br>
+    public void createAccount(){<br>
+        System.out.println("\nHBL Bank Account");<br>
+        super.createAccount();}<br>
+    public void deposit() throws Exception{<br>
+        super.deposit();}<br>
+    public void withDraw() throws Exception{<br>
+        super.withDraw();}}<br>
+
+            </p>
+
+            <div id="foremediaads-c1"></div>
+            <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/c1"></script>
+            
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <footer class=" text-center text-white"style="background-color: hsl(207, 100%, 50%);">
+        <p style="color: white">&copy; Copyright 2023 codings Hub</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#sidebarCollapse").on('click', function () {
+                $("#sidebar").toggleClass('active');
+            });
+        });
+
+        var myCustomScrollbar = document.querySelector('.my-custom-scrollbar');
+var ps = new PerfectScrollbar(myCustomScrollbar);
+
+var scrollbarY = myCustomScrollbar.querySelector('.ps__rail-y');
+
+myCustomScrollbar.onscroll = function () {
+  scrollbarY.style.cssText = `top: ${this.scrollTop}px!important; height: 400px; right: ${-this.scrollLeft}px`;
+}
+    </script>
+</body>
+
+</html>

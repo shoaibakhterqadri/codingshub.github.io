@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3456613934683097"
+  crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+ 
+  <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="../firebase-config.js" type="module"></script>
+
+</head>
+
+<body>
+
+
+
+  <header>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1 fw-bold py-2 fs-3 text-primary">Password Management System</span>
+      </div>
+    </nav>
+  </header>
+
+  <a href="Forget Password/Email Verification/verification.html"></a>
+
+  
+
+  <section class="wrapper mt-4">
+    <div class="container">
+      <form action="javascript:void(0)" class="rounded bg-white shadow p-5" autocomplete="off">
+        <h3 class="fw-bolder fs-3 mb-3 text-primary text-center">SIGN UP</h3>
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control nameElement" required id="name" placeholder="name@example.com">
+          <label for="name">Name</label>
+        </div>
+        <p class="error" id="name-error"></p>
+
+        <p class="fill"></p>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control element-1" id="rEmail" required placeholder="name@example.com">
+          <label for="email">Email address</label>
+          <div class="email"></div>
+        </div>
+        <p class="error" id="fir-error"></p>
+
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control element-2" id="rPassword" required placeholder="Password">
+          <label for="password">Password</label>
+        </div>
+        <p class="error" id="sec-error"></p>
+
+        <div class="form-floating">
+          <input type="password" class="form-control element-3" id="rCPassword" required placeholder="Password">
+          <label for="password">Confirm-Password</label>
+          <div class="password"></div>
+        </div>
+        <p class="error" id="thi-error"></p>
+
+        <div class="form-floating">
+          <input type="number" class="form-control element-4" id="number" required placeholder="Secret Code">
+          <label for="number">Secret Code:</label>
+        </div>
+        <p class="error" id="four-error"></p>
+
+      
+
+        <button class="btn btn-primary w-100 submit my-2" id="rSubmit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+
+  
+  <script src="app.js" type="module"></script>
+
+</body>
+
+</html>

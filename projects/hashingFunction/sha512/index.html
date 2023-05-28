@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3456613934683097"
+    crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="description" content="This is programming and projects related website. The students may practice programming languages by using Tasks & Solution of programming languages with source code as well as MCQs and Quiz Application.Password Management System, Random Password Generator, Encryption/Decryption and Online Hashing projects are included on here.">
+    <meta name="keywords" content="Programming,Codingshub,Html,Css,JavaScript,React,C,C#,C++,Algorithm,Data Structure, MCQs of Programming Language,Quiz,MCQs,Free YouTube Video Downloader, YouTube Downloader">
+    <meta name="author" content="Shoaib Akhter Qadri">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hashing Function</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+      window.googletag = window.googletag || {cmd: []};
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/22875833762/codingshub', [[168, 28], [120, 240], [120, 20], [120, 30], [240, 133], [468, 60], [168, 42], [250, 360], [300, 600], [216, 36], [292, 30], [300, 100], [120, 600], [320, 100], [240, 400], [216, 54], [234, 60], [300, 75], [300, 50], [320, 480], [120, 90], [220, 90], [250, 250], [300, 250], [480, 320], [580, 400], [120, 60], [160, 600], [300, 31], [200, 200], [180, 150], [200, 446], [125, 125], [336, 280]], 'div-gpt-ad-1676354899602-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
+    </script>
+    
+
+
+</head>
+
+<body>
+
+<!-- /22875833762/codingshub -->
+<div id='div-gpt-ad-1676354899602-0' style='min-width: 120px; min-height: 20px;'>
+    <script>
+      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1676354899602-0'); });
+    </script>
+  </div>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+
+         <nav id="sidebar">
+            <div id="all" style="position:relative">
+            <div class="sidebar-header" style="width: 250px;">
+              <a href="../index.html"><h3>Codings Hub</h3></a> 
+            </div>
+
+            <ul class="list-unstyled components">
+                <h4>JavaScript Projects</h4>
+                <li ><a href="../../index.html">Intro to Projects</a></li>
+                <!-- <li class="active">
+                    <a href="index.html">Hashing Function</a>
+                </li> -->
+                <li class="active" style="width: 250px;" >
+                        
+                    <a href="#c++" data-toggle="collapse" aria-expanded="false"  class="dropdown-toggle">Hashing Function</a>
+                    
+                    <ul class="collapse list-unstyled" id="c++">
+                            <li>
+                                <a href="../index.html">1. SHA 1</a>
+                            </li>
+                            <li>
+                                <a href="../sha256/index.html">3. SHA 256</a>
+                            </li>
+                            <li>
+                                <a href="../sha384/index.html">4. SHA 384</a>
+                            </li>
+                            <li>
+                                <a href="index.html">5. SHA 512</a>
+                            </li>
+                            </li>
+                            </li>
+                    </ul>
+                </li>
+                <li >
+                    <a href="../encryption/index.html">Encryption/Decryption</a>
+                </li>
+                <li>
+                    <a href="../../encryption/fileEncrypt/index.html">Encrypt/Decrypt File Data</a>
+                </li>
+                <li>
+                    <a href="../../passwordManagement/userAuthentication/index.html">Password Management</a>
+                </li>
+                <li>
+                    <a href="../../passwordManagement/generatePassword/index.html">Random Password Generator</a>
+                </li>
+                <li>
+                    <a href="../../../youtube/index.html">Youtube Video Downloader</a>
+                </li>
+                <li>
+                    <a target="_blank" href="../../../portfolio/index.html">Portfolio</a>
+                </li>
+                <li>
+                    <a target="_blank" href="../../../contact-us/contact/index.html">Contact</a>
+                </li>
+            </ul>
+        
+        
+            </div>
+        </nav> 
+
+
+
+
+
+
+        
+
+
+
+
+
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../quiz/Quiz Project/Login box/index.html">Quiz</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../mcqs/html.html">MCQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.fiverr.com/users/shoaibakhter18">Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+            </nav> -->
+            <!-- Ezoic - top_of_page - top_of_page -->
+<div id="ezoic-pub-ad-placeholder-102"> </div>
+<!-- End Ezoic - top_of_page - top_of_page -->
+
+            <h1 id="sha1">SHA-512 Online Hashing Function</h1> <br>
+
+           <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 first">
+                <form action="">
+                    <h2>SHA-512 Text Hashing Function</h2>
+                    <p>Enter text or password for SHA-512 Hashing Function</p>
+                   
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Write Text or Password for Hashing Function" id="hashingText" style="height: 200px"></textarea>
+                      </div>
+                      <button type="button" id="hashBtn" class="btn btn-primary" >SHA-512 Hash</button>
+                      <h5 class="resultHeading">SHA-512 Hashing Result:</h5>
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Hashing Result will show here"  id="hashingResult" style="height: 200px"></textarea>
+                      </div>
+                </form>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12 vertical-line second" >
+                <form action="">
+                    <h2>SHA-512 File Hashing Function</h2>
+                    <p>Upload File for SHA-512 Hashing Function </p>
+                   
+                    <div class="input form-floating mb-5">
+                        <div id="droppable-zone">
+                          <div id="droppable-zone-wrapper">
+                            <div id="droppable-zone-text"></div>
+                          </div>
+                          <input class="droppable-file" id="input" onchange="getFileName(this)" multiple type="file"  placeholder="Input2">
+                        </div>
+                      </div>
+                      <h5 class="resultHeading" style="margin-top: 70px;">Hashing Result Result:</h5>
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Hashing Result will show here"  id="FileResult" style="height: 200px"></textarea>
+                      </div>
+                      <output style="display:block;font-family:monospace;"></output>
+                </form>
+            </div>
+           </div>
+<!-- Ezoic - under_first_paragraph - under_first_paragraph -->
+<div id="ezoic-pub-ad-placeholder-101"> </div>
+<!-- End Ezoic - under_first_paragraph - under_first_paragraph -->
+
+
+            
+
+            <div class="line"></div>
+
+
+
+
+        </div>
+    </div>
+    <footer class=" text-center text-white"style="background-color: hsl(207, 100%, 50%);">
+        <p>&copy; Copyright 2023 codings Hub</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#sidebarCollapse").on('click', function () {
+                $("#sidebar").toggleClass('active');
+            });
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>

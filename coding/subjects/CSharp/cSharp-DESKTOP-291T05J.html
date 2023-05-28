@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/analytics"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4128752626691291"
+    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Sharp</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="cSharpStyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <style>
+        .all-menu a {
+          background-color: #008cff; /* Grey background color */
+          color: white; /* Black text color */
+          display: block; /* Make the links appear below each other */
+          padding: 12px; /* Add some padding */
+          text-decoration: none; /* Remove underline from links */
+        }
+        .all-menu {
+          width: 250px;
+          height: 505px;
+          overflow-y: auto;
+          background-color: #008cff;
+        }
+          </style>
+</head>
+<body>
+
+
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        
+        <nav id="sidebar" >
+            <div id="all" style="position:fixed" >
+            <div class="sidebar-header" style="width: 250px;">
+                <a href="../../../index.html"><h3>Codings Hub</h3></a>
+            </div>
+            <div class="all-menu">
+            <ul class="list-unstyled components">
+                <p>Programming Languages</p>
+                <li>
+                    <a href="../../coding.html">HTML</a>
+                </li>
+                <li>
+                    <a href="../css/css.html">CSS</a>
+                </li>
+                <li>
+                    <a href="../JavaScript/javaScript.html">JavaScript</a>
+                </li>
+
+                <li>
+                   <a href="../Java/java.html">Java</a>
+                </li>
+                <li class="active" style="width: 250px;" >
+                    <a href="#cSharp" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">C#</a>
+                    <ul class="collapse list-unstyled" id="cSharp">
+                        <li>
+                            <a href="#introduction">1. Basic Programming</a>
+                        </li>
+                        <li>
+                            <a href="#classes">2. Variables & Arithmetic Operations</a>
+                        </li>
+                        <li>
+                            <a href="#access">3. Formatted Output</a>
+                        </li>
+                        <li>
+                            <a href="#constructor">4. Operators & Expression</a>
+                        </li>
+                        <li>
+                            <a href="#condition">5. Conditional Statements</a>
+                        </li>
+                        <li>
+                            <a href="#loops">6. For Loops</a>
+                        </li>
+                        <li>
+                            <a href="#while">7. While Loop</a>
+                        </li>
+                        <li>
+                            <a href="#array">8. Arrays</a>
+                        </li>
+                        <li>
+                            <a href="#2d">9. 2-D Arrays</a>
+                        </li>
+                        <li>
+                            <a href="#function">10. Functions</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../cald/cald.html">Computer Architecture & Logic Design</a>
+                </li>
+                
+                <li>
+                    <a target="_blank" href="https://portfolio-shoaibakhter.netlify.app/">Portfolio</a>
+                </li>
+                <li>
+                    <a target="_blank" href="../../../contact/contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../quiz/Quiz Project/Login box/index.html">Quiz</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../mcqs/html.html">MCQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.fiverr.com/users/shoaibakhter18">Services by Fiverr</a>
+                            </li>
+                        </ul>
+                    </div>
+                <!-- </div> -->
+            </nav>
+
+            <h1>Tasks & Solution of C# Language</h1> <br>
+
+            <!-- Introduction to Basic Programming Language -->
+            <h2 id="introduction">1. Introduction to Basic Programming Language </h2> <br>
+
+                <h5>1) Write a Program to print your Profile using C#.</h5><br>
+            <h5>Output:</h5>
+            <img src="1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+            <p style="background-color: black;
+            color: white;">
+            Console.WriteLine("*** MY PROFILE *** ");<br>
+            Console.WriteLine("NAME : Shoaib Akhter");<br>
+            Console.WriteLine("PROGRAM : BSE-4 YEARS");<br>
+            Console.WriteLine("D.O.B : 22-JULY-2002");<br>
+            Console.WriteLine("I LIKE \"PROGRAMMING\"");<br>
+            Console.WriteLine("Email: guestpost2001@gmail.com");<br>
+            Console.WriteLine("--------------------------------------------");<br>
+            Console.WriteLine("MY SHORT INTRODUCTION");<br>
+            Console.WriteLine("--------------------------------------------");<br>
+            Console.WriteLine("I HAVE DID MY HSC FROM BAHRIA COLLEGE KARSAZ.\nI WANT TO BE A SOFTWARE DEVELOPER IN MY LIFE. ");<br>
+        </p>
+        <div class="line"></div>
+
+
+        <h5>2) Write a program to display your personal information. (Name, age, address, father’s name,
+            college name, NIC, phone number etc. ) and display your marks sheet. (Use Escape Sequences to create a
+            formatted Output according to the given image).</h5><br>
+            <h5>Output:</h5>
+            <img src="2.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+            <p style="background-color: black;
+            color: white;">
+            Console.WriteLine("\t\t __________PERSONAL INFORMATION_________ ");<br>
+            Console.WriteLine("\t\t|FIRST NAME = Shoaib\t\t\t|");<br>
+            Console.WriteLine("\t\t|LAST NAME = Akhter\t\t\t|");<br>
+            Console.WriteLine("\t\t|FATHER NAME= Bahadur\t\t\t|");<br>
+            Console.WriteLine("\t\t|AGE= 19\t\t\t\t|");<br>
+            Console.WriteLine("\t\t|EMAIL ID = guestpost2001@gmail.com\t|");<br>
+            Console.WriteLine("\t\t|PHONE NUMBER = 031454541215463\t\t|");<br>
+            Console.WriteLine("\t\t|EDUCATION = BSE(SOFTWARE)\t\t|");<br>
+            Console.WriteLine("\t\t|________________<br>_______________________|");<br>
+        </p>
+
+            <div class="line"></div>
+
+
+            <!-- Variables & Arithmetic Operations -->
+
+            <h2 id="classes">2. Variables & Arithmetic Operations </h2> <br>
+
+            <h5>1) Write a program to display your personal information and display your mark sheet. Use escape sequence to create a formatted output.</h5>
+
+            <h5>Output:</h5>
+            <img src="9.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">Console.WriteLine("______PERSONAL INSFORMATION______\n|First  Name: Shoaib \t\t|\n|Last Name: Akhter \t\t|\n|Father Name: Ali \t\t|\n|Age: 19\t\t\t|\n|Email Id: guest@gmail.com\t|\n|Phone Number: +9254635181\t|\n|Education: Intermediate\t|\n---------------------------------\n\n\n"); <br>
+
+                Console.WriteLine("__________My Marksheet___________\n|\t\t\t\t|\n|Subject\t<br>Total\tObtained|\n|English\t100\t72\t|\n|Urdu<br>\t\t100\t80\t|\n|Pst\t\t100\t75\t|\n|Islamyat<br>\t100\t82\t|\n|Maths\t\t100\t86\t|\n|Computer<br>\t100\t90\t|\n|Physics\t100\t88\t|\n|Chemistry<br>\t100\t79\t|\n|\t\t\t\t|\n|%Percentage Obtained\t81.5%\t|");<br></p>
+
+            <div class="line"></div>
+
+
+            <h5>2) Write a C# program that displays the results of the following expressions: <br>
+                1. 3.0*5.0 <br>		2. 7.1*8.3-2.2	<br>		3. 3.2/(6.1*5)<br>
+                4. 15/4	<br>		5. 15%4	<br>		6. 5*3-(6*4)
+                .</h5>
+
+                <h5>Output:</h5>
+                <img src="3.png" class="img-thumbnail" alt="firstImage">
+                <br>
+                <br>
+                <h4>Source Code:</h4>
+    
+            <p style="background-color: black;
+            color: white;">float eq1, eq2, eq3, eq4, eq5, eq6;<br>
+                Console.WriteLine("Equation 1 is : 3.0*5.0 ");<br>
+                eq1 = Convert.ToSingle(3.0F * 5.0F);<br>
+                Console.WriteLine("{0:0.00}", eq1);<br>
+                Console.WriteLine("Equation 2 is : 7.1*8.3-2.2 ");<br>
+                eq2 = Convert.ToSingle(7.1F * 8.3F - 2.2F);<br>
+                Console.WriteLine("{0:0.00}", eq2);<br>
+                Console.WriteLine("Equation 3 is : 3.2/(6.1*5) ");<br>
+                eq3 = Convert.ToSingle(3.2F / (6.1F * 5.0F));<br>
+                Console.WriteLine("{0:0.00}", eq3);<br>
+                Console.WriteLine("Equation 4 is : 15/4 ");<br>
+                eq4 = Convert.ToSingle(15.0F / 4.0F);<br>
+                Console.WriteLine("{0:0.00}", eq4);<br>
+                Console.WriteLine("Equation 5 is : 15%4 ");<br>
+                eq5 = Convert.ToSingle(15.0F % 4.0F);<br>
+                Console.WriteLine("{0:0.00}", eq5);<br>
+                Console.WriteLine("Equation 6 is : 5*3-(6*4) ");<br>
+                eq6 = Convert.ToSingle(5.0F * 3.0F - (6.0F * 4.0F));<br>
+                Console.WriteLine("{0:0.00}", eq6);<br>
+                </p>
+
+            <div class="line"></div>
+
+            <h5>3) Calculate the temperature in Celsius using integer values.</h5>
+
+            <h5>Output:</h5>
+            <img src="4.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">double fahrenheit, celsius, eq1;<br>
+                Console.WriteLine("Enter Temprature in Fahrenheit : ");<br>
+                fahrenheit = Convert.ToSingle(Console.ReadLine());<br>
+                celsius = Convert.ToSingle((fahrenheit - 32) * 5 / 9);<br>
+                Console.WriteLine("Temprature in Celsius = {0:0.00}", celsius);<br>
+                </p>
+
+            <div class="line"></div>
+
+
+            <h5>4) Calculate area of Circle.
+            </h5>
+            
+            <h5>Output:</h5>
+            <img src="5.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">double area, radius;<br>
+                Console.WriteLine("Enter Radius of a Circle : ");<br>
+                radius = Convert.ToSingle(Console.ReadLine());<br>
+                Console.WriteLine("Formula To Calculate Area of Circle = 2πR² ");<br>
+                area = 2 * Math.PI * Math.Pow(radius, 2);<br>
+                Console.WriteLine("The Area of Circle : {0:0.00}", area);<br>
+                </p>
+
+
+            <div class="line"></div>
+
+            <h5>5) Display result of expression: ((( a+b)*(c*d*e))-e)/f.
+            </h5>
+            
+            <h5>Output:</h5>
+            <img src="6.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">double a, b, c, d, e, f, equation;<br>
+                Console.WriteLine("EQUATION IS = (((a + b) * (c * e * d)) - e) / f");<br>
+                Console.WriteLine("Enter the Value of a : ");<br>
+                a = Convert.ToSingle(Console.ReadLine());<br>
+                Console.WriteLine("Enter the Value of b : ");<br>
+                b = Convert.ToSingle(Console.ReadLine());<br>
+                Console.WriteLine("Enter the Value of c : ");<br>
+                c = Convert.ToSingle(Console.ReadLine());<br>
+                Console.WriteLine("Enter the Value of d : ");<br>
+                d = Convert.ToSingle(Console.ReadLine());<br>
+                Console.WriteLine("Enter the Value of e : ");<br>
+                e = Convert.ToSingle(Console.ReadLine());<br>
+                Console.WriteLine("Enter the Value of f : ");<br>
+                f = Convert.ToSingle(Console.ReadLine());<br>
+                equation = Convert.ToSingle((((a + b) * (c * e * d)) - e) / f);<br>
+                Console.WriteLine("Solution of Equation : {0:0.00}", equation);<br></p>
+
+
+            <div class="line"></div>
+
+            <h5>6) Write a program and print the output of first equation of motion. For values take input from user. (Vf = Vi = at).
+            </h5>
+            
+            <h5>Output:</h5>
+            <img src="7.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">double vf, vi, a, t;<br>
+                Console.WriteLine("FIRST EQUATION OF MOTION IS : vf = vi + at");<br>
+                Console.Write("Enter Initial Velocity : ");<br>
+                vi = Convert.ToSingle(Console.ReadLine());<br>
+                Console.Write("Enter Acceleration : ");<br>
+                a = Convert.ToSingle(Console.ReadLine());<br>
+                Console.Write("Enter Time(in Seconds) : ");<br>
+                t = Convert.ToSingle(Console.ReadLine());<br>
+                vf = Convert.ToSingle(vi + (a * t));<br>
+                Console.WriteLine("The Final Velocity is = {0:0.00}", vf);<br></p>
+
+
+            <div class="line"></div>
+
+            <h5>7) Write a program that takes personal information from user and displays is.
+            </h5>
+            
+            <h5>Output:</h5>
+            <img src="8.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">string name, fathername, age, martialstatus, city, email, phone, profession, degree,
+                university;<br>
+                Console.Write("Enter Your Name : ");<br>
+                name = Console.ReadLine();<br>
+                Console.Write("Enter Your Father's Name : ");<br>
+                fathername = Console.ReadLine();<br>
+                Console.Write("Enter Your Age : ");<br>
+                age = Console.ReadLine();<br>
+                Console.Write("Enter Your Martial Status : ");<br>
+                martialstatus = Console.ReadLine();<br>
+                Console.Write("Where Do You Live : ");<br>
+                city = Console.ReadLine();<br>
+                Console.Write("Enter Your Email Address : ");<br>
+                email = Console.ReadLine();<br>
+                Console.Write("Enter Your Enter Your Phone Number : ");<br>
+                phone = Console.ReadLine();<br>
+                Console.Write("Enter Your Profession : ");<br>
+                profession = Console.ReadLine();<br>
+                Console.Write("Enter Your 4 Year Degree Program : ");<br>
+                degree = Console.ReadLine();<br>
+                Console.Write("Enter Your University : ");<br>
+                university = Console.ReadLine();<br>
+                Console.WriteLine("\nTHANKS FOR PROVIDING INFORMATION\n");<br>
+                Console.WriteLine("\t\t********************* Your Profile *********************\n");<br>
+                Console.Write("\t\tName : {0}" +
+                "\n\t\tFather's Name : {1}" +
+                "\n\t\tAge : {2}" +
+                "\n\t\tMartial Status : {3}" +
+                "\n\t\tCity : {4}" +
+                "\n\t\tEmail : {5}" +
+                "\n\t\tPhone Number : {6}" +
+                "\n\t\tProfession : {7}" +
+                "\n\t\tDegree : {8}" +
+                "\n\t\tUniversity : {9}\n",
+                name, fathername, age, martialstatus, city, email, phone, profession, degree, university);<br>
+                Console.WriteLine("\t\t_______________<br>____________________________<br>_____________");<br>
+                
+            </p>
+
+
+            <div class="line"></div>
+
+
+            <!-- Formatted Output -->
+
+            <h2 id="access">3. Formatted Output </h2> <br>
+
+            <h5>1) Create a small form which take employee information of a Company.
+            </h5>
+
+            <h5>Output:</h5>
+            <img src="10.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">
+            int salary;<br>
+string name, fname, phone, dsgn, DOH;<br>
+Console.Write("Enter Your Name : ");<br>
+name = Console.ReadLine();<br>
+Console.Write("Enter Your Father's Name : ");<br>
+fname = Console.ReadLine();<br>
+Console.Write("Enter Your Phone Number : ");<br>
+phone = Console.ReadLine();<br>
+Console.Write("Enter Your Designation : ");<br>
+dsgn = Console.ReadLine();<br>
+Console.Write("Enter Your Date Of Hiring : ");<br>
+DOH = Console.ReadLine();<br>
+Console.Write("Enter Your Salary : ");<br>
+salary = Convert.ToInt32(Console.ReadLine());<br>
+Console.Clear();<br>
+Console.WriteLine(" __________________________<br>_____________________");<br>
+Console.WriteLine("| EMPLOYEE DATA \t\t\t\t|");<br>
+Console.WriteLine("|-----------------------------------------------|");<br>
+Console.WriteLine("| NAME : {0}\t\t\t\t\t|", name);<br>
+Console.WriteLine("| FATHER's NAME : {0}\t\t\t\t|", fname);<br>
+Console.WriteLine("| PHONE NUMBER : {0}\t\t\t|", phone);<br>
+Console.WriteLine("| DESIGNATION : {0}\t\t\t\t|", dsgn);<br>
+Console.WriteLine("| DATE OF HIRE : {0}\t\t\t\t|", DOH);<br>
+Console.WriteLine("| SALARY : {0:0,0}\t\t\t\t|", salary);<br>
+Console.WriteLine("|_____________________<br>__________________________|");</p>
+
+            <div class="line"></div>
+
+            <h5>2) Create a C# program in which you will display a restaurants payment bill in a formatted manner with input from user.</h5>
+
+            <h5>Output:</h5>
+            <img src="11.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">DateTime DT = DateTime.Now;<br>
+string firstdish, seconddish;<br>
+double table, guest, price1, price2, q1, q2, sub, tax, total, grat;<br>
+Console.Write("Enter Table Number : ");<br>
+table = Convert.ToInt32(Console.ReadLine());<br>
+Console.Write("Number of Guests : ");<br>
+guest = Convert.ToInt32(Console.ReadLine());<br>
+Console.Write("Enter 1st Dish : ");<br>
+firstdish = Console.ReadLine();<br>
+Console.Write("Enter price : ");<br>
+price1 = Convert.ToSingle(Console.ReadLine());<br>
+Console.Write("Enter Quantity : ");<br>
+q1 = Convert.ToSingle(Console.ReadLine());<br>
+Console.Write("Enter 2nd Dish : ");<br>
+seconddish = Console.ReadLine();<br>
+Console.Write("Enter price : ");<br>
+price2 = Convert.ToSingle(Console.ReadLine());<br>
+Console.Write("Enter Quantity : ");<br>
+q2 = Convert.ToSingle(Console.ReadLine());<br>
+price1 = Convert.ToSingle(q1 * price1);<br>
+price2 = Convert.ToSingle(q2 * price2);<br>
+sub = Convert.ToSingle(price1 + price2);<br>
+tax = Convert.ToSingle(sub * 0.10);<br>
+grat = Convert.ToSingle(6.00);<br>
+total = Convert.ToSingle(sub + tax + grat);<br>
+Console.Clear();<br>
+
+Console.WriteLine("\t\t _________________________<br>______________");<br>
+Console.WriteLine("\t\t| \t\t\t\t\t|");<br>
+Console.WriteLine("\t\t| BAHRIA UNIVERSITY RESTAURANT \t\t|");<br>
+Console.WriteLine("\t\t| Bahria University Karachi Campus \t|");<br>
+Console.WriteLine("\t\t| \t\t\t\t\t|");<br>
+Console.WriteLine("\t\t| \t\t\t\t\t|");<br>
+Console.WriteLine("\t\t| {0:dd-MMM-yyyy} {1:HH:mm:ss} \t\t\t|", DT, DT);<br>
+Console.WriteLine("\t\t|---------------------------------------|");<br>
+Console.WriteLine("\t\t| Table:{0} Chk: #{1} Guest: {2} \t\t|", table, table, guest);<br>
+Console.WriteLine("\t\t|---------------------------------------|");<br>
+Console.WriteLine("\t\t| \t\t\t\t\t|");<br>
+Console.WriteLine("\t\t| \t\t\t\t\t|");<br>
+Console.WriteLine("\t\t| {0} {1} $ {2:0.00}\t\t\t|", q1, firstdish, price1);<br>
+Console.WriteLine("\t\t| {0} {1} $ {2:0.00}\t\t\t|", q2, seconddish, price2);<br>
+Console.WriteLine("\t\t| \t\t\t\t\t|");<br>
+Console.WriteLine("\t\t| \t\t\t\t\t|");<br>
+Console.WriteLine("\t\t| SUBTOTAL $ {0:0.00}\t\t\t|", sub);<br>
+Console.WriteLine("\t\t| TAX $ {0:0.00}\t\t\t\t|", tax);<br>
+Console.WriteLine("\t\t| GRATUITY $ {0:0.00}\t\t\t|", grat);<br>
+Console.WriteLine("\t\t| TOTAL DUE $ {0:0.00}\t\t\t|", total);<br>
+Console.WriteLine("\t\t| \t\t\t\t\t|");<br>
+Console.WriteLine("\t\t| \t\t\t\t\t|");<br>
+Console.WriteLine("\t\t| \t\t\t\t\t|");<br>
+Console.WriteLine("\t\t| THANK YOU FOR DINING WITH US \t\t|");<br>
+Console.WriteLine("\t\t| PLEASE COME AGAIN \t\t\t|");<br>
+Console.WriteLine("\t\t| \t\t\t\t\t|");<br>
+Console.WriteLine("\t\t|_________________<br>______________________|");</p>
+
+            <div class="line"></div>
+
+            <!-- Operators & Expression -->
+
+            <h2 id="constructor">4. Operators & Expression </h2> <br>
+
+            <h5>1) Which of the following values can be assigned to variables of type float, double and decimal: 5, -5.01, 34.567839023; 12.345; 8923.1234857; 3456.091124875956542151256683467?.</h5>
+
+            <h5>Output:</h5>
+            <img src="12.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">decimal g = 3456.091124875956542151256683467M;<br>
+double a = 5, b = -5.01, c = 34.567839023, d = 12.345, e = 8923.1234857, f =
+3456.091124875956542151256683467;<br>
+Console.WriteLine("Value of a = " + a + "\t\t\t\t\t(It is Stored in Double)");<br>
+Console.WriteLine("Value of b = " + b + "\t\t\t\t(It is Stored in Double)");<br>
+Console.WriteLine("Value of c = " + c + "\t\t\t(It is Stored in Double)");<br>
+Console.WriteLine("Value of d = " + d + "\t\t\t\t(It is Stored in Double)");<br>
+Console.WriteLine("Value of e = " + e + "\t\t\t(It is Stored in Double)");<br>
+Console.WriteLine("Value of f = " + f + "\t\t\t(It is Stored in Double But its Round off value)");<br>
+ Console.WriteLine("If We Store Value of f in Decimal ");<br>
+Console.WriteLine("Value of f = " + g + "\t(Its Stored in Decimal But its again a Round off value"); </p>
+
+            <div class="line"></div>
+
+            <h5>2) Create a simple calculator which will perform all arithmetical, Bit wise operation and logical operation on two number.</h5>
+            
+            <h5>Output:</h5>
+            <img src="13.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int num1, num2;<br>
+bool x, y;<br>
+Console.WriteLine("Enter First Number : ");<br>
+num1 = Convert.ToInt32(Console.ReadLine());<br>
+Console.WriteLine("Enter Second Number : ");<br>
+num2 = Convert.ToInt32(Console.ReadLine());<br>
+Console.WriteLine("******************ARITHMETIC<br>******************\n");<br>
+Console.WriteLine("{0} + {1} = {2}", num1, num2, num1 + num2);<br>
+Console.WriteLine("{0} + {1} = {2}", num1, num2, num1 + num2++);<br>
+Console.WriteLine("{0} - {1} = {2}", num1, num2, num1 - num2--);<br>
+Console.WriteLine("{0} - {1} = {2}", num1, num2, num1 - num2);<br>
+Console.WriteLine("{0} * {1} = {2}", num1, num2, num1 * num2);<br>
+Console.WriteLine("{0} / {1} = {2}", num1, num2, num1 / num2);<br>
+Console.WriteLine("{0} % {1} = {2}\n", num1, num2, num1 % num2);<br>
+Console.WriteLine("******************COMPARISON<br>******************\n");<br>
+Console.WriteLine("{0} > {1} = {2}", num1, num2, num1 > num2);<br>
+Console.WriteLine("{0} < {1} = {2}", num1, num2, num1 < num2);<br>
+Console.WriteLine("{0} >= {1} = {2}", num1, num2, num1 >= num2);<br>
+Console.WriteLine("{0} <= {1} = {2}", num1, num2, num1 <= num2);<br>
+Console.WriteLine("{0} == {1} = {2}", num1, num2, num1 == num2);<br>
+Console.WriteLine("{0} != {1} = {2}", num1, num2, num1 != num2);<br>
+Console.WriteLine("{0} & {1} = {2}", num1, num2, num1 & num2);<br>
+Console.WriteLine("{0} | {1} = {2}", num1, num2, num1 | num2);<br>
+Console.WriteLine("{0}^2 = {1}", num2, num2 ^ 2);<br>
+Console.WriteLine("{0} << {1} = {2}", num1, num2, num1 << num2);<br>
+Console.WriteLine("{0} >> {1} = {2}", num1, num2, num1 >> num2);<br>
+Console.WriteLine("{0} != {1}", num2, num2!);<br>
+Console.WriteLine("_____________________<br>_________________________\n");<br>
+Console.WriteLine("Enter First Value : ");<br>
+x = Convert.ToBoolean(Console.ReadLine());<br>
+Console.WriteLine("Enter Second Value : ");<br>
+y = Convert.ToBoolean(Console.ReadLine());<br>
+Console.WriteLine("*******************LOGICAL<br>*******************\n");<br>
+Console.WriteLine("{0} && {1}= {0}", x, y, x && y);<br>
+Console.WriteLine("{0} || {1}= {0}", x, y, x || y);<br>
+Console.WriteLine("!{0}= {0}", y, !y);<br>
+Console.WriteLine("{0} ^ {1}= {0}", x, y, x ^ y);<br>
+Console.WriteLine("_______________________<br>________________________");</p>
+
+            <div class="line"></div>
+
+            <h5>3) Create a simple program to calculate Hypotenuse using Pythagoras theorem c^2 = (a^2 + b^2).</h5>
+            
+            <h5>Output:</h5>
+            <img src="14.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">double a, b, a2, b2, c2, ptheorem;<br>
+Console.Write("Enter Value of A : ");<br>
+a = Convert.ToDouble(Console.ReadLine());<br>
+Console.Write("Enter Value of B : ");<br>
+b = Convert.ToDouble(Console.ReadLine());<br>
+a2 = Convert.ToDouble(Math.Pow(a, 2));<br>
+b2 = Convert.ToDouble(Math.Pow(b, 2));<br>
+c2 = a2 + b2;<br>
+Console.WriteLine("\nc^2 = a^2 + b^2");<br>
+Console.WriteLine("\nc^2 = ({0:0.00} + {1:0.00})", a2, b2);<br>
+Console.WriteLine("\nc^2 = {0:0.00}", c2);<br>
+ptheorem = Math.Sqrt(c2);<br>
+Console.WriteLine("\nc = {0:0.00}", ptheorem);</p>
+
+            <div class="line"></div>
+
+
+            <!-- Conditional Statements -->
+
+            <h2 id="condition">5. Conditional Statements </h2> <br>
+
+            <h5>1) Create a simple program to check whether the no is even or odd.</h5>
+
+            <h5>Output:</h5>
+            <img src="15.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int num;<br>
+Console.WriteLine("Enter a Number : ");<br>
+num = Convert.ToInt32(Console.ReadLine());<br>
+if (num % 2 == 0)<br>
+{<br>
+    Console.WriteLine("It is even number");<br>
+}<br>
+else<br>
+{<br>
+    Console.WriteLine("It is odd number");<br>
+}</p>
+
+            <div class="line"></div>
+
+            <h5>2) Create a simple calculator using if else condition in which you will take two number as input and ask user which operation he/she wants to perform.
+            </h5>
+
+            <h5>Output:</h5>
+            <img src="16.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">double op1, op2;<br>
+Console.Write("Enter 1st Operand :");<br>
+op1 = Convert.ToDouble(Console.ReadLine());<br>
+Console.Write("Enter 2nd Operand :");<br>
+op2 = Convert.ToDouble(Console.ReadLine());<br>
+Console.Write("Enter Operator :");<br>
+string Operator = Console.ReadLine();<br>
+switch (Operator)<br>
+{<br>
+    case "+":<br>
+        double addition;<br>
+        Console.WriteLine("*****ADDITION*****");<br>
+        addition = op1 + op2;<br>
+        Console.WriteLine("{0} + {1} = {2}", op1, op2, addition);<br>
+        break;<br>
+    case "-":<br>
+        double subtraction;<br>
+        Console.WriteLine("*****SUBTRACTION*****");<br>
+        subtraction = op1 - op2;<br>
+        Console.WriteLine("{0} - {1} = {2}", op1, op2, subtraction);<br>
+        break;<br>
+    case "*":<br>
+        double multiplication;<br>
+        Console.WriteLine("*****MULTIPLICATION*****");<br>
+        multiplication = op1 * op2;<br>
+        Console.WriteLine("{0} * {1} = {2}", op1, op2, multiplication);<br>
+        break;<br>
+    case "/":<br>
+        double division;<br>
+        Console.WriteLine("*****DIVISION*****");<br>
+        division = op1 / op2;<br>
+        Console.WriteLine("{0} / {1} = {2}", op1, op2, division);<br>
+        break;<br>
+    case "%":<br>
+        double modulus;<br>
+        Console.WriteLine("*****MODULUS*****");<br>
+        modulus = op1 % op2;<br>
+        Console.WriteLine("{0} % {1} = {2}", op1, op2, modulus);<br>
+        break;<br>
+}</p>
+
+            <div class="line"></div>
+
+            <h5>3) Write a Program using nested to create a game.</h5>
+
+            <h5>Output:</h5>
+            <img src="17.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">string response;<br>
+Console.WriteLine("*****GUESSING THE SECRET NUMBER*****");<br>
+Console.Write("DO YOU WANT TO PLAY (y/n) : ");<br>
+response = Console.ReadLine();<br>
+if (response == "y" || response == "Y" || response == "yes" || response == "YES"){<br>
+    int age;<br>
+    Console.Write("Enter Your Age : ");<br>
+    age = Convert.ToInt32(Console.ReadLine());<br>
+    if (age < 6){<br>
+        Console.WriteLine("YOU ARE TOO YOUNGER TO PLAY");}<br>
+    else{<br>
+        int secretnum = 1786, guessednum;<br>
+        Console.Write("Enter Any 4 Digit Number : ");<br>
+        guessednum = Convert.ToInt32(Console.ReadLine());<br>
+        if (guessednum == secretnum){<br>
+            Console.WriteLine("CONGRATULATIONS! YOU ARE SUCCESSFUL");}<br>
+        else{<br>
+            string again;<br>
+            Console.WriteLine("BETTER LUCK NEXT TIME");}}}<br>
+else if (response == "n" || response == "N" || response == "no" || response == "NO"){<br>
+    Console.WriteLine("THANK YOU! YOU MAY GO");}<br>
+else{<br>
+    Console.WriteLine("Enter a Valid Input");}
+</p>
+
+            <div class="line"></div>
+
+            <h5>4) Create simple application which will check the vowel using switch case.</h5>
+           
+            <h5>Output:</h5>
+            <img src="18.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">string alphabet;<br>
+Console.WriteLine("Enter an Alphabet : ");<br>
+alphabet = Console.ReadLine();<br>
+if (alphabet == "a" || alphabet == "A"){<br>
+    Console.WriteLine("ITS A VOWEL");}<br>
+else if (alphabet == "e" || alphabet == "E"){<br>
+    Console.WriteLine("ITS A VOWEL");}<br>
+else if (alphabet == "i" || alphabet == "I"){<br>
+    Console.WriteLine("ITS A VOWEL");}<br>
+else if (alphabet == "o" || alphabet == "O"){<br>
+    Console.WriteLine("ITS A VOWEL");}<br>
+else if (alphabet == "u" || alphabet == "U"){<br>
+    Console.WriteLine("It is a vowel");}<br>
+else{<br>
+    Console.WriteLine("It is not a vowel");}</p>
+
+            <div class="line"></div>
+
+            <!-- For Loops -->
+
+            <h2 id="loops">6. For Loops </h2> <br>
+
+            <h5>1) Enter Cube series without using power maths function.</h5>
+            
+            <h5>Output:</h5>
+            <img src="19.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int num, i;<br>
+Console.Write("Enter Range: ");<br>
+num = Convert.ToInt32(Console.ReadLine());<br>
+for (i = 1; i <= num; i++){<br>
+    Console.WriteLine("\tCube of {0} is {1}", i, i * i * i);}
+</p>
+
+            <div class="line"></div>
+
+            <h5>2) Square Series without using power maths function.</h5>
+
+            <h5>Output:</h5>
+            <img src="20.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int num, i;<br>
+Console.Write("Enter Range : ");<br>
+num = Convert.ToInt32(Console.ReadLine());<br>
+for (i = 1; i <= num; i++){<br>
+    Console.WriteLine("\tCube of {0} is {1}", i, i * i * i);}</p>
+
+            <div class="line"></div>
+
+            <h5>3) Repeatedly print the value of the variable xValue, decreasing it by 0.5 each time, as long as xValue remains positive. </h5>
+            
+            <h5>Output:</h5>
+            <img src="21.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">double num = 0;<br>
+int i, z;<br>
+Console.Write("Enter any Negative Number : ");<br>
+num = Convert.ToDouble(Console.ReadLine());<br>
+for (z = 1, i = (int)num; num <= 0; num += 0.5){<br>
+    Console.WriteLine("\t{0}\t=\t{1}", z, num);<br>
+    z++;}</p>
+
+            <div class="line"></div>
+
+            <h5>4) Print the square roots of the first 25 odd positive integers.</h5>
+
+            <h5>Output:</h5>
+            <img src="21.png" class="img-thumbnail"  alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int z, i;<br>
+for (z = 1, i = 1; z <= 25; z++, i += 2){<br>
+    Console.WriteLine("\t{0})\t{1} \t=\t {2:0.00}", z, i, Math.Sqrt(i));}</p>
+
+            <div class="line"></div>
+
+
+            
+            <h5>5) Generate Stars right angle triangle using 2 for loops.
+            </h5>
+            
+            <h5>Output:</h5>
+            <img src="23.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">for (int row = 0; row < 10; row++){<br>
+    for (int col = 0; col < row; col++){<br>
+        Console.Write("* ");}<br>
+    Console.Write("\n");}</p>
+
+            <div class="line"></div>
+
+            <h5>6) Write a program that reads from the console a positive integer number N (N < 20) and prints a matrix of number.
+            </h5>
+            
+            <h5>Output:</h5>
+            <img src="24.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int startnum, endnum;<br>
+Console.Write("Enter Starting Number : ");<br>
+startnum = Convert.ToInt32(Console.ReadLine());<br>
+Console.Write("Enter Ending Number : ");<br>
+endnum = Convert.ToInt32(Console.ReadLine());<br>
+Console.WriteLine("\n");<br>
+for (int row = startnum; row <= endnum; row++){<br>
+    for (int col = row; col <= (row - 1) + endnum; col++){<br>
+        Console.Write("{0}\t", col);}<br>
+    Console.Write("\n\n");}</p>
+
+            <div class="line"></div>
+
+            <!-- While Loops -->
+
+            <h2 id="while">7. While Loops </h2> <br>
+
+            <h5>1) Fibonacci series ( 0,1,1,2,3,5,8…) for and while loop.</h5>
+            
+            <h5>Output:</h5>
+            <img src="27.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int i = 3;<br>
+double num, x = 0, y = 1, z = 0;<br>
+Console.Write("Enter Number of Terms : ");<br>
+num = Convert.ToDouble(Console.ReadLine());<br>
+Console.Write("\n\n{0}, {1},", x, y);<br>
+while (i <= num){<br>
+    z = x + y;<br>
+    Console.Write(" {0},", z);<br>
+    x = y;<br>
+    y = z;<br>
+    i++;}<br>
+Console.WriteLine("\n\n");<br>
+Console.WriteLine("THANK YOU");<br></p>
+
+            <div class="line"></div>
+
+            <h5>2) Repeatedly print the value of the variable xValue, decreasing it by 0.5 each time, as long as xValue remains positive. (while loop).</h5>
+
+            <h5>Output:</h5>
+            <img src="28.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">double num = 0;<br>
+int z = 1;<br>
+Console.Write("Enter any Positive Number : ");<br>
+num = Convert.ToDouble(Console.ReadLine());<br>
+while (num >= 0){<br>
+    Console.WriteLine("\t{0}\t=\t{1}", z, num);<br>
+    z++;<br>
+    num -= 0.5;}</p>
+
+            <div class="line"></div>
+
+            <h5>3) Print the square roots of the first 25 odd positive integers. (while loop).</h5>
+
+            <!-- <h5>Output:</h5> -->
+            <!-- <img src="29.png" class="img-thumbnail" alt="firstImage"> -->
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int z = 1, i = 1, sum = 0;<br>
+Console.WriteLine("\t\t ___________________________<br>____________________________");<br>
+Console.WriteLine("\t\t| Serial Odd Number Square Root \t\t\t|");<br>
+while (z <= 25){<br>
+    Console.WriteLine("\t\t|\t{0} \t=\t {1} \t=\t {2:0.00}\t\t|", z, i, Math.Sqrt(i));<br>
+    sum += i;<br>
+    i += 2;<br>
+    z++;}<br>
+z--;<br>
+Console.WriteLine("\t\t| \t\t\t\t\t\t\t|");<br>
+Console.WriteLine("\t\t|\tTotal Sum of {0} Odd Positive Integers is {1}\t|", z, sum);<br>
+Console.WriteLine("\t\t|____________________<br>___________________________________|");</p>
+
+            <div class="line"></div>
+
+            <!-- Arrays -->
+
+            <h2 id="array">8. Arrays </h2> <br>
+
+            <h5>1) Write a program, which creates an array of 20 elements of type integer and initializes each of the elements with a value equals to the index of the element multiplied by 5. Print the elements to the console.</h5>
+            
+            <h5>Output:</h5>
+            <img src="25.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int[] array1 = new int[21];<br>
+Console.WriteLine("\t_________________");<br>
+for (int i = 1; i <= 20; i++){<br>
+    array1[i] = i;<br>
+    Console.WriteLine("\t|\t{0}\t|", array1[i] * 5);}<br>
+Console.WriteLine("\t|_______________|");</p>
+
+            <div class="line"></div>
+
+
+            <h5>2) Make a program in C# in which take 5 numbers from user and then give sum and avg. of them. Using arrays.</h5>
+            
+            <h5>Output:</h5>
+            <img src="26.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int sum = 0, average = 0;<br>
+int[] numbers = new int[5];<br>
+for (int i = 0; i < 5; i++){<br>
+    Console.Write("Enter {0} Number : ", i + 1);<br>
+    numbers[i] = Convert.ToInt32(Console.ReadLine());<br>
+    sum += numbers[i];}<br>
+average = sum / 5;<br>
+Console.WriteLine("Sum of Given Numbers is {0} ", sum);<br>
+Console.WriteLine("Average of Given Numbers is {0}", average);</p>
+
+            <div class="line"></div>
+
+
+            <!-- 2-D Arrays -->
+
+            <h2 id="2d">9. 2-D Arrays </h2> <br>
+
+            <h5>1) Enter the first matrix and then display it. Secondly, enter the second matrix and then display it. In the result by apply 2D arrays show Addition, subtraction of 2 matrixes.
+            </h5>
+
+            <h5>Output:</h5>
+            <img src="30.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int[,] mat1 = new int[3, 3];<br>
+int[,] mat2 = new int[3, 3];<br>
+Console.WriteLine("Enter Matrix 1:");<br>
+for (int x = 0; x < 3; x++){<br>
+    for (int y = 0; y < 3; y++){<br>
+        mat1[x, y] = int.Parse(Console.ReadLine());}}<br>
+Console.WriteLine("\nEnter Matrix 2:");<br>
+for (int x = 0; x < 3; x++){<br>
+    for (int y = 0; y < 3; y++){<br>
+        mat2[x, y] = int.Parse(Console.ReadLine());}}<br>
+Console.Clear();<br>
+Console.WriteLine("Matrix 1:\n");<br>
+for (int x = 0; x < 3; x++){<br>
+    for (int y = 0; y < 3; y++){<br>
+        Console.Write("\t{0}", mat1[x, y]);}<br>
+    Console.WriteLine();}<br>
+Console.WriteLine("\nMatrix 2:\n");<br>
+for (int x = 0; x < 3; x++){<br>
+    for (int y = 0; y < 3; y++){<br>
+        Console.Write("\t{0}", mat2[x, y]);}<br>
+    Console.WriteLine();}<br>
+Console.WriteLine("\nAddition of Matrix:\n");<br>
+for (int x = 0; x < 3; x++){<br>
+    for (int y = 0; y < 3; y++){<br>
+        Console.Write("\t{0}", mat1[x, y] + mat2[x, y]);}<br>
+    Console.WriteLine();}<br>
+Console.WriteLine("\nSubtraction of Matrix:\n");<br>
+for (int x = 0; x < 3; x++){<br>
+    for (int y = 0; y < 3; y++){<br>
+        Console.Write("\t{0}", mat1[x, y] - mat2[x, y]);}<br>
+    Console.WriteLine();}<br>
+</p>
+
+            <div class="line"></div>
+
+            <h5>2) Take N number of user data input and make sure N is greater than 10, which contain name of the user, his/her nationality and his/her eye color. You have to show the max color of eye in each country.
+            </h5>
+            
+            <h5>Output:</h5>
+            <img src="31.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int n = 0;<br>
+do{<br>
+    Console.WriteLine("Enter the number of user you want to insert the data of:");<br>
+    n = int.Parse(Console.ReadLine());}<br>
+while (n < 10);<br>
+string[,] data = new string[n, 3];<br>
+int[,] mec = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };<br>
+for (int x = 0; x < n; x++){<br>
+    Console.WriteLine("\nEnter Name:");<br>
+    data[x, 0] = Console.ReadLine();<br>
+    do{<br>
+        Console.WriteLine("\nEnter nationality:\na)Pakistan\nb)China\nc)Iran");<br>
+        data[x, 1] = Console.ReadLine();<br>
+        if (data[x, 1] == "a" || data[x, 1] == "A" || data[x, 1] == "Pakistan" || data[x, 1] == "pakistan"){<br>
+            data[x, 1] = "Pakistan";}<br>
+        else if (data[x, 1] == "b" || data[x, 1] == "B" || data[x, 1] == "China" || data[x, 1] == "china"){<br>
+            data[x, 1] = "China   ";}<br>
+        else if (data[x, 1] == "c" || data[x, 1] == "C" || data[x, 1] == "Iran" || data[x, 1] == "iran"){<br>
+            data[x, 1] = "Iran    ";}}<br>
+    while (data[x, 1] != "Pakistan" && data[x, 1] != "Iran    " && data[x, 1] != "China   ");<br>
+    do{<br>
+        Console.WriteLine("\nEnter eye color:\na)Black\nb)Brown\nc)Blue");<br>
+        data[x, 2] = Console.ReadLine();<br>
+        if (data[x, 2] == "a" || data[x, 2] == "A" || data[x, 2] == "Black" || data[x, 2] == "black"){<br>
+            data[x, 2] = "Black";}<br>
+        else if (data[x, 2] == "b" || data[x, 2] == "B" || data[x, 2] == "Brown" || data[x, 2] == "brown"){<br>
+            data[x, 2] = "Brown";}<br>
+        else if (data[x, 2] == "c" || data[x, 2] == "C" || data[x, 2] == "Blue" || data[x, 2] == "blue"){<br>
+            data[x, 2] = "Blue";}}<br>
+    while (data[x, 2] != "Brown" && data[x, 2] != "Black" && data[x, 2] != "Blue");}<br>
+for (int x = 0; x < n; x++){<br>
+    if (data[x, 1] == "Pakistan" && data[x, 2] == "Black"){<br>
+        mec[0, 0]++;}<br>
+    else if (data[x, 1] == "Pakistan" && data[x, 2] == "Brown"){<br>
+        mec[0, 1]++;}<br>
+    else if (data[x, 1] == "Pakistan" && data[x, 2] == "Blue"){<br>
+        mec[0, 2]++;}<br>
+    else if (data[x, 1] == "Iran    " && data[x, 2] == "Black"){<br>
+        mec[1, 0]++;}<br>
+    else if (data[x, 1] == "Iran    " && data[x, 2] == "Brown"){<br>
+        mec[1, 1]++;}<br>
+    else if (data[x, 1] == "Iran    " && data[x, 2] == "Blue"){<br>
+        mec[1, 2]++;}<br>
+    else if (data[x, 1] == "China   " && data[x, 2] == "Black"){<br>
+        mec[2, 0]++;}<br>
+    else if (data[x, 1] == "China   " && data[x, 2] == "Brown"){<br>
+        mec[2, 1]++;}<br>
+    else if (data[x, 1] == "China   " && data[x, 2] == "Blue"){<br>
+        mec[2, 2]++;}}<br>
+Console.WriteLine("\t\t\tName<br>\t\t\tNationality\t\t\tEye-Colour\n");<br>
+for (int x = 0; x < n; x++){<br>
+    for (int y = 0; y < 3; y++){<br>
+        Console.Write("\t\t\t{0}", data[x, y]);}<br>
+    Console.WriteLine();}<br>
+Console.WriteLine("\nMax Eye Colour:\n");<br>
+for (int x = 0; x < 3; x++){<br>
+    int max = 0;<br>
+    string color = "";<br>
+    for (int y = 0; y < 3; y++){<br>
+        if (mec[x, y] > max){<br>
+            max = mec[x, y];<br>
+            if (y == 0){<br>
+                color = "Black";}<br>
+            else if (y == 1){<br>
+                color = "Brown";}<br>
+            else if (y == 2){<br>
+                color = "Blue";}}}<br>
+    if (x == 0){<br>
+        Console.WriteLine("\nPakistani have most {0} eye color", color);}<br>
+    else if (x == 1){<br>
+        Console.WriteLine("\nIranii have most {0} eye color", color);}<br>
+    else if (x == 2){<br>
+        Console.WriteLine("\nChines have most {0} eye color", color);}}</p>
+
+            <div class="line"></div>
+
+            <h5>3) Make a program in C# in which take no. of items, price of items, quantity of items and name of items as input from the user and give the discount according to the following conditions (Use 2D Array
+            </h5>
+            
+            <h5>Output:</h5>
+            <img src="32.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int n, total = 0;<br>
+double d = 1, dtotal = 0;<br>
+Console.WriteLine("Enter No. of items:");<br>
+n = int.Parse(Console.ReadLine());<br>
+string[,] item = new string[n, 3];<br>
+for (int x = 0; x < n; x++){<br>
+    Console.WriteLine("\nEnter name of item {0}:", x + 1);<br>
+    item[x, 0] = Console.ReadLine();<br>
+    if (item[x, 0] == "rice" || item[x, 0] == "Rice"){<br>
+        d = 0.7; }<br>
+    Console.WriteLine("\nEnter price of {0} :", item[x, 0]);<br>
+    item[x, 1] = Console.ReadLine();<br>
+    Console.WriteLine("\nEnter quantity of {0} :", item[x, 0]);<br>
+    item[x, 2] = Console.ReadLine();<br>
+    total += (int.Parse(item[x, 1]) * int.Parse(item[x, 2]));}<br>
+if (d != 0.7){<br>
+    if (total >= 50000 & total <= 100000){<br>
+        d = 0.8;}<br>
+    else if (total > 100000){<br>
+        d = 0.7;}}<br>
+dtotal = total * d;<br>
+Console.WriteLine("S.no\t\tItem name\tPrice\t\tQuantity\n");<br>
+for (int x = 0; x < n; x++){<br>
+    Console.Write("{0}", x + 1);<br>
+    for (int y = 0; y < 3; y++){<br>
+       if (y == 1){<br>
+            Console.Write("\t\t${0}", item[x, y]);}<br>
+        else{<br>
+            Console.Write("\t\t" + item[x, y]);}}<br>
+    Console.WriteLine();}<br>
+Console.WriteLine("\n\tTotal : {0:c}", total);<br>
+if (d != 1){<br>
+    Console.WriteLine("\n\tTotal after discount of {0:0.00}% is : {1:c}", (1 - d) * 100, dtotal);}</p>
+
+            <div class="line"></div>
+
+            <!-- Functions -->
+
+            <h2 id="function">10. Functions </h2> <br>
+
+            <h5>1) Write a method named square_cube() that computes the square and cube of the value passed to it and display the result. Ask the user to provide the integer input in the main() and then call the function.
+            </h5>
+            
+            <h5>Output:</h5>
+            <img src="33.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int num1, num2;<br>
+Console.WriteLine("Enter number you want square of : ");<br>
+num1 = int.Parse(Console.ReadLine());<br>
+Console.WriteLine("Enter number you want cube of : ");<br>
+num2 = int.Parse(Console.ReadLine());<br>
+square_cube(num1, num2);<br>
+static void square_cube(int a, int b){<br>
+    Console.WriteLine("\nSquare of {0} = {1}\nCube of {2} = {3}", a, a * a, b, b * b * b);}</p>
+
+            <div class="line"></div>
+
+            <h5>2) Write a method table() which generates multiplicative table of an integer. The function receives three integers as its arguments. The first argument determine the table to be generated while the second and the third integer tell the starting and ending point respectively.  Ask the user to provide the three integer as input in the main().
+            </h5>
+
+            <h5>Output:</h5>
+            <img src="34.png"  class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int a, b, c;<br>
+Console.WriteLine("Enter 3 numbers to generate a table where :-\n1st Number represent : Table to be generated\n2nd Number represent : Start point\n3rd Number represent : End point");<br>
+a = int.Parse(Console.ReadLine());<br>
+b = int.Parse(Console.ReadLine());<br>
+c = int.Parse(Console.ReadLine());<br>
+Console.WriteLine("\n----Table----\n");<br>
+table(a, b, c);        <br>
+static void table(int a, int b, int c){<br>
+    for (int i = b; i <= c; i++){<br>
+        Console.WriteLine("{0} x {1} = {2}", a, i, a * i);}}</p>
+
+            <div class="line"></div>
+
+
+            <h5>3)	Create two function to find min and maximum value of any int array.</h5>
+
+            <h5>Output:</h5>
+            <img src="35.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int n;<br>
+Console.WriteLine("Enter number of elements in array :");<br>
+n = int.Parse(Console.ReadLine());<br>
+int[] arr = new int[n];<br>
+for (int i = 0; i < n; i++){<br>
+    Console.WriteLine("Enter element number {0} :", i + 1);<br>
+    arr[i] = int.Parse(Console.ReadLine());}<br>
+Console.WriteLine("\nArray : \n");<br>
+foreach (int i in arr){<br>
+    Console.WriteLine("{0}", i);}<br>
+Console.WriteLine("\nMin and Max : \n");<br>
+min(arr);<br>
+max(arr);}<br>
+static void min(int[] arr){<br>
+    int min = 0;<br>
+    for (int i = 0; i < arr.Length; i++){<br>
+        if (i == 0){<br>
+            min = arr[i];}<br>
+        else{<br>
+            if (min > arr[i]){<br>
+                min = arr[i];}}}<br>
+    Console.WriteLine("Minimum is : " + min);}<br>
+static void max(int[] arr){<br>
+    int max = 0;<br>
+    for (int i = 0; i < arr.Length; i++){<br>
+        if (i == 0){<br>
+            max = arr[i];}<br>
+        else {<br>
+            if (max < arr[i]){<br>
+                max = arr[i];}}}<br>
+    Console.WriteLine("Maximun is : " + max);}</p>
+
+            <div class="line"></div>
+
+            <h5>4) Take input of an array in on method and print reverse of that array.
+            </h5>
+            
+            <h5>Output:</h5>
+            <img src="35.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int[] arr = input_arr();<br>
+Console.WriteLine("\nInputed array was :\n");<br>
+foreach (int i in arr){<br>
+    Console.WriteLine("{0}", i);}<br>
+Console.WriteLine("\nNow it is :\n");<br>
+arr_rev(arr);<br>
+static int[] input_arr(){<br>
+    int n;<br>
+    Console.WriteLine("Enter number of elements in array :");<br>
+    n = int.Parse(Console.ReadLine());<br>
+    int[] arr = new int[n];<br>
+    for (int i = 0; i < n; i++){<br>
+        Console.WriteLine("Enter element number {0} :", i + 1);<br>
+        arr[i] = int.Parse(Console.ReadLine());}<br>
+    return arr;}<br>
+ static void arr_rev(int[] arr){<br>
+    for (int i = (arr.Length) - 1; i >= 0; i--){<br>
+        Console.WriteLine("{0}", arr[i]);}}</p>
+
+            <div class="line"></div>
+
+            <h5>5) Design a fully functional calculator using function.
+            </h5>
+            
+            <h5>Output:</h5>
+            <img src="36.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black;
+            color: white;">int num1, num2;<br>
+string op, ans;<br>
+do{<br>
+    Console.WriteLine("Enter number 1 :");<br>
+    num1 = int.Parse(Console.ReadLine());<br>
+    Console.WriteLine("Enter number 2 :");<br>
+    num2 = int.Parse(Console.ReadLine());<br>
+    Console.WriteLine("Select option of operation :\na) Addition\nb) Subtraction\nc) Multiplacation\nd) Division");<br>
+    op = Console.ReadLine();<br>
+    calc(num1, num2, op);<br>
+    Console.WriteLine("Enter y to try again : ");<br>
+    ans = Console.ReadLine();<br>
+} while (ans == "y" || ans == "Y");<br>
+    static void calc(int a, int b, string op){<br>
+    switch (op){<br>
+        case "a":<br>
+            Console.WriteLine("\n{0} + {1} = {2}", a, b, a + b);<br>
+            break;<br>
+        case "b":<br>
+            Console.WriteLine("\n{0} - {1} = {2}", a, b, a - b);<br>
+            break;<br>
+        case "c":<br>
+            Console.WriteLine("\n{0} x {1} = {2}", a, b, a * b);<br>
+            break;<br>
+        case "d":<br>
+            Console.WriteLine("\n{0} / {1} = {2}", a, b, a / b);<br>
+            break;<br>
+        default:<br>
+            Console.WriteLine("\nInvalid operation selected !!");<br>
+            break;}}
+</p>
+
+            <div class="line"></div>
+
+
+
+
+
+
+        </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+        <script>
+            $(document).ready(function () {
+                $("#sidebarCollapse").on('click', function () {
+                    $("#sidebar").toggleClass('active');
+                });
+            });
+        </script>
+</body>
+
+</html>

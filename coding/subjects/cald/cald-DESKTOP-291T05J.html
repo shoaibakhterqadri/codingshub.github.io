@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/analytics"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4128752626691291"
+    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Architecture & Logic Design</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="cald.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <style>
+        .all-menu a {
+            background-color:#008cff;
+          /* background-color: #7386d5; Grey background color */
+          color: white; /* Black text color */
+          display: block; /* Make the links appear below each other */
+          padding: 12px; /* Add some padding */
+          text-decoration: none; /* Remove underline from links */
+        }
+        .all-menu {
+          width: 250px;
+          height: 505px;
+          overflow-y: auto;
+          background-color: #008cff;
+        }
+          </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+
+        <nav id="sidebar" style="background-color:#008cff;">
+            <div id="all" style="position:fixed">
+            <div class="sidebar-header" style="width: 250px;">
+                <a href="../../../index.html"><h3>Codings Hub</h3></a>
+            </div>
+
+           
+            <!-- <div class="my-custom-scrollbar my-custom-scrollbar-primary" > -->
+
+                <div class="all-menu">
+
+            <ul class="list-unstyled components">
+                
+                <p>Programming Languages</p>
+                <li>
+                    <a href="../../coding.html">HTML</a>
+                </li>
+                <li>
+                    <a href="../css/css.html">CSS</a>
+                </li>
+                <li>
+                    <a href="../JavaScript/javaScript.html">JavaScript</a>
+                </li>
+
+                <li >
+                    <a href="../CSharp/cSharp.html">C#</a>
+                </li>
+                
+
+
+                
+                    <li class="active" style="width: 250px;" >
+                        
+                        <a href="#java" data-toggle="collapse" aria-expanded="false"  class="dropdown-toggle">Computer Architecture & <br>Logic Design</a>
+                        
+                        <ul class="collapse list-unstyled" id="java">
+                            <li>
+                                <a href="#introduction">1. Introduction to Visible Virtual Machine</a>
+                            </li>
+                            <li>
+                                <a href="#introduction">2. Arithmetic Operations</a>
+                            </li>
+                            <li>
+                                <a href="#loop">3. Loop</a>
+                            </li>
+                            <li>
+                                <a href="#mips">4. Introduction to MIPs Architecture</a>
+                            </li>
+                        </ul>
+                    </li>
+            
+                <li>
+                    <a target="_blank" href="https://portfolio-shoaibakhter.netlify.app/">Portfolio</a>
+                </li>
+                <li>
+                    <a target="_blank" href="../../../contact/contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../../quiz/Quiz Project/Login box/index.html">Quiz</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../mcqs/html.html">MCQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.fiverr.com/users/shoaibakhter18">Services by Fiverr</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- </div> -->
+            </nav>
+
+            <h1>Tasks & Solution of Computer Architecture & Logic Design</h1> <br>
+
+            <!-- Introduction to  Computer Architecture & Logic Design-->
+            <h2 id="introduction">1. Introduction to Visible Virtual Machine </h2> <br>
+
+            <h5>1) Write a program in which take input from user and add from input value.</h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/1.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <img src="image/1.2.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+            color: white;">
+IN INPUT <br>
+ADD 96<br>
+OUT OUTPUT<br>
+HLT HALT<br>
+*96<br>
+DAT 001<br>
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Write a program in which take input from user and subtract from user input value.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/2.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <img src="image/2.2.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                IN INPUT <br>
+                SUB 96<br>
+                OUT OUTPUT<br>
+                HLT HALT<br>
+                *96<br>
+                DAT 005
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>3) Write a program in which take two inputs from user and add both and check the answer.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/3.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <img src="image/3.2.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                IN INPUT <br>
+                STO 96<br>
+                IN INPUT<br>
+                ADD 96<br>
+                OUT OUTPUT<br>
+                HLT HALT                
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>4) Write a program in which two constant numbers and add them.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/4.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <img src="image/4.2.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                ADD 96 <br>
+                ADD 97<br>
+                OUT OUTPUT<br>
+                HLT HALT<br>
+                *96 <br>
+                DAT 005<br>
+                *97<br>
+                DAT 010
+                
+            </p>
+
+            <div class="line"></div>
+
+
+             <!-- Arithmetic Operations-->
+             <h2 id="introduction">2. Arithmetic Operations </h2> <br>
+
+             <h5>1) Write a program in which take input from user and add from input value.</h5><br>
+             <br><h5>Output:</h5>
+             <img src="image/1.1.png" class="img-thumbnail" alt="firstImage">
+             <br>
+             <img src="image/1.2.png" class="img-thumbnail" alt="secondImage">
+             <br>
+             <br>
+             <h5>Source Code:</h5>
+             <p style="background-color: black;
+             color: white;">
+ IN INPUT <br>
+ ADD 96<br>
+ OUT OUTPUT<br>
+ HLT HALT<br>
+ *96<br>
+ DAT 001<br>
+             </p>
+ 
+             <div class="line"></div>
+ 
+             <h5>2) Write a program in which take input from user and subtract from user input value.</h5>
+             <br><h5>Output:</h5>
+             <img src="image/2.1.png" class="img-thumbnail" alt="firstImage">
+             <br>
+             <img src="image/2.2.png" class="img-thumbnail" alt="secondImage">
+             <br>
+             <br>
+             <h5>Source Code:</h5>
+ 
+             <p style="background-color: black;
+             color: white;">
+                 IN INPUT <br>
+                 SUB 96<br>
+                 OUT OUTPUT<br>
+                 HLT HALT<br>
+                 *96<br>
+                 DAT 005
+             </p>
+ 
+             <div class="line"></div>
+ 
+ 
+             <h5>3) Write a program in which take two inputs from user and add both and check the answer.</h5>
+             <br><h5>Output:</h5>
+             <img src="image/3.1.png" class="img-thumbnail" alt="firstImage">
+             <br>
+             <img src="image/3.2.png" class="img-thumbnail" alt="secondImage">
+             <br>
+             <br>
+             <h5>Source Code:</h5>
+ 
+             <p style="background-color: black;
+             color: white;">
+                 IN INPUT <br>
+                 STO 96<br>
+                 IN INPUT<br>
+                 ADD 96<br>
+                 OUT OUTPUT<br>
+                 HLT HALT                
+             </p>
+ 
+             <div class="line"></div>
+ 
+ 
+             <h5>4) Write a program in which two constant numbers and add them.</h5>
+             <br><h5>Output:</h5>
+             <img src="image/4.1.png" class="img-thumbnail" alt="firstImage">
+             <br>
+             <img src="image/4.2.png" class="img-thumbnail" alt="secondImage">
+             <br>
+             <br>
+             <h5>Source Code:</h5>
+ 
+             <p style="background-color: black;
+             color: white;">
+                 ADD 96 <br>
+                 ADD 97<br>
+                 OUT OUTPUT<br>
+                 HLT HALT<br>
+                 *96 <br>
+                 DAT 005<br>
+                 *97<br>
+                 DAT 010
+                 
+             </p>
+ 
+             <div class="line"></div>
+
+
+
+              <!-- Loop-->
+            <h2 id="loop">3. Loop </h2> <br>
+
+            <h5>1) Write a program in which take input if input is equal to 0 then
+                 print output otherwise again take input.Hint This is used by while loop.</h5><br>
+            <br><h5>Output:</h5>
+            <img src="image/7.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <img src="image/7.2.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+            <p style="background-color: black;
+            color: white;">
+            IN <br>
+            STO 95<br>
+            BRZ 05<br>
+            OUT <br>
+            BR 00<br>
+            OUT<br>
+            HLT
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Write a program in which take input and if input is less than 10 then add otherwise terminate the program.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/6.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <img src="image/6.2.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+            IN <br>
+            STO 99 <br>
+            SUB 98 <br>
+            BRP 08<br>
+            LDA 99<br>
+            ADD 99<br>
+            OUT<br>
+            BR 00<br>
+            HLT<br>
+            *98<br>
+            DAT 010
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>3) Write a program in which print table.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/5.1.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <img src="image/5.2.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+            IN <br>
+            STO 95<br>
+            lda 97<br>
+            add 96<br>
+            sto 97<br>
+            lda 98<br>
+            add 95<br>
+            sto 98<br>
+            out<br>
+            lda 94<br>
+            sub 97<br>
+            brz 13<br>
+            br 02<br>
+            hlt<br>
+            *94<br>
+            dat 010<br>
+            *96<br>
+            dat 001<br>
+            *97<br>
+            dat 000<br>
+            *98<br>
+            dat 000               
+            </p>
+
+            <div class="line"></div>
+
+
+           
+
+            <h1>Practice of MIPs Architecture</h1> <br>
+
+            <!-- Introduction to  Computer Architecture & Logic Design-->
+            <h2 id="mips">1. Introduction to Computer Architecture & Logic Design </h2> <br>
+
+
+            <h5>1) Write a program to take three integers and add and display them.</h5>
+            <br><h5>Output:</h5>
+            
+            <img src="image/8.1.png" class="img-thumbnail" alt="secondImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                .data <br>
+                prompt: .asciiz "Enter three integers \n"<br>
+                sum_msg: .asciiz "The sum is "<br>
+                .text <br>
+                .globl main<br>
+                main:<br>
+                la $a0,prompt<br>
+                li $v0,4<br>
+                syscall<br>
+                li $v0,5<br>
+                syscall<br>
+                move $t1,$v0<br>
+                li $v0,5<br>
+                syscall<br>
+                move $t2,$v0<br>
+                li $v0,5<br>
+                syscall<br>
+                move $t3,$v0<br>
+                addu $t1,$t1,$t2<br>
+                addu $t1,$t1,$t3<br>
+                la $a0,sum_msg<br>
+                li $v0,4<br>
+                syscall<br>
+                move $a0,$t1<br>
+                li $v0,1<br>
+                syscall<br>
+                li $v0,10<br>
+                syscall
+                
+            </p>
+
+            <div class="line"></div>
+
+
+            <h5>2) Write a program in which take three inputs of two times from user and add  them.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/8.2.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                   .data <br>
+                   first: .asciiz "Enter three integers for 1st Addition\n"<br>
+                   second: .asciiz "Enter three integers for 2nd Addition\n"<br>
+                   first_msg: .asciiz "The sum of 1st Addition is "<br>
+                   second_msg: .asciiz "The sum of 2nd Addition is "<br>
+                   .text<br>
+                   .globl main<br>
+                   main:<br>
+                   la $a0,first<br>
+                   li $v0,4<br>
+                   syscall<br>
+                   li $v0,5<br>
+                   syscall<br>
+                   move $t1,$v0<br>
+                   li $v0,5<br>
+                   syscall<br>
+                   move $t2,$v0<br>
+                   li $v0,5<br>
+                   syscall<br>
+                   move $t3,$v0<br>
+                   addu $t1,$t1,$t2<br>
+                   addu $t1,$t1,$t3<br>
+                   la $a0,first_msg<br>
+                   li $v0,4<br>
+                   syscall<br>
+                   move $a0,$t1<br>
+                   li $v0,1<br>
+                   syscall<br>
+                   la $a0,second<br>
+                   li $v0,4<br>
+                   syscall<br>
+                   li $v0,5<br>
+                   syscall<br>
+                   move $t4,$v0<br>
+                   li $v0,5<br>
+                   syscall<br>
+                   move $t5,$v0<br>
+                   li $v0,5<br>
+                   syscall<br>
+                   move $t6,$v0<br>
+                   addu $t4,$t4,$t5<br>
+                   addu $t4,$t4,$t6<br>
+                   la $a0,second_msg<br>
+                   li $v0,4<br>
+                   syscall<br>
+                   move $a0,$t1<br>
+                   li $v0,1<br>
+                   syscall<br>
+                   li $v0,10<br>
+                   syscall           
+            </p>
+
+            <div class="line"></div>
+
+            <h5>3) Write a program in which take two inputs from user and multiply them.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/8.3.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                 .data <br>
+                 first: .asciiz "Enter first Number \n"<br>
+                 second: .asciiz "Enter second Number\n"<br>
+                 first_msg: .asciiz "The Multiply of two Numbers are "<br>
+                 .text<br>
+                 .globl main<br>
+                 main:<br>
+                 la $a0,first<br>
+                 li $v0,4<br>
+                 syscall<br>
+                 li $v0,5<br>
+                 syscall<br>
+                 move $t1,$v0<br>
+                 la $a0,second<br>
+                 li $v0,4<br>
+                 syscall<br>
+                 li $v0,5<br>
+                 syscall<br>
+                 move $t2,$v0<br>
+                 mul $t1,$t1,$t2<br>
+                 la $a0,first_msg<br>
+                 li $v0,4<br>
+                 syscall<br>
+                 move $a0,$t1<br>
+                 li $v0,1<br>
+                 syscall<br>
+                 li $v0,10<br>
+                 syscall
+                              
+            </p>
+
+            <div class="line"></div>
+
+            <h5>4) Write a program in which take two inputs from user and add both and check the answer.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/8.5.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                  .data<br>
+                  first: .asciiz "Enter first Number \n"<br>
+                  second: .asciiz "Enter second Number\n"<br>
+                  first_msg: .asciiz "The Addition of two Numbers are "<br>
+                  .text<br>
+                  .globl main<br>
+                  main:<br>
+                  la $a0,first<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  li $v0,5<br>
+                  syscall<br>
+                  move $t1,$v0<br>
+                  la $a0,second<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  li $v0,5<br>
+                  syscall<br>
+                  move $t2,$v0<br>
+                  add $t1,$t1,$t2<br>
+                  la $a0,first_msg<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  move $a0,$t1<br>
+                  li $v0,1<br>
+                  syscall<br>
+                  li $v0,10<br>
+                  syscall
+                  
+                              
+            </p>
+
+            <div class="line"></div>
+
+
+
+            <h5>5) Write a program in which take two inputs from user and sub both and check the answer.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/8.6.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                  .data <br>
+                  first: .asciiz "Enter first Number \n"<br>
+                  second: .asciiz "Enter second Number\n"<br>
+                  first_msg: .asciiz "The Addition of two Numbers are "<br>
+                  .text<br>
+                  .globl main<br>
+                  main:<br>
+                  la $a0,first<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  li $v0,5<br>
+                  syscall<br>
+                  move $t1,$v0<br>
+                  la $a0,second<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  li $v0,5<br>
+                  syscall<br>
+                  move $t2,$v0<br>
+                  sub $t1,$t1,$t2<br>
+                  la $a0,first_msg<br>
+                  li $v0,4<br>
+                  syscall<br>
+                  move $a0,$t1<br>
+                  li $v0,1<br>
+                  syscall<br>
+                  li $v0,10<br>
+                  syscall
+                  
+                              
+            </p>
+
+            <div class="line"></div>
+
+            <h5>6) Write a program in which take two inputs from user and add both and check the answer.</h5>
+            <br><h5>Output:</h5>
+            <img src="image/8.7.png" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h5>Source Code:</h5>
+
+            <p style="background-color: black;
+            color: white;">
+                   .data <br>
+                   question: .asciiz "Enter String: "<br>
+                   size: .space 25<br>
+                   .text<br>
+                   .globl main<br>
+                   main:<br>
+                   li $v0,4<br>
+                   la $a0,question<br>
+                   syscall<br>
+                   li $v0,8<br>
+                   la $a1,size<br>
+                   syscall<br>
+                   li $v0,4<br>
+                   syscall           
+            </p>
+
+            <div class="line"></div>
+
+
+            
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#sidebarCollapse").on('click', function () {
+                $("#sidebar").toggleClass('active');
+            });
+        });
+
+        var myCustomScrollbar = document.querySelector('.my-custom-scrollbar');
+var ps = new PerfectScrollbar(myCustomScrollbar);
+
+var scrollbarY = myCustomScrollbar.querySelector('.ps__rail-y');
+
+myCustomScrollbar.onscroll = function () {
+  scrollbarY.style.cssText = `top: ${this.scrollTop}px!important; height: 400px; right: ${-this.scrollLeft}px`;
+}
+    </script>
+</body>
+
+</html>

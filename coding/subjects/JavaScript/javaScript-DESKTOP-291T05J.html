@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" async src="https://platform.foremedia.net/code/35331/analytics"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4128752626691291"
+    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="javaScript.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <style>
+        .all-menu a {
+          background-color: #008cff; /* Grey background color */
+          color: white; /* Black text color */
+          display: block; /* Make the links appear below each other */
+          padding: 12px; /* Add some padding */
+          text-decoration: none; /* Remove underline from links */
+        }
+        .all-menu {
+          width: 250px;
+          height: 505px;
+          overflow-y: auto;
+          background-color: #008cff;
+        }
+          </style>
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+
+
+        <nav id="sidebar">
+            <div id="all" style="position:fixed">
+            <div class="sidebar-header" style="width: 250px;">
+                <a href="../../../index.html"><h3>Codings Hub</h3></a>
+            </div>
+                <div class="all-menu">
+
+            <ul class="list-unstyled components">
+                
+                <p>Programming Languages</p>
+                <li>
+                    <a href="../../coding.html">HTML</a>
+                </li>
+                <li>
+                    <a href="../css/css.html">CSS</a>
+                </li>
+                <li class="active" style="width: 250px;" >
+                        
+                    <a href="#java" data-toggle="collapse" aria-expanded="false"  class="dropdown-toggle">JavaScript</a>
+                    
+                    <ul class="collapse list-unstyled" id="java">
+                            <li>
+                                <a href="#alert">1. Alert</a>
+                            </li>
+                            <li>
+                                <a href="#user">2. User Input</a>
+                            </li>
+                            <li>
+                                <a href="#conditional">3. Conditional Statements</a>
+                            </li>
+                            <li>
+                                <a href="#loops">4. Loops</a>
+                            </li>
+                            <li>
+                                <a href="#function">5. Function</a>
+                            </li>
+                            <li>
+                                <a href="#array">6. Array</a>
+                            </li>
+                            <li>
+                                <a href="#date">7. Date & Time</a>
+                            </li>
+                            <li>
+                                <a href="#number">8. Number Methods</a>
+                            </li>
+                            <li>
+                                <a href="#string">9. String Methods</a>
+                            </li>
+                            <li>
+                                <a href="#map">10. Map Method</a>
+                            </li>
+                            <li>
+                                <a href="#filter">11. Filter Method</a>
+                            </li>
+                            <li>
+                                <a href="#reduce">12. Reduce Method</a>
+                            </li>
+                            <li>
+                                <a href="#classes">13. Classes</a>
+                            </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="../Java/java.html">Java</a>
+                </li>
+
+                <li>
+                    <a href="../CSharp/cSharp.html">C#</a>
+                </li>
+                <li>
+                    <a href="../cald/cald.html">Computer Architecture & Logic Design</a>
+                </li>
+                
+
+
+                
+                    
+                <li>
+                    <a target="_blank" href="https://portfolio-shoaibakhter.netlify.app/">Portfolio</a>
+                </li>
+                <li>
+                    <a target="_blank" href="../../../contact/contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+
+
+
+
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../../quiz/Quiz Project/Login box/index.html">Quiz</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../mcqs/html.html">MCQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.fiverr.com/users/shoaibakhter18">Services by Fiverr</a>
+                            </li>
+                        </ul>
+                    </div>
+                <!-- </div> -->
+            </nav>
+
+            <h1>Tasks & Solution of JavaScript Language</h1> <br>
+
+            <!-- Alert Function -->
+            <h2 id="alert">1. Alert Function </h2> <br>
+
+            <h5>1) Write a script to greet your website visitor using JS alert box.</h5>
+            <br><h4>Output:</h4>
+            <img src="image/38.PNG" class="img-thumbnail" alt="">
+
+            <br><br><h4>Source Code</h4>
+            <p style="background-color: black; color:white">
+                let greet=alert("Hello User!");<br>
+console.log(greet)
+            </p>
+            
+        <div class="line"></div>
+
+            <h5>2) Write a script to display following message on your web page: (Hint : Use line break)</h5>
+            <br><h4>Output:</h4>
+            <img src="image/39.PNG" class="img-thumbnail" alt="">
+
+            <br><br><h4>Source Code</h4>
+            <p style="background-color: black; color:white">
+                let password=123; <br>
+let pass=+prompt("Enter Password:")<br>
+if(pass===password){<br>
+    alert("Congratulations!");}<br>
+else{<br>
+    alert("Enter Valid Password");}
+            </p>
+            
+        <div class="line"></div>
+
+            <h5>3) Write a script to display following message on your web page.</h5>
+            
+            <br><h4>Output:</h4>
+            <img src="image/40.PNG" class="img-thumbnail" alt="">
+
+            <br><br><h4>Source Code</h4>
+            <p style="background-color: black; color:white">
+                let show=alert("Welcome to JS Land...\r\n Happy Coding");<br>
+console.log(show)
+            </p>
+            
+        <div class="line"></div> 
+    
+
+            <h5>4) Write a script to display following messages in sequence:
+            </h5>
+            <br><h4>Output:</h4>
+            <img src="image/41.1.PNG" class="img-thumbnail" alt=""><br>
+            <img src="image/41.2.PNG" class="img-thumbnail" alt="">
+            <br><br><h4>Source Code</h4>
+            <p style="background-color: black; color:white">
+                let show=alert("Welcome to JS Land...");<br>
+let show2=alert("Happy Coding") <br>
+console.log(show+show2)
+            </p>
+            
+        <div class="line"></div>
+
+
+            <!-- User Input -->
+
+            <h2 id="user">2. User Input </h2> <br>
+
+            <h5>1) Write a program that takes input a name from user & greet the
+                user like this:</h5>
+
+                <br><h4>Output:</h4>
+                <img src="image/42.PNG" class="img-thumbnail" alt=""><br>
+                <br><br><h4>Source Code</h4>
+                <p style="background-color: black; color:white">
+                    let input=prompt("Enter your Name:");<br>
+let print=alert("Hello "+ input);<br>
+console.log(print)
+                </p>
+
+            <div class="line"></div>
+
+            <h5>2) Write a program to take input a number from user & display
+                it’s multiplication table on your browser. If user does not enter
+                a new number, multiplication table of 5 should be displayed by
+                default.</h5>
+
+                <br><h4>Output:</h4>
+                <img src="image/43.PNG" class="img-thumbnail" alt=""><br>
+                <br><br><h4>Source Code</h4>
+                <p style="background-color: black; color:white">
+                    let table=prompt("Enter table Number:");<br>
+if(table===""){<br>
+    for(let i=1;i<=10;i++){<br>
+        console.log("5 x "+ i+ "= "+ (5*i));}}<br>
+else{<br>
+    for(let i=1;i<=10;i++){<br>
+        console.log(table+" x "+ i+ "= "+ (table*i));}}
+                </p>
+
+            <div class="line"></div>
+
+            <h5>3) Write a program to take “city” name as input from user. If user
+                enters “Karachi”, welcome the user like this: “Welcome to city
+                of lights”</h5>
+
+                <br><h4>Output:</h4>
+                <img src="image/44.PNG" class="img-thumbnail" alt=""><br>
+                <br><br><h4>Source Code</h4>
+                <p style="background-color: black; color:white">
+                    let table=prompt("Enter city Name:");<br>
+console.log("Welcome to "+ table);<br>
+if(table==='karachi'||table==='Karachi'){<br>
+    alert("Welcome to city of lights")<br>
+    console.log("Welcome to city of lights")}<br>
+else{<br>
+    alert("Welcome to "+ table)<br>
+    console.log("Welcome to "+ table);}
+                </p>
+
+            <div class="line"></div>
+
+            <h5>4) Write a program to take “gender” as input from user. If the
+                user is male, give the message: Good Morning Sir. If the user is
+                female, give the message: Good Morning Madam.</h5>
+
+                <br><h4>Output:</h4>
+                <img src="image/45.PNG" class="img-thumbnail" alt=""><br>
+                <br><br><h4>Source Code</h4>
+                <p style="background-color: black; color:white">
+                    let gender=prompt("Enter your gender:");<br>
+if(gender==='male'){<br>
+    alert("Good Mornig Sir");}<br>
+else{<br>
+    alert("Good Morning Madam")}
+                </p>
+
+            <div class="line"></div>
+
+
+            <h5>5) Write a program to take input color of road traffic signal from
+                the user & show the message according to this table:
+            </h5>
+            <br><h4>Output:</h4>
+            <img src="image/46.png" class="img-thumbnail" alt=""><br>
+            <br><br><h4>Source Code</h4>
+            <p style="background-color: black; color:white">
+                let light=prompt("Enter light color");<br>
+                if(light==='red'){<br>
+                    alert("Stop");}<br>
+                else if(light==="yellow"){<br>
+                alert("Start");}<br>
+                else{<br>
+                    alert("Go")}
+            </p>
+
+
+            <div class="line"></div>
+
+            <!-- Conditional Statements -->
+
+            <h2 id="conditional">3. Conditional Statements </h2> <br>
+
+            <h5>1) Write a program to check whether the given input number is
+                divisible by 3 or else show a message “Number is not divisible
+                by 3”.
+            </h5>
+
+            <br><h4>Output:</h4>
+            <img src="image/47.png" class="img-thumbnail" alt=""><br>
+            <br><br><h4>Source Code</h4>
+            <p style="background-color: black; color:white">
+                let num=+prompt("Enter any Number:");<br>
+if(num%3===0){<br>
+    console.log("The given Number is divisible by 3");}<br>
+else{<br>
+    console.log("The given Number is not divisible by 3");}
+            </p>
+            <div class="line"></div>
+
+            <h5>2) Write a program that checks whether the given input is an even
+                number or an odd number.</h5>
+
+                <br><h4>Output:</h4>
+                <img src="image/48.png" class="img-thumbnail" alt=""><br>
+                <br><br><h4>Source Code</h4>
+                <p style="background-color: black; color:white">
+                    let num=+prompt("Enter any Number:");<br>
+if(num%2===0){<br>
+    console.log("This is Even Number");}<br>
+else{<br>
+    console.log("This is Odd Number");}
+                </p>
+            <div class="line"></div>
+
+            <h5>3) Write an if/else statement with the following condition:
+                If the variable age is greater than 18, output "Old enough",
+                otherwise output "Too young".</h5>
+
+                <br><h4>Output:</h4>
+                <img src="image/49.png" class="img-thumbnail" alt=""><br>
+                <br><br><h4>Source Code</h4>
+                <p style="background-color: black; color:white">
+                    let age=+prompt("Enter age:");<br>
+if(age>18){<br>
+    console.log("Old enough");}<br>
+else{<br>
+    console.log("Too young");}
+                </p>
+
+
+            <div class="line"></div>
+
+
+            <h5>4) Write a program to check whether the given input number is
+                divisible by 3 or not by using Switch Case statements. Show a
+                message “Number is not divisible by 3” or “Number is divisible
+                by 3”.</h5>
+
+                <br><h4>Output:</h4>
+                <img src="image/50.png" class="img-thumbnail" alt=""><br>
+                <br><br><h4>Source Code</h4>
+                <p style="background-color: black; color:white">
+                    let num=+prompt("Enter Number:");<br>
+switch(num%3){<br>
+    case 0:<br>
+            console.log("This Number is divisible by 3");<br>
+            break;<br>
+        default:<br>
+            console.log("This Number is not divisible by 3");}
+                </p>
+
+
+            <div class="line"></div>
+
+
+            <h5>5) Write a program to create a calculator for +, -, *, /, % using
+                switch case statements. (number1, number2 and operator will
+                be input)</h5>
+
+                <br><h4>Output:</h4>
+                <img src="image/51.png" class="img-thumbnail" alt=""><br>
+                <br><br><h4>Source Code</h4>
+                <p style="background-color: black; color:white">
+                    let num1=+prompt("Enter First Number");<br>
+let num2=+prompt("Enter Second Number");<br>
+let opt=prompt("Enter Operator");<br>
+switch(opt){<br>
+    case "+":<br>
+            console.log(`The Addition of ${num1} and ${num2} is ${num1+num2} `);<br>
+            break;<br>
+            case "-":<br>
+            console.log(`The Subtraction of ${num1} and ${num2} is ${num1-num2} `);<br>
+            break;<br>
+            case "*":<br>
+            console.log(`The Multiplication of ${num1} and ${num2} is ${num1*num2} `);<br>
+            break;<br>
+            case "/":<br>
+            console.log(`The Division of ${num1} and ${num2} is ${num1/num2} `);<br>
+            break;<br>
+        default:<br>
+            console.log("Please enter correct Operator");}
+                </p>
+
+
+            <div class="line"></div>
+
+            <!-- Loops -->
+
+            <h2 id="loops">4. Loops </h2> <br>
+
+            <h5>1) . Write a program to display the message “Hello World” 5 times
+                in your browser using for loop.</h5>
+                <br><h4>Output:</h4>
+                <img src="image/77.png" class="img-thumbnail" alt=""><br>
+                <br><br><h4>Source Code</h4>
+            <p style="background-color: black; color:white">for(let i=1;i<=5;i++){<br>
+                console.log(i+" Hello World")<br>
+              }
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Write a program to print numeric counting from 1 to 10.</h5>
+            
+            <br><h4>Output:</h4>
+                <img src="image/76.png" class="img-thumbnail" alt=""><br>
+                <br><br><h4>Source Code</h4>
+            <p style="background-color: black; color:white">for(let i=1;i<=10;i++){<br>
+                console.log(i);<br>
+              }
+            </p>
+
+            <div class="line"></div>
+
+            <h5>3) Write a program to print multiplication table of any number
+                using for loop. Table number & length should be taken as an
+                input from user.</h5>
+               
+                <br><h4>Output:</h4>
+                <img src="image/75.png" class="img-thumbnail" alt=""><br>
+                <br><br><h4>Source Code</h4>
+            <p style="background-color: black; color:white">let tableNum=+prompt("Enter Table Number");<br>
+                let times=+prompt("How many times the table would be print?");<br>
+                for(let i=1;i<=times;i++){<br>
+                  console.log(tableNum+" x "+i+" = "+(tableNum*i));}
+            </p>
+
+            <div class="line"></div>
+
+            <h5>4) You have an array <br>
+                A = [“Nokia”, “Samsung”, “Apple”, “Sony”, “Huawei”]<br>
+                Write each element on new line with the help of for loop.<br>
+            </h5>
+
+            <br><h4>Output:</h4>
+            <img src="image/74.png" class="img-thumbnail" alt=""><br>
+            <br><br><h4>Source Code</h4>
+        <p style="background-color: black; color:white">let arr= ["Nokia", "Samsung", "Apple", "Sony", "Huawei"];<br>
+            for(let i=0;i<arr.length;i++){<br>
+              console.log(arr[i])}<br>
+            
+        </p>
+
+            <div class="line"></div>
+
+
+
+
+            <!-- 
+                <h4>HTML Source Code Image</h4>
+            <img src="image/3para.png" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                
+            </p>
+            <h4>Output:</h4>
+<img src="image/.PNG" alt="">
+        <div class="line"></div> 
+    -->
+
+
+
+
+
+
+            <!-- Function -->
+
+            <div>
+
+            <h2 id="function">5. Function </h2> <br>
+
+            <h5>1) Create a block of code that you can use several times. </h5>
+
+
+            <h4>HTML Source Code Image</h4>
+            <img src="image/3para.png" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                var para=document.querySelector<br>("#paragraph");<br>
+                var names=prompt("Enter your name");<br>
+                function printInfo(){<br>
+                    para.innerHTML= names;}<br>
+                printInfo();
+            </p>
+            <h4>Output:</h4>
+<img src="image/21.PNG" class="img-thumbnail" alt="">
+        <div class="line"></div>
+
+
+            <h5>2) Write a function that displays current date & time in your browser.
+            </h5>
+
+            <h4>HTML Source Code Image</h4>
+            <img src="image/3para.png" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                var paragraph=document.querySelector<br>("#paragraph");<br>
+function printDate(){<br>
+    var date=new Date();<br>
+   paragraph.innerHTML=date;}<br>
+printDate();
+
+            </p>
+            <h4>Output:</h4>
+<img src="image/22.PNG" class="img-thumbnail" alt="">
+        <div class="line"></div> 
+
+            <h5>3) Write a function that takes first & last name and then it greets the user using his full name.</h5>
+
+            <h4>HTML Source Code Image</h4>
+            <img src="image/3para.png" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                var para = document.querySelector<br>("#paragraph");<br>
+function printName() {<br>
+var firstName = prompt("Enter First Name");<br>
+var lastName = prompt("Enter Last Name");<br>
+para.innerHTML="Hello "+firstName+" "+ lastName;}<br>
+printName();
+
+            </p>
+            <h4>Output:</h4>
+<img src="image/23.PNG" class="img-thumbnail" alt="">
+        <div class="line"></div> 
+
+            <h5>4) Write a function that adds two numbers (input by user) and returns the sum of two numbers.</h5>
+            <h4>HTML Source Code Image</h4>
+            <img src="image/3para.png" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                var firstNum = +prompt("Enter first Number");<br>
+var secondNum = +prompt("Enter second Number");<br>
+var para = document.querySelector<br>("#paragraph")<br>
+function sum(num1, num2) {<br>
+    console.log("The sum of two numbers are " + (num1 + num2));<br>
+    para.innerHTML = "The sum of two numbers are " + (num1 + num2);}<br>
+sum(firstNum, secondNum);
+
+            </p>
+            <h4>Output:</h4>
+<img src="image/24.PNG" class="img-thumbnail" alt="">
+        <div class="line"></div> 
+
+
+            <h5>5) Write a function that takes three arguments num1, num2 & operator & compute the desired operation. Return and show the desired result in your browser.
+            </h5>
+
+            <h4>HTML Source Code Image</h4>
+            <img src="image/3para.png" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                var firstNum = +prompt("Enter first Number");<br>
+                var secondNum = +prompt("Enter second Number");<br>
+                var opr = prompt("Enter any operator (+,-,*,/)");<br>
+                var para = document.querySelector<br>("#paragraph");<br>
+                function sum(num1, num2, operator) {<br>
+                    if (operator === "+") {<br>
+                        console.log("The sum of two numbers are " + (num1 + num2));<br>
+                        para.innerHTML = "The sum of two numbers are " + (num1 + num2);}<br>
+                    else if (operator === "-") {<br>
+                        console.log("The subtract of two numbers are " + (num1 - num2));<br>
+                        para.innerHTML = "The subtract of two numbers are " + (num1 - num2);}<br>
+                    else if (operator === "*") {<br>
+                        console.log("The multiply of two numbers are " + (num1 * num2));<br>
+                        para.innerHTML = "The multiply of two numbers are " + (num1 * num2);}<br>
+                    else if (operator === "/") {<br>
+                        console.log("The division of two numbers are " + (num1 / num2));<br>
+                        para.innerHTML = "The division of two numbers are " + (num1 / num2);}<br>
+                    else{<br>
+                        alert("Enter correct operator")}}<br>
+                sum(firstNum,secondNum,opr);
+
+            </p>
+            <h4>Output:</h4>
+<img src="image/25.PNG" class="img-thumbnail" alt="">
+        <div class="line"></div> 
+
+            <h5>6) Write a function that squares its argument.</h5>
+            
+            <h4>HTML Source Code Image</h4>
+            <img src="image/3para.png" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                var para = document.querySelector<br>("#paragraph");<br>
+                var num = +prompt("Enter any number for squaring");<br>
+                function square(num) {<br>
+                    console.log("The square of " + num + <br>" is " + (num * num));<br>
+                    para.innerHTML = "The square of " + num + " is " + (num * num);}<br>
+                square(num);
+            </p>
+            <h4>Output:</h4>
+<img src="image/26.PNG" class="img-thumbnail" alt="">
+        <div class="line"></div> 
+
+            <h5>7) Write a function that computes factorial of a number.
+            </h5>
+
+            <h4>HTML Source Code Image</h4>
+            <img src="image/3para.png" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                var para = document.querySelector<br>("#paragraph");<br>
+var num = +prompt("Enter any number for foctorial");<br>
+function fact(num) {<br>
+    var fact = 1<br>
+    for (var i = 1; i <= num; i++) {<br>
+        fact = fact * i;}<br>
+    console.log("The factorial of " + num + " is " + fact);<br>
+    para.innerHTML = "The square of " + num + " is " + fact;}<br>
+fact(num);
+
+            </p>
+            <h4>Output:</h4>
+<img src="image/27.PNG" class="img-thumbnail" alt="">
+        <div class="line"></div> 
+
+            <h5>8) Write a function that take start and end number as inputs & display counting in your browser.
+            </h5>
+
+            <h4>HTML Source Code Image</h4>
+            <img src="image/3para.png" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                	var para=document.getElementById<br>("paragraph") <br>
+	var numStart=+prompt("Enter starting number for display counting");<br>
+	var numEnd=+prompt("Enter ending number for display counting");<br>
+	for(var i=numStart;i<=numEnd;i++){<br>
+	    console.log(i);	}
+
+            </p>
+            <h4>Output:</h4>
+<img src="image/28.PNG"  class="img-thumbnail" alt="">
+        <div class="line"></div> 
+
+            <h5>9) Write a nested function that computes hypotenuse of a right angle triangle.  <br>
+                Hypotenuse2 = Base2 + Perpendicular2<br>
+                Take base and perpendicular as inputs.<br>
+                Outer function : calculateHypotenuse()<br>
+                Inner function: calculateSquare()
+                <br>
+            </h5>
+
+            <h4>HTML Source Code Image</h4>
+            <img src="image/3para.png" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                var para=document.getElementById<br>("paragraph") <br>
+var base=+prompt("Enter base of right angled triangle.");<br>
+var perp=+prompt("Enter perpendicular of right angled triangle.");<br>
+var baseSquare=base*base;<br>
+var perpSquare=perp*perp;<br>
+var hypo=baseSquare+perpSquare;<br>
+var hypothesis=Math.sqrt(hypo);<br>
+console.log("The Hypothesis is "+hypothesis);<br>
+para.innerHTML="The Hypothesis is "+hypothesis;
+            </p>
+            <h4>Output:</h4>
+<img src="image/29.PNG" class="img-thumbnail" alt="">
+        <div class="line"></div> 
+    </div>
+            <!-- Array -->
+
+            <h2 id="array">6. Array </h2> <br>
+
+            <h5>1) Declare an empty array using JS literal notation to store
+                student names in future.</h5>
+
+
+
+                <h4>Output</h4>
+                <img src="image/61.JPG" class="img-thumbnail" alt="">
+                <h4>JavaScript Source Code</h4>
+                <p style="background-color: black; color:white">
+                    let studentNames=[];<br>
+                    studentNames.push("Shoaib",'Akhter');<br>
+                    console.log(studentNames)
+                </p>
+
+            <div class="line"></div> 
+
+
+            <h5>2) Declare and initialize a strings array.</h5>
+
+
+            <h4>Output</h4>
+                <img src="image/61.JPG" class="img-thumbnail" alt="">
+                <h4>JavaScript Source Code</h4>
+                <p style="background-color: black; color:white">
+                    let studentNames=[];<br>
+                    studentNames.push("Shoaib",'Akhter');<br>
+                    console.log(studentNames)
+                </p>
+
+            <div class="line"></div> 
+
+
+            <h5>3) Declare and initialize a numbers array.
+            </h5>
+
+
+            <h4>Output</h4>
+                <img src="image/62.JPG" class="img-thumbnail" alt="">
+                <h4>JavaScript Source Code</h4>
+                <p style="background-color: black; color:white">
+                    let numbers=[2,3,4];<br>
+                    numbers.unshift(0,1);<br>
+                    console.log(numbers)
+                </p>
+
+            <div class="line"></div> 
+
+
+            <h5>4) Declare and initialize a boolean array.
+            </h5>
+
+
+            <h4>Output</h4>
+                <img src="image/63.JPG" class="img-thumbnail" alt="">
+                <h4>JavaScript Source Code</h4>
+                <p style="background-color: black; color:white">
+                    let boolean=[true,false];<br>
+console.log(boolean)
+                </p>
+
+            <div class="line"></div> 
+
+
+            <h5>5) Declare and initialize a mixed array.
+            </h5>
+
+
+            <h4>Output</h4>
+            <img src="image/64.JPG" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                let mixedArray=[0,1,2,"Shoaib","Akhter",true,false];<br>
+                console.log(mixedArray)
+            </p>
+
+        <div class="line"></div> 
+
+
+            <h5>6) Declare and Initialize an array and store available mobile
+                networks in Pakistan.
+            </h5>
+
+            <h4>Output</h4>
+                <img src="image/65.JPG" class="img-thumbnail" alt="">
+                <h4>JavaScript Source Code</h4>
+                <p style="background-color: black; color:white">
+                    let network=["Zong","Ufone","Jazz","Warid"];<br>
+                    console.log(network)
+                </p>
+
+            <div class="line"></div> 
+
+
+            <h5>7) Declare and Initialize an array and store available education qualifications in Pakistan (eg. SSC, HSC, BCS, BS, BCOM, MS,M. Phil., PhD). Show the listed qualifications in your browser.
+            </h5>
+
+
+            <h4>Output</h4>
+            <img src="image/66.JPG" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                let education=["SSC", "HSC"," BCS"," BS"," BCOM"," MS","M. Phil","PhD"];<br>
+                console.log(education)
+            </p>
+
+        <div class="line"></div> 
+
+
+            <h5>8) Declare and initialize an empty array to store top Names of
+                university. Add Names one by one in an array. Display the elements
+                & length of array in your browser. (Use array’s length method).
+            </h5>
+            
+
+            <h4>Output</h4>
+            <img src="image/67.JPG" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                let education=["Bahria Uni","Fast Uni","Al-Madinah Uni","NED Uni"];<br>
+                console.log(education.length)<br>
+                console.log(education)
+            </p>
+
+        <div class="line"></div> 
+
+            <h5>9) Declare and Initialize an array with your favorite cars. Show that<br>
+                a. First index of the array<br>
+                b. Car at first index of the array<br>
+                c. Last index of the array<br>
+                d. Car at last index of the array
+            </h5>
+
+            <h4>Output</h4>
+                <img src="image/68.JPG" class="img-thumbnail" alt="">
+                <h4>JavaScript Source Code</h4>
+                <p style="background-color: black; color:white">
+                    let car=["Corola","Passo","Mehran","Civic"];<br>
+console.log(car)<br>
+console.log("The car at first index is "+car[0])<br>
+console.log("The car at last index is "+car[3])
+                </p>
+
+            <div class="line"></div> 
+
+
+            <!-- Date & Time -->
+
+<div>
+
+            <h2 id="date">7. Date & Time </h2> <br>
+
+            <h5>1) Write a program that displays current date and time in your
+                browser.</h5>
+
+                <h4>HTML Source Code Image</h4>
+                <img src="image/12.1.PNG" class="img-thumbnail" alt="">
+                <h4>JavaScript Source Code</h4>
+                <p style="background-color: black; color:white">
+                    var paragraph=document.querySelector<br>("#paragraph"); <br>
+var currentDate=new Date();<br>
+paragraph.innerHTML= currentDate;
+
+                </p>
+                <h4>Output:</h4>
+<img src="image/14.PNG" class="img-thumbnail" alt="">
+            <div class="line"></div>
+
+            <h5>2) Write a program that alerts the current month in words. For example December.</h5>
+
+                <h4>HTML Source Code Image</h4>
+                <img src="image/12.1.PNG" class="img-thumbnail" alt="">
+                <h4>JavaScript Source Code</h4>
+                <p style="background-color: black; color:white">
+                    var paragraph=document.querySelector<br>("#paragraph");<br>
+var monthName=["Januray","February","March","April","May","June","July",<br>"August","September","Octuber","November",<br>"December"];<br>
+var currentMonth= new Date();<br>
+paragraph.innerHTML="Current Month: "+monthName[currentMonth.getMonth()];<br>
+
+
+                </p>
+                <h4>Output:</h4>
+                <img src="image/15.PNG" class="img-thumbnail" alt="">
+            <div class="line"></div>
+
+            <h5>3) Write a program that alerts the first 3 letters of the current day, for example if today is Sunday then alert will show Sun.
+                <h4>HTML Source Code Image</h4>
+                <img src="image/12.1.PNG" class="img-thumbnail" alt="">
+                <h4>JavaScript Source Code</h4> 
+                <p style="background-color: black; color:white"> 
+                    var paragraph=document.querySelector<br>("#paragraph"); <br> 
+                    var dayName=['Sunday','Monday','Tuesday','Wednesday','Thursday',<br>'Friday','Saturday']; <br>
+                    var currentDay= new Date();<br>
+                    paragraph.innerHTML="Today is "+dayName[currentDay.getDay()];<br>
+                    
+
+                </p>
+                <h4>Output:</h4>
+                <img src="image/16.PNG" class="img-thumbnail" alt="">
+            <div class="line"></div>
+
+            <h5>4) Write a program that shows the message “First fifteen days of the month” if the date is less than 16th of the month else shows “Last days of the month”.
+
+                <h4>HTML Source Code Image</h4>
+                <img src="image/5.1.PNG" class="img-thumbnail" alt="">
+                <h4>JavaScript Source Code</h4>
+                <p style="background-color: black; color:white">
+                    var paragraph=document.querySelector<br>("#paragraph");<br>
+var currentDate= new Date();<br>
+var date=currentDate.getDate();<br>
+if(date<=15){<br>
+    paragraph.innerHTML="First fifteen days of the month";}
+else{<br>
+    paragraph.innerHTML="Last fifteen days of the month";}
+
+
+                </p>
+                <h4>Output:</h4>
+                <img src="image/18.PNG" class="img-thumbnail" alt="">
+            <div class="line"></div>
+
+
+            <h5>5) Write a program that displays a message “It’s Fun day” if its Saturday or Sunday today
+            </h5>
+
+            <h4>HTML Source Code Image</h4>
+            <img src="image/9.1.PNG" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                var paragraph=document.querySelector<br>("#paragraph");<br>
+                var currentDay= new Date();<br>
+                var day=currentDay.getDay();<br>
+                if(day==0 || day==6){<br>
+                    paragraph.innerHTML="It's Fun day";}<br>
+                else{<br>
+                    paragraph.innerHTML="It's not a Fun day";}
+                
+
+            </p>
+            <h4>Output:</h4>
+            <img src="image/17.PNG" class="img-thumbnail" alt="">
+            <div class="line"></div>
+
+
+            <h5>6)  Write a program that determines the minutes since midnight, Jan. 1, 1970 and assigns it to a variable that hasn't been declared beforehand. Use any variable you like to represent the Date object.
+            </h5>
+
+            <h4>HTML Source Code Image</h4>
+            <img src="image/5.1.PNG" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                var paragraph=document.querySelector<br>("#paragraph");<br>
+var paragraph1=document.querySelector<br>("#paragraph1");<br>
+var paragraph2=document.querySelector<br>("#paragraph2");<br>
+var currentDate=new Date();<br>
+var previousDate=new Date("January 01,1970");<br>
+var currentMinutes=currentDate/1000;<br>
+var previousMinutes=previousDate/1000;<br>
+paragraph.innerHTML="Current Date: "+ currentDate;<br>
+var Elapsed=currentDate-previousDate;<br>
+var remainingMiliseconds=currentMinutes-previousMinutes;<br>
+paragraph1.innerHTML="Elapsed milliseconds since June 4, 2022: "+ Elapsed;<br>
+paragraph2.innerHTML="Elapsed minutes since July 4,2022: "+remainingMiliseconds;
+
+                
+
+            </p>
+            <h4>Output:</h4>
+            <img src="image/19.PNG" class="img-thumbnail" alt="">
+            <div class="line"></div>
+
+
+            <h5>7)  Write a program that creates a Date object for the last day of the last month of 2020 and assigns it to variable named laterDate
+            </h5>
+
+            <h4>HTML Source Code Image</h4>
+            <img src="image/12.1.PNG" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                var paragraph=document.querySelector<br>("#paragraph");<br>
+var laterDate=new Date("December 31,2020");<br>
+paragraph.innerHTML="Later Date: "+laterDate;
+
+            </p>
+            <h4>Output:</h4>
+            <img src="image/20.PNG"  class="img-thumbnail" alt="">
+            <div class="line"></div>
+        </div>
+            
+            <!-- Number Methods -->
+
+<div>
+
+
+            <h2 id="number">7. Number Methods </h2> <br>
+
+            <h5>1) Write a program that takes a positive integer from user & display the following in your browser. <br>
+                a. number<br>
+                b. round off value of the number<br>
+                c. floor value of the number<br>
+                d. ceil value of the number </h5>
+
+                <h4>HTML Source Code Image</h4>
+                <img src="image/5.1.PNG" class="img-thumbnail" alt="">
+                <h4>JavaScript Source Code</h4>
+                <p style="background-color: black; color:white">
+                    var paragraph1=document.querySelector<br>("#paragraph1");<br>
+var paragraph2=document.querySelector<br>("#paragraph2");<br>
+var paragraph3=document.querySelector<br>("#paragraph3");<br>
+var paragraph4=document.querySelector<br>("#paragraph4");<br>
+var num=prompt("Enter any Number");<br>
+paragraph1.innerHTML="The Number is " + num;<br>
+paragraph2.innerHTML="The round off value of Number is " +Math.round(num);<br>
+paragraph3.innerHTML="The Floor value of Number is " + Math.floor(num);<br>
+paragraph4.innerHTML="The Ceil value of Number is " + Math.ceil(num);<br>
+                </p>
+                <h4>Output:</h4>
+<img src="image/5.PNG" class="img-thumbnail" alt="">
+            <div class="line"></div>
+
+            <h5>2) Write a program that takes a negative integer from user &
+                display the following in your browser.
+                a. number
+                b. round off value of the number
+                c. floor value of the number
+                d. ceil value of the number</h5>
+
+                <h4>HTML Source Code Image</h4>
+                <img src="image/5.1.PNG" class="img-thumbnail" alt="">
+                <h4>JavaScript Source Code</h4>
+                <p style="background-color: black; color:white">
+                    var paragraph1=document.querySelector<br>("#paragraph1");<br>
+var paragraph2=document.querySelector<br>("#paragraph2");<br>
+var paragraph3=document.querySelector<br>("#paragraph3");<br>
+var paragraph4=document.querySelector<br>("#paragraph4");<br>
+
+var num=prompt("Enter any Negative Number");<br>
+
+paragraph1.innerHTML="The Number is " + num;<br>
+paragraph2.innerHTML="The round off value of Number is " +Math.round(num);<br>
+paragraph3.innerHTML="The Floor value of Number is " + Math.floor(num);<br>
+paragraph4.innerHTML="The Ceil value of Number is " + Math.ceil(num);<br>
+
+                </p>
+                <h4>Output:</h4>
+                <img src="image/6.PNG" class="img-thumbnail" alt="">
+            <div class="line"></div>
+
+            <h5>3) Write a program that takes a positive floating point number from user & display the following in your browser. <br>
+                a. number<br>
+                b. round off value of the number<br>
+                c. floor value of the number<br>
+                d. ceil value of the number</h5>
+
+                <h4>HTML Source Code Image</h4>
+                <img src="image/5.1.PNG" class="img-thumbnail" alt="">
+                <h4>JavaScript Source Code</h4>
+                <p style="background-color: black; color:white">
+                    var paragraph1=document.querySelector<br>("#paragraph1");<br>
+var paragraph2=document.querySelector<br>("#paragraph2");<br>
+var paragraph3=document.querySelector<br>("#paragraph3");<br>
+var paragraph4=document.querySelector<br>("#paragraph4");<br>
+var num=prompt("Enter any floating point number");<br>
+paragraph1.innerHTML="The Floating Number is "+ num;<br>
+paragraph2.innerHTML="The Round off value of Floating Number is "+ Math.round(num);<br>
+paragraph3.innerHTML="The Floor value of Floating Number is "+ Math.floor(num);<br>
+paragraph4.innerHTML="The Ceil value of Floating Number is "+ Math.ceil(num);
+
+                </p>
+                <h4>Output:</h4>
+                <img src="image/7.PNG" class="img-thumbnail" alt="">
+            <div class="line"></div>
+
+            <h5>4) Write a program that takes a negative floating point number from user & display the following in your browser. <br>
+                a. number<br>
+                b. round off value of the number<br>
+                c. floor value of the number<br>
+                d. ceil value of the number</h5>
+
+                <h4>HTML Source Code Image</h4>
+                <img src="image/5.1.PNG" class="img-thumbnail" alt="">
+                <h4>JavaScript Source Code</h4>
+                <p style="background-color: black; color:white">
+                    var paragraph1=document.querySelector<br>("#paragraph1");<br>
+var paragraph2=document.querySelector<br>("#paragraph2");<br>
+var paragraph3=document.querySelector<br>("#paragraph3");<br>
+var paragraph4=document.querySelector<br>("#paragraph4");<br>
+var num=prompt("Enter any Negative floating point number");<br>
+paragraph1.innerHTML="The Floating Number is "+ num;<br>
+paragraph2.innerHTML="The Round off value of Floating Number is "+ Math.round(num);<br>
+paragraph3.innerHTML="The Floor value of Floating Number is "+ Math.floor(num);<br>
+paragraph4.innerHTML="The Ceil value of Floating Number is "+ Math.ceil(num);
+
+                </p>
+                <h4>Output:</h4>
+                <img src="image/8.PNG" class="img-thumbnail" alt="">
+            <div class="line"></div>
+
+
+            <h5>5) . Write a program that displays the absolute value of a number. <br>
+                E.g. absolute value of -4 is 4 & absolute value of 5 is 5
+            </h5>
+
+            <h4>HTML Source Code Image</h4>
+            <img src="image/9.1.PNG" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                var paragraph=document.querySelector<br>("#paragraph") <br>
+var num=prompt("Enter any number for checking absolute");<br>
+if(num<0){<br>
+paragraph.innerHTML="The absolute value of " + num +" is "+ (num*(-1));<br>
+}<br>
+else{<br>
+    paragraph.innerHTML="The absolute value of " + num +" is "+ num;<br>
+}
+
+            </p>
+            <h4>Output:</h4>
+            <img src="image/9.1.PNG" class="img-thumbnail" alt="">
+            <div class="line"></div>
+
+
+            <h5>6)  Write a program that simulates a dice using random() method of JS Math class. Display the value of dice in your browser.
+            </h5>
+
+            <h4>HTML Source Code Image</h4>
+            <img src="image/9.1.PNG" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                var paragraph=document.querySelector<br>("#paragraph");<br>
+                paragraph.innerHTML="The Random dice value is "+ (Math.ceil(Math.random()*6));<br>
+                
+
+            </p>
+            <h4>Output:</h4>
+            <img src="image/10.PNG" class="img-thumbnail" alt="">
+            <div class="line"></div>
+
+
+            <h5>7)  Write a program that simulates a coin toss using random() method of JS Math class. Display the value of coin in your browser.
+            </h5>
+
+            <h4>HTML Source Code Image</h4>
+            <img src="image/11.1.PNG" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                var paragraph1=document.querySelector<br>("#paragraph1");<br>
+var paragraph=document.querySelector<br>("#paragraph");<br>
+var toss=Math.ceil(Math.random()*2);<br>
+paragraph.innerHTML=toss;<br>
+if(toss===1){<br>
+    paragraph1.innerHTML=1;<br>
+    paragraph.innerHTML="The Random coin value: Tails";}<br>
+else{<br>
+    paragraph1.innerHTML=2;<br>
+    paragraph.innerHTML="The Random coin Value: Heads";}
+
+            </p>
+            <h4>Output:</h4>
+            <img src="image/11.PNG" class="img-thumbnail" alt="">
+            <div class="line"></div>
+
+
+            <h5>8)  Write a program that shows a random number between 1 and 100 in your browser
+            </h5>
+
+            <h4>HTML Source Code Image</h4>
+            <img src="image/12.1.PNG" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                var paragraph=document.querySelector<br>("#paragraph");<br>
+paragraph.innerHTML="The Random Number between 1 and 100: "+ Math.ceil(Math.random()*100);
+
+
+            </p>
+            <h4>Output:</h4>
+            <img src="image/12.PNG" class="img-thumbnail" alt="">
+            <div class="line"></div>
+
+
+            <h5>9) Write a program that simulates a dice using random() method of JS Math class. Display the value of dice in your browser.
+            </h5>
+
+            <h4>HTML Source Code Image</h4>
+            <img src="image/9.1.PNG" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                var paragraph=document.querySelector<br>("#paragraph");<br>
+var num=+prompt("Enter any Number from 1 to 10");<br>
+var myNum=5;<br>
+if(num===myNum){<br>
+    paragraph.innerHTML="Congratulation! You won the match";}<br>
+else{<br>
+paragraph.innerHTML="Please try again";}
+
+
+            </p>
+            <h4>Output:</h4>
+            <img src="image/13.PNG" class="img-thumbnail" alt="">
+            <div class="line"></div>
+
+        </div>
+            
+
+
+            <!-- Strings Methods -->
+
+            <h2 id="string">9. String Methods </h2> <br>
+
+            <h5>1) Write a program that takes two user inputs for first and last name using prompt and merge them in a new variable titled fullName. Greet the user using his full name.
+            </h5>
+
+            <h4>Output:</h4>
+            <img src="image/69.jpeg" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                let firstName=prompt("Enter your first Name");<br>
+let lastName=prompt("Enter your last Name");<br>
+let fullName=firstName+lastName;<br>
+alert("Your fullName is "+fullName);
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Write a program to take a user input about his favorite mobile phone model. Find and display the length of user input in your browser.
+            </h5>
+
+            <h4>Output:</h4>
+            <img src="image/70.jpeg" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                let names=prompt("Enter Mobile Phone Model");<br>
+alert("The length of Mobile phone model is "+names.length);
+            </p>
+
+            <div class="line"></div>
+
+            <h5>3) Write a program to find the index of letter “n” in the word “Pakistani” and display the result in your browser.
+            </h5>
+            <h4>Output:</h4>
+            <img src="image/71.png" class="img-thumbnail" alt="">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                let indexNumber="Pakistan";<br>
+for(let i=0;i<indexNumber.length;i++){ <br>
+    if(indexNumber[i]=="n"){<br>
+        alert("The index number of n is "+i);<br>
+        document.write("The index number of n is "+i)}}
+
+            </p>
+
+            <div class="line"></div>
+
+            <h5>4) Write a program to find the last index of letter “l” in the word “Hello World” and display the result in your browser.
+            </h5>
+            <h4>Output:</h4>
+            <img src="image/72.png" class="img-thumbnail" alt="image">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                let word="Hello World";<br>
+alert("The index of last L is "+word.lastIndexOf("l"));
+            </p>
+            <div class="line"></div>
+
+            <h5>5) Write a program to find the character at 3rd index in the word
+                “Pakistani” and display the result in your browser.
+            </h5>
+            <h4>Output:</h4>
+            <img src="image/73.png" class="img-thumbnail" alt="image">
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                let word="Pakistan";<br>
+alert("The third index in Pakistan name is "+word[3]);
+            </p>
+
+            <div class="line"></div>
+
+
+
+            <!-- Map Method -->
+
+            <h2 id="map">10. Map Method </h2> <br>
+
+            <h5>1) Write a program that takes two user inputs for first and last name using prompt and merge them in a new variable titled fullName. Greet the user using his full name.
+            </h5>
+
+            <h4>HTML Source Code</h4>
+            <p style="background-color: black; color:white">
+
+            </p>
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Write a program to take a user input about his favorite mobile phone model. Find and display the length of user input in your browser.
+            </h5>
+
+            <h4>HTML Source Code</h4>
+            <p style="background-color: black; color:white">
+
+            </p>
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                
+            </p>
+
+            <div class="line"></div>
+
+            <h5>3) Write a program to find the index of letter “n” in the word “Pakistani” and display the result in your browser.
+            </h5>
+            <h4>HTML Source Code</h4>
+            <p style="background-color: black; color:white">
+
+            </p>
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                
+            </p>
+
+            <div class="line"></div>
+
+            <h5>4) Write a program to find the last index of letter “l” in the word “Hello World” and display the result in your browser.
+            </h5>
+            <h4>HTML Source Code</h4>
+            <p style="background-color: black; color:white">
+
+            </p>
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                
+            </p>
+
+            <div class="line"></div>
+
+            <h5>5) Write a program to find the character at 3rd index in the word
+                “Pakistani” and display the result in your browser.
+            </h5>
+            <h4>HTML Source Code</h4>
+            <p style="background-color: black; color:white">
+
+            </p>
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                
+            </p>
+
+            <div class="line"></div>
+
+
+            <!-- Filter Method -->
+
+            <h2 id="filter">11. Filter Method </h2> <br>
+
+            <h5>1) Write a program that takes two user inputs for first and last name using prompt and merge them in a new variable titled fullName. Greet the user using his full name.
+            </h5>
+
+            <h4>HTML Source Code</h4>
+            <p style="background-color: black; color:white">
+
+            </p>
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                
+            </p>
+
+            <div class="line"></div>
+
+            <h5>2) Write a program to take a user input about his favorite mobile phone model. Find and display the length of user input in your browser.
+            </h5>
+
+            <h4>HTML Source Code</h4>
+            <p style="background-color: black; color:white">
+
+            </p>
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                
+            </p>
+
+            <div class="line"></div>
+
+            <h5>3) Write a program to find the index of letter “n” in the word “Pakistani” and display the result in your browser.
+            </h5>
+
+            <h4>HTML Source Code</h4>
+            <p style="background-color: black; color:white">
+
+            </p>
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                
+            </p>
+
+            <div class="line"></div>
+
+            <h5>4) Write a program to find the last index of letter “l” in the word “Hello World” and display the result in your browser.
+            </h5>
+
+            <h4>HTML Source Code</h4>
+            <p style="background-color: black; color:white">
+
+            </p>
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                
+            </p>
+
+            <div class="line"></div>
+
+            <h5>5) Write a program to find the character at 3rd index in the word
+                “Pakistani” and display the result in your browser.
+            </h5>
+
+            <h4>HTML Source Code</h4>
+            <p style="background-color: black; color:white">
+
+            </p>
+            <h4>JavaScript Source Code</h4>
+            <p style="background-color: black; color:white">
+                
+            </p>
+
+            <div class="line"></div>
+
+
+            <!-- Reduce Method -->
+
+            <h2 id="reduce">12. Reduce Method </h2> <br>
+
+            <h5>1) Write array of numbers and add amoung them by using Reduce Method and print result.
+            </h5>
+
+            <h5>Output:</h5>
+                <img src="image/1.PNG" class="img-thumbnail" alt="firstImage">
+                <br>
+                <br>
+                <h4>Source Code:</h4>
+
+            <p style="background-color: black; color: white;">let numbers=[1,2,3,4]; <br>
+                let sum=numbers.reduce((accum,item)=>{<br>
+                    return accum+item<br>
+                },0);<br>
+                console.log(sum);</p>
+
+            <div class="line"></div>
+
+            <h5>2) write array of numbers and multiply amoung them by using Reduce Method and print result.
+            </h5>
+
+            <h5>Output:</h5>
+            <img src="image/2.PNG" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black; color: white;">
+                  let num=[5,2,4,6,9,1];<br>
+                 let product=num.reduce((accum,item)=>{<br>
+                    return accum*item<br>
+                 },1);<br>
+                 console.log(product)</p>
+
+            <div class="line"></div>
+
+            <h5>3) Make array and write names of any living thing and count that living thing who came in many times. 
+            </h5>
+
+            <h5>Output:</h5>
+            <img src="image/4.PNG" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black; color: white;">
+                let pets=['dog','cat','chicken','dog','chicken','rabit'];<br>
+                 let petscount=pets.reduce((accum,item)=>{<br>
+                 if(accum[item]){<br>
+                     accum[item]++;}<br>
+                 else{<br>
+                     accum[item]=1;}<br>
+                 return accum;<br>
+                 },{}) <br>
+                 console.log(petscount);</p>
+
+            <div class="line"></div>
+
+            <h5>4) Write a program in which show greater number in console screen by using Reduce Method.
+            </h5>
+
+            <h5>Output:</h5>
+            <img src="image/3.PNG" class="img-thumbnail" alt="firstImage">
+            <br>
+            <br>
+            <h4>Source Code:</h4>
+
+            <p style="background-color: black; color: white;" >
+                let num=[5000,6000,81,10,112,99999, 2030]; <br>
+                 let large=num.reduce((accum,item)=>{ <br>
+                 if(accum < item ) {  <br>
+                     return item;}<br>
+                 else{ <br>
+                 return accum}<br>
+                },1)<br>
+                 console.log(large)</p>
+
+            <div class="line"></div>
+
+            
+
+
+             <!-- Classes -->
+
+             <h2 id="classes">13. Classes </h2> <br>
+
+             <h5>1) Make one class and make constructor and give parameters and make function in Animal class and display output.
+             </h5>
+ 
+             <h5>Output:</h5>
+                 <img src="image/52.PNG" class="img-thumbnail" alt="firstImage">
+                 <br>
+                 <br>
+                 <h4>Source Code:</h4>
+ 
+             <p style="background-color: black; color: white;">
+                class Animal{<br>
+                    constructor(name,legs,color){<br>
+                        this.name=name;<br>
+                        this.legs=legs;<br>
+                        this.color=color;}<br>
+                    eat(){<br>
+                        console.log(`${this.name} eats bone`);}}<br>
+                let anim=new Animal("Dogs",4,"White");<br>
+                console.log(anim)<br>
+                anim.eat()
+            </p>
+ 
+             <div class="line"></div>
+ 
+             <h5>2) Write a Animal class with constructor and make two more child class and inherits its Parent class.
+             </h5>
+ 
+             <h5>Output:</h5>
+             <img src="image/53.PNG" class="img-thumbnail" alt="firstImage">
+             <br>
+             <br>
+             <h4>Source Code:</h4>
+ 
+             <p style="background-color: black; color: white;">
+                class Animal{<br>
+                    constructor(name,legs){<br>
+                        this.name=name;<br>
+                        this.legs=legs;}<br>
+                    speed1(name,name1){<br>
+                        console.log(name+` runs `+name1)}}<br>
+                class Rabit extends Animal{<br>
+                    constructor(name,legs,speed,quality){<br>
+                        super(name,legs);<br>
+                        this.speed=speed;<br>
+                        this.quality=quality;}}<br>
+                class Turtle extends Animal{<br>
+                    constructor(name,legs,quality,specialPower){<br>
+                        super(name,legs);<br>
+                        this.quality=quality;<br>
+                        this.specialPower=specialPower;}}<br>
+                let rabit=new Rabit("rabit",4,"fast",'hide');<br>
+                let turtle=new Turtle("turtle",4,"consistent",'hard shell');<br>
+                console.log(rabit,turtle)<br>
+                rabit.speed1("Rabit","Fast");<br>
+                turtle.speed1("Turtle","Slow")</p>
+ 
+             <div class="line"></div>
+
+
+        </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+        <script>
+            $(document).ready(function () {
+                $("#sidebarCollapse").on('click', function () {
+                    $("#sidebar").toggleClass('active');
+                });
+            });
+        </script>
+</body>
+
+</html>

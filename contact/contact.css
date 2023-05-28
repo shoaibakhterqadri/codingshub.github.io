@@ -1,0 +1,21 @@
+section {
+    background-color: rgb(250, 245, 245);
+
+}
+#female,
+#other {
+    margin-left: 20px;
+}
+
+#male,
+#female,
+#other {
+    margin-top: 10px;
+}
+.contact {
+    text-align: center;
+    margin-top: 20px;
+}
+#Site-footer {
+    display:none;
+    }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Language</title>
+  <!-- Bootstrap CDN link -->
+  <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
+
+  <!-- Custom Css link -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <header>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1 fw-bold py-2 fs-3 text-primary">MCQs APPLICATION</span>
+      </div>
+    </nav>
+  </header>
+
+  <a href="Forget Password/Email Verification/verification.html"></a>
+  <!-- Sign Up -->
+  <section class="wrapper mt-4">
+    <div class="container">
+      <form action="javascript:void(0)" class="rounded bg-white shadow p-5" autocomplete="off">
+        <h3 class="fw-bolder fs-3 mb-3 text-primary text-center">JAVA Language</h3>
+
+        <div class="form-floating mb-3">
+          <input type="text" name="question" id="question" required placeholder="Enter Question" class="form-control nameElement">
+          <label for="question">Question</label>
+        </div>
+        <p class="error" id="name-error"></p>
+
+        <p class="fill"></p>
+        <div class="form-floating mb-3">
+          <input type="text" name="opt1" id="opt1" class="form-control element-1" required  placeholder="Option 1">
+          <label for="opt1">Option 1</label>
+        </div>
+        <p class="error" id="fir-error"></p>
+
+        <div class="form-floating mb-3">
+          <input type="text" name="opt2" id="opt2" class="form-control element-2" required placeholder="Option 2">
+          <label for="opt2">Option 2</label>
+        </div>
+        <p class="error" id="sec-error"></p>
+
+        <div class="form-floating">
+          <input type="text" name="opt3" id="opt3" class="form-control element-3" required  placeholder="Option 3">
+          <label for="opt3">Option 3</label>
+        </div>
+        <p class="error" id="thi-error"></p>
+
+        <div class="form-floating">
+          <input type="text" name="opt4" id="opt4" class="form-control element-4" required placeholder="Option 4">
+          <label for="opt4">Option 4</label>
+        </div>
+        <p class="error" id="four-error"></p>
+        <div class="form-floating">
+          <input type="text" name="answer" id="answer" class="form-control element-4" required placeholder="answer">
+          <label for="opt4">Write answer</label>
+        </div>
+        <p class="error" id="four-error"></p>
+        
+       
+
+        <button class="btn btn-primary w-100 submit my-2" type="submit" id="addMcqs">Add MCQs</button>
+      </form>
+    </div>
+    <div id="mcqsData"></div>
+  </section>
+  <!-- custom javascript -->
+  <script src="apps.js" type="module"></script>
+</body>
+
+</html>
